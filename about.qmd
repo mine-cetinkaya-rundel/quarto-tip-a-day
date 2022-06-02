@@ -1,8 +1,8 @@
 ---
-title: "About"
-image: profile.png
+title: "A Quarto tip a day keeps the docs away"
+image: images/profile.png
 about:
-  template: jolla
+  template: trestles
   links:
     - icon: twitter
       text: Twitter
@@ -10,11 +10,16 @@ about:
     - icon: github
       text: Github
       href: https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day
-
 ---
 
-Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto. Despite the title, the goal is not really to keep the documentation away, in fact, [Quarto documentation](https://quarto.org/) is pretty awesome!
+Inspired by the saying *"An apple a day keeps the doctor away"*, this project titled *"A Quarto tip a day keeps the docs away"* is a playful attempt to share Quarto tips daily for a month leading up to my rstudio::conf(2022) keynote on Quarto.
+Despite the title, the goal is not really to keep the docs (documentation) away.
+In fact, the [Quarto documentation](https://quarto.org/) is pretty awesome and the best place to learn everything you might want to know about Quarto.
 
-As part of this project, I will tweet a Quarto tip each day in starting June 28, 2022 for thirty days from my personal account [@minebocek](https://twitter.com/minebocek) with the hashtag `#quartotip`. The daily tips / tweets are in no particular order. This website will collect each tip as a daily blog post entry. And, you guessed it, it's made with Quarto!
+As part of this project, I will tweet a Quarto tip each day in starting June 28, 2022 for thirty days, from my personal account (\@minebocek), with the hashtag `#quartotip`.
+The daily tips / tweets are in no particular order.
+This website collects each tip as a daily blog post entry, with each blog post linking to "learn more" resources.
+And, you guessed it, it's made with Quarto!
 
-The target audience for this project is folks who are already somewhat familiar with Quarto. If you're brand new to Quarto, I recommend getting started [here](https://quarto.org/docs/get-started/) instead.
+The target audience for this project is folks who are already somewhat familiar with Quarto.
+If you're brand new to Quarto, I recommend getting started [here](https://quarto.org/docs/get-started/) instead.
