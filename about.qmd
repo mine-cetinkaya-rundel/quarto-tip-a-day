@@ -12,11 +12,11 @@ about:
       href: https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day
 ---
 
-Inspired by the saying *"An apple a day keeps the doctor away"*, this project titled *"A Quarto tip a day keeps the docs away"* is a playful attempt to share Quarto tips daily for a month leading up to my rstudio::conf(2022) keynote on Quarto.
+Inspired by the saying *"An apple a day keeps the doctor away"*, this project titled *"A Quarto tip a day keeps the docs away"* is a playful attempt to share Quarto tips daily for a month leading up to rstudio::conf(2022).
 Despite the title, the goal is not really to keep the docs (documentation) away.
 In fact, the [Quarto documentation](https://quarto.org/) is pretty awesome and the best place to learn everything you might want to know about Quarto.
 
-As part of this project, I will tweet a Quarto tip each day in starting June 28, 2022 for thirty days, from my personal account (\@minebocek), with the hashtag `#quartotip`.
+As part of this project, I will tweet a Quarto tip each day in starting June 28, 2022 for thirty days, from my personal account ([\@minebocek](https://twitter.com/minebocek)), with the hashtag `#quartotip`.
 The daily tips / tweets are in no particular order.
 This website collects each tip as a daily blog post entry, with each blog post linking to "learn more" resources.
 And, you guessed it, it's made with Quarto!
