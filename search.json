@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "A Quarto tip a day keeps the docs away",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\ntables\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "As part of this project, I will tweet a Quarto tip each day in starting June 28, 2022 for thirty days from my personal account @minebocek with the hashtag #quartotip. The daily tips / tweets are in no particular order. This website will collect each tip as a daily blog post entry. And, you guessed it, it’s made with Quarto!\nThe target audience for this project is folks who are already somewhat familiar with Quarto. If you’re brand new to Quarto, I recommend getting started here instead."
+  },
+  {
+    "objectID": "posts/01-side-by-side-tables/index.html",
+    "href": "posts/01-side-by-side-tables/index.html",
+    "title": "Side-by-side tables",
+    "section": "",
+    "text": "```{r}\n#| layout-ncol: 2\n\nlibrary(knitr)\n\n# table on the left\nkable(head(mtcars[, 1:3]))\n\n# table on the right\nkable(head(cars))\n```\n\n\n\n\n\n\n\nmpg\ncyl\ndisp\n\n\n\n\nMazda RX4\n21.0\n6\n160\n\n\nMazda RX4 Wag\n21.0\n6\n160\n\n\nDatsun 710\n22.8\n4\n108\n\n\nHornet 4 Drive\n21.4\n6\n258\n\n\nHornet Sportabout\n18.7\n8\n360\n\n\nValiant\n18.1\n6\n225\n\n\n\n\n\n\n\n\nspeed\ndist\n\n\n\n\n4\n2\n\n\n4\n10\n\n\n7\n4\n\n\n7\n22\n\n\n8\n16\n\n\n9\n10"
+  }
+]
