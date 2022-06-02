@@ -41,7 +41,7 @@ jobs:
 
       - name: Build site 🔧
         run: |
-          R -e 'quarto::quarto_render(".", as_job = FALSE)'
+          quarto render
 
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
