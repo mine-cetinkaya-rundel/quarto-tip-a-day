@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "A Quarto tip a day",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "A Quarto tip a day keeps the docs away",
+    "section": "",
+    "text": "As part of this project, I will tweet a Quarto tip each day in starting June 28, 2022 for thirty days, from my personal account (@minebocek), with the hashtag #quartotip. The daily tips / tweets are in no particular order. This website collects each tip as a daily blog post entry, with each blog post linking to “learn more” resources. And, you guessed it, it’s made with Quarto!\nThe target audience for this project is folks who are already somewhat familiar with Quarto. If you’re brand new to Quarto, I recommend getting started here instead."
+  },
+  {
     "objectID": "posts/01-side-by-side-tables/index.html",
     "href": "posts/01-side-by-side-tables/index.html",
     "title": "Side-by-side tables",
@@ -12,19 +26,5 @@
     "title": "Side-by-side tables",
     "section": "Learn more",
     "text": "Learn more\nOptions for tables produced by executable code cells"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "A Quarto tip a day keeps the docs away",
-    "section": "",
-    "text": "As part of this project, I will tweet a Quarto tip each day in starting June 28, 2022 for thirty days, from my personal account (@minebocek), with the hashtag #quartotip. The daily tips / tweets are in no particular order. This website collects each tip as a daily blog post entry, with each blog post linking to “learn more” resources. And, you guessed it, it’s made with Quarto!\nThe target audience for this project is folks who are already somewhat familiar with Quarto. If you’re brand new to Quarto, I recommend getting started here instead."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "A Quarto tip a day",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
