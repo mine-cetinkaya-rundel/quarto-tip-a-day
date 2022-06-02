@@ -1,0 +1,20 @@
+---
+title: "Side-by-side tables"
+date: "2022-06-28"
+categories: [tables]
+---
+
+Use the `layout-ncol` chunk option to organize output in columns, i.e., `layout-ncol: 2` for two table side-by-side.
+
+```{r}
+#| echo: fenced
+#| layout-ncol: 2
+
+library(knitr)
+
+# table on the left
+kable(head(mtcars[, 1:3]))
+
+# table on the right
+kable(head(cars))
+```

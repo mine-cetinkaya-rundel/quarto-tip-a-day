@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "A Quarto tip a day keeps the docs away"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day
+      - icon: twitter
+        href: https://twitter.com/minebocek
+format:
+  html:
+    theme:
+      - litera
+      - styles.scss
+    highlight-style: a11y-dark
+    mainfont: "Atkinson Hyperlegible"
+    code-copy: true
+    code-overflow: wrap

@@ -1,0 +1,14 @@
+{
+  "hash": "5657b8b46e385355241b306a142949ec",
+  "result": {
+    "markdown": "---\ntitle: \"Side-by-side tables\"\ndate: \"2022-06-28\"\ncategories: [tables]\n---\n\n\nUse the `layout-ncol` chunk option to organize output in columns, i.e., `layout-ncol: 2` for two table side-by-side.\n\n\n::: {.cell layout-ncol=\"2\"}\n\n````{.cell-code}\n```{{r}}\n#| layout-ncol: 2\n\nlibrary(knitr)\n\n# table on the left\nkable(head(mtcars[, 1:3]))\n\n# table on the right\nkable(head(cars))\n```\n````\n\n::: {.cell-output-display}\n|                  |  mpg| cyl| disp|\n|:-----------------|----:|---:|----:|\n|Mazda RX4         | 21.0|   6|  160|\n|Mazda RX4 Wag     | 21.0|   6|  160|\n|Datsun 710        | 22.8|   4|  108|\n|Hornet 4 Drive    | 21.4|   6|  258|\n|Hornet Sportabout | 18.7|   8|  360|\n|Valiant           | 18.1|   6|  225|\n\n\n\n| speed| dist|\n|-----:|----:|\n|     4|    2|\n|     4|   10|\n|     7|    4|\n|     7|   22|\n|     8|   16|\n|     9|   10|\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
