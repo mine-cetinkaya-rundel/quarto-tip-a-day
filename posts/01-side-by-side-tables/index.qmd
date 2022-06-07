@@ -1,6 +1,6 @@
 ---
 title: "Side-by-side tables"
-date: "2022-06-28"
+date: "2022-06-28T09:00"
 categories: [tables]
 image: "featured.png"
 ---

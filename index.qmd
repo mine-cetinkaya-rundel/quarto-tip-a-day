@@ -9,6 +9,7 @@ listing:
   filter-ui: true
   image-placeholder: images/image-placeholder.png
   fields: [image, date, title, description]
+  date-format: "MMMM DD, YYYY - HH:MM"
 page-layout: full
 title-block-banner: true
 ---
