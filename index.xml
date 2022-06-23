@@ -9,10 +9,56 @@
 <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</link>
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
-<generator>quarto-0.9.541</generator>
-<lastBuildDate>Tue, 28 Jun 2022 00:00:00 GMT</lastBuildDate>
+<generator>quarto-0.9.613</generator>
+<lastBuildDate>Wed, 29 Jun 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Fenced echo</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/02-fenced-echo/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="echo-fenced" class="level2">
+<h2 class="anchored" data-anchor-id="echo-fenced"><code>echo: fenced</code></h2>
+<p>If you, like me, spend most of your time writing teaching materials or documentation, I’m sure you’ll find the chunk option <code>echo: fenced</code> just as useful as I do! When you set this option for a code chunk, the chunk is displayed with the fences around it – without a screenshot or using a special verbatim engine.</p>
+<p>To get code chunks printed out as</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;">```{r}</span></span>
+<span id="cb1-2"><span class="co" style="color: #5E5E5E;">#| label: simple-arithmetic</span></span>
+<span id="cb1-3"><span class="co" style="color: #5E5E5E;">#| results: hide</span></span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="dv" style="color: #AD0000;">1</span> <span class="sc" style="color: #5E5E5E;">+</span> <span class="dv" style="color: #AD0000;">1</span></span>
+<span id="cb1-6"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+</div>
+<p>add the <code>echo: fenced</code> option to your chunk:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="in" style="color: #5E5E5E;">```{r}</span></span>
+<span id="cb2-2"><span class="co" style="color: #5E5E5E;">#| echo: fenced</span></span>
+<span id="cb2-3"><span class="co" style="color: #5E5E5E;">#| label: simple-arithmetic</span></span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;">#| results: hide</span></span>
+<span id="cb2-5"></span>
+<span id="cb2-6"><span class="dv" style="color: #AD0000;">1</span> <span class="sc" style="color: #5E5E5E;">+</span> <span class="dv" style="color: #AD0000;">1</span></span>
+<span id="cb2-7"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+<p>Note that in the output the chunk option other than <code>echo: fenced</code> are shown</p>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/computations/execution-options.html#fenced-echo">Fenced echo execution option</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>teaching</category>
+  <category>documentation</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/02-fenced-echo/index.html</guid>
+  <pubDate>Wed, 29 Jun 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/02-fenced-echo/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Side-by-side tables</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
   <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/01-side-by-side-tables/index.html</link>
   <description><![CDATA[ 
 
@@ -36,12 +82,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-5703132" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-4713976" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-5703132-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-5703132" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-4713976-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-4713976" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -92,7 +138,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-5703132-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-5703132" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-4713976-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-4713976" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>

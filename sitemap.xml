@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</loc>
-    <lastmod>2022-06-07T17:16:39.545Z</lastmod>
+    <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/about.html</loc>
+    <lastmod>2022-06-23T04:09:42.600Z</lastmod>
   </url>
   <url>
-    <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/about.html</loc>
-    <lastmod>2022-06-07T17:16:40.193Z</lastmod>
+    <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/02-fenced-echo/index.html</loc>
+    <lastmod>2022-06-23T04:09:43.344Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/01-side-by-side-tables/index.html</loc>
-    <lastmod>2022-06-07T17:16:40.541Z</lastmod>
+    <lastmod>2022-06-23T04:09:43.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</loc>
+    <lastmod>2022-06-23T04:09:44.116Z</lastmod>
   </url>
 </urlset>

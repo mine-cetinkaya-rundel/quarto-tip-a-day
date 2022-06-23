@@ -1,17 +1,24 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "A Quarto tip a day",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "A Quarto tip a day keeps the docs away",
     "section": "",
     "text": "As part of this project, I will tweet a Quarto tip each day in starting June 28, 2022 for thirty days, from my personal account (@minebocek), with the hashtag #quartotip. The daily tips / tweets are in no particular order. This website collects each tip as a daily blog post entry, with each blog post linking to “learn more” resources. And, you guessed it, it’s made with Quarto!\nThe target audience for this project is folks who are already somewhat familiar with Quarto. If you’re brand new to Quarto, I recommend getting started here instead."
+  },
+  {
+    "objectID": "posts/02-fenced-echo/index.html",
+    "href": "posts/02-fenced-echo/index.html",
+    "title": "Fenced echo",
+    "section": "",
+    "text": "If you, like me, spend most of your time writing teaching materials or documentation, I’m sure you’ll find the chunk option echo: fenced just as useful as I do! When you set this option for a code chunk, the chunk is displayed with the fences around it – without a screenshot or using a special verbatim engine.\nTo get code chunks printed out as\n\n```{r}\n#| label: simple-arithmetic\n#| results: hide\n\n1 + 1\n```\n\nadd the echo: fenced option to your chunk:\n```{r}\n#| echo: fenced\n#| label: simple-arithmetic\n#| results: hide\n\n1 + 1\n```\nNote that in the output the chunk option other than echo: fenced are shown"
+  },
+  {
+    "objectID": "posts/02-fenced-echo/index.html#learn-more",
+    "href": "posts/02-fenced-echo/index.html#learn-more",
+    "title": "Fenced echo",
+    "section": "Learn more",
+    "text": "Learn more\nFenced echo execution option"
   },
   {
     "objectID": "posts/01-side-by-side-tables/index.html",
@@ -26,5 +33,12 @@
     "title": "Side-by-side tables",
     "section": "Learn more",
     "text": "Learn more\nOptions for tables produced by executable code cells"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "A Quarto tip a day",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/02-fenced-echo/index.html",
       "/posts/01-side-by-side-tables/index.html"
     ]
   }
