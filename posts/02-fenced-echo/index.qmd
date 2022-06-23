@@ -1,0 +1,37 @@
+---
+title: "Fenced echo"
+date: "2022-06-29"
+categories: [teaching, documentation]
+image: "featured.png"
+---
+
+## `echo: fenced`
+
+If you, like me, spend most of your time writing teaching materials or documentation, I'm sure you'll find the chunk option `echo: fenced` just as useful as I do!
+When you set this option for a code chunk, the chunk is displayed with the fences around it -- without a screenshot or using a special verbatim engine.
+
+To get code chunks printed out as
+
+```{r}
+#| echo: fenced
+#| label: simple-arithmetic
+#| results: hide
+
+1 + 1
+```
+
+add the `echo: fenced` option to your chunk:
+
+``` {{r}}
+#| echo: fenced
+#| label: simple-arithmetic
+#| results: hide
+
+1 + 1
+```
+
+Note that in the output all chunk options other than `echo: fenced` are shown, so this is a great tool for teaching chunk options as well.
+
+## Learn more
+
+[Fenced echo execution option](https://quarto.org/docs/computations/execution-options.html#fenced-echo)
