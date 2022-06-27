@@ -16,7 +16,7 @@ Inspired by the saying *"An apple a day keeps the doctor away"*, this project ti
 Despite the title, the goal is not really to keep the docs (documentation) away.
 In fact, the [Quarto documentation](https://quarto.org/) is pretty awesome and the best place to learn everything you might want to know about Quarto.
 
-As part of this project, I will tweet a Quarto tip each day in starting June 28, 2022 for thirty days, from my personal account ([\@minebocek](https://twitter.com/minebocek)), with the hashtag `#quartotip`.
+As part of this project, I will tweet a Quarto tip each day in starting June 28, 2022 for thirty days, from the Quarto account ([\@quarto_pub](https://twitter.com/quarto_pub "@quarto_pub on Twitter")), with the hashtag `#quartotip`.
 The daily tips / tweets are in no particular order.
 This website collects each tip as a daily blog post entry, with each blog post linking to "learn more" resources.
 And, you guessed it, it's made with Quarto!
