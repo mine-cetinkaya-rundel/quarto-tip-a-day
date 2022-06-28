@@ -12,10 +12,13 @@ website:
         href: about.qmd
       - icon: rss-fill
         href: index.xml
+        aria-label: RSS
       - icon: github
         href: https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day
+        aria-label: GitHub repo
       - icon: twitter
         href: https://twitter.com/quarto_pub
+        aria-label: Quarto Twitter
 
   page-footer:
     right: "This blog is built with ❤️ and [Quarto](https://quarto.org/)."
