@@ -22,7 +22,7 @@
 
 <section id="layout-ncol" class="level2">
 <h2 class="anchored" data-anchor-id="layout-ncol"><code>layout-ncol</code></h2>
-<p>Use the <code>layout-ncol</code> chunk option to organize output in columns, i.e., <code>layout-ncol: 2</code> for two tables side-by-side.</p>
+<p>Use the <code>layout-ncol</code> chunk option to organize output in columns, e.g., <code>layout-ncol: 2</code> for two tables side-by-side.</p>
 <div>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;">```{r}</span></span>
 <span id="cb1-2"><span class="co" style="color: #5E5E5E;">#| tbl-cap: Two tables</span></span>
@@ -37,12 +37,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-7452516" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-1825283" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-7452516-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7452516" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-1825283-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-1825283" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -93,7 +93,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-7452516-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7452516" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-1825283-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-1825283" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>
