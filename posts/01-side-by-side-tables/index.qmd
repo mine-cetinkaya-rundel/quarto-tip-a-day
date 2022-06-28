@@ -7,7 +7,7 @@ image: "featured.png"
 
 ## `layout-ncol`
 
-Use the `layout-ncol` chunk option to organize output in columns, i.e., `layout-ncol: 2` for two tables side-by-side.
+Use the `layout-ncol` chunk option to organize output in columns, e.g., `layout-ncol: 2` for two tables side-by-side.
 
 ```{r}
 #| echo: fenced
