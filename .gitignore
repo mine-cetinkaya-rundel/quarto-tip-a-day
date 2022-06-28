@@ -6,3 +6,4 @@
 *.key
 _site/
 /.quarto/
+*tweet-image.png
