@@ -35,7 +35,8 @@ website:
     right: "This blog is built with ❤️ and [Quarto](https://quarto.org/)."
     left: |
       Proudly supported by
-      [![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-flat.svg){fig-alt="RStudio" width=65px}](https://www.rstudio.com)    background: "#F8F9FA"
+      [![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-flat.svg){fig-alt="RStudio" width=65px}](https://www.rstudio.com)
+    background: "#F8F9FA"
 
 format:
   html:
