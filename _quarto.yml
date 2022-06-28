@@ -19,8 +19,9 @@ website:
 
   page-footer:
     right: "This blog is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; Copyright 2022, Mine Çetinkaya-Rundel"
-    background: "#F8F9FA"
+    left: |
+      Proudly supported by
+      [![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-flat.svg){fig-alt="RStudio" width=65px}](https://www.rstudio.com)    background: "#F8F9FA"
 
 format:
   html:
