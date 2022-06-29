@@ -28,3 +28,13 @@ Code and tables can be found in the linked blog post.
 Super useful for teaching Quarto!
 
 Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/01-side-by-side-tables/
+
+\[insert-image\]
+
+alt-text: Two R chunks are displayed.
+The top R chunk is the output, and shows the chunk options label: simple-arithmetic, results: hide.
+The R code in the chunk is 1 + 1.
+Also visible are the fences of the R chunk.
+The bottom R chunk is the input, which shows the same content as the top chunk, plus an additional chunk option: echo: fenced.
+The text reads "To get code chunks printed out as \[the top chunk\], add the echo: fenced option to your chunk".
+Code and text can also be found in the linked blog post.
