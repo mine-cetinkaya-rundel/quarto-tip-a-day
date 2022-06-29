@@ -3,6 +3,7 @@ title: "Fenced echo"
 date: "2022-06-29"
 categories: [teaching, documentation]
 image: "featured.png"
+image-alt: "An R chunk with YAML-style chunk options echo: fenced, label: simple-arithmetic, results: hide. The R code in the chunk is 1 + 1. The fences of the chunk are also visible."
 ---
 
 ## `echo: fenced`
