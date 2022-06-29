@@ -1,11 +1,13 @@
-#1 - 
+#1 -
 
-Today we begin a new series: “A Quarto tip a day keeps the docs away” -- a playful attempt to share Quarto tips daily for the next month. Follow along:
+Today we begin a new series: "A Quarto tip a day keeps the docs away" -- a playful attempt to share Quarto tips daily for the next month.
+Follow along:
 
-🐦 #quartotip
-🔗 https://rstd.io/quartotip
+🐦 #quartotip 🔗 https://rstd.io/quartotip
 
 And, of course, don't keep the docs away, they're incredibly helpful and thorough!
+
+------------------------------------------------------------------------
 
 #2 -
 
@@ -13,6 +15,16 @@ And, of course, don't keep the docs away, they're incredibly helpful and thoroug
 
 Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/01-side-by-side-tables/
 
-[insert-image]
+\[insert-image\]
 
-alt-text: R code for generating two tables from mtcars and cars datasets and placing them next to each other as well as the output tables side-by-side. Code and tables can be found in the linked blog post.
+alt-text: R code for generating two tables from mtcars and cars datasets and placing them next to each other as well as the output tables side-by-side.
+Code and tables can be found in the linked blog post.
+
+------------------------------------------------------------------------
+
+#3 -
+
+#quartotip 2: Use the echo: fenced chunk option to display the fences around your code chunks in your output.
+Super useful for teaching Quarto!
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/01-side-by-side-tables/
