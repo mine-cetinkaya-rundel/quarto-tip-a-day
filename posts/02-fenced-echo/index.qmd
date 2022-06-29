@@ -3,7 +3,6 @@ title: "Fenced echo"
 date: "2022-06-29"
 categories: [teaching, documentation]
 image: "featured.png"
-draft: true
 ---
 
 ## `echo: fenced`
@@ -36,4 +35,3 @@ Note that in the output all chunk options other than `echo: fenced` are shown, s
 ## Learn more
 
 [Fenced echo execution option](https://quarto.org/docs/computations/execution-options.html#fenced-echo)
-
