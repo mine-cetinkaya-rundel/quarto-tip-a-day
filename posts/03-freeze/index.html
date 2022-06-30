@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.632">
+<meta name="generator" content="quarto-0.9.633">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -221,8 +221,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <section id="freeze-auto-true" class="level2">
 <h2 class="anchored" data-anchor-id="freeze-auto-true"><code>freeze: auto / true</code></h2>
-<p>For Quarto projects with many documents that include code, you probably won’t want to re-execute all of that code each time you render the project.<br>
-</p>
+<p>For Quarto projects with many documents that include code, you probably won’t want to re-execute all of that code each time you render the project. The <code>freeze</code> execution option is helpful for managing that.</p>
 <p>For example, you might have a Quarto blog and when you render the website you wouldn’t want code from old blog posts to be re-rendered automatically, you would likely prefer to leave them as is as of the date they were published. Or you might be using Quarto for a course website and have slides, homework assignments, etc. in that website that you add as the semester progresses. You wouldn’t want to re-render all of those old documents each time you add new items to your website.</p>
 <p>Managing execution for these purposes is straightforward with Quarto using the <code>freeze</code> option in your <code>_quarto.yml</code> file for your project, e.g.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">execute</span><span class="kw">:</span></span>

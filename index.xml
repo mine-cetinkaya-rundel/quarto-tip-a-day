@@ -9,7 +9,7 @@
 <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</link>
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
-<generator>quarto-0.9.632</generator>
+<generator>quarto-0.9.633</generator>
 <lastBuildDate>Thu, 30 Jun 2022 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Freeze</title>
@@ -22,8 +22,7 @@
 
 <section id="freeze-auto-true" class="level2">
 <h2 class="anchored" data-anchor-id="freeze-auto-true"><code>freeze: auto / true</code></h2>
-<p>For Quarto projects with many documents that include code, you probably won’t want to re-execute all of that code each time you render the project.<br>
-</p>
+<p>For Quarto projects with many documents that include code, you probably won’t want to re-execute all of that code each time you render the project. The <code>freeze</code> execution option is helpful for managing that.</p>
 <p>For example, you might have a Quarto blog and when you render the website you wouldn’t want code from old blog posts to be re-rendered automatically, you would likely prefer to leave them as is as of the date they were published. Or you might be using Quarto for a course website and have slides, homework assignments, etc. in that website that you add as the semester progresses. You wouldn’t want to re-render all of those old documents each time you add new items to your website.</p>
 <p>Managing execution for these purposes is straightforward with Quarto using the <code>freeze</code> option in your <code>_quarto.yml</code> file for your project, e.g.</p>
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;">execute</span><span class="kw" style="color: #003B4F;">:</span></span>
@@ -125,12 +124,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-4056216" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-1257391" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-4056216-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-4056216" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-1257391-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-1257391" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -181,7 +180,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-4056216-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-4056216" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-1257391-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-1257391" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>
