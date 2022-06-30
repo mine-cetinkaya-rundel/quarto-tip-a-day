@@ -38,3 +38,18 @@ Also visible are the fences of the R chunk.
 The bottom R chunk is the input, which shows the same content as the top chunk, plus an additional chunk option: echo: fenced.
 The text reads "To get code chunks printed out as \[the top chunk\], add the echo: fenced option to your chunk".
 Code and text can also be found in the linked blog post.
+
+------------------------------------------------------------------------
+
+#4 -
+
+#quartotip 3: Use the freeze: true or freeze: auto execution option for finer control over when documents in Quarto projects are re-rendered.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/03-freeze/
+
+\[insert-image\]
+
+alt-text: YAML file with two execute options.
+The first one is freeze: true and the comment that goes with it reads "never re-render during project render".
+The other one is freeze: auto and the comment reads "re-render only when source changes".
+

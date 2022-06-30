@@ -8,8 +8,7 @@ image-alt: "An R chunk with YAML-style chunk options echo: fenced, label: simple
 
 ## `freeze: auto / true`
 
-For Quarto projects with many documents that include code, you probably won't want to re-execute all of that code each time you render the project.
-\
+For Quarto projects with many documents that include code, you probably won't want to re-execute all of that code each time you render the project. The `freeze` execution option is helpful for managing that.
 
 For example, you might have a Quarto blog and when you render the website you wouldn't want code from old blog posts to be re-rendered automatically, you would likely prefer to leave them as is as of the date they were published.
 Or you might be using Quarto for a course website and have slides, homework assignments, etc. in that website that you add as the semester progresses.
