@@ -35,11 +35,25 @@
     "text": "Learn more\nOptions for tables produced by executable code cells"
   },
   {
+    "objectID": "posts/03-freeze/index.html",
+    "href": "posts/03-freeze/index.html",
+    "title": "Freeze",
+    "section": "",
+    "text": "For Quarto projects with many documents that include code, you probably won’t want to re-execute all of that code each time you render the project.\n\nFor example, you might have a Quarto blog and when you render the website you wouldn’t want code from old blog posts to be re-rendered automatically, you would likely prefer to leave them as is as of the date they were published. Or you might be using Quarto for a course website and have slides, homework assignments, etc. in that website that you add as the semester progresses. You wouldn’t want to re-render all of those old documents each time you add new items to your website.\nManaging execution for these purposes is straightforward with Quarto using the freeze option in your _quarto.yml file for your project, e.g.\nexecute:\n  freeze: true\nYou can set this option to true or auto. By default, it’s false.\n\nfreeze: true - Never re-render during project render. If you need the page/document to be re-rendered, you need to render that document individually.\n\nThis is the option I use for blogs as I want to make sure to avoid re-rendering old posts unless I explicitly do so.\n\nfreeze: auto - Re-render only when source changes.\n\nThis is the option I use for my course websites – when I catch a mistake in earlier slide decks, and update the source code, I want those documents re-render next time I render my project, I don’t want to rely on remembering to re-render them myself.\n\n\nNote that freeze controls whether execution occurs during global project renders. If you do render a single document or a sub-directory in a Quarto project, then the code is always executed."
+  },
+  {
+    "objectID": "posts/03-freeze/index.html#learn-more",
+    "href": "posts/03-freeze/index.html#learn-more",
+    "title": "Freeze",
+    "section": "Learn more",
+    "text": "Learn more\nManaging execution with freeze"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "A Quarto tip a day",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tweets.html",

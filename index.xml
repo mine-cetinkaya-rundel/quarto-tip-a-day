@@ -9,8 +9,51 @@
 <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</link>
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
-<generator>quarto-0.9.629</generator>
-<lastBuildDate>Wed, 29 Jun 2022 00:00:00 GMT</lastBuildDate>
+<generator>quarto-0.9.632</generator>
+<lastBuildDate>Thu, 30 Jun 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Freeze</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/03-freeze/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="freeze-auto-true" class="level2">
+<h2 class="anchored" data-anchor-id="freeze-auto-true"><code>freeze: auto / true</code></h2>
+<p>For Quarto projects with many documents that include code, you probably won’t want to re-execute all of that code each time you render the project.<br>
+</p>
+<p>For example, you might have a Quarto blog and when you render the website you wouldn’t want code from old blog posts to be re-rendered automatically, you would likely prefer to leave them as is as of the date they were published. Or you might be using Quarto for a course website and have slides, homework assignments, etc. in that website that you add as the semester progresses. You wouldn’t want to re-render all of those old documents each time you add new items to your website.</p>
+<p>Managing execution for these purposes is straightforward with Quarto using the <code>freeze</code> option in your <code>_quarto.yml</code> file for your project, e.g.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;">execute</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb1-2"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">freeze</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="ch" style="color: #20794D;">true</span></span></code></pre></div>
+<p>You can set this option to <code>true</code> or <code>auto</code>. By default, it’s <code>false</code>.</p>
+<ul>
+<li><code>freeze: true</code> - Never re-render during project render. If you need the page/document to be re-rendered, you need to render that document individually.
+<ul>
+<li>This is the option I use for blogs as I want to make sure to avoid re-rendering old posts unless I explicitly do so.</li>
+</ul></li>
+<li><code>freeze: auto</code> - Re-render only when source changes.
+<ul>
+<li>This is the option I use for my course websites – when I catch a mistake in earlier slide decks, and update the source code, I want those documents re-render next time I render my project, I don’t want to rely on remembering to re-render them myself.</li>
+</ul></li>
+</ul>
+<p>Note that <code>freeze</code> controls whether execution occurs during global project renders. If you do render a single document or a sub-directory in a Quarto project, then the code is always executed.</p>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/projects/code-execution.html#freeze">Managing execution with freeze</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>execution</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/03-freeze/index.html</guid>
+  <pubDate>Thu, 30 Jun 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/03-freeze/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Fenced echo</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -82,12 +125,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-7660294" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-4056216" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-7660294-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7660294" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-4056216-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-4056216" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -138,7 +181,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-7660294-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7660294" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-4056216-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-4056216" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>
