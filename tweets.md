@@ -53,3 +53,20 @@ alt-text: YAML file with two execute options.
 The first one is freeze: true and the comment that goes with it reads "never re-render during project render".
 The other one is freeze: auto and the comment reads "re-render only when source changes".
 
+------------------------------------------------------------------------
+
+#5 -
+
+#quartotip 4: Use the include shortcode to include content from a file in another file.
+Helpful for including repeated content in multiple documents.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/04-freeze/
+
+\[insert-image\]
+
+alt-text: A file called content-to-repeat.qmd is shown.
+The file includes one sentence: Look at me, I'm content to be repeated.
+This sentence is in italics.
+Arrows and file icons depict how this file can be included in two different files with the same include shortcode.
+The code can be found in the linked blog post.
+
