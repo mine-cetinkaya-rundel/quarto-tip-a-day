@@ -38,4 +38,4 @@ A few important things to note:
 
 ## Learn more
 
-[Managing execution with freeze](https://quarto.org/docs/projects/code-execution.html#freeze)
+[Includes](https://quarto.org/docs/authoring/includes.html)
