@@ -1,0 +1,41 @@
+---
+title: "Includes"
+date: "2022-07-01"
+categories: [includes]
+image: "featured.png"
+image-alt: "A file called content-to-repeat.qmd is shown. The file includes one sentence: Look at me, I'm content to be repeated. This sentence is in italics. Arrows and file icons depict how this file can be included in two different files with the same include shortcode. The code can be found in the linked blog post."
+---
+
+## `include`
+
+If you have content you want to include across many files, you can place that content in a separate Quarto file and use the `include` comment wherever you want to pull it in.
+
+This could be useful for plain text content (e.g., including the same submission instructions for each homework assignment) or for content that includes computation (e.g., including the same data cleaning steps for various alternate analyses).
+
+Suppose you have such repeatable content in a file called `_content-to-repeat.qmd` and suppose the contents of that file read *Look at me, I'm content to be repeated!* (in italics):
+
+::: {.callout-note appearance="minimal" icon="false" title="hello"}
+**content-to-repeat.qmd**
+
+    *Look at me, I'm content to be repeated!*
+:::
+
+You can include it in other documents using the `{{< include >}}` shortcode:
+
+``` markdown
+{{{< include _content-to-repeat.qmd >}}}
+```
+
+This will result in:
+
+{{< include _content-to-repeat.qmd >}}
+
+A few important things to note:
+
+-   The name of the file that will be included should start with an underscore (`_`) so that they are automatically ignored (i.e. not treated as standalone files) when rendering a project.
+-   All computations within a document will share a single engine (e.g., knitr and jupyter), which is relevant when the included file has computations.
+-   The included file does not have to be a `.qmd` if it only contains text, it can also be a `.md`, `.ipynb`, etc. However included files with computation in them need to be `.qmd`, computational includes don't work in `.ipynb` notebook files.
+
+## Learn more
+
+[Managing execution with freeze](https://quarto.org/docs/projects/code-execution.html#freeze)
