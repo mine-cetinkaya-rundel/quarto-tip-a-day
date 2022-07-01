@@ -9,8 +9,57 @@
 <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</link>
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
-<generator>quarto-0.9.633</generator>
-<lastBuildDate>Thu, 30 Jun 2022 00:00:00 GMT</lastBuildDate>
+<generator>quarto-0.9.637</generator>
+<lastBuildDate>Fri, 01 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Includes</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/04-include/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="include" class="level2">
+<h2 class="anchored" data-anchor-id="include"><code>include</code></h2>
+<p>If you have content you want to include across many files, you can place that content in a separate Quarto file and use the <code>include</code> comment wherever you want to pull it in.</p>
+<p>This could be useful for plain text content (e.g., including the same submission instructions for each homework assignment) or for content that includes computation (e.g., including the same data cleaning steps for various alternate analyses).</p>
+<p>Suppose you have such repeatable content in a file called <code>_content-to-repeat.qmd</code> and suppose the contents of that file read <em>Look at me, I’m content to be repeated!</em> (in italics):</p>
+<div class="callout-note callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container" title="hello">
+<p><strong>content-to-repeat.qmd</strong></p>
+<pre><code>*Look at me, I'm content to be repeated!*</code></pre>
+</div>
+</div>
+</div>
+<p>You can include it in other documents using the <code></code> shortcode:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1">{{&lt; include _content-to-repeat.qmd &gt;}}</span></code></pre></div>
+<p>This will result in:</p>
+<p><em>Look at me I’m content to be repeated!</em></p>
+<p>A few important things to note:</p>
+<ul>
+<li>The name of the file that will be included should start with an underscore (<code>_</code>) so that they are automatically ignored (i.e.&nbsp;not treated as standalone files) when rendering a project.</li>
+<li>All computations within a document will share a single engine (e.g., knitr and jupyter), which is relevant when the included file has computations.</li>
+<li>The included file does not have to be a <code>.qmd</code> if it only contains text, it can also be a <code>.md</code>, <code>.ipynb</code>, etc. However included files with computation in them need to be <code>.qmd</code>, computational includes don’t work in <code>.ipynb</code> notebook files.</li>
+</ul>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/projects/code-execution.html#freeze">Managing execution with freeze</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>includes</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/04-include/index.html</guid>
+  <pubDate>Fri, 01 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/04-include/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Freeze</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -124,12 +173,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-7100498" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-7086093" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-7100498-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7100498" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-7086093-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7086093" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -180,7 +229,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-7100498-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7100498" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-7086093-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7086093" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>

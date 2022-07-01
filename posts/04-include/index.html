@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mine Çetinkaya-Rundel">
-<meta name="dcterms.date" content="2022-06-28">
+<meta name="dcterms.date" content="2022-07-01">
 
-<title>A Quarto tip a day - Side-by-side tables</title>
+<title>A Quarto tip a day - Includes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,13 +121,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 }</script>
 
 
-<meta name="twitter:title" content="A Quarto tip a day - Side-by-side tables">
-<meta name="twitter:description" content="Use the layout-ncol chunk option to organize output in columns, e.g., layout-ncol: 2 for two tables side-by-side.">
+<meta name="twitter:title" content="A Quarto tip a day - Includes">
+<meta name="twitter:description" content="If you have content you want to include across many files, you can place that content in a separate Quarto file and use the include comment wherever you want to pull it in.">
 <meta name="twitter:image" content="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/images/twitter-card.png">
 <meta name="twitter:creator" content="@quarto_pub">
 <meta name="twitter:image-height" content="600">
 <meta name="twitter:image-width" content="1200">
-<meta name="twitter:image:alt" content="Two tables side by side. On the left is the first six rows and first three columns of the mtcars dataset. On the right is the first six rows and all two columns of the cars dataset.">
+<meta name="twitter:image:alt" content="A file called content-to-repeat.qmd is shown. The file includes one sentence: Look at me, I'm content to be repeated. This sentence is in italics. Arrows and file icons depict how this file can be included in two different files with the same include shortcode. The code can be found in the linked blog post.">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -173,9 +173,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Side-by-side tables</h1>
+      <h1 class="title">Includes</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">tables</div>
+                <div class="quarto-category">includes</div>
               </div>
                   </div>
   </div>
@@ -193,7 +193,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">June 28, 2022</p>
+        <p class="date">July 1, 2022</p>
       </div>
     </div>
       
@@ -208,10 +208,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#layout-ncol" id="toc-layout-ncol" class="nav-link active" data-scroll-target="#layout-ncol"><code>layout-ncol</code></a></li>
+  <li><a href="#include" id="toc-include" class="nav-link active" data-scroll-target="#include"><code>include</code></a></li>
   <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn more</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/01-side-by-side-tables/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/04-include/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -219,123 +219,36 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="layout-ncol" class="level2">
-<h2 class="anchored" data-anchor-id="layout-ncol"><code>layout-ncol</code></h2>
-<p>Use the <code>layout-ncol</code> chunk option to organize output in columns, e.g., <code>layout-ncol: 2</code> for two tables side-by-side.</p>
-<div>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: Two tables</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-subcap: ["mtcars", "Just cars"]</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| layout-ncol: 2</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># table on the left</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">head</span>(mtcars[, <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]))</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># table on the right</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">head</span>(cars))</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="tbl-anonymous-7086093" class="cell tbl-parent quarto-layout-panel anchored">
-<div class="panel-caption table-caption">
-<p>Two tables</p>
+<section id="include" class="level2">
+<h2 class="anchored" data-anchor-id="include"><code>include</code></h2>
+<p>If you have content you want to include across many files, you can place that content in a separate Quarto file and use the <code>include</code> comment wherever you want to pull it in.</p>
+<p>This could be useful for plain text content (e.g., including the same submission instructions for each homework assignment) or for content that includes computation (e.g., including the same data cleaning steps for various alternate analyses).</p>
+<p>Suppose you have such repeatable content in a file called <code>_content-to-repeat.qmd</code> and suppose the contents of that file read <em>Look at me, I’m content to be repeated!</em> (in italics):</p>
+<div class="callout-note callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-7086093-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7086093" style="flex-basis: 50.0%;justify-content: center;">
-<table class="table table-sm table-striped">
-<caption>mtcars</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: right;">mpg</th>
-<th style="text-align: right;">cyl</th>
-<th style="text-align: right;">disp</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Mazda RX4</td>
-<td style="text-align: right;">21.0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">160</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Mazda RX4 Wag</td>
-<td style="text-align: right;">21.0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">160</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Datsun 710</td>
-<td style="text-align: right;">22.8</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">108</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Hornet 4 Drive</td>
-<td style="text-align: right;">21.4</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">258</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Hornet Sportabout</td>
-<td style="text-align: right;">18.7</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">360</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Valiant</td>
-<td style="text-align: right;">18.1</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">225</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="tbl-anonymous-7086093-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7086093" style="flex-basis: 50.0%;justify-content: center;">
-<table class="table table-sm table-striped">
-<caption>Just cars</caption>
-<thead>
-<tr class="header">
-<th style="text-align: right;">speed</th>
-<th style="text-align: right;">dist</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">10</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">22</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">16</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">10</td>
-</tr>
-</tbody>
-</table>
+<div class="callout-body-container" title="hello">
+<p><strong>content-to-repeat.qmd</strong></p>
+<pre><code>*Look at me, I'm content to be repeated!*</code></pre>
 </div>
 </div>
 </div>
-</div>
+<p>You can include it in other documents using the <code></code> shortcode:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>{{&lt; include _content-to-repeat.qmd &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will result in:</p>
+<p><em>Look at me I’m content to be repeated!</em></p>
+<p>A few important things to note:</p>
+<ul>
+<li>The name of the file that will be included should start with an underscore (<code>_</code>) so that they are automatically ignored (i.e.&nbsp;not treated as standalone files) when rendering a project.</li>
+<li>All computations within a document will share a single engine (e.g., knitr and jupyter), which is relevant when the included file has computations.</li>
+<li>The included file does not have to be a <code>.qmd</code> if it only contains text, it can also be a <code>.md</code>, <code>.ipynb</code>, etc. However included files with computation in them need to be <code>.qmd</code>, computational includes don’t work in <code>.ipynb</code> notebook files.</li>
+</ul>
 </section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p><a href="https://quarto.org/docs/authoring/tables.html#computations">Options for tables produced by executable code cells</a></p>
+<p><a href="https://quarto.org/docs/projects/code-execution.html#freeze">Managing execution with freeze</a></p>
 
 
 </section>
