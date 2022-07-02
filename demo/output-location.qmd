@@ -20,6 +20,10 @@ library(colorblindr)
 ```
 
 ```{r}
+#| fig-alt: |
+#|   Scatterplot of penguin bill depth vs. length, colored by species.
+#|   The relationship is positive for each of the three species.
+
 ggplot(penguins, 
        aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
   geom_point() +
