@@ -88,7 +88,7 @@
     "href": "demo/output-location.html#default",
     "title": "A Quarto tip a day",
     "section": "default",
-    "text": "default\n\n\n\n\n```{r}\n#| fig-alt: |\n#|   Scatterplot of penguin bill depth vs. length, colored by species.\n#|   The relationship is positive for each of the three species.\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```"
+    "text": "default\n\n\n\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()"
   },
   {
     "objectID": "demo/output-location.html#fragment",

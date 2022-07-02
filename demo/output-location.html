@@ -389,16 +389,10 @@
 
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="co">#| fig-alt: |</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="co">#|   Scatterplot of penguin bill depth vs. length, colored by species.</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="co">#|   The relationship is positive for each of the three species.</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="fu">ggplot</span>(penguins, </span>
-<span id="cb1-7"><a href="#cb1-7"></a>       <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">scale_color_OkabeIto</span>()</span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">ggplot</span>(penguins, </span>
+<span id="cb1-2"><a href="#cb1-2"></a>       <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="fu">scale_color_OkabeIto</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="output-location_files/figure-revealjs/unnamed-chunk-2-1.png" alt="Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species." width="960" class="r-stretch"></section>
