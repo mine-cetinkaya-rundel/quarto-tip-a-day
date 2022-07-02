@@ -1,0 +1,30 @@
+---
+title: "Output location"
+date: "2022-07-02"
+categories: [execution, code, layout]
+image: "featured.png"
+image-alt: "Slide with the title output-location: column. Content is presented in two columns. On the left is the code, which has the chunk options output-location: column as well as fig-width: 6 and fig-height: 4. The code uses ggplot2 to create a scatterplot of penguin bill depth vs. length, colored by species. On the right is output showing this plot."
+---
+
+## `output-location`
+
+Showing code and output side-by-side or delayed reveal of the output are commonly used techniques for teaching programming when the mode of delivery is slides.
+The `output-location` chunk option makes it easy to achieve these.
+
+Possible values for the `output-location` option are as follows:
+
+-   `fragment`: Display output as a [fragment](https://quarto.org/docs/presentations/revealjs/advanced.html#fragments), i.e., delay showing it until it is explicitly stepped through by advancing the slides.
+-   `slide`: Display output on the subsequent slide.
+-   `column`: Display output in a column adjacent to the code. This splits the slide into two columns, each of which span 50% of the width of the slide
+-   `column-fragment`: Display output in a column adjacent to the code and delay showing it until its explicitly stepped through by advancing the slides.
+
+You can see these in action in the slide deck below.
+
+```{=html}
+<iframe width="800px" height="533px" src="_output-location.html"></iframe>
+```
+Note that for the column options I also adjusted `fig-height` and `fig-width` since the default size and aspect ration doesn't work well for figures spanning only half the width of the slide.
+
+## Learn more
+
+[Output location](https://quarto.org/docs/presentations/revealjs/#output-location)
