@@ -1,6 +1,6 @@
 ---
 listing:
-  contents: posts
+  contents: "posts/*/index.qmd"
   feed: true
   sort: "date desc"
   type: grid
