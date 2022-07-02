@@ -26,7 +26,7 @@ ggplot(penguins,
   scale_color_OkabeIto()
 ```
 
-## `output-location: fragment`
+## `fragment`
 
 ```{r}
 #| output-location: fragment
@@ -37,7 +37,7 @@ ggplot(penguins,
   scale_color_OkabeIto()
 ```
 
-## `output-location: slide`
+## `slide`
 
 ```{r}
 #| output-location: slide
@@ -48,7 +48,7 @@ ggplot(penguins,
   scale_color_OkabeIto()
 ```
 
-## `output-location: column`
+## `column`
 
 ```{r}
 #| output-location: column
@@ -63,7 +63,7 @@ ggplot(penguins,
   scale_color_OkabeIto()
 ```
 
-## `output-location: column-fragment`
+## `column-fragment`
 
 ```{r}
 #| output-location: column-fragment
