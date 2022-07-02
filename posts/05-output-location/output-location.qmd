@@ -82,4 +82,3 @@ ggplot(penguins,
   geom_point() +
   scale_color_OkabeIto()
 ```
-
