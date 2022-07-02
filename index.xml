@@ -9,8 +9,46 @@
 <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</link>
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
-<generator>quarto-0.9.637</generator>
-<lastBuildDate>Fri, 01 Jul 2022 00:00:00 GMT</lastBuildDate>
+<generator>quarto-0.9.639</generator>
+<lastBuildDate>Sat, 02 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Output location</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/05-output-location/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="output-location" class="level2">
+<h2 class="anchored" data-anchor-id="output-location"><code>output-location</code></h2>
+<p>Showing code and output side-by-side or delayed reveal of the output are commonly used techniques for teaching programming when the mode of delivery is slides. The <code>output-location</code> chunk option makes it easy to achieve these.</p>
+<p>Possible values for the <code>output-location</code> option are as follows:</p>
+<ul>
+<li><code>fragment</code>: Display output as a <a href="https://quarto.org/docs/presentations/revealjs/advanced.html#fragments">fragment</a>, i.e., delay showing it until it is explicitly stepped through by advancing the slides.</li>
+<li><code>slide</code>: Display output on the subsequent slide.</li>
+<li><code>column</code>: Display output in a column adjacent to the code. This splits the slide into two columns, each of which span 50% of the width of the slide</li>
+<li><code>column-fragment</code>: Display output in a column adjacent to the code and delay showing it until its explicitly stepped through by advancing the slides.</li>
+</ul>
+<p>You can see these in action in the slide deck below.</p>
+<iframe width="800px" height="533px" src="_output-location.html"></iframe>
+<p>Note that for the column options I also adjusted <code>fig-height</code> and <code>fig-width</code> since the default size and aspect ration doesn’t work well for figures spanning only half the width of the slide.</p>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/presentations/revealjs/#output-location">Output location</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>execution</category>
+  <category>code</category>
+  <category>layout</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/05-output-location/index.html</guid>
+  <pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/05-output-location/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Includes</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -173,12 +211,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-6249662" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-6363480" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-6249662-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-6249662" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-6363480-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-6363480" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -229,7 +267,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-6249662-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-6249662" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-6363480-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-6363480" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>

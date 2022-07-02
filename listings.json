@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/05-output-location/index.html",
       "/posts/04-include/index.html",
       "/posts/03-freeze/index.html",
       "/posts/02-fenced-echo/index.html",

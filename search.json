@@ -21,6 +21,20 @@
     "text": "Learn more\nFenced echo execution option"
   },
   {
+    "objectID": "posts/05-output-location/index.html",
+    "href": "posts/05-output-location/index.html",
+    "title": "Output location",
+    "section": "",
+    "text": "Showing code and output side-by-side or delayed reveal of the output are commonly used techniques for teaching programming when the mode of delivery is slides. The output-location chunk option makes it easy to achieve these.\nPossible values for the output-location option are as follows:\n\nfragment: Display output as a fragment, i.e., delay showing it until it is explicitly stepped through by advancing the slides.\nslide: Display output on the subsequent slide.\ncolumn: Display output in a column adjacent to the code. This splits the slide into two columns, each of which span 50% of the width of the slide\ncolumn-fragment: Display output in a column adjacent to the code and delay showing it until its explicitly stepped through by advancing the slides.\n\nYou can see these in action in the slide deck below.\n\nNote that for the column options I also adjusted fig-height and fig-width since the default size and aspect ration doesn’t work well for figures spanning only half the width of the slide."
+  },
+  {
+    "objectID": "posts/05-output-location/index.html#learn-more",
+    "href": "posts/05-output-location/index.html#learn-more",
+    "title": "Output location",
+    "section": "Learn more",
+    "text": "Learn more\nOutput location"
+  },
+  {
     "objectID": "posts/01-side-by-side-tables/index.html",
     "href": "posts/01-side-by-side-tables/index.html",
     "title": "Side-by-side tables",
@@ -67,7 +81,7 @@
     "href": "index.html",
     "title": "A Quarto tip a day",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tweets.html",

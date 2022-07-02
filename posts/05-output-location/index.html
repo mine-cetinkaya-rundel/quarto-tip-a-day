@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mine Çetinkaya-Rundel">
-<meta name="dcterms.date" content="2022-06-29">
+<meta name="dcterms.date" content="2022-07-02">
 
-<title>A Quarto tip a day - Fenced echo</title>
+<title>A Quarto tip a day - Output location</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,69 +17,6 @@ span.underline{text-decoration: underline;}
 div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -121,13 +58,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 }</script>
 
 
-<meta name="twitter:title" content="A Quarto tip a day - Fenced echo">
-<meta name="twitter:description" content="If you, like me, spend most of your time writing teaching materials or documentation, I’m sure you’ll find the chunk option echo: fenced just as useful as I do!">
+<meta name="twitter:title" content="A Quarto tip a day - Output location">
+<meta name="twitter:description" content="Showing code and output side-by-side or delayed reveal of the output are commonly used techniques for teaching programming when the mode of delivery is slides.">
 <meta name="twitter:image" content="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/images/twitter-card.png">
 <meta name="twitter:creator" content="@quarto_pub">
 <meta name="twitter:image-height" content="600">
 <meta name="twitter:image-width" content="1200">
-<meta name="twitter:image:alt" content="An R chunk with YAML-style chunk options echo: fenced, label: simple-arithmetic, results: hide. The R code in the chunk is 1 + 1. The fences of the chunk are also visible.">
+<meta name="twitter:image:alt" content="Slide with the title output-location: column. Content is presented in two columns. On the left is the code, which has the chunk options output-location: column as well as fig-width: 6 and fig-height: 4. The code uses ggplot2 to create a scatterplot of penguin bill depth vs. length, colored by species. On the right is output showing this plot.">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -173,10 +110,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Fenced echo</h1>
+      <h1 class="title">Output location</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">teaching</div>
-                <div class="quarto-category">documentation</div>
+                <div class="quarto-category">execution</div>
+                <div class="quarto-category">code</div>
+                <div class="quarto-category">layout</div>
               </div>
                   </div>
   </div>
@@ -194,7 +132,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">June 29, 2022</p>
+        <p class="date">July 2, 2022</p>
       </div>
     </div>
       
@@ -209,10 +147,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#echo-fenced" id="toc-echo-fenced" class="nav-link active" data-scroll-target="#echo-fenced"><code>echo: fenced</code></a></li>
+  <li><a href="#output-location" id="toc-output-location" class="nav-link active" data-scroll-target="#output-location"><code>output-location</code></a></li>
   <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn more</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/02-fenced-echo/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/05-output-location/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -220,31 +158,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="echo-fenced" class="level2">
-<h2 class="anchored" data-anchor-id="echo-fenced"><code>echo: fenced</code></h2>
-<p>If you, like me, spend most of your time writing teaching materials or documentation, I’m sure you’ll find the chunk option <code>echo: fenced</code> just as useful as I do! When you set this option for a code chunk, the chunk is displayed with the fences around it – without a screenshot or using a special verbatim engine.</p>
-<p>To get code chunks printed out as</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: simple-arithmetic</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: hide</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>add the <code>echo: fenced</code> option to your chunk:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: fenced</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: simple-arithmetic</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: hide</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Note that in the output all chunk options other than <code>echo: fenced</code> are shown, so this is a great tool for teaching chunk options as well.</p>
+<section id="output-location" class="level2">
+<h2 class="anchored" data-anchor-id="output-location"><code>output-location</code></h2>
+<p>Showing code and output side-by-side or delayed reveal of the output are commonly used techniques for teaching programming when the mode of delivery is slides. The <code>output-location</code> chunk option makes it easy to achieve these.</p>
+<p>Possible values for the <code>output-location</code> option are as follows:</p>
+<ul>
+<li><code>fragment</code>: Display output as a <a href="https://quarto.org/docs/presentations/revealjs/advanced.html#fragments">fragment</a>, i.e., delay showing it until it is explicitly stepped through by advancing the slides.</li>
+<li><code>slide</code>: Display output on the subsequent slide.</li>
+<li><code>column</code>: Display output in a column adjacent to the code. This splits the slide into two columns, each of which span 50% of the width of the slide</li>
+<li><code>column-fragment</code>: Display output in a column adjacent to the code and delay showing it until its explicitly stepped through by advancing the slides.</li>
+</ul>
+<p>You can see these in action in the slide deck below.</p>
+<iframe width="800px" height="533px" src="_output-location.html"></iframe>
+<p>Note that for the column options I also adjusted <code>fig-height</code> and <code>fig-width</code> since the default size and aspect ration doesn’t work well for figures spanning only half the width of the slide.</p>
 </section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p><a href="https://quarto.org/docs/computations/execution-options.html#fenced-echo">Fenced echo execution option</a></p>
+<p><a href="https://quarto.org/docs/presentations/revealjs/#output-location">Output location</a></p>
 
 
 </section>
