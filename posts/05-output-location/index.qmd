@@ -21,7 +21,7 @@ Possible values for the `output-location` option are as follows:
 You can see these in action in the slide deck below.
 
 ```{=html}
-<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="../../demo/output-location.html"></iframe>
+<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="output-location.html"></iframe>
 ```
 Note that for the column options I also adjusted `fig-height` and `fig-width` since the default size and aspect ration doesn't work well for figures spanning only half the width of the slide.
 
