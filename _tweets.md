@@ -70,3 +70,17 @@ This sentence is in italics.
 Arrows and file icons depict how this file can be included in two different files with the same include shortcode.
 The code can be found in the linked blog post.
 
+------------------------------------------------------------------------
+
+#6 -
+
+#quartotip 5: Use the output-location chunk option to control where code output is shown -- delayed (fragment), in the next slide (slide), in the next column (column), or delayed in the next column (column-fragment).
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/05-output-location/
+
+\[insert-image\]
+
+alt-text: Slide with content presented in two columns.
+On the left is the code, which has the chunk options output-location: column as well as fig-width: 6 and fig-height: 4.
+The code uses ggplot2 to create a scatterplot of penguin bill depth vs. length, colored by species.
+On the right is output showing this plot.
