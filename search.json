@@ -21,6 +21,48 @@
     "text": "Learn more\nFenced echo execution option"
   },
   {
+    "objectID": "posts/05-output-location/output-location.html#default",
+    "href": "posts/05-output-location/output-location.html#default",
+    "title": "A Quarto tip a day",
+    "section": "default",
+    "text": "default\n\n\n\n\n```{r}\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```"
+  },
+  {
+    "objectID": "posts/05-output-location/output-location.html#output-location-fragment",
+    "href": "posts/05-output-location/output-location.html#output-location-fragment",
+    "title": "A Quarto tip a day",
+    "section": "output-location: fragment",
+    "text": "output-location: fragment\n\n```{r}\n#| output-location: fragment\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```"
+  },
+  {
+    "objectID": "posts/05-output-location/output-location.html#output-location-slide",
+    "href": "posts/05-output-location/output-location.html#output-location-slide",
+    "title": "A Quarto tip a day",
+    "section": "output-location: slide",
+    "text": "output-location: slide\n\n```{r}\n#| output-location: slide\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```"
+  },
+  {
+    "objectID": "posts/05-output-location/output-location.html#output-location-slide-output",
+    "href": "posts/05-output-location/output-location.html#output-location-slide-output",
+    "title": "A Quarto tip a day",
+    "section": "output-location: slide",
+    "text": "output-location: slide"
+  },
+  {
+    "objectID": "posts/05-output-location/output-location.html#output-location-column",
+    "href": "posts/05-output-location/output-location.html#output-location-column",
+    "title": "A Quarto tip a day",
+    "section": "output-location: column",
+    "text": "output-location: column\n\n\n```{r}\n#| output-location: column\n#| fig-width: 6\n#| fig-height: 4\n\nggplot(penguins, \n       aes(x = bill_length_mm, \n           y = bill_depth_mm, \n           color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```"
+  },
+  {
+    "objectID": "posts/05-output-location/output-location.html#output-location-column-fragment",
+    "href": "posts/05-output-location/output-location.html#output-location-column-fragment",
+    "title": "A Quarto tip a day",
+    "section": "output-location: column-fragment",
+    "text": "output-location: column-fragment\n\n\n```{r}\n#| output-location: column-fragment\n#| fig-width: 6\n#| fig-height: 4\n\nggplot(penguins, \n       aes(x = bill_length_mm, \n           y = bill_depth_mm, \n           color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```"
+  },
+  {
     "objectID": "posts/05-output-location/index.html",
     "href": "posts/05-output-location/index.html",
     "title": "Output location",
@@ -82,47 +124,5 @@
     "title": "A Quarto tip a day",
     "section": "",
     "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "demo/output-location.html#default",
-    "href": "demo/output-location.html#default",
-    "title": "A Quarto tip a day",
-    "section": "default",
-    "text": "default\n\n\n\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()"
-  },
-  {
-    "objectID": "demo/output-location.html#fragment",
-    "href": "demo/output-location.html#fragment",
-    "title": "A Quarto tip a day",
-    "section": "fragment",
-    "text": "fragment\n\n```{r}\n#| output-location: fragment\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```"
-  },
-  {
-    "objectID": "demo/output-location.html#slide",
-    "href": "demo/output-location.html#slide",
-    "title": "A Quarto tip a day",
-    "section": "slide",
-    "text": "slide\n\n```{r}\n#| output-location: slide\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```"
-  },
-  {
-    "objectID": "demo/output-location.html#slide-output",
-    "href": "demo/output-location.html#slide-output",
-    "title": "A Quarto tip a day",
-    "section": "slide",
-    "text": "slide"
-  },
-  {
-    "objectID": "demo/output-location.html#column",
-    "href": "demo/output-location.html#column",
-    "title": "A Quarto tip a day",
-    "section": "column",
-    "text": "column\n\n\n```{r}\n#| output-location: column\n#| fig-width: 6\n#| fig-height: 4\n\nggplot(penguins, \n       aes(x = bill_length_mm, \n           y = bill_depth_mm, \n           color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```"
-  },
-  {
-    "objectID": "demo/output-location.html#column-fragment",
-    "href": "demo/output-location.html#column-fragment",
-    "title": "A Quarto tip a day",
-    "section": "column-fragment",
-    "text": "column-fragment\n\n\n```{r}\n#| output-location: column-fragment\n#| fig-width: 6\n#| fig-height: 4\n\nggplot(penguins, \n       aes(x = bill_length_mm, \n           y = bill_depth_mm, \n           color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```"
   }
 ]

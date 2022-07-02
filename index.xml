@@ -31,7 +31,7 @@
 <li><code>column-fragment</code>: Display output in a column adjacent to the code and delay showing it until its explicitly stepped through by advancing the slides.</li>
 </ul>
 <p>You can see these in action in the slide deck below.</p>
-<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="../../demo/output-location.html"></iframe>
+<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="output-location.html"></iframe>
 <p>Note that for the column options I also adjusted <code>fig-height</code> and <code>fig-width</code> since the default size and aspect ration doesn’t work well for figures spanning only half the width of the slide.</p>
 </section>
 <section id="learn-more" class="level2">
@@ -211,12 +211,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-5245423" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-5013681" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-5245423-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-5245423" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-5013681-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-5013681" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -267,7 +267,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-5245423-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-5245423" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-5013681-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-5013681" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>
