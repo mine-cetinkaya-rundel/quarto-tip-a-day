@@ -1,0 +1,34 @@
+---
+title: "Listing contents"
+date: "2022-07-03"
+categories: [blog, listing, glob]
+image: "featured.png"
+image-alt: "YAML file showing listings as the top field and contents as a sub-field under that with the value posts/*/index.qmd. An arrow points to the contents sub-field and text annotation reads customizable."
+---
+
+## `contents` for `listing`
+
+Quarto blogs by default will create a new blog post entry for each `.qmd` file in the `posts` folder.
+However you can customize which files are included in the listing by specifying the `contents` for the `listing` in the YAML where the listing is created.
+
+For example, suppose that in your `posts` folder you have a sub-folder for each blog post (like I do for this blog at <https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/tree/main/posts>).
+In each of these subfolders you might want to have an `index.qmd` file that contains the blog post entry as well as other supplementary `.qmd` files (e.g., any example, demo, etc. files for your blog post) that you don't want turned into their own individual blog posts.
+To indicate this you can add the following to your YAML:
+
+``` yaml
+---
+listing:
+  contents: "posts/*/index.qmd"
+---
+```
+
+A few more ideas for how this feature can be leveraged:
+
+-   If building a course website, you can make use of the listings feature and bundle each lesson in a folder. Then, the `index.qmd` file in that folder can be the landing page for the lesson and other files (slides, exercises, instructor's notes, etc.) can live in the lesson folder as well but not get processed as individual listing items.
+-   In addition to using globs to include files that follow a certain convention, you can use globs to exclude them as well.
+-   Authoring each of your blog posts in a file called `index.qmd` might get a bit hectic if you're editing multiple posts concurrently ([h/t to Charlotte for pointing this out](https://twitter.com/charliejhadley/status/1537787931049578497?s=20&t=e089-ispLwxkk5QeKj8rDA)). You can come up with a different naming convention for your posts and indicate that as a [glob](https://quarto.org/docs/reference/globs.html). Note that the file name will affect the slug of your post in its URL though, so you might want to choose a convention keeping that in mind.
+
+## Learn more
+
+-   [Listing contents](https://quarto.org/docs/websites/website-listings.html#listing-contents)
+-   [Quarto glob syntax](https://quarto.org/docs/reference/globs.html)

@@ -1,0 +1,20 @@
+{
+  "hash": "d6ed63a93ab51e0b9489c9b9adde6fd8",
+  "result": {
+    "markdown": "---\nformat: \n  revealjs:\n    mainfont: \"Atkinson Hyperlegible\"\n    highlight-style: a11y-dark\ntoc: false\nexecute: \n  echo: fenced\neditor: visual\n---\n\n\n## default\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```\n\n::: {.cell-output-display}\n![](output-location_files/figure-revealjs/unnamed-chunk-2-1.png){fig-alt='Scatterplot of penguin bill depth vs. length, colored by species.\nThe relationship is positive for each of the three species.' width=960}\n:::\n:::\n\n\n## `fragment`\n\n\n::: {.cell output-location='fragment'}\n\n````{.cell-code}\n```{{r}}\n#| output-location: fragment\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```\n````\n\n::: {.cell-output-display}\n![](output-location_files/figure-revealjs/unnamed-chunk-3-1.png){width=960}\n:::\n:::\n\n\n## `slide`\n\n\n::: {.cell output-location='slide'}\n\n````{.cell-code}\n```{{r}}\n#| output-location: slide\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```\n````\n\n::: {.cell-output-display}\n![](output-location_files/figure-revealjs/unnamed-chunk-4-1.png){width=960}\n:::\n:::\n\n\n## `column`\n\n\n::: {.cell output-location='column'}\n\n````{.cell-code}\n```{{r}}\n#| output-location: column\n#| fig-width: 6\n#| fig-height: 4\n\nggplot(penguins, \n       aes(x = bill_length_mm, \n           y = bill_depth_mm, \n           color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```\n````\n\n::: {.cell-output-display}\n![](output-location_files/figure-revealjs/unnamed-chunk-5-1.png){width=576}\n:::\n:::\n\n\n## `column-fragment`\n\n\n::: {.cell output-location='column-fragment'}\n\n````{.cell-code}\n```{{r}}\n#| output-location: column-fragment\n#| fig-width: 6\n#| fig-height: 4\n\nggplot(penguins, \n       aes(x = bill_length_mm, \n           y = bill_depth_mm, \n           color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```\n````\n\n::: {.cell-output-display}\n![](output-location_files/figure-revealjs/unnamed-chunk-6-1.png){width=576}\n:::\n:::\n",
+    "supporting": [
+      "output-location_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    function fireSlideChanged(previousSlide, currentSlide) {\n\n      // dispatch for htmlwidgets\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for reveal\n    if (window.Reveal) {\n      window.Reveal.addEventListener(\"slidechanged\", function(event) {\n        fireSlideChanged(event.previousSlide, event.currentSlide);\n      });\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
