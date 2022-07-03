@@ -84,3 +84,18 @@ alt-text: Slide with content presented in two columns.
 On the left is the code, which has the chunk options output-location: column as well as fig-width: 6 and fig-height: 4.
 The code uses ggplot2 to create a scatterplot of penguin bill depth vs. length, colored by species.
 On the right is output showing this plot.
+
+------------------------------------------------------------------------
+
+#7 -
+
+#quartotip 6: Customize which documents are included in a listing by using the contents option, which allows you to provide a set of input files (or globs of input files) that should be included in the listing.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/06-listing-contents/
+
+\[insert-image\]
+
+alt-text: Slide with content presented in two columns.
+On the left is the code, which has the chunk options output-location: column as well as fig-width: 6 and fig-height: 4.
+The code uses ggplot2 to create a scatterplot of penguin bill depth vs. length, colored by species.
+On the right is output showing this plot.

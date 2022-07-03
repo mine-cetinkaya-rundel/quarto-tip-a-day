@@ -30,5 +30,6 @@ A few more ideas for how this feature can be leveraged:
 
 ## Learn more
 
+-   [Document listings](https://quarto.org/docs/websites/website-listings.html)
 -   [Listing contents](https://quarto.org/docs/websites/website-listings.html#listing-contents)
 -   [Quarto glob syntax](https://quarto.org/docs/reference/globs.html)
