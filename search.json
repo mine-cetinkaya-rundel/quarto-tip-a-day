@@ -119,10 +119,24 @@
     "text": "Learn more\nIncludes"
   },
   {
+    "objectID": "posts/06-listing-contents/index.html",
+    "href": "posts/06-listing-contents/index.html",
+    "title": "Listing contents",
+    "section": "",
+    "text": "Quarto blogs by default will create a new blog post entry for each .qmd file in the posts folder. However you can customize which files are included in the listing by specifying the contents for the listing in the YAML where the listing is created.\nFor example, suppose that in your posts folder you have a sub-folder for each blog post (like I do for this blog at https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/tree/main/posts). In each of these subfolders you might want to have an index.qmd file that contains the blog post entry as well as other supplementary .qmd files (e.g., any example, demo, etc. files for your blog post) that you don’t want turned into their own individual blog posts. To indicate this you can add the following to your YAML:\n---\nlisting:\n  contents: \"posts/*/index.qmd\"\n---\nA few more ideas for how this feature can be leveraged:\n\nIf building a course website, you can make use of the listings feature and bundle each lesson in a folder. Then, the index.qmd file in that folder can be the landing page for the lesson and other files (slides, exercises, instructor’s notes, etc.) can live in the lesson folder as well but not get processed as individual listing items.\nIn addition to using globs to include files that follow a certain convention, you can use globs to exclude them as well.\nAuthoring each of your blog posts in a file called index.qmd might get a bit hectic if you’re editing multiple posts concurrently (h/t to Charlotte for pointing this out). You can come up with a different naming convention for your posts and indicate that as a glob. Note that the file name will affect the slug of your post in its URL though, so you might want to choose a convention keeping that in mind."
+  },
+  {
+    "objectID": "posts/06-listing-contents/index.html#learn-more",
+    "href": "posts/06-listing-contents/index.html#learn-more",
+    "title": "Listing contents",
+    "section": "Learn more",
+    "text": "Learn more\n\nListing contents\nQuarto glob syntax"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "A Quarto tip a day",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
