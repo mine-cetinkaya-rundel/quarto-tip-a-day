@@ -95,7 +95,19 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/06-lis
 
 \[insert-image\]
 
-alt-text: Slide with content presented in two columns.
-On the left is the code, which has the chunk options output-location: column as well as fig-width: 6 and fig-height: 4.
-The code uses ggplot2 to create a scatterplot of penguin bill depth vs. length, colored by species.
-On the right is output showing this plot.
+alt-text: YAML file showing listings as the top field and contents as a sub-field under that with the value posts/\*/index.qmd.
+An arrow points to the contents sub-field and text annotation for the arrow says customizable.
+
+#8 -
+
+#quartotip 7: Use the chalkboard: true option for revealjs slides to annotate your slides by drawing on them or opening up an empty chalkboard within your presentation.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/07-slide-annotation/
+
+\[insert-image\]
+
+alt-text: Two slides.
+First one is a slide with the title Penguins and a plot that shows the relationship between bill depth and bill length for penguins, colors by species.
+Clusters of species are marked with red annotation on the slide.
+The second one is slide with chalkboard background and the word Hello!
+is written in white chalk.

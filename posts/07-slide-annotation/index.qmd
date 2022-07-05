@@ -1,0 +1,39 @@
+---
+title: "Slide annotation"
+date: "2022-07-04"
+categories: [slides, revealjs]
+image: "featured.png"
+image-alt: "Two slides. First one is a slide with the title Penguins and a plot that shows the relationship between bill depth and bill length for penguins, colors by species. Clusters of species are marked with red annotation on the slide. The second one is slide with chalkboard background and the word Hello! is written in white chalk."
+---
+
+## `chalkboard: true`
+
+The `chalkboard: true` option for `revealjs` slides enables you to annotate your slides by drawing on them as well as open up an empty chalkboard within your presentation.
+
+``` yaml
+---
+format: 
+  revealjs:
+    chalkboard: true
+---
+```
+
+When you add this to your slide source code, you'll see two new icons appear in the bottom left corner of your slides: **chalkboard** and **paintbrush**.
+
+```{=html}
+<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="chalkboard.html"></iframe>
+```
+
+-   Canvas annotation can be activated by clicking on the **paintbrush** icon and can be used to highlight / draw attention to particular items in your slide.
+
+![](canvas.png){fig-alt="A slide with the title Penguins and a plot that shows the relationship between bill depth and bill length for penguins, colors by species. Clusters of species are marked with red annotation on the slide." fig-align="center"}
+
+-   Chalkboard can be activated by clicking on the **chalkboard** icon. I often use this feature when I get a question during teaching that is not covered in the slides and requires some writing/drawing to effectively answer. It's great help if you teach in a classroom where the chalk/whiteboard is not accessible when the projector screen is down.
+
+![](chalkboard.png){fig-alt="A slide with chalkboard background and the word Hello! is written in white chalk." fig-align="center"}
+
+Try interacting with these in the slides embedded above! To clear drawings click DEL (delete). You can also toggle between these features and download your annotations using keyboard shortcuts.
+
+## Learn more
+
+[Chalkboard](https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard)
