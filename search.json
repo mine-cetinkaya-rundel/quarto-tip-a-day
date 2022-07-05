@@ -77,6 +77,27 @@
     "text": "Learn more\nOutput location"
   },
   {
+    "objectID": "posts/07-slide-annotation/index.html",
+    "href": "posts/07-slide-annotation/index.html",
+    "title": "Slide annotation",
+    "section": "",
+    "text": "The chalkboard: true option for revealjs slides enables you to annotate your slides by drawing on them as well as open up an empty chalkboard within your presentation.\n---\nformat: \n  revealjs:\n    chalkboard: true\n---\nWhen you add this to your slide source code, you’ll see two new icons appear in the bottom left corner of your slides: chalkboard and paintbrush.\n\n\nCanvas annotation can be activated by clicking on the paintbrush icon and can be used to highlight / draw attention to particular items in your slide.\n\n\n\n\n\n\n\nChalkboard can be activated by clicking on the chalkboard icon. I often use this feature when I get a question during teaching that is not covered in the slides and requires some writing/drawing to effectively answer. It’s great help if you teach in a classroom where the chalk/whiteboard is not accessible when the projector screen is down.\n\n\n\n\n\n\nTry interacting with these in the slides embedded above! To clear drawings click DEL (delete). You can also toggle between these features and download your annotations using keyboard shortcuts."
+  },
+  {
+    "objectID": "posts/07-slide-annotation/index.html#learn-more",
+    "href": "posts/07-slide-annotation/index.html#learn-more",
+    "title": "Slide annotation",
+    "section": "Learn more",
+    "text": "Learn more\nChalkboard"
+  },
+  {
+    "objectID": "posts/07-slide-annotation/chalkboard.html#penguins",
+    "href": "posts/07-slide-annotation/chalkboard.html#penguins",
+    "title": "A Quarto tip a day",
+    "section": "Penguins",
+    "text": "Penguins\n\n\n\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()"
+  },
+  {
     "objectID": "posts/01-side-by-side-tables/index.html",
     "href": "posts/01-side-by-side-tables/index.html",
     "title": "Side-by-side tables",
@@ -137,6 +158,6 @@
     "href": "index.html",
     "title": "A Quarto tip a day",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

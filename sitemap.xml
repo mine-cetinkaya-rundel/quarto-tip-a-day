@@ -2,38 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/about.html</loc>
-    <lastmod>2022-07-03T19:03:04.379Z</lastmod>
+    <lastmod>2022-07-05T18:27:28.499Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/02-fenced-echo/index.html</loc>
-    <lastmod>2022-07-03T19:03:05.191Z</lastmod>
+    <lastmod>2022-07-05T18:27:29.291Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/05-output-location/output-location.html</loc>
-    <lastmod>2022-07-03T19:03:06.859Z</lastmod>
+    <lastmod>2022-07-05T18:27:29.843Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/05-output-location/index.html</loc>
-    <lastmod>2022-07-03T19:03:07.564Z</lastmod>
+    <lastmod>2022-07-05T18:27:31.639Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/07-slide-annotation/index.html</loc>
+    <lastmod>2022-07-05T18:27:31.984Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/07-slide-annotation/chalkboard.html</loc>
+    <lastmod>2022-07-05T18:27:32.448Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/01-side-by-side-tables/index.html</loc>
-    <lastmod>2022-07-03T19:03:07.960Z</lastmod>
+    <lastmod>2022-07-05T18:27:32.800Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/03-freeze/index.html</loc>
-    <lastmod>2022-07-03T19:03:08.304Z</lastmod>
+    <lastmod>2022-07-05T18:27:33.140Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/04-include/index.html</loc>
-    <lastmod>2022-07-03T19:03:08.652Z</lastmod>
+    <lastmod>2022-07-05T18:27:33.460Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/06-listing-contents/index.html</loc>
-    <lastmod>2022-07-03T19:03:08.996Z</lastmod>
+    <lastmod>2022-07-05T18:27:33.780Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</loc>
-    <lastmod>2022-07-03T19:03:09.420Z</lastmod>
+    <lastmod>2022-07-05T18:27:34.204Z</lastmod>
   </url>
 </urlset>

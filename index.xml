@@ -10,7 +10,58 @@
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
 <generator>quarto-0.9.640</generator>
-<lastBuildDate>Sun, 03 Jul 2022 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 04 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Slide annotation</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/07-slide-annotation/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="chalkboard-true" class="level2">
+<h2 class="anchored" data-anchor-id="chalkboard-true"><code>chalkboard: true</code></h2>
+<p>The <code>chalkboard: true</code> option for <code>revealjs</code> slides enables you to annotate your slides by drawing on them as well as open up an empty chalkboard within your presentation.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="pp" style="color: #AD0000;">---</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;">format</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span></span>
+<span id="cb1-3"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">revealjs</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb1-4"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">chalkboard</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="ch" style="color: #20794D;">true</span></span>
+<span id="cb1-5"><span class="pp" style="color: #AD0000;">---</span></span></code></pre></div>
+<p>When you add this to your slide source code, you’ll see two new icons appear in the bottom left corner of your slides: <strong>chalkboard</strong> and <strong>paintbrush</strong>.</p>
+<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="chalkboard.html"></iframe>
+<ul>
+<li>Canvas annotation can be activated by clicking on the <strong>paintbrush</strong> icon and can be used to highlight / draw attention to particular items in your slide.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/07-slide-annotation/canvas.png" class="img-fluid figure-img" alt="A slide with the title Penguins and a plot that shows the relationship between bill depth and bill length for penguins, colors by species. Clusters of species are marked with red annotation on the slide."></p>
+</figure>
+</div>
+<ul>
+<li>Chalkboard can be activated by clicking on the <strong>chalkboard</strong> icon. I often use this feature when I get a question during teaching that is not covered in the slides and requires some writing/drawing to effectively answer. It’s great help if you teach in a classroom where the chalk/whiteboard is not accessible when the projector screen is down.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/07-slide-annotation/chalkboard.png" class="img-fluid figure-img" alt="A slide with chalkboard background and the word Hello! is written in white chalk."></p>
+</figure>
+</div>
+<p>Try interacting with these in the slides embedded above! To clear drawings click DEL (delete). You can also toggle between these features and download your annotations using keyboard shortcuts.</p>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard">Chalkboard</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>slides</category>
+  <category>revealjs</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/07-slide-annotation/index.html</guid>
+  <pubDate>Mon, 04 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/07-slide-annotation/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Listing contents</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -254,12 +305,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-7269932" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-7859506" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-7269932-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7269932" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-7859506-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7859506" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -310,7 +361,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-7269932-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7269932" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-7859506-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7859506" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>

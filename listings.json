@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/07-slide-annotation/index.html",
       "/posts/06-listing-contents/index.html",
       "/posts/05-output-location/index.html",
       "/posts/04-include/index.html",

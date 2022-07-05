@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mine Çetinkaya-Rundel">
-<meta name="dcterms.date" content="2022-06-28">
+<meta name="dcterms.date" content="2022-07-04">
 
-<title>A Quarto tip a day - Side-by-side tables</title>
+<title>A Quarto tip a day - Slide annotation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,13 +121,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 }</script>
 
 
-<meta name="twitter:title" content="A Quarto tip a day - Side-by-side tables">
-<meta name="twitter:description" content="Use the layout-ncol chunk option to organize output in columns, e.g., layout-ncol: 2 for two tables side-by-side.">
+<meta name="twitter:title" content="A Quarto tip a day - Slide annotation">
+<meta name="twitter:description" content="The chalkboard: true option for revealjs slides enables you to annotate your slides by drawing on them as well as open up an empty chalkboard within your presentation.">
 <meta name="twitter:image" content="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/images/twitter-card.png">
 <meta name="twitter:creator" content="@quarto_pub">
 <meta name="twitter:image-height" content="600">
 <meta name="twitter:image-width" content="1200">
-<meta name="twitter:image:alt" content="Two tables side by side. On the left is the first six rows and first three columns of the mtcars dataset. On the right is the first six rows and all two columns of the cars dataset.">
+<meta name="twitter:image:alt" content="Two slides. First one is a slide with the title Penguins and a plot that shows the relationship between bill depth and bill length for penguins, colors by species. Clusters of species are marked with red annotation on the slide. The second one is slide with chalkboard background and the word Hello! is written in white chalk.">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -173,9 +173,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Side-by-side tables</h1>
+      <h1 class="title">Slide annotation</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">tables</div>
+                <div class="quarto-category">slides</div>
+                <div class="quarto-category">revealjs</div>
               </div>
                   </div>
   </div>
@@ -193,7 +194,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">June 28, 2022</p>
+        <p class="date">July 4, 2022</p>
       </div>
     </div>
       
@@ -208,10 +209,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#layout-ncol" id="toc-layout-ncol" class="nav-link active" data-scroll-target="#layout-ncol"><code>layout-ncol</code></a></li>
+  <li><a href="#chalkboard-true" id="toc-chalkboard-true" class="nav-link active" data-scroll-target="#chalkboard-true"><code>chalkboard: true</code></a></li>
   <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn more</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/01-side-by-side-tables/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/07-slide-annotation/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -219,123 +220,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="layout-ncol" class="level2">
-<h2 class="anchored" data-anchor-id="layout-ncol"><code>layout-ncol</code></h2>
-<p>Use the <code>layout-ncol</code> chunk option to organize output in columns, e.g., <code>layout-ncol: 2</code> for two tables side-by-side.</p>
-<div>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: Two tables</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-subcap: ["mtcars", "Just cars"]</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| layout-ncol: 2</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># table on the left</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">head</span>(mtcars[, <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]))</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># table on the right</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">head</span>(cars))</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="tbl-anonymous-7859506" class="cell tbl-parent quarto-layout-panel anchored">
-<div class="panel-caption table-caption">
-<p>Two tables</p>
+<section id="chalkboard-true" class="level2">
+<h2 class="anchored" data-anchor-id="chalkboard-true"><code>chalkboard: true</code></h2>
+<p>The <code>chalkboard: true</code> option for <code>revealjs</code> slides enables you to annotate your slides by drawing on them as well as open up an empty chalkboard within your presentation.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">chalkboard</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>When you add this to your slide source code, you’ll see two new icons appear in the bottom left corner of your slides: <strong>chalkboard</strong> and <strong>paintbrush</strong>.</p>
+<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="chalkboard.html"></iframe>
+<ul>
+<li>Canvas annotation can be activated by clicking on the <strong>paintbrush</strong> icon and can be used to highlight / draw attention to particular items in your slide.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="canvas.png" class="img-fluid figure-img" alt="A slide with the title Penguins and a plot that shows the relationship between bill depth and bill length for penguins, colors by species. Clusters of species are marked with red annotation on the slide."></p>
+</figure>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-7859506-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7859506" style="flex-basis: 50.0%;justify-content: center;">
-<table class="table table-sm table-striped">
-<caption>mtcars</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: right;">mpg</th>
-<th style="text-align: right;">cyl</th>
-<th style="text-align: right;">disp</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Mazda RX4</td>
-<td style="text-align: right;">21.0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">160</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Mazda RX4 Wag</td>
-<td style="text-align: right;">21.0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">160</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Datsun 710</td>
-<td style="text-align: right;">22.8</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">108</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Hornet 4 Drive</td>
-<td style="text-align: right;">21.4</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">258</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Hornet Sportabout</td>
-<td style="text-align: right;">18.7</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">360</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Valiant</td>
-<td style="text-align: right;">18.1</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">225</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>Chalkboard can be activated by clicking on the <strong>chalkboard</strong> icon. I often use this feature when I get a question during teaching that is not covered in the slides and requires some writing/drawing to effectively answer. It’s great help if you teach in a classroom where the chalk/whiteboard is not accessible when the projector screen is down.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="chalkboard.png" class="img-fluid figure-img" alt="A slide with chalkboard background and the word Hello! is written in white chalk."></p>
+</figure>
 </div>
-<div id="tbl-anonymous-7859506-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7859506" style="flex-basis: 50.0%;justify-content: center;">
-<table class="table table-sm table-striped">
-<caption>Just cars</caption>
-<thead>
-<tr class="header">
-<th style="text-align: right;">speed</th>
-<th style="text-align: right;">dist</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">10</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">22</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">16</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">10</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
+<p>Try interacting with these in the slides embedded above! To clear drawings click DEL (delete). You can also toggle between these features and download your annotations using keyboard shortcuts.</p>
 </section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p><a href="https://quarto.org/docs/authoring/tables.html#computations">Options for tables produced by executable code cells</a></p>
+<p><a href="https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard">Chalkboard</a></p>
 
 
 </section>
