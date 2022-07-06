@@ -10,7 +10,35 @@
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
 <generator>quarto-0.9.644</generator>
-<lastBuildDate>Mon, 04 Jul 2022 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 05 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R Markdown to Quarto</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/08-rmd-switch/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="switching-over-from-r-markdown" class="level2">
+<h2 class="anchored" data-anchor-id="switching-over-from-r-markdown">Switching over from R Markdown?</h2>
+<p>If you are an R Markdown user starting to use Quarto for your new projects or if you are converting an existing R Markdown project to Quarto, I highly recommend reading the <a href="https://quarto.org/docs/faq/rmarkdown.html">FAQ for R Markdown Users</a>.</p>
+<p>You might particularly find the <a href="https://quarto.org/docs/faq/rmarkdown.html#i-use-x-bookdown-blogdown-etc..-what-is-the-quarto-equivalent">I use X (bookdown, blogdown, etc.). What is the Quarto equivalent?</a> question as it provides a table comparing R Markdown outputs with Quarto formats, providing a roadmap for where to get started depending on the nature of your project.</p>
+<p>It should also be noted that R Markdown is not going away. Quarto simply expands the scope of R Markdown, and R Markdown will continue to be actively supported.</p>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/faq/rmarkdown">FAQ for R Markdown Users</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>documentation</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/08-rmd-switch/index.html</guid>
+  <pubDate>Tue, 05 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/08-rmd-switch/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Slide annotation</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -306,12 +334,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-8511786" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-3637231" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-8511786-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-8511786" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-3637231-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-3637231" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -362,7 +390,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-8511786-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-8511786" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-3637231-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-3637231" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>

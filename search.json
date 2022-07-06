@@ -140,6 +140,20 @@
     "text": "Learn more\nIncludes"
   },
   {
+    "objectID": "posts/08-rmd-switch/index.html",
+    "href": "posts/08-rmd-switch/index.html",
+    "title": "R Markdown to Quarto",
+    "section": "",
+    "text": "If you are an R Markdown user starting to use Quarto for your new projects or if you are converting an existing R Markdown project to Quarto, I highly recommend reading the FAQ for R Markdown Users.\nYou might particularly find the I use X (bookdown, blogdown, etc.). What is the Quarto equivalent? question as it provides a table comparing R Markdown outputs with Quarto formats, providing a roadmap for where to get started depending on the nature of your project.\nIt should also be noted that R Markdown is not going away. Quarto simply expands the scope of R Markdown, and R Markdown will continue to be actively supported."
+  },
+  {
+    "objectID": "posts/08-rmd-switch/index.html#learn-more",
+    "href": "posts/08-rmd-switch/index.html#learn-more",
+    "title": "R Markdown to Quarto",
+    "section": "Learn more",
+    "text": "Learn more\nFAQ for R Markdown Users"
+  },
+  {
     "objectID": "posts/06-listing-contents/index.html",
     "href": "posts/06-listing-contents/index.html",
     "title": "Listing contents",
@@ -158,6 +172,6 @@
     "href": "index.html",
     "title": "A Quarto tip a day",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
