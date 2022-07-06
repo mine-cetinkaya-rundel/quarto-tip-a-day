@@ -111,3 +111,26 @@ First one is a slide with the title Penguins and a plot that shows the relations
 Clusters of species are marked with red annotation on the slide.
 The second one is slide with chalkboard background and the word Hello!
 is written in white chalk.
+
+------------------------------------------------------------------------
+
+#quartotip 8: Switching over from #rmarkdown to Quarto?
+Read the reading the FAQ for R Markdown Users!
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/08-rmd-switch/
+
+\[insert-image\]
+
+alt-text: Screenshot of the FAQ for R Markdown users page.
+with the description 'Answers to R Markdown users' most frequently asked questions about Quarto.' The questions answered are: What can I use Quarto for?,
+Quarto sounds similar to R Markdown.
+What is the difference and why create a new project?,
+Is R Markdown going away?
+Will my R Markdown documents continue to work?,
+Should I switch from R Markdown to Quarto?,
+I use X (bookdown, blogdown, etc.).
+What is the Quarto equivalent?,
+Can you create custom formats for Quarto like you can for R Markdown?,
+When would be a good time to start new projects in Quarto rather than R Markdown?,
+Does the RStudio IDE support Quarto?,
+Does RStudio Connect support Quarto?
