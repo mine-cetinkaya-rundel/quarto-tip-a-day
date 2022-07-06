@@ -1,0 +1,21 @@
+---
+title: "R Markdown to Quarto"
+date: "2022-07-05"
+categories: [documentation]
+image: "featured.png"
+image-alt: "Screenshot of the FAQ for R Markdown users page. with the description 'Answers to R Markdown users' most frequently asked questions about Quarto.' The questions answered are: What can I use Quarto for?, Quarto sounds similar to R Markdown. What is the difference and why create a new project?, Is R Markdown going away? Will my R Markdown documents continue to work?, Should I switch from R Markdown to Quarto?, I use X (bookdown, blogdown, etc.). What is the Quarto equivalent?, Can you create custom formats for Quarto like you can for R Markdown?, When would be a good time to start new projects in Quarto rather than R Markdown?, Does the RStudio IDE support Quarto?, Does RStudio Connect support Quarto?"
+---
+
+## Switching over from R Markdown?
+
+If you are an R Markdown user starting to use Quarto for your new projects or if you are converting an existing R Markdown project to Quarto, I highly recommend reading the [FAQ for R Markdown Users](https://quarto.org/docs/faq/rmarkdown.html).
+
+You might particularly find the [I use X (bookdown, blogdown, etc.). What is the Quarto equivalent?](https://quarto.org/docs/faq/rmarkdown.html#i-use-x-bookdown-blogdown-etc..-what-is-the-quarto-equivalent)
+question as it provides a table comparing R Markdown outputs with Quarto formats, providing a roadmap for where to get started depending on the nature of your project.
+
+It should also be noted that R Markdown is not going away.
+Quarto simply expands the scope of R Markdown, and R Markdown will continue to be actively supported.
+
+## Learn more
+
+[FAQ for R Markdown Users](https://quarto.org/docs/faq/rmarkdown)
