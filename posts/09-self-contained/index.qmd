@@ -1,0 +1,28 @@
+---
+title: "Self-contained HTML"
+date: "2022-07-06"
+categories: [html]
+image: "featured.png"
+image-alt: "YAML with format html and option self-contained set to true."
+---
+
+## `self-contained: true`
+
+If you want to create an entirely self-contained HTML document (with images, CSS, etc. embedded into the HTML file), add the following to the YAML of your document.
+
+``` yaml
+format:
+  html:
+    self-contained: true
+```
+
+This produces a standalone HTML with no external dependencies.
+
+-   This works with `.qmd` and `.ipynb` files.
+-   If instead of publishing the document, you want to share it using a file sharing service (e.g., Dropbox) or email it to someone just like you share other document types like spreadsheets, presentations, and PDFs, you should use this option to generate a self-contained HTML.
+-   Quarto presentations created with revealjs can also be published as self-contained HTML.
+-   Math libraries are not embedded in self-contained HTML documents by default (because they are quite large and often time consuming to download) but you can add `self-contained-math: true` to your YAML to embed them as well.
+
+## Learn more
+
+[Self-contained HTML](https://quarto.org/docs/output-formats/html-basics.html#self-contained)

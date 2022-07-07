@@ -134,3 +134,13 @@ Can you create custom formats for Quarto like you can for R Markdown?,
 When would be a good time to start new projects in Quarto rather than R Markdown?,
 Does the RStudio IDE support Quarto?,
 Does RStudio Connect support Quarto?
+
+------------------------------------------------------------------------
+
+#quartotip 9: If you want to create an entirely self-contained HTML document (with images, CSS, etc. embedded into the HTML file), set self-contained: true in the YAML of your document.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/09-self-contained/
+
+\[insert-image\]
+
+alt-text: YAML with format html and option self-contained set to true.
