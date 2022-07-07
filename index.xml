@@ -10,7 +10,43 @@
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
 <generator>quarto-0.9.649</generator>
-<lastBuildDate>Tue, 05 Jul 2022 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 06 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Self-contained HTML</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/09-self-contained/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="self-contained-true" class="level2">
+<h2 class="anchored" data-anchor-id="self-contained-true"><code>self-contained: true</code></h2>
+<p>If you want to create an entirely self-contained HTML document (with images, CSS, etc. embedded into the HTML file), add the following to the YAML of your document.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;">format</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb1-2"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">html</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb1-3"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">self-contained</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="ch" style="color: #20794D;">true</span></span></code></pre></div>
+<p>This produces a standalone HTML with no external dependencies.</p>
+<ul>
+<li>This works with <code>.qmd</code> and <code>.ipynb</code> files.</li>
+<li>If instead of publishing the document, you want to share it using a file sharing service (e.g., Dropbox) or email it to someone just like you share other document types like spreadsheets, presentations, and PDFs, you should use this option to generate a self-contained HTML.</li>
+<li>Quarto presentations created with revealjs can also be published as self-contained HTML.</li>
+<li>Math libraries are not embedded in self-contained HTML documents by default (because they are quite large and often time consuming to download) but you can add <code>self-contained-math: true</code> to your YAML to embed them as well.</li>
+</ul>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/output-formats/html-basics.html#self-contained">Self-contained HTML</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>html</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/09-self-contained/index.html</guid>
+  <pubDate>Wed, 06 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/09-self-contained/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>R Markdown to Quarto</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -334,12 +370,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-7325154" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-2188412" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-7325154-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7325154" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-2188412-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-2188412" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -390,7 +426,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-7325154-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-7325154" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-2188412-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-2188412" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>

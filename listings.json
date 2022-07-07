@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/09-self-contained/index.html",
       "/posts/08-rmd-switch/index.html",
       "/posts/07-slide-annotation/index.html",
       "/posts/06-listing-contents/index.html",

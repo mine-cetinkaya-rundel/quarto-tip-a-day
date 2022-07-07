@@ -154,6 +154,20 @@
     "text": "Learn more\nFAQ for R Markdown Users"
   },
   {
+    "objectID": "posts/09-self-contained/index.html",
+    "href": "posts/09-self-contained/index.html",
+    "title": "Self-contained HTML",
+    "section": "",
+    "text": "If you want to create an entirely self-contained HTML document (with images, CSS, etc. embedded into the HTML file), add the following to the YAML of your document.\nformat:\n  html:\n    self-contained: true\nThis produces a standalone HTML with no external dependencies.\n\nThis works with .qmd and .ipynb files.\nIf instead of publishing the document, you want to share it using a file sharing service (e.g., Dropbox) or email it to someone just like you share other document types like spreadsheets, presentations, and PDFs, you should use this option to generate a self-contained HTML.\nQuarto presentations created with revealjs can also be published as self-contained HTML.\nMath libraries are not embedded in self-contained HTML documents by default (because they are quite large and often time consuming to download) but you can add self-contained-math: true to your YAML to embed them as well."
+  },
+  {
+    "objectID": "posts/09-self-contained/index.html#learn-more",
+    "href": "posts/09-self-contained/index.html#learn-more",
+    "title": "Self-contained HTML",
+    "section": "Learn more",
+    "text": "Learn more\nSelf-contained HTML"
+  },
+  {
     "objectID": "posts/06-listing-contents/index.html",
     "href": "posts/06-listing-contents/index.html",
     "title": "Listing contents",
@@ -172,6 +186,6 @@
     "href": "index.html",
     "title": "A Quarto tip a day",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
