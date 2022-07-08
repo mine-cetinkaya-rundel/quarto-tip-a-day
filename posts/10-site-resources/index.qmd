@@ -8,7 +8,7 @@ image-alt: "Two YAML entries. First one is for the project configuration, the se
 
 ## `resources`
 
-To publish a file not explicitly linked from your within the pages in your Quarto site, add a `resources` entry to your `_quarto.yml` file.
+To publish a file not explicitly linked from pages in your Quarto site, add a `resources` entry to your `_quarto.yml` file.
 
 For example, to include all PDF files within the project directory as part of the website, you can use the following.
 
