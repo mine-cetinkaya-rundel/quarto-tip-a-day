@@ -147,7 +147,7 @@ alt-text: YAML with format html and option self-contained set to true.
 
 ------------------------------------------------------------------------
 
-#quartotip 10: To publish a file not explicitly linked from your within the pages in your Quarto site (or if the auto-detection of a linked file fails), add a `resources` entry to the `_quarto.yml` file of your project or an individual page's metadata.
+#quartotip 10: To publish a file not explicitly linked from pages in your Quarto site (or if the auto-detection of a linked file fails), add a `resources` entry to the `_quarto.yml` file of your project or an individual page's metadata.
 
 Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/10-site-resources/
 
@@ -155,5 +155,5 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/10-sit
 
 alt-text: Two YAML entries.
 First one is for the project configuration, the second one is metadata for a single page.
-First one defines project, type: website, resoures: "\*.pdf".
+First one defines project, type: website, resources: "\*.pdf".
 Second one defined title: "Syllabus", resources: "syllabus.pdf".
