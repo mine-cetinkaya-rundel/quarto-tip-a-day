@@ -130,7 +130,7 @@
     "href": "posts/04-include/index.html",
     "title": "Includes",
     "section": "",
-    "text": "If you have content you want to include across many files, you can place that content in a separate Quarto file and use the include comment wherever you want to pull it in.\nThis could be useful for plain text content (e.g., including the same submission instructions for each homework assignment) or for content that includes computation (e.g., including the same data cleaning steps for various alternate analyses).\nSuppose you have such repeatable content in a file called _content-to-repeat.qmd and suppose the contents of that file read Look at me, I’m content to be repeated! (in italics):\n\n\n\n\n\n\ncontent-to-repeat.qmd\n*Look at me, I'm content to be repeated!*\n\n\n\nYou can include it in other documents using the  shortcode:\n{{< include _content-to-repeat.qmd >}}\nThis will result in:\nLook at me I’m content to be repeated!\nA few important things to note:\n\nThe name of the file that will be included should start with an underscore (_) so that they are automatically ignored (i.e. not treated as standalone files) when rendering a project.\nAll computations within a document will share a single engine (e.g., knitr and jupyter), which is relevant when the included file has computations.\nThe included file does not have to be a .qmd if it only contains text, it can also be a .md, .ipynb, etc. However included files with computation in them need to be .qmd, computational includes don’t work in .ipynb notebook files."
+    "text": "If you have content you want to include across many files, you can place that content in a separate Quarto file and use the include comment wherever you want to pull it in.\nThis could be useful for plain text content (e.g., including the same submission instructions for each homework assignment) or for content that includes computation (e.g., including the same data cleaning steps for various alternate analyses).\nSuppose you have such repeatable content in a file called _content-to-repeat.qmd and suppose the contents of that file read Look at me, I’m content to be repeated! (in italics):\n\n\n\n\n\n\ncontent-to-repeat.qmd\n*Look at me, I'm content to be repeated!*\n\n\n\nYou can include it in other documents using the {{< include >}} shortcode:\n{{< include _content-to-repeat.qmd >}}\nThis will result in:\nLook at me I’m content to be repeated!\nA few important things to note:\n\nThe name of the file that will be included should start with an underscore (_) so that they are automatically ignored (i.e. not treated as standalone files) when rendering a project.\nAll computations within a document will share a single engine (e.g., knitr and jupyter), which is relevant when the included file has computations.\nThe included file does not have to be a .qmd if it only contains text, it can also be a .md, .ipynb, etc. However included files with computation in them need to be .qmd, computational includes don’t work in .ipynb notebook files."
   },
   {
     "objectID": "posts/04-include/index.html#learn-more",
@@ -138,6 +138,20 @@
     "title": "Includes",
     "section": "Learn more",
     "text": "Learn more\nIncludes"
+  },
+  {
+    "objectID": "posts/10-site-resources/index.html",
+    "href": "posts/10-site-resources/index.html",
+    "title": "Site resources",
+    "section": "",
+    "text": "To publish a file not explicitly linked from your within the pages in your Quarto site, add a resources entry to your _quarto.yml file.\nFor example, to include all PDF files within the project directory as part of the website, you can use the following.\nproject:\n  type: website\n  resources: \n    - \"*.pdf\"\nIf the PDF files are linked from somewhere in your website, they should automatically be copied over to your _site directory when your site is built. But if Quarto somehow fails to do that, adding them as resources should fix the issue.\nA few other notes on this feature:\n\nresources entries are character strings so they should have quotes around them.\nYou can use Quarto Glob Syntax when defining resources for Quarto websites.\nQuarto cannot render xaringan slides but you can include the Rmds and the resulting HTML files of your xaringan slide decks by including them as resources. Note that the slide decks are in a folder starting with _ to indicate that quarto render should ignore that folder.\n\nproject:\n  type: website\n  resources:\n    - \"_xaringan-slides/\"\n\nresources metadata can also be added to individual files. For example, if you have a course website with a syllabus page, and you also want to allow downloading a PDF version of the syllabus from that page, you might use something like the following.\n\ntitle: \"Syllabus\"\nresources:\n  - \"syllabus.pdf\""
+  },
+  {
+    "objectID": "posts/10-site-resources/index.html#learn-more",
+    "href": "posts/10-site-resources/index.html#learn-more",
+    "title": "Site resources",
+    "section": "Learn more",
+    "text": "Learn more\nSite Resources"
   },
   {
     "objectID": "posts/08-rmd-switch/index.html",
@@ -186,6 +200,6 @@
     "href": "index.html",
     "title": "A Quarto tip a day",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
