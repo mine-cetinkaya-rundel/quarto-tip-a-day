@@ -1,0 +1,48 @@
+---
+title: "Site resources"
+date: "2022-07-07"
+categories: [website]
+image: "featured.png"
+image-alt: "Two YAML entries. First one is for the project configuration, the second one is metadata for a single page. First one defines project, type: website, resoures: *.pdf. Second one defined title: Syllabus, resources: syllabus.pdf."
+---
+
+## `resources`
+
+To publish a file not explicitly linked from your within the pages in your Quarto site, add a `resources` entry to your `_quarto.yml` file.
+
+For example, to include all PDF files within the project directory as part of the website, you can use the following.
+
+``` yaml
+project:
+  type: website
+  resources: 
+    - "*.pdf"
+```
+
+If the PDF files are linked from somewhere in your website, they should automatically be copied over to your `_site` directory when your site is built.
+But if Quarto somehow fails to do that, adding them as `resources` should fix the issue.
+
+A few other notes on this feature:
+
+-   `resources` entries are character strings so they should have quotes around them.
+-   You can use [Quarto Glob Syntax](https://quarto.org/docs/reference/globs.html) when defining resources for Quarto websites.
+-   Quarto cannot render xaringan slides but you can include the Rmds and the resulting HTML files of your xaringan slide decks by including them as resources. Note that the slide decks are in a folder starting with `_` to indicate that `quarto render` should ignore that folder.
+
+``` yaml
+project:
+  type: website
+  resources:
+    - "_xaringan-slides/"
+```
+
+-   `resources` metadata can also be added to individual files. For example, if you have a course website with a syllabus page, and you also want to allow downloading a PDF version of the syllabus from that page, you might use something like the following.
+
+``` yaml
+title: "Syllabus"
+resources:
+  - "syllabus.pdf"
+```
+
+## Learn more
+
+[Site Resources](https://quarto.org/docs/websites/website-tools.html#site-resources)
