@@ -1,7 +1,7 @@
 ---
 title: "Site resources"
 date: "2022-07-07"
-categories: [website]
+categories: [website, glob]
 image: "featured.png"
 image-alt: "Two YAML entries. First one is for the project configuration, the second one is metadata for a single page. First one defines project, type: website, resoures: *.pdf. Second one defined title: Syllabus, resources: syllabus.pdf."
 ---
