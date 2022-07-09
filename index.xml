@@ -22,7 +22,7 @@
 
 <section id="spans" class="level2">
 <h2 class="anchored" data-anchor-id="spans">Spans</h2>
-<p>You can apply styles to inline text using spans using <code>[]</code> to surround the text you want to style and <code>{}</code> to define the style you want to apply.</p>
+<p>You can apply styles to inline text by creating spans using <code>[]</code> to surround the text you want to style and <code>{}</code> to define the style you want to apply.</p>
 <p>For example, to achieve the styling in the following sentence:</p>
 <blockquote class="blockquote">
 <p>To draw attention to a specific part of the text, you might want to make it <span style="color: red;">red</span> with a <span style="background-color: yellow;">yellow background</span>; <span style="color: red; background-color: yellow;">like this</span>.</p>
@@ -501,12 +501,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-4920155" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-3803309" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-4920155-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-4920155" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-3803309-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-3803309" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -557,7 +557,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-4920155-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-4920155" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-3803309-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-3803309" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>
