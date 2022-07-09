@@ -126,6 +126,27 @@
     "text": "Learn more\nManaging execution with freeze"
   },
   {
+    "objectID": "posts/11-spans/spans.html#fragments",
+    "href": "posts/11-spans/spans.html#fragments",
+    "title": "A Quarto tip a day",
+    "section": "Fragments",
+    "text": "Fragments\n\n\nThis shows up first,\n\nthen this,\n\n\nthen this."
+  },
+  {
+    "objectID": "posts/11-spans/index.html",
+    "href": "posts/11-spans/index.html",
+    "title": "Spans",
+    "section": "",
+    "text": "You can apply styles to inline text using spans using [] to surround the text you want to style and {} to define the style you want to apply.\nFor example, to achieve the styling in the following sentence:\n\nTo draw attention to a specific part of the text, you might want to make it red with a yellow background; like this.\n\nYou can use the following:\nTo draw attention to a specific part of the text, you might want to make it [red]{style=\"color: red;\"} with a [yellow background]{style=\"background-color: yellow;\"}; [like this]{style=\"color: red; background-color: yellow;\"}.\nSome tips for using spans:\n\nIf you’re authoring in RStudio using the visual editor, you can create a span by selecting the text you want to format and using the Format -> Span command.\n\n\n\n\n\n\n\nYou can also define a CSS class and apply it to the span. For example,\n\n.important {\n  background-color: yellow;\n  color: red;\n}\n\n\n\n\n\n\nSpans can also be used to define fragments in Quarto revealjs presentations. Use the left arrow on your keyboard to advance the slides below to\n\nOutputCode\n\n\n\n\n\n## Fragments\n\n::: columns\n::: {.column width=\"50%\"}\n[This shows up first,]{.fragment fragment-index=\"1\" style=\"color:orange;\"}\n:::\n\n::: {.column width=\"50%\"}\n[then this,]{.fragment fragment-index=\"2\" style=\"color: blue;\"}\n:::\n:::\n\n[then this.]{.fragment fragment-index=\"3\" style=\"color: pink;\"}"
+  },
+  {
+    "objectID": "posts/11-spans/index.html#learn-more",
+    "href": "posts/11-spans/index.html#learn-more",
+    "title": "Spans",
+    "section": "Learn more",
+    "text": "Learn more\nSite Resources"
+  },
+  {
     "objectID": "posts/04-include/index.html",
     "href": "posts/04-include/index.html",
     "title": "Includes",
@@ -200,6 +221,6 @@
     "href": "index.html",
     "title": "A Quarto tip a day",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
