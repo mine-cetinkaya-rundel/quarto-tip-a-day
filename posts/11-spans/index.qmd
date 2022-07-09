@@ -8,7 +8,7 @@ image-alt: "Two pieces of source code an the output of eadch. The first one show
 
 ## Spans
 
-You can apply styles to inline text using spans using `[]` to surround the text you want to style and `{}` to define the style you want to apply.
+You can apply styles to inline text by creating spans using `[]` to surround the text you want to style and `{}` to define the style you want to apply.
 
 For example, to achieve the styling in the following sentence:
 
