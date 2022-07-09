@@ -1,0 +1,70 @@
+---
+title: "Spans"
+date: "2022-07-08"
+categories: [html, css, visual editor, revealjss]
+image: "featured.png"
+image-alt: "Two pieces of source code an the output of eadch. The first one shows the sentence To draw attention to a specific part of the text, you might want to make it red with a yellow background; like this. spans used to change color of the text. The second one shows code for a slide with three separate fragments. Both examples are in the blog post."
+---
+
+## Spans
+
+You can apply styles to inline text using spans using `[]` to surround the text you want to style and `{}` to define the style you want to apply.
+
+For example, to achieve the styling in the following sentence:
+
+> To draw attention to a specific part of the text, you might want to make it [red]{style="color: red;"} with a [yellow background]{style="background-color: yellow;"}; [like this]{style="color: red; background-color: yellow;"}.
+
+You can use the following:
+
+``` markdown
+To draw attention to a specific part of the text, you might want to make it [red]{style="color: red;"} with a [yellow background]{style="background-color: yellow;"}; [like this]{style="color: red; background-color: yellow;"}.
+```
+
+Some tips for using spans:
+
+-   If you're authoring in RStudio using the visual editor, you can create a span by selecting the text you want to format and using the **Format -\> Span** command.
+
+![](visual-editor-highlight.png){fig-alt="Creating a span using the visual editor Span Attributes menu. This menu has four elements: ID, Classes, CSS Styles, and Other. The CSS styles element in the menu shows background-color: yellow;." fig-align="center" width="400"}
+
+-   You can also define a CSS class and apply it to the span. For example,
+
+``` css
+.important {
+  background-color: yellow;
+  color: red;
+}
+```
+
+![](visual-editor-important.png){fig-alt="Creating a span using the visual editor Span Attributes menu. This menu has four elements: ID, Classes, CSS Styles, and Other. The Classes element in the menu shows .important." fig-align="center" width="400"}
+
+-   Spans can also be used to define [fragments](https://quarto.org/docs/presentations/revealjs/advanced.html#fragments) in Quarto revealjs presentations.
+    Use the left arrow on your keyboard to advance the slides below to
+
+    ::: panel-tabset
+    ## Output
+
+    ```{=html}
+    <iframe width="600px" height="400px" style="border:2px solid #dee2e6;" src="spans.html"></iframe>
+    ```
+    ## Code
+
+    ``` markdown
+    ## Fragments
+
+    ::: columns
+    ::: {.column width="50%"}
+    [This shows up first,]{.fragment fragment-index="1" style="color:orange;"}
+    :::
+
+    ::: {.column width="50%"}
+    [then this,]{.fragment fragment-index="2" style="color: blue;"}
+    :::
+    :::
+
+    [then this.]{.fragment fragment-index="3" style="color: pink;"}
+    ```
+    :::
+
+## Learn more
+
+[Site Resources](https://quarto.org/docs/websites/website-tools.html#site-resources)

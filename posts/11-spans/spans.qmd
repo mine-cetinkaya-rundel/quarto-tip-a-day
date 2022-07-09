@@ -1,0 +1,23 @@
+---
+format: 
+  revealjs:
+    mainfont: "Atkinson Hyperlegible"
+toc: false
+execute: 
+  echo: true
+editor: visual
+---
+
+## Fragments
+
+::: columns
+::: {.column width="50%"}
+[This shows up first,]{.fragment fragment-index="1" style="color: orange;"}
+:::
+
+::: {.column width="50%"}
+[then this,]{.fragment fragment-index="2" style="color: blue;"}
+:::
+:::
+
+[then this.]{.fragment fragment-index="3" style="color: pink;"}
