@@ -157,3 +157,17 @@ alt-text: Two YAML entries.
 First one is for the project configuration, the second one is metadata for a single page.
 First one defines project, type: website, resources: "\*.pdf".
 Second one defined title: "Syllabus", resources: "syllabus.pdf".
+
+------------------------------------------------------------------------
+
+#quartotip 11: You can apply styles to inline text by creating spans using `[]` to surround the text you want to style and `{}` to define the style you want to apply.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/11-spans/
+
+\[insert-image\]
+
+alt-text: Two pieces of source code an the output of eadch.
+The first one shows the sentence To draw attention to a specific part of the text, you might want to make it red with a yellow background; like this.
+spans used to change color of the text.
+The second one shows code for a slide with three separate fragments.
+Both examples are in the linked blog post.
