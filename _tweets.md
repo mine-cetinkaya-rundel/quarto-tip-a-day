@@ -166,8 +166,21 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/11-spa
 
 \[insert-image\]
 
-alt-text: Two pieces of source code an the output of eadch.
+alt-text: Two pieces of source code an the output of each.
 The first one shows the sentence To draw attention to a specific part of the text, you might want to make it red with a yellow background; like this.
 spans used to change color of the text.
 The second one shows code for a slide with three separate fragments.
 Both examples are in the linked blog post.
+
+------------------------------------------------------------------------
+
+#quartotip 12: Want to embed an iframe on a webpage or a slide deck?
+Plop the sharing code in a raw html block!
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/
+
+\[insert-image\]
+
+alt-text: On top, a screenshot of the Insert Anything tool in the RStudio Visual Editor to insert an HTML block.
+An arrow from this points to the bottom image, which is an HTML block containing raw HTML code for including the Quarto Documentation at quarto.org in an iframe.
+The complete code can be found in the linked blog post.
