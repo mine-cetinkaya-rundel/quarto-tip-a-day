@@ -1,7 +1,7 @@
 ---
 title: "Spans"
 date: "2022-07-08"
-categories: [html, css, visual editor, revealjss]
+categories: [html, css, visual editor, revealjs]
 image: "featured.png"
 image-alt: "Two pieces of source code an the output of eadch. The first one shows the sentence To draw attention to a specific part of the text, you might want to make it red with a yellow background; like this. spans used to change color of the text. The second one shows code for a slide with three separate fragments. Both examples are in the blog post."
 ---
