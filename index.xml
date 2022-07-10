@@ -9,8 +9,51 @@
 <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</link>
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
-<generator>quarto-1.0.3</generator>
-<lastBuildDate>Fri, 08 Jul 2022 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.0.5</generator>
+<lastBuildDate>Sat, 09 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>HTML blocks</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="html-block" class="level2">
+<h2 class="anchored" data-anchor-id="html-block">HTML block</h2>
+<p>Want to embed an iframe on a webpage or a slide deck? Plop the sharing code in a raw html block!</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;">```{=html}</span></span>
+<span id="cb1-2"><span class="in" style="color: #5E5E5E;">&lt;iframe width="780" height="500" src="https://quarto.org/" title="Quarto Documentation"&gt;&lt;/iframe&gt;</span></span>
+<span id="cb1-3"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+<p>And here is the result!</p>
+<iframe width="780" height="500" src="https://quarto.org/" title="Quarto Documentation"></iframe>
+<p>A few notes on HTML blocks:</p>
+<ul>
+<li>They’re useful for visually separating out areas where you include raw HTML in an otherwise (primarily) markdown document.</li>
+<li>They make it easy to programatically access those HTML blocks should you ever need to do so (e.g., with a document parser or using regular expressions).</li>
+<li>If you’re using the RStudio visual editor, you can insert an HTML block using <strong>Insert &gt; Any &gt; HTML Block</strong> or accessing the Insert Anything tool with the <kbd>⌘ /</kbd> shortcut.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/insert-html-block.png" class="img-fluid figure-img" alt="Using the Insert Anything tool to insert an HTML block. Typing out the letters &quot;ht&quot; brings this option in the tool." width="400"></p>
+</figure>
+</div>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/visual-editor/index.html#insert-anything">Insert anything</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>html</category>
+  <category>raw</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/index.html</guid>
+  <pubDate>Sat, 09 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Spans</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -501,12 +544,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-198873" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-9227850" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-198873-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-198873" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-9227850-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-9227850" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -557,7 +600,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-198873-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-198873" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-9227850-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-9227850" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>

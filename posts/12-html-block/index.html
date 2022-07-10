@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mine Çetinkaya-Rundel">
-<meta name="dcterms.date" content="2022-07-01">
+<meta name="dcterms.date" content="2022-07-09">
 
-<title>A Quarto tip a day - Includes</title>
+<title>A Quarto tip a day - HTML blocks</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,13 +121,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 }</script>
 
 
-<meta name="twitter:title" content="A Quarto tip a day - Includes">
-<meta name="twitter:description" content="If you have content you want to include across many files, you can place that content in a separate Quarto file and use the include comment wherever you want to pull it in.">
+<meta name="twitter:title" content="A Quarto tip a day - HTML blocks">
+<meta name="twitter:description" content="Want to embed an iframe on a webpage or a slide deck? Plop the sharing code in a raw html block!">
 <meta name="twitter:image" content="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/images/twitter-card.png">
 <meta name="twitter:creator" content="@quarto_pub">
 <meta name="twitter:image-height" content="600">
 <meta name="twitter:image-width" content="1200">
-<meta name="twitter:image:alt" content="A file called content-to-repeat.qmd is shown. The file includes one sentence: Look at me, I'm content to be repeated. This sentence is in italics. Arrows and file icons depict how this file can be included in two different files with the same include shortcode. The code can be found in the linked blog post.">
+<meta name="twitter:image:alt" content="On top, a screenshot of the Insert Anything tool in the RStudio Visual Editor to insert an HTML block. An arrow from this points to the bottom image, which is an HTML block containing raw HTML code for including the Quarto Documentation at quarto.org in an iframe. The complete code can be found in the blog post.">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -173,9 +173,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Includes</h1>
+      <h1 class="title">HTML blocks</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">includes</div>
+                <div class="quarto-category">html</div>
+                <div class="quarto-category">raw</div>
               </div>
                   </div>
   </div>
@@ -193,7 +194,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 1, 2022</p>
+        <p class="date">July 9, 2022</p>
       </div>
     </div>
       
@@ -208,10 +209,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#include" id="toc-include" class="nav-link active" data-scroll-target="#include"><code>include</code></a></li>
+  <li><a href="#html-block" id="toc-html-block" class="nav-link active" data-scroll-target="#html-block">HTML block</a></li>
   <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn more</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/04-include/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/12-html-block/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -219,36 +220,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="include" class="level2">
-<h2 class="anchored" data-anchor-id="include"><code>include</code></h2>
-<p>If you have content you want to include across many files, you can place that content in a separate Quarto file and use the <code>include</code> comment wherever you want to pull it in.</p>
-<p>This could be useful for plain text content (e.g., including the same submission instructions for each homework assignment) or for content that includes computation (e.g., including the same data cleaning steps for various alternate analyses).</p>
-<p>Suppose you have such repeatable content in a file called <code>_content-to-repeat.qmd</code> and suppose the contents of that file read <em>Look at me, I’m content to be repeated!</em> (in italics):</p>
-<div class="callout-note callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container" title="hello">
-<p><strong>content-to-repeat.qmd</strong></p>
-<pre><code>*Look at me, I'm content to be repeated!*</code></pre>
-</div>
-</div>
-</div>
-<p>You can include it in other documents using the <code>{{&lt; include &gt;}}</code> shortcode:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>{{&lt; include _content-to-repeat.qmd &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This will result in:</p>
-<p><em>Look at me I’m content to be repeated!</em></p>
-<p>A few important things to note:</p>
+<section id="html-block" class="level2">
+<h2 class="anchored" data-anchor-id="html-block">HTML block</h2>
+<p>Want to embed an iframe on a webpage or a slide deck? Plop the sharing code in a raw html block!</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;iframe width="780" height="500" src="https://quarto.org/" title="Quarto Documentation"&gt;&lt;/iframe&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>And here is the result!</p>
+<iframe width="780" height="500" src="https://quarto.org/" title="Quarto Documentation"></iframe>
+<p>A few notes on HTML blocks:</p>
 <ul>
-<li>The name of the file that will be included should start with an underscore (<code>_</code>) so that they are automatically ignored (i.e.&nbsp;not treated as standalone files) when rendering a project.</li>
-<li>All computations within a document will share a single engine (e.g., knitr and jupyter), which is relevant when the included file has computations.</li>
-<li>The included file does not have to be a <code>.qmd</code> if it only contains text, it can also be a <code>.md</code>, <code>.ipynb</code>, etc. However included files with computation in them need to be <code>.qmd</code>, computational includes don’t work in <code>.ipynb</code> notebook files.</li>
+<li>They’re useful for visually separating out areas where you include raw HTML in an otherwise (primarily) markdown document.</li>
+<li>They make it easy to programatically access those HTML blocks should you ever need to do so (e.g., with a document parser or using regular expressions).</li>
+<li>If you’re using the RStudio visual editor, you can insert an HTML block using <strong>Insert &gt; Any &gt; HTML Block</strong> or accessing the Insert Anything tool with the <kbd>⌘ /</kbd> shortcut.</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="insert-html-block.png" class="img-fluid figure-img" alt="Using the Insert Anything tool to insert an HTML block. Typing out the letters &quot;ht&quot; brings this option in the tool." width="400"></p>
+</figure>
+</div>
 </section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p><a href="https://quarto.org/docs/authoring/includes.html">Includes</a></p>
+<p><a href="https://quarto.org/docs/visual-editor/index.html#insert-anything">Insert anything</a></p>
 
 
 </section>
