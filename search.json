@@ -161,6 +161,20 @@
     "text": "Learn more\nIncludes"
   },
   {
+    "objectID": "posts/13-homebrew/index.html",
+    "href": "posts/13-homebrew/index.html",
+    "title": "Quarto on Homebrew",
+    "section": "",
+    "text": "If you’re a Homebrew person, chances are you’d like to install and update Quarto with Homebrew. There are two options for doing so.\n\nUsing the Quarto cask: This installs the pkg file from latest official Quarto release. One minor pain point with this approach is that each time you update Quarto, you’ll need to enter your user password.\nbrew install --cask quarto\nUsing a private tap: This provides a formula-based version which installs the Quarto files in the typical Homebrew cellar location. With this method, you won’t need to enter your password each time you want to update Quarto, however you are relying on a private tap.\nbrew tap rundel/quarto-cli\nbrew install quarto\n\nOnce you’ve installed Quarto via Homebrew using either method, you can update to the latest release with\nbrew upgrade quarto\nor it will also update along with other software, when you run brew upgrade.\nA few more notes:\n\nYou do not need Homebrew to install or update the Quarto CLI. You can always get the latest released version at https://quarto.org/docs/get-started/.\nIf using RStudio, you do not need to install the Quarto CLI separately as RStudio already ships with it. However if you want a different version of Quarto than the one bundled with RStudio, you can use either of the approaches above to install / update it.\nIf you’re interested in the development version of Quarto, you can find installation instructions on the Quarto CLI repo."
+  },
+  {
+    "objectID": "posts/13-homebrew/index.html#learn-more",
+    "href": "posts/13-homebrew/index.html#learn-more",
+    "title": "Quarto on Homebrew",
+    "section": "Learn more",
+    "text": "Learn more\nQuarto on Homebrew"
+  },
+  {
     "objectID": "posts/12-html-block/index.html",
     "href": "posts/12-html-block/index.html",
     "title": "HTML blocks",
@@ -235,6 +249,6 @@
     "href": "index.html",
     "title": "A Quarto tip a day",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

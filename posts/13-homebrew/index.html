@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mine Çetinkaya-Rundel">
-<meta name="dcterms.date" content="2022-07-03">
+<meta name="dcterms.date" content="2022-07-10">
 
-<title>A Quarto tip a day - Listing contents</title>
+<title>A Quarto tip a day - Quarto on Homebrew</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,13 +121,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 }</script>
 
 
-<meta name="twitter:title" content="A Quarto tip a day - Listing contents">
-<meta name="twitter:description" content="Quarto blogs by default will create a new blog post entry for each .qmd file in the posts folder.">
+<meta name="twitter:title" content="A Quarto tip a day - Quarto on Homebrew">
+<meta name="twitter:description" content="If you’re a Homebrew person, chances are you’d like to install and update Quarto with Homebrew. There are two options for doing so.">
 <meta name="twitter:image" content="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/images/twitter-card.png">
 <meta name="twitter:creator" content="@quarto_pub">
 <meta name="twitter:image-height" content="600">
 <meta name="twitter:image-width" content="1200">
-<meta name="twitter:image:alt" content="YAML file showing listings as the top field and contents as a sub-field under that with the value posts/*/index.qmd. An arrow points to the contents sub-field and text annotation reads customizable.">
+<meta name="twitter:image:alt" content="On top, the homebrew logo, an orange heart, and the Quarto logo. Underneath the code for two options for installation via Homebrew. Option 1 is brew install –cask quarto. Option 2 is brew tap rundel/quarto-cli followed by brew install quarto. And at the bottom the code for updating Quarto with Homebrew: brew upgrade quarto. The complete code can be found in the blog post.">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -173,11 +173,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Listing contents</h1>
+      <h1 class="title">Quarto on Homebrew</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">blog</div>
-                <div class="quarto-category">listing</div>
-                <div class="quarto-category">glob</div>
+                <div class="quarto-category">install</div>
+                <div class="quarto-category">update</div>
+                <div class="quarto-category">homebrew</div>
               </div>
                   </div>
   </div>
@@ -195,7 +195,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 3, 2022</p>
+        <p class="date">July 10, 2022</p>
       </div>
     </div>
       
@@ -210,10 +210,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#contents-for-listing" id="toc-contents-for-listing" class="nav-link active" data-scroll-target="#contents-for-listing"><code>contents</code> for <code>listing</code></a></li>
+  <li><a href="#brew-install-upgrade" id="toc-brew-install-upgrade" class="nav-link active" data-scroll-target="#brew-install-upgrade"><code>brew install / upgrade</code></a></li>
   <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn more</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/06-listing-contents/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/13-homebrew/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -221,28 +221,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="contents-for-listing" class="level2">
-<h2 class="anchored" data-anchor-id="contents-for-listing"><code>contents</code> for <code>listing</code></h2>
-<p>Quarto blogs by default will create a new blog post entry for each <code>.qmd</code> file in the <code>posts</code> folder. However you can customize which files are included in the listing by specifying the <code>contents</code> for the <code>listing</code> in the YAML where the listing is created.</p>
-<p>For example, suppose that in your <code>posts</code> folder you have a sub-folder for each blog post (like I do for this blog at <a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/tree/main/posts" class="uri">https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/tree/main/posts</a>). In each of these subfolders you might want to have an <code>index.qmd</code> file that contains the blog post entry as well as other supplementary <code>.qmd</code> files (e.g., any example, demo, etc. files for your blog post) that you don’t want turned into their own individual blog posts. To indicate this you can add the following to your YAML:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">listing</span><span class="kw">:</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span><span class="st">"posts/*/index.qmd"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>A few more ideas for how this feature can be leveraged:</p>
+<section id="brew-install-upgrade" class="level2">
+<h2 class="anchored" data-anchor-id="brew-install-upgrade"><code>brew install / upgrade</code></h2>
+<p>If you’re a Homebrew person, chances are you’d like to install and update Quarto with Homebrew. There are two options for doing so.</p>
+<ol type="1">
+<li><p>Using the Quarto cask: This installs the pkg file from latest official <a href="https://github.com/quarto-dev/quarto-cli/releases">Quarto release</a>. One minor pain point with this approach is that each time you update Quarto, you’ll need to enter your user password.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> quarto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Using a private tap: This provides a formula-based version which installs the Quarto files in the typical Homebrew cellar location. With this method, you won’t need to enter your password each time you want to update Quarto, however you are relying on a private tap.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> tap rundel/quarto-cli</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install quarto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+<p>Once you’ve installed Quarto via Homebrew using either method, you can update to the latest release with</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> upgrade quarto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>or it will also update along with other software, when you run <code>brew upgrade</code>.</p>
+<p>A few more notes:</p>
 <ul>
-<li>If building a course website, you can make use of the listings feature and bundle each lesson in a folder. Then, the <code>index.qmd</code> file in that folder can be the landing page for the lesson and other files (slides, exercises, instructor’s notes, etc.) can live in the lesson folder as well but not get processed as individual listing items.</li>
-<li>In addition to using globs to include files that follow a certain convention, you can use globs to exclude them as well.</li>
-<li>Authoring each of your blog posts in a file called <code>index.qmd</code> might get a bit hectic if you’re editing multiple posts concurrently (<a href="https://twitter.com/charliejhadley/status/1537787931049578497?s=20&amp;t=e089-ispLwxkk5QeKj8rDA">h/t to Charlotte for pointing this out</a>). You can come up with a different naming convention for your posts and indicate that as a <a href="https://quarto.org/docs/reference/globs.html">glob</a>. Note that the file name will affect the slug of your post in its URL though, so you might want to choose a convention keeping that in mind.</li>
+<li><p>You do not need Homebrew to install or update the Quarto CLI. You can always get the latest released version at https://quarto.org/docs/get-started/.</p></li>
+<li><p>If using RStudio, you do not need to install the Quarto CLI separately as RStudio already ships with it. However if you want a different version of Quarto than the one bundled with RStudio, you can use either of the approaches above to install / update it.</p></li>
+<li><p>If you’re interested in the development version of Quarto, you can find installation instructions on the <a href="https://github.com/quarto-dev/quarto-cli#development-version">Quarto CLI repo</a>.</p></li>
 </ul>
 </section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<ul>
-<li><a href="https://quarto.org/docs/websites/website-listings.html">Document listings</a></li>
-<li><a href="https://quarto.org/docs/websites/website-listings.html#listing-contents">Listing contents</a></li>
-<li><a href="https://quarto.org/docs/reference/globs.html">Quarto glob syntax</a></li>
-</ul>
+<p><a href="https://formulae.brew.sh/cask/quarto">Quarto on Homebrew</a></p>
 
 
 </section>
