@@ -1,0 +1,48 @@
+---
+title: "Quarto on Homebrew"
+date: "2022-07-10"
+categories: [install, update, homebrew]
+image: "featured.png"
+image-alt: "On top, the homebrew logo, an orange heart, and the Quarto logo. Underneath the code for two options for installation via Homebrew. Option 1 is brew install –cask quarto. Option 2 is brew tap rundel/quarto-cli followed by brew install quarto. And at the bottom the code for updating Quarto with Homebrew: brew upgrade quarto. The complete code can be found in the blog post."
+---
+
+## `brew install / upgrade`
+
+If you're a Homebrew person, chances are you'd like to install and update Quarto with Homebrew.
+There are two options for doing so.
+
+1.  Using the Quarto cask: This installs the pkg file from latest official [Quarto release](https://github.com/quarto-dev/quarto-cli/releases).
+    One minor pain point with this approach is that each time you update Quarto, you'll need to enter your user password.
+
+    ``` bash
+    brew install --cask quarto
+    ```
+
+2.  Using a private tap: This provides a formula-based version which installs the Quarto files in the typical Homebrew cellar location.
+    With this method, you won't need to enter your password each time you want to update Quarto, however you are relying on a private tap.
+
+    ``` bash
+    brew tap rundel/quarto-cli
+    brew install quarto
+    ```
+
+Once you've installed Quarto via Homebrew using either method, you can update to the latest release with
+
+``` bash
+brew upgrade quarto
+```
+
+or it will also update along with other software, when you run `brew upgrade`.
+
+A few more notes:
+
+-   You do not need Homebrew to install or update the Quarto CLI. You can always get the latest released version at https://quarto.org/docs/get-started/.
+
+-   If using RStudio, you do not need to install the Quarto CLI separately as RStudio already ships with it.
+    However if you want a different version of Quarto than the one bundled with RStudio, you can use either of the approaches above to install / update it.
+
+-   If you're interested in the development version of Quarto, you can find installation instructions on the [Quarto CLI repo](https://github.com/quarto-dev/quarto-cli#development-version).
+
+## Learn more
+
+[Quarto on Homebrew](https://formulae.brew.sh/cask/quarto)

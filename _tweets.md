@@ -184,3 +184,19 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-htm
 alt-text: On top, a screenshot of the Insert Anything tool in the RStudio Visual Editor to insert an HTML block.
 An arrow from this points to the bottom image, which is an HTML block containing raw HTML code for including the Quarto Documentation at quarto.org in an iframe.
 The complete code can be found in the linked blog post.
+
+------------------------------------------------------------------------
+
+#quartotip 13: If you\'re a Homebrew person, chances are you\'d like to install and update Quarto with Homebrew.
+Read on for a couple more options for doing so!
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/13-homebrew/
+
+\[insert-image\]
+
+alt-text: On top, the homebrew logo, an orange heart, and the Quarto logo.
+Underneath the code for two options for installation via Homebrew.
+Option 1 is brew install --cask quarto.
+Option 2 is brew tap rundel/quarto-cli followed by brew install quarto.
+And at the bottom the code for updating Quarto with Homebrew: brew upgrade quarto.
+The complete code can be found in the linked blog post.
