@@ -8,7 +8,7 @@ image-alt: "Find the bunny among the cats slide from the post, being zoomed in a
 
 ## Slide zoom
 
-One way to draw your audience's attention to a particular spot on your slides is annotating it, which I wrote about in [quartotip #7](07-slide-annotation/).
+One way to draw your audience's attention to a particular spot on your slides is annotating it, which I wrote about in [quartotip #7](../07-slide-annotation/).
 Another way of doing this is zooming in, which you can do by holding down the <kbd>Alt</kbd> key (or <kbd>Ctrl</kbd> in Linux) and clicking on any element to zoom towards it.
 Click again to zoom back out.
 
