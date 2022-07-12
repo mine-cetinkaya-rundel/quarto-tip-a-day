@@ -1,0 +1,13 @@
+---
+format: 
+  revealjs:
+    mainfont: "Atkinson Hyperlegible"
+toc: false
+editor: visual
+---
+
+## Find the bunny among the cats
+
+by zooming in
+
+![Artwork by Gergely Dudás](find-bunny-among-cats.jpeg){fig-alt="Illustrations of many cats in white, gray, orange, and green, and one bunny hidden among them." fig-align="center"}

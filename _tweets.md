@@ -187,8 +187,8 @@ The complete code can be found in the linked blog post.
 
 ------------------------------------------------------------------------
 
-#quartotip 13: If you\'re a Homebrew person, chances are you\'d like to install and update Quarto with Homebrew.
-Read on for a couple more options for doing so!
+#quartotip 13: If you're a Homebrew person, chances are you'd like to install and update Quarto with Homebrew.
+Read on for a couple options for doing so!
 
 Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/13-homebrew/
 
@@ -200,3 +200,13 @@ Option 1 is brew install --cask quarto.
 Option 2 is brew tap rundel/quarto-cli followed by brew install quarto.
 And at the bottom the code for updating Quarto with Homebrew: brew upgrade quarto.
 The complete code can be found in the linked blog post.
+
+------------------------------------------------------------------------
+
+#quartotip 14: Yet another way to highlight a portion of a slide: slide zoom with Alt+Click!
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/14-slide-zoom/
+
+\[insert-image\]
+
+alt-text: Find the bunny among the cats slide from the post, being zoomed in and out three times.
