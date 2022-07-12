@@ -9,8 +9,36 @@
 <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</link>
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
-<generator>quarto-1.0.8</generator>
-<lastBuildDate>Sun, 10 Jul 2022 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.0.12</generator>
+<lastBuildDate>Mon, 11 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Slide zoom</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/14-slide-zoom/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="slide-zoom" class="level2">
+<h2 class="anchored" data-anchor-id="slide-zoom">Slide zoom</h2>
+<p>One way to draw your audience’s attention to a particular spot on your slides is annotating it, which I wrote about in <a href="07-slide-annotation/">quartotip #7</a>. Another way of doing this is zooming in, which you can do by holding down the <kbd>Alt</kbd> key (or <kbd>Ctrl</kbd> in Linux) and clicking on any element to zoom towards it. Click again to zoom back out.</p>
+<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="slide-zoom.html"></iframe>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/presentations/revealjs/presenting.html#slide-zoom">Slide zoom</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>slides</category>
+  <category>revealjs</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/14-slide-zoom/index.html</guid>
+  <pubDate>Mon, 11 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/14-slide-zoom/featured.gif" medium="image" type="image/gif"/>
+</item>
 <item>
   <title>Quarto on Homebrew</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -588,12 +616,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-100836" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-8744138" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-100836-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-100836" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-8744138-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-8744138" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -644,7 +672,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-100836-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-100836" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-8744138-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-8744138" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>

@@ -98,6 +98,27 @@
     "text": "Penguins\n\n\n\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()"
   },
   {
+    "objectID": "posts/14-slide-zoom/slide-zoom.html#find-the-bunny-among-the-cats",
+    "href": "posts/14-slide-zoom/slide-zoom.html#find-the-bunny-among-the-cats",
+    "title": "A Quarto tip a day",
+    "section": "Find the bunny among the cats",
+    "text": "Find the bunny among the cats\nby zooming in\n\n\nArtwork by Gergely Dudás"
+  },
+  {
+    "objectID": "posts/14-slide-zoom/index.html",
+    "href": "posts/14-slide-zoom/index.html",
+    "title": "Slide zoom",
+    "section": "",
+    "text": "One way to draw your audience’s attention to a particular spot on your slides is annotating it, which I wrote about in quartotip #7. Another way of doing this is zooming in, which you can do by holding down the Alt key (or Ctrl in Linux) and clicking on any element to zoom towards it. Click again to zoom back out."
+  },
+  {
+    "objectID": "posts/14-slide-zoom/index.html#learn-more",
+    "href": "posts/14-slide-zoom/index.html#learn-more",
+    "title": "Slide zoom",
+    "section": "Learn more",
+    "text": "Learn more\nSlide zoom"
+  },
+  {
     "objectID": "posts/01-side-by-side-tables/index.html",
     "href": "posts/01-side-by-side-tables/index.html",
     "title": "Side-by-side tables",
@@ -249,6 +270,6 @@
     "href": "index.html",
     "title": "A Quarto tip a day",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 11, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
