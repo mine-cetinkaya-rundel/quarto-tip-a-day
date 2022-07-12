@@ -22,7 +22,7 @@
 
 <section id="slide-zoom" class="level2">
 <h2 class="anchored" data-anchor-id="slide-zoom">Slide zoom</h2>
-<p>One way to draw your audience’s attention to a particular spot on your slides is annotating it, which I wrote about in <a href="07-slide-annotation/">quartotip #7</a>. Another way of doing this is zooming in, which you can do by holding down the <kbd>Alt</kbd> key (or <kbd>Ctrl</kbd> in Linux) and clicking on any element to zoom towards it. Click again to zoom back out.</p>
+<p>One way to draw your audience’s attention to a particular spot on your slides is annotating it, which I wrote about in <a href="../07-slide-annotation/">quartotip #7</a>. Another way of doing this is zooming in, which you can do by holding down the <kbd>Alt</kbd> key (or <kbd>Ctrl</kbd> in Linux) and clicking on any element to zoom towards it. Click again to zoom back out.</p>
 <iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="slide-zoom.html"></iframe>
 </section>
 <section id="learn-more" class="level2">
@@ -616,12 +616,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-8744138" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-3493159" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-8744138-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-8744138" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-3493159-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-3493159" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -672,7 +672,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-8744138-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-8744138" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-3493159-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-3493159" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>
