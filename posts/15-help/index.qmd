@@ -9,9 +9,8 @@ image-alt: "Screenshot of Discussions page for the quarto-dev/quarto-cli repo wi
 ## Discussions and issues
 
 Need help with a Quarto thing?
-
--   If you have a question, post on [Quarto Discussions](https://github.com/quarto-dev/quarto-cli/discussions).
--   If you have a bug report or a feature request, post an issue on the [quarto-dev/quarto-cli](https://github.com/quarto-dev/quarto-cli/issues) repo.
+If you have a question or a feature request, post on [Quarto Discussions](https://github.com/quarto-dev/quarto-cli/discussions).
+If you have a bug report, post an issue on the [quarto-dev/quarto-cli](https://github.com/quarto-dev/quarto-cli/issues) repo.
 
 If you're not sure which to post on, I'd suggest posting on Discussions, and if turning it into an issue is more appropriate, you or someone from the Quarto team can do once the discussion develops.
 Feature requests can also make for great questions!
