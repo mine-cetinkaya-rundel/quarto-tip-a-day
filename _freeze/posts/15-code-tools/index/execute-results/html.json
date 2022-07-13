@@ -1,0 +1,14 @@
+{
+  "hash": "4f59c1c9de04c82d7e954a7cbd096813",
+  "result": {
+    "markdown": "---\ntitle: \"Code tools\"\ndate: \"2022-07-12\"\ncategories: [html, code]\nimage: \"featured.gif\"\nimage-alt: \"...\"\nformat:\n  html: \n    code-tools:\n      source: repo\n---\n\n\n## `code-tools` \n\nkwjkjwds\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n```\n\n::: {.cell-output .cell-output-stderr}\n```\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──\n```\n:::\n\n::: {.cell-output .cell-output-stderr}\n```\n✔ ggplot2 3.3.6     ✔ purrr   0.3.4\n✔ tibble  3.1.7     ✔ dplyr   1.0.9\n✔ tidyr   1.2.0     ✔ stringr 1.4.0\n✔ readr   2.1.2     ✔ forcats 0.5.1\n```\n:::\n\n::: {.cell-output .cell-output-stderr}\n```\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n```\n:::\n\n```{.r .cell-code}\nlibrary(palmerpenguins)\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\npenguins %>%\n  group_by(species) %>%\n  summarise(mean_bill_length = mean(bill_length_mm, na.rm = TRUE))\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n# A tibble: 3 × 2\n  species   mean_bill_length\n  <fct>                <dbl>\n1 Adelie                38.8\n2 Chinstrap             48.8\n3 Gentoo                47.5\n```\n:::\n:::\n\n\n## Learn more\n\n[Slide zoom](https://quarto.org/docs/presentations/revealjs/presenting.html#slide-zoom)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

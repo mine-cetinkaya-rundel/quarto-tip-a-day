@@ -210,3 +210,14 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/14-sli
 \[insert-image\]
 
 alt-text: Find the bunny among the cats slide from the post, being zoomed in and out three times.
+
+------------------------------------------------------------------------
+
+#quartotip 15: Need help with something Quarto related?
+Post a question on GitHub Discussions or open an issue!
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/
+
+\[insert-image\]
+
+alt-text: Screenshot of Discussions page for the quarto-dev/quarto-cli repo with the word Questions next to it and the screenshot issues page for the same repo with the word bug reports next to it.

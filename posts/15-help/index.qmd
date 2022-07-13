@@ -1,0 +1,39 @@
+---
+title: "Need help?"
+date: "2022-07-12"
+categories: [help]
+image: "featured.png"
+image-alt: "Screenshot of Discussions page for the quarto-dev/quarto-cli repo with the word Questions next to it and the screenshot issues page for the same repo with the word bug reports next to it."
+---
+
+## Discussions and issues
+
+Need help with a Quarto thing?
+
+-   If you have a question, post on [Quarto Discussions](https://github.com/quarto-dev/quarto-cli/discussions).
+-   If you have a bug report or a feature request, post an issue on the [quarto-dev/quarto-cli](https://github.com/quarto-dev/quarto-cli/issues) repo.
+
+If you're not sure which to post on, I'd suggest posting on Discussions, and if turning it into an issue is more appropriate, you or someone from the Quarto team can do once the discussion develops.
+Feature requests can also make for great questions!
+
+Discussion posts don't need a whole lot of structure, but including a minimal reproducible example is always nice and will make it much easier for someone else to understand your question.
+
+Issues, particularly bug reports, ask that you provide information in a structured manner with a minimal, fully reproducible example as well as information on the versions of software you're running.
+The requirements are clearly spelled out on the issue form, which should make it easier for you to fulfill them, even if this is your first GitHub issue.
+
+Finally, before posting an issue, make sure to search for it in the repo.
+For example, say you have a question about the [`code-tools` feature](https://quarto.org/docs/output-formats/html-code.html#code-tools).
+First, search for `code-tools` in the [quarto-dev/quarto-cli](https://github.com/quarto-dev/quarto-cli) repo:
+
+![](search.png){fig-alt="Searching for \"code-tools\" in the quarto-dev/quarto-cli repo. The search options are \"in this repository\", \"in this organization\", and \"all GitHub\". \"In this repository\" is highlighted." fig-align="center" width="601"}
+
+Choose "In this repository" among the search options.
+
+![](search-results.png){fig-alt="Search results for \"code-tools\". Options for narrowing down search results for \"Issues\" and \"Discussions\" are highlighted." fig-align="center"}
+
+Next, narrow down the search results for either Issues or Discussions.
+Read any relevant posts and if those don't answer your questions, post your own.
+
+## Learn more
+
+[Frequently asked questions](https://quarto.org/docs/faq/)
