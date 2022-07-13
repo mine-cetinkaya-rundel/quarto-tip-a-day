@@ -22,11 +22,7 @@
 
 <section id="discussions-and-issues" class="level2">
 <h2 class="anchored" data-anchor-id="discussions-and-issues">Discussions and issues</h2>
-<p>Need help with a Quarto thing?</p>
-<ul>
-<li>If you have a question, post on <a href="https://github.com/quarto-dev/quarto-cli/discussions">Quarto Discussions</a>.</li>
-<li>If you have a bug report or a feature request, post an issue on the <a href="https://github.com/quarto-dev/quarto-cli/issues">quarto-dev/quarto-cli</a> repo.</li>
-</ul>
+<p>Need help with a Quarto thing? If you have a question or a feature request, post on <a href="https://github.com/quarto-dev/quarto-cli/discussions">Quarto Discussions</a>. If you have a bug report, post an issue on the <a href="https://github.com/quarto-dev/quarto-cli/issues">quarto-dev/quarto-cli</a> repo.</p>
 <p>If you’re not sure which to post on, I’d suggest posting on Discussions, and if turning it into an issue is more appropriate, you or someone from the Quarto team can do once the discussion develops. Feature requests can also make for great questions!</p>
 <p>Discussion posts don’t need a whole lot of structure, but including a minimal reproducible example is always nice and will make it much easier for someone else to understand your question.</p>
 <p>Issues, particularly bug reports, ask that you provide information in a structured manner with a minimal, fully reproducible example as well as information on the versions of software you’re running. The requirements are clearly spelled out on the issue form, which should make it easier for you to fulfill them, even if this is your first GitHub issue.</p>
@@ -662,12 +658,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-9560584" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-4518108" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-9560584-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-9560584" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-4518108-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-4518108" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -718,7 +714,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-9560584-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-9560584" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-4518108-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-4518108" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>
