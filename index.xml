@@ -10,7 +10,53 @@
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
 <generator>quarto-1.0.16</generator>
-<lastBuildDate>Mon, 11 Jul 2022 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 12 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Need help?</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="discussions-and-issues" class="level2">
+<h2 class="anchored" data-anchor-id="discussions-and-issues">Discussions and issues</h2>
+<p>Need help with a Quarto thing?</p>
+<ul>
+<li>If you have a question, post on <a href="https://github.com/quarto-dev/quarto-cli/discussions">Quarto Discussions</a>.</li>
+<li>If you have a bug report or a feature request, post an issue on the <a href="https://github.com/quarto-dev/quarto-cli/issues">quarto-dev/quarto-cli</a> repo.</li>
+</ul>
+<p>If you’re not sure which to post on, I’d suggest posting on Discussions, and if turning it into an issue is more appropriate, you or someone from the Quarto team can do once the discussion develops. Feature requests can also make for great questions!</p>
+<p>Discussion posts don’t need a whole lot of structure, but including a minimal reproducible example is always nice and will make it much easier for someone else to understand your question.</p>
+<p>Issues, particularly bug reports, ask that you provide information in a structured manner with a minimal, fully reproducible example as well as information on the versions of software you’re running. The requirements are clearly spelled out on the issue form, which should make it easier for you to fulfill them, even if this is your first GitHub issue.</p>
+<p>Finally, before posting an issue, make sure to search for it in the repo. For example, say you have a question about the <a href="https://quarto.org/docs/output-formats/html-code.html#code-tools"><code>code-tools</code> feature</a>. First, search for <code>code-tools</code> in the <a href="https://github.com/quarto-dev/quarto-cli">quarto-dev/quarto-cli</a> repo:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/search.png" class="img-fluid figure-img" alt="Searching for &quot;code-tools&quot; in the quarto-dev/quarto-cli repo. The search options are &quot;in this repository&quot;, &quot;in this organization&quot;, and &quot;all GitHub&quot;. &quot;In this repository&quot; is highlighted." width="601"></p>
+</figure>
+</div>
+<p>Choose “In this repository” among the search options.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/search-results.png" class="img-fluid figure-img" alt="Search results for &quot;code-tools&quot;. Options for narrowing down search results for &quot;Issues&quot; and &quot;Discussions&quot; are highlighted."></p>
+</figure>
+</div>
+<p>Next, narrow down the search results for either Issues or Discussions. Read any relevant posts and if those don’t answer your questions, post your own.</p>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/faq/">Frequently asked questions</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>help</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/index.html</guid>
+  <pubDate>Tue, 12 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Slide zoom</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -616,12 +662,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-8763067" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-9560584" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-8763067-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-8763067" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-9560584-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-9560584" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -672,7 +718,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-8763067-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-8763067" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-9560584-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-9560584" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>
