@@ -22,15 +22,15 @@ The requirements are clearly spelled out on the issue form, which should make it
 
 Finally, before posting an issue, make sure to search for it in the repo.
 For example, say you have a question about the [`code-tools` feature](https://quarto.org/docs/output-formats/html-code.html#code-tools).
-First, search for `code-tools` in the [quarto-dev/quarto-cli](https://github.com/quarto-dev/quarto-cli) repo:
+First, search for `code-tools` in the [quarto-dev/quarto-cli](https://github.com/quarto-dev/quarto-cli) repo.
+Choose "In this repository" among the search options.
 
 ![](search.png){fig-alt="Searching for \"code-tools\" in the quarto-dev/quarto-cli repo. The search options are \"in this repository\", \"in this organization\", and \"all GitHub\". \"In this repository\" is highlighted." fig-align="center" width="601"}
 
-Choose "In this repository" among the search options.
+Next, narrow down the search results for either Issues or Discussions.
 
 ![](search-results.png){fig-alt="Search results for \"code-tools\". Options for narrowing down search results for \"Issues\" and \"Discussions\" are highlighted." fig-align="center"}
 
-Next, narrow down the search results for either Issues or Discussions.
 Read any relevant posts and if those don't answer your questions, post your own.
 
 ## Learn more
