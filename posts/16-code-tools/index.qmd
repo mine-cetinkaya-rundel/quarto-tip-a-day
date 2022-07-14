@@ -1,0 +1,77 @@
+---
+title: "Code tools"
+date: "2022-07-13"
+categories: [html, code]
+image: "featured.png"
+image-alt: "Three ways of linking to source code from within your document, each presented with its associated YAML. (1) Make source code available on page. (2) Link to source code on repo. (3) Link to any file as source code. The associated YAML fields are provided in the blog post."
+format:
+  html: 
+    code-tools:
+      source: https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/posts/16-code-tools/penguins.R
+---
+
+## `code-tools`
+
+You can include a **Code** menu in the header of your document that provides various tools for readers to interact with your source code.
+
+If you want to include the full source code (including executable code chunks and your prose, in other words, your full `.qmd` file), set `code-tools: true` in the YAML of your document.
+
+``` yaml
+---
+format:
+  html: 
+    code-tools: true
+---
+```
+
+The [mlr3book](https://mlr3book.mlr-org.com/) uses this approach.
+
+Alternatively, if your document lives within a project that has a specified `repo-url` in the project-level `_quarto.yml` file, you can directly link to the document in your repo by specifying the `source`.
+
+``` yaml
+---
+format:
+  html: 
+    code-tools:
+      source: repo
+---
+```
+
+On this page I've done something a little different. I have some "analysis code" on my page, in the following code chunks.
+
+First, I load some packages.
+
+```{r}
+#| warning: false
+
+library(tidyverse)
+library(palmerpenguins)
+```
+
+Then, I calculate some summary statistics.
+
+```{r}
+penguins %>%
+  group_by(species) %>%
+  summarise(mean_bill_length = mean(bill_length_mm, na.rm = TRUE))
+```
+
+When you have a bunch of code as well as bunch of prose in your document (like here), your readers might want access to just the content in your executable code chunks so that they can easily replicate your analysis. You can do this by maintaining a separate R script, and then linking to it from your YAML, like I've done on this page.
+
+``` yaml
+---
+format:
+  html: 
+    code-tools:
+      source: https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/posts/16-code-tools/penguins.R
+---
+```
+
+And you have two options for generating that R script:
+
+- You can create and maintain it manually, making sure to keep it updated as you update the analysis in your narrative / `.qmd` file.
+- You can automatically generate it from your `.qmd` file with `knitr::purl()`, which "extracts the R code in it according to a list of patterns, evaluates the code and writes the output in another file".
+
+## Learn more
+
+[Code tools](https://quarto.org/docs/output-formats/html-code.html#code-tools)

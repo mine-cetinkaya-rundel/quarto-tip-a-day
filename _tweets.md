@@ -221,3 +221,17 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-hel
 \[insert-image\]
 
 alt-text: Screenshot of Discussions page for the quarto-dev/quarto-cli repo with the word Questions next to it and the screenshot issues page for the same repo with the word bug reports next to it.
+
+------------------------------------------------------------------------
+
+#quartotip 16: Link to the source code on your document using code-tools: true, or customize how you link to it with various options.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/16-code-tools/
+
+\[insert-image\]
+
+alt-text: Three ways of linking to source code from within your document, each presented with its associated YAML.
+(1) Make source code available on page.
+(2) Link to source code on repo.
+(3) Link to any file as source code.
+The associated YAML fields are provided in the linked blog post.
