@@ -10,7 +10,80 @@
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
 <generator>quarto-1.0.18</generator>
-<lastBuildDate>Tue, 12 Jul 2022 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 13 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Code tools</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/16-code-tools/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="code-tools" class="level2">
+<h2 class="anchored" data-anchor-id="code-tools"><code>code-tools</code></h2>
+<p>You can include a <strong>Code</strong> menu in the header of your document that provides various tools for readers to interact with your source code.</p>
+<p>If you want to include the full source code (including executable code chunks and your prose, in other words, your full <code>.qmd</code> file), set <code>code-tools: true</code> in the YAML of your document.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="pp" style="color: #AD0000;">---</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;">format</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb1-3"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">html</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span></span>
+<span id="cb1-4"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">code-tools</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="ch" style="color: #20794D;">true</span></span>
+<span id="cb1-5"><span class="pp" style="color: #AD0000;">---</span></span></code></pre></div>
+<p>The <a href="https://mlr3book.mlr-org.com/">mlr3book</a> uses this approach.</p>
+<p>Alternatively, if your document lives within a project that has a specified <code>repo-url</code> in the project-level <code>_quarto.yml</code> file, you can directly link to the document in your repo by specifying the <code>source</code>.</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><span class="pp" style="color: #AD0000;">---</span></span>
+<span id="cb2-2"><span class="fu" style="color: #4758AB;">format</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb2-3"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">html</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span></span>
+<span id="cb2-4"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">code-tools</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb2-5"><span class="at" style="color: #657422;">      </span><span class="fu" style="color: #4758AB;">source</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> repo</span></span>
+<span id="cb2-6"><span class="pp" style="color: #AD0000;">---</span></span></code></pre></div>
+<p>On this page I’ve done something a little different. I have some “analysis code” on my page, in the following code chunks.</p>
+<p>First, I load some packages.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;">library</span>(tidyverse)</span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;">library</span>(palmerpenguins)</span></code></pre></div>
+</div>
+<p>Then, I calculate some summary statistics.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">penguins <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb4-2">  <span class="fu" style="color: #4758AB;">group_by</span>(species) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb4-3">  <span class="fu" style="color: #4758AB;">summarise</span>(<span class="at" style="color: #657422;">mean_bill_length =</span> <span class="fu" style="color: #4758AB;">mean</span>(bill_length_mm, <span class="at" style="color: #657422;">na.rm =</span> <span class="cn" style="color: #8f5902;">TRUE</span>))</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+  species   mean_bill_length
+  &lt;fct&gt;                &lt;dbl&gt;
+1 Adelie                38.8
+2 Chinstrap             48.8
+3 Gentoo                47.5</code></pre>
+</div>
+</div>
+<p>When you have a bunch of code as well as bunch of prose in your document (like here), your readers might want access to just the content in your executable code chunks so that they can easily replicate your analysis. You can do this by maintaining a separate R script, and then linking to it from your YAML, like I’ve done on this page.</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><span class="pp" style="color: #AD0000;">---</span></span>
+<span id="cb6-2"><span class="fu" style="color: #4758AB;">format</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb6-3"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">html</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span></span>
+<span id="cb6-4"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">code-tools</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb6-5"><span class="at" style="color: #657422;">      </span><span class="fu" style="color: #4758AB;">source</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/posts/16-code-tools/penguins.R</span></span>
+<span id="cb6-6"><span class="pp" style="color: #AD0000;">---</span></span></code></pre></div>
+<p>And you have two options for generating that R script:</p>
+<ul>
+<li>You can create and maintain it manually, making sure to keep it updated as you update the analysis in your narrative / <code>.qmd</code> file.</li>
+<li>You can automatically generate it from your <code>.qmd</code> file with <code>knitr::purl()</code>, which “extracts the R code in it according to a list of patterns, evaluates the code and writes the output in another file”.</li>
+</ul>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/output-formats/html-code.html#code-tools">Code tools</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>html</category>
+  <category>code</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/16-code-tools/index.html</guid>
+  <pubDate>Wed, 13 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/16-code-tools/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Need help?</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -658,12 +731,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-1517736" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-6911471" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-1517736-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-1517736" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-6911471-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-6911471" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -714,7 +787,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-1517736-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-1517736" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-6911471-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-6911471" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>

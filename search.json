@@ -7,6 +7,20 @@
     "text": "As part of this project, I will tweet a Quarto tip each day in starting June 28, 2022 for thirty days, from the Quarto account (@quarto_pub), with the hashtag #quartotip. The daily tips / tweets are in no particular order. This website collects each tip as a daily blog post entry, with each blog post linking to “learn more” resources. And, you guessed it, it’s made with Quarto!\nThe target audience for this project is folks who are already somewhat familiar with Quarto. If you’re brand new to Quarto, I recommend getting started here instead."
   },
   {
+    "objectID": "posts/16-code-tools/index.html",
+    "href": "posts/16-code-tools/index.html",
+    "title": "Code tools",
+    "section": "",
+    "text": "You can include a Code menu in the header of your document that provides various tools for readers to interact with your source code.\nIf you want to include the full source code (including executable code chunks and your prose, in other words, your full .qmd file), set code-tools: true in the YAML of your document.\n---\nformat:\n  html: \n    code-tools: true\n---\nThe mlr3book uses this approach.\nAlternatively, if your document lives within a project that has a specified repo-url in the project-level _quarto.yml file, you can directly link to the document in your repo by specifying the source.\n---\nformat:\n  html: \n    code-tools:\n      source: repo\n---\nOn this page I’ve done something a little different. I have some “analysis code” on my page, in the following code chunks.\nFirst, I load some packages.\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nThen, I calculate some summary statistics.\n\npenguins %>%\n  group_by(species) %>%\n  summarise(mean_bill_length = mean(bill_length_mm, na.rm = TRUE))\n\n# A tibble: 3 × 2\n  species   mean_bill_length\n  <fct>                <dbl>\n1 Adelie                38.8\n2 Chinstrap             48.8\n3 Gentoo                47.5\n\n\nWhen you have a bunch of code as well as bunch of prose in your document (like here), your readers might want access to just the content in your executable code chunks so that they can easily replicate your analysis. You can do this by maintaining a separate R script, and then linking to it from your YAML, like I’ve done on this page.\n---\nformat:\n  html: \n    code-tools:\n      source: https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/posts/16-code-tools/penguins.R\n---\nAnd you have two options for generating that R script:\n\nYou can create and maintain it manually, making sure to keep it updated as you update the analysis in your narrative / .qmd file.\nYou can automatically generate it from your .qmd file with knitr::purl(), which “extracts the R code in it according to a list of patterns, evaluates the code and writes the output in another file”."
+  },
+  {
+    "objectID": "posts/16-code-tools/index.html#learn-more",
+    "href": "posts/16-code-tools/index.html#learn-more",
+    "title": "Code tools",
+    "section": "Learn more",
+    "text": "Learn more\nCode tools"
+  },
+  {
     "objectID": "posts/01-side-by-side-tables/index.html",
     "href": "posts/01-side-by-side-tables/index.html",
     "title": "Side-by-side tables",
@@ -284,6 +298,6 @@
     "href": "index.html",
     "title": "A Quarto tip a day",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 12, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 11, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 13, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 12, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 11, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

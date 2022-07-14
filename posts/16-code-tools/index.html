@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mine Çetinkaya-Rundel">
-<meta name="dcterms.date" content="2022-06-28">
+<meta name="dcterms.date" content="2022-07-13">
 
-<title>A Quarto tip a day - Side-by-side tables</title>
+<title>A Quarto tip a day - Code tools</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,13 +121,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 }</script>
 
 
-<meta name="twitter:title" content="A Quarto tip a day - Side-by-side tables">
-<meta name="twitter:description" content="Use the layout-ncol chunk option to organize output in columns, e.g., layout-ncol: 2 for two tables side-by-side.">
+<meta name="twitter:title" content="A Quarto tip a day - Code tools">
+<meta name="twitter:description" content="You can include a Code menu in the header of your document that provides various tools for readers to interact with your source code.">
 <meta name="twitter:image" content="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/images/twitter-card.png">
 <meta name="twitter:creator" content="@quarto_pub">
 <meta name="twitter:image-height" content="600">
 <meta name="twitter:image-width" content="1200">
-<meta name="twitter:image:alt" content="Two tables side by side. On the left is the first six rows and first three columns of the mtcars dataset. On the right is the first six rows and all two columns of the cars dataset.">
+<meta name="twitter:image:alt" content="Three ways of linking to source code from within your document, each presented with its associated YAML. (1) Make source code available on page. (2) Link to source code on repo. (3) Link to any file as source code. The associated YAML fields are provided in the blog post.">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -173,9 +173,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Side-by-side tables</h1>
+      <div class="quarto-title-block"><div><h1 class="title">Code tools</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/posts/16-code-tools/penguins.R"><i class="bi"></i> Code</button></div></div>
                                 <div class="quarto-categories">
-                <div class="quarto-category">tables</div>
+                <div class="quarto-category">html</div>
+                <div class="quarto-category">code</div>
               </div>
                   </div>
   </div>
@@ -193,7 +194,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">June 28, 2022</p>
+        <p class="date">July 13, 2022</p>
       </div>
     </div>
       
@@ -208,10 +209,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#layout-ncol" id="toc-layout-ncol" class="nav-link active" data-scroll-target="#layout-ncol"><code>layout-ncol</code></a></li>
+  <li><a href="#code-tools" id="toc-code-tools" class="nav-link active" data-scroll-target="#code-tools"><code>code-tools</code></a></li>
   <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn more</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/01-side-by-side-tables/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/16-code-tools/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -219,123 +220,59 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="layout-ncol" class="level2">
-<h2 class="anchored" data-anchor-id="layout-ncol"><code>layout-ncol</code></h2>
-<p>Use the <code>layout-ncol</code> chunk option to organize output in columns, e.g., <code>layout-ncol: 2</code> for two tables side-by-side.</p>
-<div>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: Two tables</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-subcap: ["mtcars", "Just cars"]</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| layout-ncol: 2</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># table on the left</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">head</span>(mtcars[, <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]))</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># table on the right</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">head</span>(cars))</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="tbl-anonymous-6911471" class="cell tbl-parent quarto-layout-panel anchored">
-<div class="panel-caption table-caption">
-<p>Two tables</p>
+<section id="code-tools" class="level2">
+<h2 class="anchored" data-anchor-id="code-tools"><code>code-tools</code></h2>
+<p>You can include a <strong>Code</strong> menu in the header of your document that provides various tools for readers to interact with your source code.</p>
+<p>If you want to include the full source code (including executable code chunks and your prose, in other words, your full <code>.qmd</code> file), set <code>code-tools: true</code> in the YAML of your document.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">code-tools</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The <a href="https://mlr3book.mlr-org.com/">mlr3book</a> uses this approach.</p>
+<p>Alternatively, if your document lives within a project that has a specified <code>repo-url</code> in the project-level <code>_quarto.yml</code> file, you can directly link to the document in your repo by specifying the <code>source</code>.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">code-tools</span><span class="kw">:</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">source</span><span class="kw">:</span><span class="at"> repo</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>On this page I’ve done something a little different. I have some “analysis code” on my page, in the following code chunks.</p>
+<p>First, I load some packages.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-6911471-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-6911471" style="flex-basis: 50.0%;justify-content: center;">
-<table class="table table-sm table-striped">
-<caption>mtcars</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: right;">mpg</th>
-<th style="text-align: right;">cyl</th>
-<th style="text-align: right;">disp</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Mazda RX4</td>
-<td style="text-align: right;">21.0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">160</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Mazda RX4 Wag</td>
-<td style="text-align: right;">21.0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">160</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Datsun 710</td>
-<td style="text-align: right;">22.8</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">108</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Hornet 4 Drive</td>
-<td style="text-align: right;">21.4</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">258</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Hornet Sportabout</td>
-<td style="text-align: right;">18.7</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">360</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Valiant</td>
-<td style="text-align: right;">18.1</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">225</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="tbl-anonymous-6911471-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-6911471" style="flex-basis: 50.0%;justify-content: center;">
-<table class="table table-sm table-striped">
-<caption>Just cars</caption>
-<thead>
-<tr class="header">
-<th style="text-align: right;">speed</th>
-<th style="text-align: right;">dist</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">10</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">22</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">16</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">10</td>
-</tr>
-</tbody>
-</table>
+<p>Then, I calculate some summary statistics.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(species) <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_bill_length =</span> <span class="fu">mean</span>(bill_length_mm, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+  species   mean_bill_length
+  &lt;fct&gt;                &lt;dbl&gt;
+1 Adelie                38.8
+2 Chinstrap             48.8
+3 Gentoo                47.5</code></pre>
 </div>
 </div>
-</div>
-</div>
+<p>When you have a bunch of code as well as bunch of prose in your document (like here), your readers might want access to just the content in your executable code chunks so that they can easily replicate your analysis. You can do this by maintaining a separate R script, and then linking to it from your YAML, like I’ve done on this page.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">code-tools</span><span class="kw">:</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">source</span><span class="kw">:</span><span class="at"> https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/posts/16-code-tools/penguins.R</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>And you have two options for generating that R script:</p>
+<ul>
+<li>You can create and maintain it manually, making sure to keep it updated as you update the analysis in your narrative / <code>.qmd</code> file.</li>
+<li>You can automatically generate it from your <code>.qmd</code> file with <code>knitr::purl()</code>, which “extracts the R code in it according to a list of patterns, evaluates the code and writes the output in another file”.</li>
+</ul>
 </section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p><a href="https://quarto.org/docs/authoring/tables.html#computations">Options for tables produced by executable code cells</a></p>
+<p><a href="https://quarto.org/docs/output-formats/html-code.html#code-tools">Code tools</a></p>
 
 
 </section>
@@ -386,6 +323,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
