@@ -238,10 +238,10 @@ The associated YAML fields are provided in the linked blog post.
 
 ------------------------------------------------------------------------
 
-#quartotip 17: Quarto websites support light and dark themes and will automatically add a light/dark toggle to your website if you supply both themes.
+#quartotip 17: Quarto websites support light and dark themes and automatically add a light/dark toggle if you supply both themes.
 
 Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/17-dark-mode/
 
 \[insert-image\]
 
-alt-text: Switching between light and dark mode using the toggle on the navbar of the homepage of the Quarto Tip a Day blog.
+alt-text: Switching between light and dark mode using the toggle on the blog homepage navbar.
