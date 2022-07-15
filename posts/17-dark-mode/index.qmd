@@ -1,0 +1,44 @@
+---
+title: "Dark mode"
+date: "2022-07-14"
+categories: [website, theme]
+image: "featured.png"
+image-alt: "Insert alt text."
+---
+
+## `theme:` `light` / `dark` 
+
+Quarto websites support light and dark themes and will automatically add a light/dark toggle to your website if you supply both themes.
+
+``` yaml
+---
+format:
+  html:
+    theme:
+      light: litera
+      dark: darkly
+---
+```
+
+You can also customize your light and dark themes and and supply custom theme files in addition to the [Bootswatch themes](https://bootswatch.com/) you're using.
+
+``` yaml
+---
+format:
+  html:
+    theme:
+      light: [litera, styles.scss]
+      dark: [darkly, styles-dark.scss]
+---
+```
+
+Here are the custom styles I'm using on this website:
+
+-   [`styles.scss`](https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/styles.scss)
+-   [`styles-dark.scss`](https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/styles-dark.scss)
+
+If you know you want to offer the light/dark toggle, and you are planning to use a Bootswatch theme, I recommend browsing the options thoroughly first can decide on a light and a dark theme that look similar except for the colors and using that pair.
+
+## Learn more
+
+[Dark mode](https://quarto.org/docs/output-formats/html-themes.html#dark-mode)
