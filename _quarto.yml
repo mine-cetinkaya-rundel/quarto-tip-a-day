@@ -36,13 +36,12 @@ website:
     left: |
       Proudly supported by
       [![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-flat.svg){fig-alt="RStudio" width=65px}](https://www.rstudio.com)
-    background: "#F8F9FA"
 
 format:
   html:
     theme:
-      - litera
-      - styles.scss
+      light: [litera, styles.scss]
+      dark: [darkly, styles-dark.scss]
     highlight-style: a11y-dark
     mainfont: "Atkinson Hyperlegible"
     code-copy: true
