@@ -2,11 +2,11 @@
 title: "Dark mode"
 date: "2022-07-14"
 categories: [website, theme]
-image: "featured.png"
-image-alt: "Insert alt text."
+image: "featured.gif"
+image-alt: "Switching between light and dark mode using the toggle on the navbar of this blog's homepage."
 ---
 
-## `theme:` `light` / `dark` 
+## `theme:` `light` / `dark`
 
 Quarto websites support light and dark themes and will automatically add a light/dark toggle to your website if you supply both themes.
 
