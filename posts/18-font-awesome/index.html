@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mine Çetinkaya-Rundel">
-<meta name="dcterms.date" content="2022-07-02">
+<meta name="dcterms.date" content="2022-07-15">
 
-<title>A Quarto tip a day - Output location</title>
+<title>A Quarto tip a day - Font Awesome</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,6 +17,69 @@ span.underline{text-decoration: underline;}
 div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -39,6 +102,7 @@ ul.task-list{list-style: none;}
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,13 +124,13 @@ ul.task-list{list-style: none;}
 }</script>
 
 
-<meta name="twitter:title" content="A Quarto tip a day - Output location">
-<meta name="twitter:description" content="Showing code and output side-by-side or delayed reveal of the output are commonly used techniques for teaching programming when the mode of delivery is slides.">
+<meta name="twitter:title" content="A Quarto tip a day - Font Awesome">
+<meta name="twitter:description" content="Including Font Awesome icons in Quarto documents is now easy peasy lemon squeezy  with the Font Awesome extension. Just surround the Font Awesome icon name in {{< and >}}.">
 <meta name="twitter:image" content="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/images/twitter-card.png">
 <meta name="twitter:creator" content="@quarto_pub">
 <meta name="twitter:image-height" content="600">
 <meta name="twitter:image-width" content="1200">
-<meta name="twitter:image:alt" content="Slide with content presented in two columns. On the left is the code, which has the chunk options output-location: column as well as fig-width: 6 and fig-height: 4. The code uses ggplot2 to create a scatterplot of penguin bill depth vs. length, colored by species. On the right is output showing this plot.">
+<meta name="twitter:image:alt" content="Code for installing the Font Awesome extension for Quarto: quarto install extension quarto-ext/fontawesome and a table that shows the input syntax and output icon for the icons brands apple, calendar, user-doctor, and door-closed.">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -115,12 +179,10 @@ ul.task-list{list-style: none;}
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Output location</h1>
+      <h1 class="title">Font Awesome</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">execution</div>
-                <div class="quarto-category">code</div>
-                <div class="quarto-category">layout</div>
-                <div class="quarto-category">slides</div>
+                <div class="quarto-category">extension</div>
+                <div class="quarto-category">fontawesome</div>
               </div>
                   </div>
   </div>
@@ -138,7 +200,7 @@ ul.task-list{list-style: none;}
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 2, 2022</p>
+        <p class="date">July 15, 2022</p>
       </div>
     </div>
       
@@ -153,10 +215,12 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#output-location" id="toc-output-location" class="nav-link active" data-scroll-target="#output-location"><code>output-location</code></a></li>
+  <li><a href="#font-awesome" id="toc-font-awesome" class="nav-link active" data-scroll-target="#font-awesome"><strong>Font Awesome</strong></a>
+  <ul class="collapse">
   <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn more</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/05-output-location/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/18-font-awesome/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -164,25 +228,53 @@ ul.task-list{list-style: none;}
 
 
 
-<section id="output-location" class="level2">
-<h2 class="anchored" data-anchor-id="output-location"><code>output-location</code></h2>
-<p>Showing code and output side-by-side or delayed reveal of the output are commonly used techniques for teaching programming when the mode of delivery is slides. The <code>output-location</code> chunk option makes it easy to achieve these.</p>
-<p>Possible values for the <code>output-location</code> option are as follows:</p>
+<section id="font-awesome" class="level1">
+<h1><strong>Font Awesome</strong></h1>
+<p>Including Font Awesome icons in Quarto documents is now easy peasy lemon squeezy <i class="fa-solid fa-lemon"></i> with the <a href="https://github.com/quarto-ext/fontawesome">Font Awesome extension</a>. Just surround the Font Awesome icon name in <code>{{&lt;</code> and <code>&gt;}}</code>.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>input</th>
+<th style="text-align: center;">output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>{{&lt; fa brands apple &gt;}}</code></td>
+<td style="text-align: center;"><p><i class="fa-brands fa-apple"></i></p></td>
+</tr>
+<tr class="even">
+<td><code>{{&lt; fa calendar &gt;}}</code></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-calendar"></i></p></td>
+</tr>
+<tr class="odd">
+<td><code>{{&lt; fa user-doctor &gt;}}</code></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-user-doctor"></i></p></td>
+</tr>
+<tr class="even">
+<td><code>{{&lt; fa door-closed &gt;}}</code></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-door-closed"></i></p></td>
+</tr>
+</tbody>
+</table>
+<p>To use this extension run the following in your terminal in the Quarto project you want to use these icons.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension quarto-ext/fontawesome</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will prompt you to answer if you trust the extension, and you should decide that for yourself. This particular extension is developed by the Quarto development team. Once you say yes, the extension will be installed in an <code>_extensions</code> subdirectory.</p>
+<p>A few notes on this extension:</p>
 <ul>
-<li><code>fragment</code>: Display output as a <a href="https://quarto.org/docs/presentations/revealjs/advanced.html#fragments">fragment</a>, i.e., delay showing it until it is explicitly stepped through by advancing the slides.</li>
-<li><code>slide</code>: Display output on the subsequent slide.</li>
-<li><code>column</code>: Display output in a column adjacent to the code. This splits the slide into two columns, each of which span 50% of the width of the slide</li>
-<li><code>column-fragment</code>: Display output in a column adjacent to the code and delay showing it until its explicitly stepped through by advancing the slides.</li>
+<li>Icons can be used in both HTML and PDF output.</li>
+<li>Only the free Font Awesome icons are supported: <a href="https://fontawesome.com/search?m=free" class="uri">https://fontawesome.com/search?m=free</a>.</li>
+<li>If you’re using version control, you should check in the <code>_extensions</code> directory.</li>
 </ul>
-<p>You can see these in action in the slide deck below.</p>
-<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="output-location.html"></iframe>
-<p>Note that for the column options I also adjusted <code>fig-height</code> and <code>fig-width</code> since the default size and aspect ration doesn’t work well for figures spanning only half the width of the slide.</p>
-</section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p><a href="https://quarto.org/docs/presentations/revealjs/#output-location">Output location</a></p>
+<ul>
+<li><a href="https://github.com/quarto-ext/fontawesome">Font Awesome Extension for Quarto</a></li>
+<li><a href="https://quarto.org/docs/extensions/">Using Extensions</a></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
