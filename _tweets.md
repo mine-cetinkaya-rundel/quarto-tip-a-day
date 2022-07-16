@@ -245,3 +245,13 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/17-dar
 \[insert-image\]
 
 alt-text: Switching between light and dark mode using the toggle on the blog homepage navbar.
+
+------------------------------------------------------------------------
+
+#quartotip 18: Including Font Awesome icons in Quarto documents is now easy peasy lemon squeezy 🍋 with the Font Awesome extension.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/18-font-awesome/
+
+\[insert-image\]
+
+alt-text: Code for installing the Font Awesome extension for Quarto: quarto install extension quarto-ext/fontawesome and a table that shows the input syntax and output icon for the icons brands apple, calendar, user-doctor, and door-closed.
