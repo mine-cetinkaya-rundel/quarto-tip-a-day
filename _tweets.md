@@ -255,3 +255,16 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/18-fon
 \[insert-image\]
 
 alt-text: Code for installing the Font Awesome extension for Quarto: quarto install extension quarto-ext/fontawesome and a table that shows the input syntax and output icon for the icons brands apple, calendar, user-doctor, and door-closed.
+
+------------------------------------------------------------------------
+
+#quartotip 19: Need some Quarto inspiration?
+Want to see examples of what others are creating with Quarto?
+And importantly, *how* they're creating them?
+Take a look at the newly refreshed Quarto Gallery.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gallery/
+
+\[insert-image\]
+
+alt-text: Scrolling through the Quarto Gallery at quarto.org/docs/gallery.
