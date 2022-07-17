@@ -6,7 +6,7 @@ image: "featured.png"
 image-alt: "Code for installing the Font Awesome extension for Quarto: quarto install extension quarto-ext/fontawesome and a table that shows the input syntax and output icon for the icons brands apple, calendar, user-doctor, and door-closed."
 ---
 
-# **Font Awesome**
+## **Font Awesome**
 
 Including Font Awesome icons in Quarto documents is now easy peasy lemon squeezy {{< fa lemon >}} with the [Font Awesome extension](https://github.com/quarto-ext/fontawesome).
 Just surround the Font Awesome icon name in `{{<` and `>}}`.
