@@ -1,7 +1,7 @@
 ---
 title: "Quarto on Homebrew"
 date: "2022-07-10"
-categories: [install, update, homebrew]
+categories: [installation, homebrew]
 image: "featured.png"
 image-alt: "On top, the homebrew logo, an orange heart, and the Quarto logo. Underneath the code for two options for installation via Homebrew. Option 1 is brew install –cask quarto. Option 2 is brew tap rundel/quarto-cli followed by brew install quarto. And at the bottom the code for updating Quarto with Homebrew: brew upgrade quarto. The complete code can be found in the blog post."
 ---
