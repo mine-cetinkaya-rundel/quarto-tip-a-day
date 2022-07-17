@@ -10,7 +10,49 @@
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
 <generator>quarto-1.0.28</generator>
-<lastBuildDate>Fri, 15 Jul 2022 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 16 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Quarto Gallery</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gallery/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="quarto-gallery" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-gallery">Quarto Gallery</h2>
+<p>Need some Quarto inspiration? Want to see examples of what others are creating with Quarto? And importantly, <em>how</em> they’re creating them? Take a look at the newly refreshed <a href="https://quarto.org/docs/gallery/">Quarto Gallery</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://quarto.org/docs/gallery/"><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gallery/featured.gif" class="img-fluid figure-img" alt="Scrolling through the Quarto Gallery"></a></p>
+</figure>
+</div>
+<p>The Quarto Gallery contains examples of</p>
+<ul>
+<li><a href="https://quarto.org/docs/gallery/#articles-reports">articles and reports</a>,</li>
+<li><a href="https://quarto.org/docs/gallery/#presentations">presentations</a>,</li>
+<li><a href="https://quarto.org/docs/gallery/#interactive-documents">interactive documents</a>,</li>
+<li><a href="https://quarto.org/docs/gallery/#websites">websites</a>, and</li>
+<li><a href="https://quarto.org/docs/gallery/#books">books</a>.</li>
+</ul>
+<p>Each example on the gallery links to its source code, which you can peruse for inspiration or to learn how others have achieved a particular look or functionality.</p>
+<p>If you plan on reusing any of the content from the gallery, make sure to check out the license of the document/project first!</p>
+<p>And if you have Quarto artifacts you’d like to share with others on the gallery, and the source code for that project is publicly available, let us know in a <a href="https://github.com/quarto-dev/quarto-web/discussions">discussion post</a> or an <a href="https://github.com/quarto-dev/quarto-web/issues">issue</a> on the Quarto documentation repo.</p>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/gallery/">Quarto Gallery</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>documentation</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gallery/index.html</guid>
+  <pubDate>Sat, 16 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gallery/featured.gif" medium="image" type="image/gif"/>
+</item>
 <item>
   <title>Font Awesome</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -20,8 +62,8 @@
 
 
 
-<section id="font-awesome" class="level1">
-<h1><strong>Font Awesome</strong></h1>
+<section id="font-awesome" class="level2">
+<h2 class="anchored" data-anchor-id="font-awesome"><strong>Font Awesome</strong></h2>
 <p>Including Font Awesome icons in Quarto documents is now easy peasy lemon squeezy <i class="fa-solid fa-lemon"></i> with the <a href="https://github.com/quarto-ext/fontawesome">Font Awesome extension</a>. Just surround the Font Awesome icon name in <code>{{&lt;</code> and <code>&gt;}}</code>.</p>
 <table class="table">
 <thead>
@@ -58,6 +100,7 @@
 <li>Only the free Font Awesome icons are supported: <a href="https://fontawesome.com/search?m=free" class="uri">https://fontawesome.com/search?m=free</a>.</li>
 <li>If you’re using version control, you should check in the <code>_extensions</code> directory.</li>
 </ul>
+</section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
 <ul>
@@ -66,7 +109,6 @@
 </ul>
 
 
-</section>
 </section>
 
  ]]></description>
@@ -844,12 +886,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-8369051" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-350732" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-8369051-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-8369051" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-350732-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-350732" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -900,7 +942,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-8369051-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-8369051" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-350732-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-350732" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>

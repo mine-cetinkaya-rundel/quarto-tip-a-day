@@ -266,11 +266,32 @@
     "text": "Learn more\nDark mode"
   },
   {
+    "objectID": "posts/19-gallery/index.html",
+    "href": "posts/19-gallery/index.html",
+    "title": "Quarto Gallery",
+    "section": "",
+    "text": "Need some Quarto inspiration? Want to see examples of what others are creating with Quarto? And importantly, how they’re creating them? Take a look at the newly refreshed Quarto Gallery.\n\n\n\n\n\nThe Quarto Gallery contains examples of\n\narticles and reports,\npresentations,\ninteractive documents,\nwebsites, and\nbooks.\n\nEach example on the gallery links to its source code, which you can peruse for inspiration or to learn how others have achieved a particular look or functionality.\nIf you plan on reusing any of the content from the gallery, make sure to check out the license of the document/project first!\nAnd if you have Quarto artifacts you’d like to share with others on the gallery, and the source code for that project is publicly available, let us know in a discussion post or an issue on the Quarto documentation repo."
+  },
+  {
+    "objectID": "posts/19-gallery/index.html#learn-more",
+    "href": "posts/19-gallery/index.html#learn-more",
+    "title": "Quarto Gallery",
+    "section": "Learn more",
+    "text": "Learn more\nQuarto Gallery"
+  },
+  {
     "objectID": "posts/18-font-awesome/index.html",
     "href": "posts/18-font-awesome/index.html",
     "title": "Font Awesome",
     "section": "",
-    "text": "Including Font Awesome icons in Quarto documents is now easy peasy lemon squeezy  with the Font Awesome extension. Just surround the Font Awesome icon name in {{< and >}}.\n\n\n\ninput\noutput\n\n\n\n\n{{< fa brands apple >}}\n\n\n\n{{< fa calendar >}}\n\n\n\n{{< fa user-doctor >}}\n\n\n\n{{< fa door-closed >}}\n\n\n\n\nTo use this extension run the following in your terminal in the Quarto project you want to use these icons.\nquarto install extension quarto-ext/fontawesome\nThis will prompt you to answer if you trust the extension, and you should decide that for yourself. This particular extension is developed by the Quarto development team. Once you say yes, the extension will be installed in an _extensions subdirectory.\nA few notes on this extension:\n\nIcons can be used in both HTML and PDF output.\nOnly the free Font Awesome icons are supported: https://fontawesome.com/search?m=free.\nIf you’re using version control, you should check in the _extensions directory.\n\n\n\n\nFont Awesome Extension for Quarto\nUsing Extensions"
+    "text": "Including Font Awesome icons in Quarto documents is now easy peasy lemon squeezy  with the Font Awesome extension. Just surround the Font Awesome icon name in {{< and >}}.\n\n\n\ninput\noutput\n\n\n\n\n{{< fa brands apple >}}\n\n\n\n{{< fa calendar >}}\n\n\n\n{{< fa user-doctor >}}\n\n\n\n{{< fa door-closed >}}\n\n\n\n\nTo use this extension run the following in your terminal in the Quarto project you want to use these icons.\nquarto install extension quarto-ext/fontawesome\nThis will prompt you to answer if you trust the extension, and you should decide that for yourself. This particular extension is developed by the Quarto development team. Once you say yes, the extension will be installed in an _extensions subdirectory.\nA few notes on this extension:\n\nIcons can be used in both HTML and PDF output.\nOnly the free Font Awesome icons are supported: https://fontawesome.com/search?m=free.\nIf you’re using version control, you should check in the _extensions directory."
+  },
+  {
+    "objectID": "posts/18-font-awesome/index.html#learn-more",
+    "href": "posts/18-font-awesome/index.html#learn-more",
+    "title": "Font Awesome",
+    "section": "Learn more",
+    "text": "Learn more\n\nFont Awesome Extension for Quarto\nUsing Extensions"
   },
   {
     "objectID": "posts/08-rmd-switch/index.html",
@@ -319,6 +340,6 @@
     "href": "index.html",
     "title": "A Quarto tip a day",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 15, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 13, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 12, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 11, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 15, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 13, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 12, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 11, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
