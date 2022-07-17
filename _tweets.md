@@ -268,3 +268,18 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gal
 \[insert-image\]
 
 alt-text: Scrolling through the Quarto Gallery at quarto.org/docs/gallery.
+
+------------------------------------------------------------------------
+
+#quartotip 20: YAML intelligence, including completion and diagnostics, make writing project files, YAML front matter, and executable cell options easy for experts and new learners.
+Available in the RStudio IDE and in VS Code!
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/
+
+\[insert-image\]
+
+alt-text: Three code chunks with YAML chunk options being edited.
+The first one showcases YAML completion for fields \-- typing e brings up options that start with e.
+The second one showcases YAML completion for options \-- eval can be set to true or false.
+The third one showcases diagnostics that are provided in the case of errors \-- setting eval to FALSE (with capital letters) prompts a message that says it should be true or false.
+
