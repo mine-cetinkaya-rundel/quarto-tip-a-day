@@ -261,7 +261,7 @@ alt-text: Code for installing the Font Awesome extension for Quarto: quarto inst
 #quartotip 19: Need some Quarto inspiration?
 Want to see examples of what others are creating with Quarto?
 And importantly, *how* they're creating them?
-Take a look at the newly refreshed Quarto Gallery.
+Take a look at the newly refreshed Quarto Gallery!
 
 Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gallery/
 
