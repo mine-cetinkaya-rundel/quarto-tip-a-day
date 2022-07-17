@@ -1,0 +1,34 @@
+---
+title: "Quarto Gallery"
+date: "2022-07-16"
+categories: [documentation]
+image: "featured.gif"
+image-alt: "Scrolling through the Quarto Gallery at quarto.org/docs/gallery."
+---
+
+## Quarto Gallery
+
+Need some Quarto inspiration?
+Want to see examples of what others are creating with Quarto?
+And importantly, *how* they're creating them?
+Take a look at the newly refreshed [Quarto Gallery](https://quarto.org/docs/gallery/).
+
+[![](featured.gif){fig-alt="Scrolling through the Quarto Gallery" fig-align="center"}](https://quarto.org/docs/gallery/)
+
+The Quarto Gallery contains examples of
+
+-   [articles and reports](https://quarto.org/docs/gallery/#articles-reports),
+-   [presentations](https://quarto.org/docs/gallery/#presentations),
+-   [interactive documents](https://quarto.org/docs/gallery/#interactive-documents),
+-   [websites](https://quarto.org/docs/gallery/#websites), and
+-   [books](https://quarto.org/docs/gallery/#books).
+
+Each example on the gallery links to its source code, which you can peruse for inspiration or to learn how others have achieved a particular look or functionality.
+
+If you plan on reusing any of the content from the gallery, make sure to check out the license of the document/project first!
+
+And if you have Quarto artifacts you'd like to share with others on the gallery, and the source code for that project is publicly available, let us know in a [discussion post](https://github.com/quarto-dev/quarto-web/discussions) or an [issue](https://github.com/quarto-dev/quarto-web/issues) on the Quarto documentation repo.
+
+## Learn more
+
+[Quarto Gallery](https://quarto.org/docs/gallery/)
