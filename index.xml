@@ -10,7 +10,62 @@
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
 <generator>quarto-1.0.28</generator>
-<lastBuildDate>Sat, 16 Jul 2022 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 17 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>YAML intelligence</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Quarto offers extensive YAML intelligence (completion and diagnostics) in the RStudio IDE and in VS Code for project files, YAML front matter, and executable cell options. This makes it easier to write YAML, whether you’re an expert or just starting to learn.</p>
+<section id="yaml-completion" class="level2">
+<h2 class="anchored" data-anchor-id="yaml-completion">YAML completion</h2>
+<p>For example, let’s say you have a code chunk in your document and you don’t want it to be evaluated. The chunk option you should set is <code>eval</code> and it should be set to <code>false</code>. If you’re coming from R Markdown, you might be used to seeing this as <code>eval = FALSE</code>, but in YAMl style this option should be defined as <code>eval: false</code>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/eval-false.gif" class="img-fluid figure-img" alt="Code chunk with code 1 + 1. YAML style chunk option to set eval to false is added using tab completion."></p>
+</figure>
+</div>
+<p>This is super helpful when you just want to browse through all chunk options to see what’s available as well as when you can’t remember the full name of a chunk option, but remember a piece of it, e.g., <code>fig-</code>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/fig-options.png" class="img-fluid figure-img" alt="Code chunk with code plot(cars). Chunk option starting with fig- is added and tab completion brings up all chunk options starting with this character string: fig-align, fig-alt, fig-asp, fig-cap-location, fig-cap, fig-column, etc."></p>
+</figure>
+</div>
+<p>YAML completion works in <code>.yml</code> files as well.</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/quarto-yml.gif" class="img-fluid" alt="Writing a _quarto.yml from scratch. Typing the letter pr brings up project as a yaml field. A line break and then tab brings up various yaml fields available under project. type is chosen and set to website using yaml completion. In the next line website is typed as the yaml field. Moving to the next line and tabbing brings up various yaml fields as options under website. title is chosen and website title is set to Website Title. In the next line, tabbing again brings up key/value pair as an option. key is defined as left and underneath it in list form index.qmd and about.qmd are added."></p>
+</section>
+<section id="yaml-diagnostics" class="level2">
+<h2 class="anchored" data-anchor-id="yaml-diagnostics">YAML diagnostics</h2>
+<p>YAML intelligence isn’t limited to code completion. If you have incorrect YAML it will also be highlighted when documents are saved. For example, if you typed <code>eval: FALSE</code> instead of <code>eval: false</code>, you’ll see the following.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/eval-FALSE.png" class="img-fluid figure-img" alt="Chunk option defined as eval: FALSE. The word FALSE is underlined in red. A red X next to the code chunk gives the warning Key eval has value FALSE, which must be `true` or `false`. (Try using false instead.)"></p>
+</figure>
+</div>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<ul>
+<li><p><a href="https://quarto.org/docs/tools/rstudio.html#yaml-intelligence">RStudio IDE YAML intelligence</a></p></li>
+<li><p><a href="https://quarto.org/docs/tools/vscode.html#yaml-intelligence">VSCode YAML intelligence</a></p></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>code</category>
+  <category>execution</category>
+  <category>yaml</category>
+  <category>teaching</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/index.html</guid>
+  <pubDate>Sun, 17 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Quarto Gallery</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -885,12 +940,12 @@
 <span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
 <span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
 <span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-3031923" class="cell tbl-parent quarto-layout-panel anchored">
+<div id="tbl-anonymous-6527419" class="cell tbl-parent quarto-layout-panel anchored">
 <div class="panel-caption table-caption">
 <p>Two tables</p>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-3031923-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-3031923" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-6527419-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-6527419" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>mtcars</caption>
 <thead>
@@ -941,7 +996,7 @@
 </tbody>
 </table>
 </div>
-<div id="tbl-anonymous-3031923-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-3031923" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-anonymous-6527419-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-6527419" style="flex-basis: 50.0%;justify-content: center;">
 <table class="table table-sm table-striped">
 <caption>Just cars</caption>
 <thead>
