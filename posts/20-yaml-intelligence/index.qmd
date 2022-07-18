@@ -35,7 +35,6 @@ For example, if you typed `eval: FALSE` instead of `eval: false`, you'll see the
 
 ## Learn more
 
--   RStudio IDE YAML intelligence -- TO DO: Add link
+-   [RStudio IDE YAML intelligence](https://quarto.org/docs/tools/rstudio.html#yaml-intelligence)
 
 -   [VSCode YAML intelligence](https://quarto.org/docs/tools/vscode.html#yaml-intelligence)
-
