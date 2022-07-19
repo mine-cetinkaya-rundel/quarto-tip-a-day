@@ -71,27 +71,34 @@
 </div>
 <p>Note that diagrams can be treated as figures, with chunk options like <code>fig-width</code> and <code>fig-cap</code>. And prefixing the <code>label</code> with <code>fig-</code> allows us to cross-reference it and for the diagram to get figure numbering.</p>
 <p>And Figure Figure&nbsp;2 is the Graphviz version of this diagram. Note that it uses a different engine: <code>dot</code>.</p>
-<div class="cell">
+<div class="cell" data-fig-width="6">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="in" style="color: #5E5E5E;">```{dot}</span></span>
 <span id="cb2-2">//| label: fig<span class="ot" style="color: #003B4F;">-d</span>ot</span>
-<span id="cb2-3">graph G {</span>
-<span id="cb2-4">  layout=neato</span>
-<span id="cb2-5">  qmd -- Knitr;</span>
-<span id="cb2-6">  qmd -- Jupyter;</span>
-<span id="cb2-7">  Knitr -- md;</span>
-<span id="cb2-8">  Jupyter -- md;</span>
-<span id="cb2-9">  md -- pandoc;</span>
-<span id="cb2-10">  pandoc -- HTML;</span>
-<span id="cb2-11">  pandoc -- PDF;</span>
-<span id="cb2-12">  pandoc -- Word;</span>
-<span id="cb2-13">  pandoc -- more;</span>
-<span id="cb2-14">}</span>
-<span id="cb2-15"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+<span id="cb2-3">//| fig<span class="ot" style="color: #003B4F;">-w</span>idth: <span class="dv" style="color: #AD0000;">6</span></span>
+<span id="cb2-4">//| fig<span class="ot" style="color: #003B4F;">-c</span>ap: |</span>
+<span id="cb2-5">//|   How Quarto orchestrates rendering of documents: start with </span>
+<span id="cb2-6">//|   a qmd file, <span class="fu" style="color: #4758AB;">use</span> the Knitr <span class="ot" style="color: #003B4F;">or</span> Jupyter engine to perform the </span>
+<span id="cb2-7">//|   computations <span class="ot" style="color: #003B4F;">and</span> convert it to an md file, then <span class="fu" style="color: #4758AB;">use</span> Pandoc </span>
+<span id="cb2-8">//|   to convert to various file formats including HTML, PDF, </span>
+<span id="cb2-9">//|   <span class="ot" style="color: #003B4F;">and</span> Word.</span>
+<span id="cb2-10">graph G {</span>
+<span id="cb2-11">  layout=neato</span>
+<span id="cb2-12">  qmd -- Knitr;</span>
+<span id="cb2-13">  qmd -- Jupyter;</span>
+<span id="cb2-14">  Knitr -- md;</span>
+<span id="cb2-15">  Jupyter -- md;</span>
+<span id="cb2-16">  md -- pandoc;</span>
+<span id="cb2-17">  pandoc -- HTML;</span>
+<span id="cb2-18">  pandoc -- PDF;</span>
+<span id="cb2-19">  pandoc -- Word;</span>
+<span id="cb2-20">  pandoc -- more;</span>
+<span id="cb2-21">}</span>
+<span id="cb2-22"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
 <div class="cell-output-display">
 <div id="fig-dot" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p>
-<svg width="245pt" height="327pt" viewbox="0.00 0.00 245.08 327.34" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+<svg width="576" height="769" viewbox="0.00 0.00 245.08 327.34" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 323.34)">
 <title>
 G
@@ -171,7 +178,7 @@ pandoc–more
 <path fill="none" stroke="black" d="M137.97,-78.89C145.9,-70.6 155.42,-60.63 163.22,-52.47"></path> </g> </g>
 </svg>
 </p>
-<p></p><figcaption class="figure-caption">Figure 2: <strong>?(caption)</strong></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure 2: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.</figcaption><p></p>
 </figure>
 </div>
 </div>
