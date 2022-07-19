@@ -1,5 +1,5 @@
 ---
-title: "YAML intelligence"
+title: "Diagrams"
 date: "2022-07-18"
 categories: [diagrams]
 image: "featured.png"
