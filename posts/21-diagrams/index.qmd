@@ -38,11 +38,12 @@ flowchart LR
 Note that diagrams can be treated as figures, with chunk options like `fig-width` and `fig-cap`.
 And prefixing the `label` with `fig-` allows us to cross-reference it and for the diagram to get figure numbering.
 
-And below is the Graphviz version of this diagram.
+And Figure @fig-dot is the Graphviz version of this diagram.
 Note that it uses a different engine: `dot`.
 
 ```{dot}
 //| echo: fenced
+//| label: fig-dot
 graph G {
   layout=neato
   qmd -- Knitr;
