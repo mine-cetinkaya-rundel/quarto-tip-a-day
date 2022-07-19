@@ -9,8 +9,192 @@
 <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</link>
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
-<generator>quarto-1.0.28</generator>
-<lastBuildDate>Sun, 17 Jul 2022 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.0.32</generator>
+<lastBuildDate>Mon, 18 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>YAML intelligence</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/21-diagrams/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="diagrams" class="level2">
+<h2 class="anchored" data-anchor-id="diagrams">Diagrams</h2>
+<p>Quarto supports creating diagrams (flow charts, sequence diagrams, etc.) in with <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a> and <a href="https://graphviz.org/">Graphviz</a>.</p>
+<p>To create a diagram with Mermaid, use a <code>mermaid</code> chunk. For example, Figure Figure&nbsp;1 depicts how Quarto orchestrates rendering of documents.</p>
+<div class="cell" data-fig-width="6">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;">```{mermaid}</span></span>
+<span id="cb1-2">%%| label: fig-mermaid</span>
+<span id="cb1-3">%%| fig<span class="ot" style="color: #003B4F;">-w</span>idth: <span class="dv" style="color: #AD0000;">6</span></span>
+<span id="cb1-4">%%| fig<span class="ot" style="color: #003B4F;">-c</span>ap: |</span>
+<span id="cb1-5">%%|   How Quarto orchestrates rendering of documents: start with </span>
+<span id="cb1-6">%%|   a qmd file, <span class="fu" style="color: #4758AB;">use</span> the Knitr <span class="ot" style="color: #003B4F;">or</span> Jupyter engine to perform the </span>
+<span id="cb1-7">%%|   computations <span class="ot" style="color: #003B4F;">and</span> convert it to an md file, then <span class="fu" style="color: #4758AB;">use</span> Pandoc </span>
+<span id="cb1-8">%%|   to convert to various file formats including HTML, PDF, </span>
+<span id="cb1-9">%%|   <span class="ot" style="color: #003B4F;">and</span> Word.</span>
+<span id="cb1-10">flowchart LR</span>
+<span id="cb1-11">  A[qmd] --&gt; B(Knitr)</span>
+<span id="cb1-12">  A[qmd] --&gt; C(Jupyter)</span>
+<span id="cb1-13">  B(Knitr) --&gt; D[md]</span>
+<span id="cb1-14">  C(Jupyter) --&gt; D[md]</span>
+<span id="cb1-15">  D[md] --&gt; E(pandoc)</span>
+<span id="cb1-16">  E(pandoc) --&gt; F(HTML)</span>
+<span id="cb1-17">  E(pandoc) --&gt; G(PDF)</span>
+<span id="cb1-18">  E(pandoc) --&gt; H(Word)</span>
+<span id="cb1-19">  E(pandoc) --&gt; I{<span class="ot" style="color: #003B4F;">and</span> more}</span>
+<span id="cb1-20"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+<div class="cell-output-display">
+<div id="fig-mermaid" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+  A[qmd] --&gt; B(Knitr)
+  A[qmd] --&gt; C(Jupyter)
+  B(Knitr) --&gt; D[md]
+  C(Jupyter) --&gt; D[md]
+  D[md] --&gt; E(pandoc)
+  E(pandoc) --&gt; F(HTML)
+  E(pandoc) --&gt; G(PDF)
+  E(pandoc) --&gt; H(Word)
+  E(pandoc) --&gt; I{and more}
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+<p></p><figcaption class="figure-caption">Figure 1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Note that diagrams can be treated as figures, with chunk options like <code>fig-width</code> and <code>fig-cap</code>. And prefixing the <code>label</code> with <code>fig-</code> allows us to cross-reference it and for the diagram to get figure numbering.</p>
+<p>And below is the Graphviz version of this diagram. Note that it uses a different engine: <code>dot</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="in" style="color: #5E5E5E;">```{dot}</span></span>
+<span id="cb2-2">graph G {</span>
+<span id="cb2-3">  layout=neato</span>
+<span id="cb2-4">  qmd -- Knitr;</span>
+<span id="cb2-5">  qmd -- Jupyter;</span>
+<span id="cb2-6">  Knitr -- md;</span>
+<span id="cb2-7">  Jupyter -- md;</span>
+<span id="cb2-8">  md -- pandoc;</span>
+<span id="cb2-9">  pandoc -- HTML;</span>
+<span id="cb2-10">  pandoc -- PDF;</span>
+<span id="cb2-11">  pandoc -- Word;</span>
+<span id="cb2-12">  pandoc -- more;</span>
+<span id="cb2-13">}</span>
+<span id="cb2-14"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+<div class="cell-output-display">
+<div>
+<p>
+<svg width="245pt" height="327pt" viewbox="0.00 0.00 245.08 327.34" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 323.34)">
+<title>
+G
+</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-323.34 241.08,-323.34 241.08,4 -4,4"></polygon> <!-- qmd --> <g id="node1" class="node">
+<title>
+qmd
+</title>
+<ellipse fill="none" stroke="black" cx="69.62" cy="-301.34" rx="28.41" ry="18"></ellipse> <text text-anchor="middle" x="69.62" y="-297.14" font-family="Times,serif" font-size="14.00">qmd</text> </g> <!-- Knitr --> <g id="node2" class="node">
+<title>
+Knitr
+</title>
+<ellipse fill="none" stroke="black" cx="132.13" cy="-252.75" rx="31.34" ry="18"></ellipse> <text text-anchor="middle" x="132.13" y="-248.55" font-family="Times,serif" font-size="14.00">Knitr</text> </g> <!-- qmd&#45;&#45;Knitr --> <g id="edge1" class="edge">
+<title>
+qmd–Knitr
+</title>
+<path fill="none" stroke="black" d="M87.7,-287.28C95.78,-281 105.29,-273.61 113.44,-267.28"></path> </g> <!-- Jupyter --> <g id="node3" class="node">
+<title>
+Jupyter
+</title>
+<ellipse fill="none" stroke="black" cx="39.47" cy="-228.46" rx="39.43" ry="18"></ellipse> <text text-anchor="middle" x="39.47" y="-224.26" font-family="Times,serif" font-size="14.00">Jupyter</text> </g> <!-- qmd&#45;&#45;Jupyter --> <g id="edge2" class="edge">
+<title>
+qmd–Jupyter
+</title>
+<path fill="none" stroke="black" d="M62.32,-283.69C57.62,-272.32 51.52,-257.58 46.8,-246.19"></path> </g> <!-- md --> <g id="node4" class="node">
+<title>
+md
+</title>
+<ellipse fill="none" stroke="black" cx="102.7" cy="-177.2" rx="27" ry="18"></ellipse> <text text-anchor="middle" x="102.7" y="-173" font-family="Times,serif" font-size="14.00">md</text> </g> <!-- Knitr&#45;&#45;md --> <g id="edge3" class="edge">
+<title>
+Knitr–md
+</title>
+<path fill="none" stroke="black" d="M125.16,-234.84C120.43,-222.72 114.21,-206.76 109.52,-194.72"></path> </g> <!-- Jupyter&#45;&#45;md --> <g id="edge4" class="edge">
+<title>
+Jupyter–md
+</title>
+<path fill="none" stroke="black" d="M59.12,-212.52C67.54,-205.71 77.27,-197.82 85.4,-191.22"></path> </g> <!-- pandoc --> <g id="node5" class="node">
+<title>
+pandoc
+</title>
+<ellipse fill="none" stroke="black" cx="121.99" cy="-95.61" rx="38.85" ry="18"></ellipse> <text text-anchor="middle" x="121.99" y="-91.41" font-family="Times,serif" font-size="14.00">pandoc</text> </g> <!-- md&#45;&#45;pandoc --> <g id="edge5" class="edge">
+<title>
+md–pandoc
+</title>
+<path fill="none" stroke="black" d="M106.98,-159.1C110.18,-145.58 114.53,-127.18 117.72,-113.67"></path> </g> <!-- HTML --> <g id="node6" class="node">
+<title>
+HTML
+</title>
+<ellipse fill="none" stroke="black" cx="41.87" cy="-72.53" rx="38.29" ry="18"></ellipse> <text text-anchor="middle" x="41.87" y="-68.33" font-family="Times,serif" font-size="14.00">HTML</text> </g> <!-- pandoc&#45;&#45;HTML --> <g id="edge6" class="edge">
+<title>
+pandoc–HTML
+</title>
+<path fill="none" stroke="black" d="M88.94,-86.09C84.2,-84.72 79.32,-83.32 74.59,-81.96"></path> </g> <!-- PDF --> <g id="node7" class="node">
+<title>
+PDF
+</title>
+<ellipse fill="none" stroke="black" cx="96.57" cy="-18" rx="28.51" ry="18"></ellipse> <text text-anchor="middle" x="96.57" y="-13.8" font-family="Times,serif" font-size="14.00">PDF</text> </g> <!-- pandoc&#45;&#45;PDF --> <g id="edge7" class="edge">
+<title>
+pandoc–PDF
+</title>
+<path fill="none" stroke="black" d="M116.1,-77.61C111.96,-64.98 106.46,-48.18 102.35,-35.64"></path> </g> <!-- Word --> <g id="node8" class="node">
+<title>
+Word
+</title>
+<ellipse fill="none" stroke="black" cx="204.05" cy="-110.52" rx="33.05" ry="18"></ellipse> <text text-anchor="middle" x="204.05" y="-106.32" font-family="Times,serif" font-size="14.00">Word</text> </g> <!-- pandoc&#45;&#45;Word --> <g id="edge8" class="edge">
+<title>
+pandoc–Word
+</title>
+<path fill="none" stroke="black" d="M158.23,-102.2C163.03,-103.07 167.93,-103.96 172.65,-104.82"></path> </g> <!-- more --> <g id="node9" class="node">
+<title>
+more
+</title>
+<ellipse fill="none" stroke="black" cx="178.27" cy="-36.72" rx="30.76" ry="18"></ellipse> <text text-anchor="middle" x="178.27" y="-32.52" font-family="Times,serif" font-size="14.00">more</text> </g> <!-- pandoc&#45;&#45;more --> <g id="edge9" class="edge">
+<title>
+pandoc–more
+</title>
+<path fill="none" stroke="black" d="M137.97,-78.89C145.9,-70.6 155.42,-60.63 163.22,-52.47"></path> </g> </g>
+</svg>
+</p>
+</div>
+</div>
+</div>
+<p>Couple of notes on creating diagrams with Quarto:</p>
+<ul>
+<li>For Mermaid diagrams, use <code>%%|</code> for chunk options. For Graphviz, use <code>//|</code>.</li>
+<li>The online editors for Mermaid and Graphviz are very helpful for interactively developing the code for a diagram:
+<ul>
+<li><p><a href="https://mermaid.live/">Mermaid Live Editor</a></p></li>
+<li><p><a href="https://dreampuf.github.io/GraphvizOnline/">Graphviz Online</a></p></li>
+</ul></li>
+</ul>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/authoring/diagrams.html">Diagrams</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>diagrams</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/21-diagrams/index.html</guid>
+  <pubDate>Mon, 18 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/21-diagrams/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>YAML intelligence</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -913,142 +1097,6 @@
   <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/02-fenced-echo/index.html</guid>
   <pubDate>Wed, 29 Jun 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/02-fenced-echo/featured.png" medium="image" type="image/png" height="98" width="144"/>
-</item>
-<item>
-  <title>Side-by-side tables</title>
-  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/01-side-by-side-tables/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="layout-ncol" class="level2">
-<h2 class="anchored" data-anchor-id="layout-ncol"><code>layout-ncol</code></h2>
-<p>Use the <code>layout-ncol</code> chunk option to organize output in columns, e.g., <code>layout-ncol: 2</code> for two tables side-by-side.</p>
-<div>
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;">```{r}</span></span>
-<span id="cb1-2"><span class="co" style="color: #5E5E5E;">#| tbl-cap: Two tables</span></span>
-<span id="cb1-3"><span class="co" style="color: #5E5E5E;">#| tbl-subcap: ["mtcars", "Just cars"]</span></span>
-<span id="cb1-4"><span class="co" style="color: #5E5E5E;">#| layout-ncol: 2</span></span>
-<span id="cb1-5"></span>
-<span id="cb1-6"><span class="fu" style="color: #4758AB;">library</span>(knitr)</span>
-<span id="cb1-7"></span>
-<span id="cb1-8"><span class="co" style="color: #5E5E5E;"># table on the left</span></span>
-<span id="cb1-9"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(mtcars[, <span class="dv" style="color: #AD0000;">1</span><span class="sc" style="color: #5E5E5E;">:</span><span class="dv" style="color: #AD0000;">3</span>]))</span>
-<span id="cb1-10"></span>
-<span id="cb1-11"><span class="co" style="color: #5E5E5E;"># table on the right</span></span>
-<span id="cb1-12"><span class="fu" style="color: #4758AB;">kable</span>(<span class="fu" style="color: #4758AB;">head</span>(cars))</span>
-<span id="cb1-13"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div id="tbl-anonymous-6527419" class="cell tbl-parent quarto-layout-panel anchored">
-<div class="panel-caption table-caption">
-<p>Two tables</p>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div id="tbl-anonymous-6527419-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-6527419" style="flex-basis: 50.0%;justify-content: center;">
-<table class="table table-sm table-striped">
-<caption>mtcars</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: right;">mpg</th>
-<th style="text-align: right;">cyl</th>
-<th style="text-align: right;">disp</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Mazda RX4</td>
-<td style="text-align: right;">21.0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">160</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Mazda RX4 Wag</td>
-<td style="text-align: right;">21.0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">160</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Datsun 710</td>
-<td style="text-align: right;">22.8</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">108</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Hornet 4 Drive</td>
-<td style="text-align: right;">21.4</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">258</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Hornet Sportabout</td>
-<td style="text-align: right;">18.7</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">360</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Valiant</td>
-<td style="text-align: right;">18.1</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">225</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="tbl-anonymous-6527419-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-anonymous-6527419" style="flex-basis: 50.0%;justify-content: center;">
-<table class="table table-sm table-striped">
-<caption>Just cars</caption>
-<thead>
-<tr class="header">
-<th style="text-align: right;">speed</th>
-<th style="text-align: right;">dist</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">10</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">22</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">16</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">10</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="learn-more" class="level2">
-<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p><a href="https://quarto.org/docs/authoring/tables.html#computations">Options for tables produced by executable code cells</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>tables</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/01-side-by-side-tables/index.html</guid>
-  <pubDate>Tue, 28 Jun 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/01-side-by-side-tables/featured.png" medium="image" type="image/png" height="95" width="144"/>
 </item>
 </channel>
 </rss>

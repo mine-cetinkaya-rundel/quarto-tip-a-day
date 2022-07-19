@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mine Çetinkaya-Rundel">
-<meta name="dcterms.date" content="2022-07-10">
+<meta name="dcterms.date" content="2022-07-18">
 
-<title>A Quarto tip a day - Quarto on Homebrew</title>
+<title>A Quarto tip a day - YAML intelligence</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,15 +121,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
-<meta name="twitter:title" content="A Quarto tip a day - Quarto on Homebrew">
-<meta name="twitter:description" content="If you’re a Homebrew person, chances are you’d like to install and update Quarto with Homebrew. There are two options for doing so.">
+<meta name="twitter:title" content="A Quarto tip a day - YAML intelligence">
+<meta name="twitter:description" content="Quarto supports creating diagrams (flow charts, sequence diagrams, etc.) in with Mermaid and Graphviz.">
 <meta name="twitter:image" content="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/images/twitter-card.png">
 <meta name="twitter:creator" content="@quarto_pub">
 <meta name="twitter:image-height" content="600">
 <meta name="twitter:image-width" content="1200">
-<meta name="twitter:image:alt" content="On top, the homebrew logo, an orange heart, and the Quarto logo. Underneath the code for two options for installation via Homebrew. Option 1 is brew install –cask quarto. Option 2 is brew tap rundel/quarto-cli followed by brew install quarto. And at the bottom the code for updating Quarto with Homebrew: brew upgrade quarto. The complete code can be found in the blog post.">
+<meta name="twitter:image:alt" content="Diagram depicting how Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -178,10 +181,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Quarto on Homebrew</h1>
+      <h1 class="title">YAML intelligence</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">installation</div>
-                <div class="quarto-category">homebrew</div>
+                <div class="quarto-category">diagrams</div>
               </div>
                   </div>
   </div>
@@ -199,7 +201,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 10, 2022</p>
+        <p class="date">July 18, 2022</p>
       </div>
     </div>
       
@@ -214,10 +216,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#brew-install-upgrade" id="toc-brew-install-upgrade" class="nav-link active" data-scroll-target="#brew-install-upgrade"><code>brew install / upgrade</code></a></li>
+  <li><a href="#diagrams" id="toc-diagrams" class="nav-link active" data-scroll-target="#diagrams">Diagrams</a></li>
   <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn more</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/13-homebrew/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/21-diagrams/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -225,29 +227,171 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="brew-install-upgrade" class="level2">
-<h2 class="anchored" data-anchor-id="brew-install-upgrade"><code>brew install / upgrade</code></h2>
-<p>If you’re a Homebrew person, chances are you’d like to install and update Quarto with Homebrew. There are two options for doing so.</p>
-<ol type="1">
-<li><p>Using the Quarto cask: This installs the pkg file from latest official <a href="https://github.com/quarto-dev/quarto-cli/releases">Quarto release</a>. One minor pain point with this approach is that each time you update Quarto, you’ll need to enter your user password.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> quarto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Using a private tap: This provides a formula-based version which installs the Quarto files in the typical Homebrew cellar location. With this method, you won’t need to enter your password each time you want to update Quarto, however you are relying on a private tap.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> tap rundel/quarto-cli</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install quarto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-</ol>
-<p>Once you’ve installed Quarto via Homebrew using either method, you can update to the latest release with</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> upgrade quarto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>or it will also update along with other software, when you run <code>brew upgrade</code>.</p>
-<p>A few more notes:</p>
+<section id="diagrams" class="level2">
+<h2 class="anchored" data-anchor-id="diagrams">Diagrams</h2>
+<p>Quarto supports creating diagrams (flow charts, sequence diagrams, etc.) in with <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a> and <a href="https://graphviz.org/">Graphviz</a>.</p>
+<p>To create a diagram with Mermaid, use a <code>mermaid</code> chunk. For example, Figure <a href="#fig-mermaid">Figure&nbsp;1</a> depicts how Quarto orchestrates rendering of documents.</p>
+<div class="cell" data-fig-width="6">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{mermaid}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>%%| label: fig-mermaid</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>%%| fig<span class="ot">-w</span>idth: <span class="dv">6</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>%%| fig<span class="ot">-c</span>ap: |</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>%%|   How Quarto orchestrates rendering of documents: start with </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>%%|   a qmd file, <span class="fu">use</span> the Knitr <span class="ot">or</span> Jupyter engine to perform the </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>%%|   computations <span class="ot">and</span> convert it to an md file, then <span class="fu">use</span> Pandoc </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>%%|   to convert to various file formats including HTML, PDF, </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>%%|   <span class="ot">and</span> Word.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>flowchart LR</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  A[qmd] --&gt; B(Knitr)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  A[qmd] --&gt; C(Jupyter)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  B(Knitr) --&gt; D[md]</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  C(Jupyter) --&gt; D[md]</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  D[md] --&gt; E(pandoc)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  E(pandoc) --&gt; F(HTML)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  E(pandoc) --&gt; G(PDF)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  E(pandoc) --&gt; H(Word)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  E(pandoc) --&gt; I{<span class="ot">and</span> more}</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-mermaid" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+  A[qmd] --&gt; B(Knitr)
+  A[qmd] --&gt; C(Jupyter)
+  B(Knitr) --&gt; D[md]
+  C(Jupyter) --&gt; D[md]
+  D[md] --&gt; E(pandoc)
+  E(pandoc) --&gt; F(HTML)
+  E(pandoc) --&gt; G(PDF)
+  E(pandoc) --&gt; H(Word)
+  E(pandoc) --&gt; I{and more}
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+<p></p><figcaption class="figure-caption">Figure 1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Note that diagrams can be treated as figures, with chunk options like <code>fig-width</code> and <code>fig-cap</code>. And prefixing the <code>label</code> with <code>fig-</code> allows us to cross-reference it and for the diagram to get figure numbering.</p>
+<p>And below is the Graphviz version of this diagram. Note that it uses a different engine: <code>dot</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{dot}</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>graph G {</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  layout=neato</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  qmd -- Knitr;</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  qmd -- Jupyter;</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  Knitr -- md;</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  Jupyter -- md;</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  md -- pandoc;</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  pandoc -- HTML;</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  pandoc -- PDF;</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  pandoc -- Word;</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  pandoc -- more;</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<p>
+<svg width="245pt" height="327pt" viewbox="0.00 0.00 245.08 327.34" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 323.34)">
+<title>
+G
+</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-323.34 241.08,-323.34 241.08,4 -4,4"></polygon> <!-- qmd --> <g id="node1" class="node">
+<title>
+qmd
+</title>
+<ellipse fill="none" stroke="black" cx="69.62" cy="-301.34" rx="28.41" ry="18"></ellipse> <text text-anchor="middle" x="69.62" y="-297.14" font-family="Times,serif" font-size="14.00">qmd</text> </g> <!-- Knitr --> <g id="node2" class="node">
+<title>
+Knitr
+</title>
+<ellipse fill="none" stroke="black" cx="132.13" cy="-252.75" rx="31.34" ry="18"></ellipse> <text text-anchor="middle" x="132.13" y="-248.55" font-family="Times,serif" font-size="14.00">Knitr</text> </g> <!-- qmd&#45;&#45;Knitr --> <g id="edge1" class="edge">
+<title>
+qmd–Knitr
+</title>
+<path fill="none" stroke="black" d="M87.7,-287.28C95.78,-281 105.29,-273.61 113.44,-267.28"></path> </g> <!-- Jupyter --> <g id="node3" class="node">
+<title>
+Jupyter
+</title>
+<ellipse fill="none" stroke="black" cx="39.47" cy="-228.46" rx="39.43" ry="18"></ellipse> <text text-anchor="middle" x="39.47" y="-224.26" font-family="Times,serif" font-size="14.00">Jupyter</text> </g> <!-- qmd&#45;&#45;Jupyter --> <g id="edge2" class="edge">
+<title>
+qmd–Jupyter
+</title>
+<path fill="none" stroke="black" d="M62.32,-283.69C57.62,-272.32 51.52,-257.58 46.8,-246.19"></path> </g> <!-- md --> <g id="node4" class="node">
+<title>
+md
+</title>
+<ellipse fill="none" stroke="black" cx="102.7" cy="-177.2" rx="27" ry="18"></ellipse> <text text-anchor="middle" x="102.7" y="-173" font-family="Times,serif" font-size="14.00">md</text> </g> <!-- Knitr&#45;&#45;md --> <g id="edge3" class="edge">
+<title>
+Knitr–md
+</title>
+<path fill="none" stroke="black" d="M125.16,-234.84C120.43,-222.72 114.21,-206.76 109.52,-194.72"></path> </g> <!-- Jupyter&#45;&#45;md --> <g id="edge4" class="edge">
+<title>
+Jupyter–md
+</title>
+<path fill="none" stroke="black" d="M59.12,-212.52C67.54,-205.71 77.27,-197.82 85.4,-191.22"></path> </g> <!-- pandoc --> <g id="node5" class="node">
+<title>
+pandoc
+</title>
+<ellipse fill="none" stroke="black" cx="121.99" cy="-95.61" rx="38.85" ry="18"></ellipse> <text text-anchor="middle" x="121.99" y="-91.41" font-family="Times,serif" font-size="14.00">pandoc</text> </g> <!-- md&#45;&#45;pandoc --> <g id="edge5" class="edge">
+<title>
+md–pandoc
+</title>
+<path fill="none" stroke="black" d="M106.98,-159.1C110.18,-145.58 114.53,-127.18 117.72,-113.67"></path> </g> <!-- HTML --> <g id="node6" class="node">
+<title>
+HTML
+</title>
+<ellipse fill="none" stroke="black" cx="41.87" cy="-72.53" rx="38.29" ry="18"></ellipse> <text text-anchor="middle" x="41.87" y="-68.33" font-family="Times,serif" font-size="14.00">HTML</text> </g> <!-- pandoc&#45;&#45;HTML --> <g id="edge6" class="edge">
+<title>
+pandoc–HTML
+</title>
+<path fill="none" stroke="black" d="M88.94,-86.09C84.2,-84.72 79.32,-83.32 74.59,-81.96"></path> </g> <!-- PDF --> <g id="node7" class="node">
+<title>
+PDF
+</title>
+<ellipse fill="none" stroke="black" cx="96.57" cy="-18" rx="28.51" ry="18"></ellipse> <text text-anchor="middle" x="96.57" y="-13.8" font-family="Times,serif" font-size="14.00">PDF</text> </g> <!-- pandoc&#45;&#45;PDF --> <g id="edge7" class="edge">
+<title>
+pandoc–PDF
+</title>
+<path fill="none" stroke="black" d="M116.1,-77.61C111.96,-64.98 106.46,-48.18 102.35,-35.64"></path> </g> <!-- Word --> <g id="node8" class="node">
+<title>
+Word
+</title>
+<ellipse fill="none" stroke="black" cx="204.05" cy="-110.52" rx="33.05" ry="18"></ellipse> <text text-anchor="middle" x="204.05" y="-106.32" font-family="Times,serif" font-size="14.00">Word</text> </g> <!-- pandoc&#45;&#45;Word --> <g id="edge8" class="edge">
+<title>
+pandoc–Word
+</title>
+<path fill="none" stroke="black" d="M158.23,-102.2C163.03,-103.07 167.93,-103.96 172.65,-104.82"></path> </g> <!-- more --> <g id="node9" class="node">
+<title>
+more
+</title>
+<ellipse fill="none" stroke="black" cx="178.27" cy="-36.72" rx="30.76" ry="18"></ellipse> <text text-anchor="middle" x="178.27" y="-32.52" font-family="Times,serif" font-size="14.00">more</text> </g> <!-- pandoc&#45;&#45;more --> <g id="edge9" class="edge">
+<title>
+pandoc–more
+</title>
+<path fill="none" stroke="black" d="M137.97,-78.89C145.9,-70.6 155.42,-60.63 163.22,-52.47"></path> </g> </g>
+</svg>
+</p>
+</div>
+</div>
+</div>
+<p>Couple of notes on creating diagrams with Quarto:</p>
 <ul>
-<li><p>You do not need Homebrew to install or update the Quarto CLI. You can always get the latest released version at https://quarto.org/docs/get-started/.</p></li>
-<li><p>If using RStudio, you do not need to install the Quarto CLI separately as RStudio already ships with it. However if you want a different version of Quarto than the one bundled with RStudio, you can use either of the approaches above to install / update it.</p></li>
-<li><p>If you’re interested in the development version of Quarto, you can find installation instructions on the <a href="https://github.com/quarto-dev/quarto-cli#development-version">Quarto CLI repo</a>.</p></li>
+<li>For Mermaid diagrams, use <code>%%|</code> for chunk options. For Graphviz, use <code>//|</code>.</li>
+<li>The online editors for Mermaid and Graphviz are very helpful for interactively developing the code for a diagram:
+<ul>
+<li><p><a href="https://mermaid.live/">Mermaid Live Editor</a></p></li>
+<li><p><a href="https://dreampuf.github.io/GraphvizOnline/">Graphviz Online</a></p></li>
+</ul></li>
 </ul>
 </section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p><a href="https://formulae.brew.sh/cask/quarto">Quarto on Homebrew</a></p>
+<p><a href="https://quarto.org/docs/authoring/diagrams.html">Diagrams</a></p>
 
 
 </section>

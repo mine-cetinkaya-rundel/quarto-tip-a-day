@@ -2,106 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/about.html</loc>
-    <lastmod>2022-07-18T01:04:17.514Z</lastmod>
+    <lastmod>2022-07-19T05:35:30.486Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/21-diagrams/index.html</loc>
+    <lastmod>2022-07-19T05:35:32.898Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/16-code-tools/index.html</loc>
-    <lastmod>2022-07-18T01:04:19.622Z</lastmod>
+    <lastmod>2022-07-19T05:35:33.630Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/01-side-by-side-tables/index.html</loc>
-    <lastmod>2022-07-18T01:04:20.150Z</lastmod>
+    <lastmod>2022-07-19T05:35:34.062Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/11-spans/spans.html</loc>
-    <lastmod>2022-07-18T01:04:20.551Z</lastmod>
+    <lastmod>2022-07-19T05:35:34.414Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/11-spans/index.html</loc>
-    <lastmod>2022-07-18T01:04:21.867Z</lastmod>
+    <lastmod>2022-07-19T05:35:35.610Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/14-slide-zoom/slide-zoom.html</loc>
-    <lastmod>2022-07-18T01:04:22.235Z</lastmod>
+    <lastmod>2022-07-19T05:35:37.990Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/14-slide-zoom/index.html</loc>
-    <lastmod>2022-07-18T01:04:22.687Z</lastmod>
+    <lastmod>2022-07-19T05:35:38.386Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/02-fenced-echo/index.html</loc>
-    <lastmod>2022-07-18T01:04:23.155Z</lastmod>
+    <lastmod>2022-07-19T05:35:38.802Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/index.html</loc>
-    <lastmod>2022-07-18T01:04:23.635Z</lastmod>
+    <lastmod>2022-07-19T05:35:39.194Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/07-slide-annotation/index.html</loc>
-    <lastmod>2022-07-18T01:04:24.079Z</lastmod>
+    <lastmod>2022-07-19T05:35:39.590Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/07-slide-annotation/chalkboard.html</loc>
-    <lastmod>2022-07-18T01:04:24.703Z</lastmod>
+    <lastmod>2022-07-19T05:35:40.162Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/13-homebrew/index.html</loc>
-    <lastmod>2022-07-18T01:04:25.195Z</lastmod>
+    <lastmod>2022-07-19T05:35:40.574Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/03-freeze/index.html</loc>
-    <lastmod>2022-07-18T01:04:25.643Z</lastmod>
+    <lastmod>2022-07-19T05:35:40.998Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/06-listing-contents/index.html</loc>
-    <lastmod>2022-07-18T01:04:26.131Z</lastmod>
+    <lastmod>2022-07-19T05:35:41.390Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/index.html</loc>
-    <lastmod>2022-07-18T01:04:26.575Z</lastmod>
+    <lastmod>2022-07-19T05:35:41.758Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/05-output-location/index.html</loc>
-    <lastmod>2022-07-18T01:04:27.023Z</lastmod>
+    <lastmod>2022-07-19T05:35:42.166Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/05-output-location/output-location.html</loc>
-    <lastmod>2022-07-18T01:04:27.411Z</lastmod>
+    <lastmod>2022-07-19T05:35:42.502Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/10-site-resources/index.html</loc>
-    <lastmod>2022-07-18T01:04:27.867Z</lastmod>
+    <lastmod>2022-07-19T05:35:42.926Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/index.html</loc>
-    <lastmod>2022-07-18T01:04:28.355Z</lastmod>
+    <lastmod>2022-07-19T05:35:43.314Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/17-dark-mode/index.html</loc>
-    <lastmod>2022-07-18T01:04:28.795Z</lastmod>
+    <lastmod>2022-07-19T05:35:43.698Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gallery/index.html</loc>
-    <lastmod>2022-07-18T01:04:29.271Z</lastmod>
+    <lastmod>2022-07-19T05:35:44.086Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/18-font-awesome/index.html</loc>
-    <lastmod>2022-07-18T01:04:29.735Z</lastmod>
+    <lastmod>2022-07-19T05:35:44.494Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/08-rmd-switch/index.html</loc>
-    <lastmod>2022-07-18T01:04:30.175Z</lastmod>
+    <lastmod>2022-07-19T05:35:44.902Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/09-self-contained/index.html</loc>
-    <lastmod>2022-07-18T01:04:30.651Z</lastmod>
+    <lastmod>2022-07-19T05:35:45.282Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/04-include/index.html</loc>
-    <lastmod>2022-07-18T01:04:31.115Z</lastmod>
+    <lastmod>2022-07-19T05:35:45.714Z</lastmod>
   </url>
   <url>
     <loc>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</loc>
-    <lastmod>2022-07-18T01:04:31.883Z</lastmod>
+    <lastmod>2022-07-19T05:35:46.366Z</lastmod>
   </url>
 </urlset>
