@@ -1,0 +1,14 @@
+{
+  "hash": "e65fed6180af98bf2f1b93532f1529e0",
+  "result": {
+    "markdown": "---\ntitle: \"YAML intelligence\"\ndate: \"2022-07-17\"\ncategories: [diagrams]\nimage: \"featured.png\"\nimage-alt: \"Add alt text.\"\n---\n\n\n## Diagrams\n\nQuarto supports creating diagrams in with Mermaid and Graphviz.\n\n\n```{mermaid}\n%%| echo: true\n\nflowchart LR\n  A[qmd] --> B(knitr)\n  A[qmd] --> C(jupyter)\n  B(knitr) --> D[md]\n  C(jupyter) --> D[md]\n  D[md] --> E(pandoc)\n  E(pandoc) --> F(HTML)\n  E(pandoc) --> G(PDF)\n  E(pandoc) --> H(Word)\n  E(pandoc) --> I{and more}\n```\n\n```{mermaid}\n%%| echo: fenced\n\nflowchart LR\n  A[Hard edge] --> B(Round edge)\n  B --> C{Decision}\n  C --> D[Result one]\n  C --> E[Result two]\n```\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n\n\n\n\n## Learn more\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

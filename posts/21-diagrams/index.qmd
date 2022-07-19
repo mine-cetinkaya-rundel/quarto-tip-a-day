@@ -1,0 +1,70 @@
+---
+title: "YAML intelligence"
+date: "2022-07-18"
+categories: [diagrams]
+image: "featured.png"
+image-alt: "Diagram depicting how Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word."
+---
+
+## Diagrams
+
+Quarto supports creating diagrams (flow charts, sequence diagrams, etc.) in with [Mermaid](https://mermaid-js.github.io/mermaid/#/) and [Graphviz](https://graphviz.org/).
+
+To create a diagram with Mermaid, use a `mermaid` chunk.
+For example, Figure @fig-mermaid depicts how Quarto orchestrates rendering of documents.
+
+```{mermaid}
+%%| echo: fenced
+%%| label: fig-mermaid
+%%| fig-width: 6
+%%| fig-cap: |
+%%|   How Quarto orchestrates rendering of documents: start with 
+%%|   a qmd file, use the Knitr or Jupyter engine to perform the 
+%%|   computations and convert it to an md file, then use Pandoc 
+%%|   to convert to various file formats including HTML, PDF, 
+%%|   and Word.
+flowchart LR
+  A[qmd] --> B(Knitr)
+  A[qmd] --> C(Jupyter)
+  B(Knitr) --> D[md]
+  C(Jupyter) --> D[md]
+  D[md] --> E(pandoc)
+  E(pandoc) --> F(HTML)
+  E(pandoc) --> G(PDF)
+  E(pandoc) --> H(Word)
+  E(pandoc) --> I{and more}
+```
+
+Note that diagrams can be treated as figures, with chunk options like `fig-width` and `fig-cap`.
+And prefixing the `label` with `fig-` allows us to cross-reference it and for the diagram to get figure numbering.
+
+And below is the Graphviz version of this diagram.
+Note that it uses a different engine: `dot`.
+
+```{dot}
+//| echo: fenced
+graph G {
+  layout=neato
+  qmd -- Knitr;
+  qmd -- Jupyter;
+  Knitr -- md;
+  Jupyter -- md;
+  md -- pandoc;
+  pandoc -- HTML;
+  pandoc -- PDF;
+  pandoc -- Word;
+  pandoc -- more;
+}
+```
+
+Couple of notes on creating diagrams with Quarto:
+
+-   For Mermaid diagrams, use `%%|` for chunk options. For Graphviz, use `//|`.
+-   The online editors for Mermaid and Graphviz are very helpful for interactively developing the code for a diagram:
+    -   [Mermaid Live Editor](https://mermaid.live/)
+
+    -   [Graphviz Online](https://dreampuf.github.io/GraphvizOnline/)
+
+## Learn more
+
+[Diagrams](https://quarto.org/docs/authoring/diagrams.html)

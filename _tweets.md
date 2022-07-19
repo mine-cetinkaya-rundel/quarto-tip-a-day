@@ -283,3 +283,12 @@ The first one showcases YAML completion for fields \-- typing e brings up option
 The second one showcases YAML completion for options \-- eval can be set to true or false.
 The third one showcases diagnostics that are provided in the case of errors \-- setting eval to FALSE (with capital letters) prompts a message that says it should be true or false.
 
+------------------------------------------------------------------------
+
+#quartotip 21: Create diagrams in Quarto documents using Mermaid or Graphviz in executable code cells, similar to how you create figures.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/21-diagrams/
+
+\[insert-image\]
+
+alt-text: Diagram depicting how Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.
