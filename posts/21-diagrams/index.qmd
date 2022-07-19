@@ -62,7 +62,6 @@ Couple of notes on creating diagrams with Quarto:
 -   For Mermaid diagrams, use `%%|` for chunk options. For Graphviz, use `//|`.
 -   The online editors for Mermaid and Graphviz are very helpful for interactively developing the code for a diagram:
     -   [Mermaid Live Editor](https://mermaid.live/)
-
     -   [Graphviz Online](https://dreampuf.github.io/GraphvizOnline/)
 
 ## Learn more
