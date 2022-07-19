@@ -9,14 +9,14 @@
   {
     "objectID": "posts/21-diagrams/index.html",
     "href": "posts/21-diagrams/index.html",
-    "title": "YAML intelligence",
+    "title": "Diagrams",
     "section": "",
     "text": "Quarto supports creating diagrams (flow charts, sequence diagrams, etc.) in with Mermaid and Graphviz.\nTo create a diagram with Mermaid, use a mermaid chunk. For example, Figure Figure 1 depicts how Quarto orchestrates rendering of documents.\n\n```{mermaid}\n%%| label: fig-mermaid\n%%| fig-width: 6\n%%| fig-cap: |\n%%|   How Quarto orchestrates rendering of documents: start with \n%%|   a qmd file, use the Knitr or Jupyter engine to perform the \n%%|   computations and convert it to an md file, then use Pandoc \n%%|   to convert to various file formats including HTML, PDF, \n%%|   and Word.\nflowchart LR\n  A[qmd] --> B(Knitr)\n  A[qmd] --> C(Jupyter)\n  B(Knitr) --> D[md]\n  C(Jupyter) --> D[md]\n  D[md] --> E(pandoc)\n  E(pandoc) --> F(HTML)\n  E(pandoc) --> G(PDF)\n  E(pandoc) --> H(Word)\n  E(pandoc) --> I{and more}\n```\n\n\n\n\nflowchart LR\n  A[qmd] --> B(Knitr)\n  A[qmd] --> C(Jupyter)\n  B(Knitr) --> D[md]\n  C(Jupyter) --> D[md]\n  D[md] --> E(pandoc)\n  E(pandoc) --> F(HTML)\n  E(pandoc) --> G(PDF)\n  E(pandoc) --> H(Word)\n  E(pandoc) --> I{and more}\n\n\n\n\n\nFigure 1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.\n\n\n\n\nNote that diagrams can be treated as figures, with chunk options like fig-width and fig-cap. And prefixing the label with fig- allows us to cross-reference it and for the diagram to get figure numbering.\nAnd below is the Graphviz version of this diagram. Note that it uses a different engine: dot.\n\n```{dot}\ngraph G {\n  layout=neato\n  qmd -- Knitr;\n  qmd -- Jupyter;\n  Knitr -- md;\n  Jupyter -- md;\n  md -- pandoc;\n  pandoc -- HTML;\n  pandoc -- PDF;\n  pandoc -- Word;\n  pandoc -- more;\n}\n```\n\n\n\n\n\n\nG\n\n  \n\nqmd\n\n qmd   \n\nKnitr\n\n Knitr   \n\nqmd–Knitr\n\n   \n\nJupyter\n\n Jupyter   \n\nqmd–Jupyter\n\n   \n\nmd\n\n md   \n\nKnitr–md\n\n   \n\nJupyter–md\n\n   \n\npandoc\n\n pandoc   \n\nmd–pandoc\n\n   \n\nHTML\n\n HTML   \n\npandoc–HTML\n\n   \n\nPDF\n\n PDF   \n\npandoc–PDF\n\n   \n\nWord\n\n Word   \n\npandoc–Word\n\n   \n\nmore\n\n more   \n\npandoc–more\n\n  \n\n\n\n\n\nCouple of notes on creating diagrams with Quarto:\n\nFor Mermaid diagrams, use %%| for chunk options. For Graphviz, use //|.\nThe online editors for Mermaid and Graphviz are very helpful for interactively developing the code for a diagram:\n\nMermaid Live Editor\nGraphviz Online"
   },
   {
     "objectID": "posts/21-diagrams/index.html#learn-more",
     "href": "posts/21-diagrams/index.html#learn-more",
-    "title": "YAML intelligence",
+    "title": "Diagrams",
     "section": "Learn more",
     "text": "Learn more\nDiagrams"
   },
