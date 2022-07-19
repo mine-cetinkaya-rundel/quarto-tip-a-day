@@ -44,7 +44,7 @@ Note that it uses a different engine: `dot`.
 ```{dot}
 //| echo: fenced
 //| label: fig-dot
-//| fig-width: 6
+//| fig-width: 3
 //| fig-cap: |
 //|   How Quarto orchestrates rendering of documents: start with 
 //|   a qmd file, use the Knitr or Jupyter engine to perform the 
