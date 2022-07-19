@@ -44,6 +44,13 @@ Note that it uses a different engine: `dot`.
 ```{dot}
 //| echo: fenced
 //| label: fig-dot
+//| fig-width: 6
+//| fig-cap: |
+//|   How Quarto orchestrates rendering of documents: start with 
+//|   a qmd file, use the Knitr or Jupyter engine to perform the 
+//|   computations and convert it to an md file, then use Pandoc 
+//|   to convert to various file formats including HTML, PDF, 
+//|   and Word.
 graph G {
   layout=neato
   qmd -- Knitr;
