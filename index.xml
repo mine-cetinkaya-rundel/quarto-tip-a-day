@@ -10,7 +10,58 @@
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
 <generator>quarto-1.0.32</generator>
-<lastBuildDate>Mon, 18 Jul 2022 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 19 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Shiny</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/22-shiny/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="shiny" class="level2">
+<h2 class="anchored" data-anchor-id="shiny">Shiny</h2>
+<p>You can create interactive Quarto documents using Shiny. To do so:</p>
+<ul>
+<li>Add <code>server: shiny</code> to the YAML of your document.</li>
+<li>Define Shiny UI elements in plain R code chunks.</li>
+<li>Place Shiny server code in R code chunks with the chunk option <code>context: server</code>.</li>
+</ul>
+<p>Below is an example of a Quarto document with Shiny elements in it. Click on a different radio button to see the effect in the document.</p>
+<iframe width="800px" height="1000px" style="border:2px solid #dee2e6;" src="https://minecr.shinyapps.io/shiny-in-quarto/"></iframe>
+<p>You can also click on the <code>&lt;/&gt; Code</code> link in the document to view the source code for the document.</p>
+<p>You’ll see that:</p>
+<ul>
+<li>We create an input widget called <code>radio_input</code> in the first code chunk.</li>
+<li>The value of this widget is stored in <code>output$radio_output</code> (which is in a code chunk with <code>context: server</code>, which is not visible in the rendered document).</li>
+<li>The output element called <code>radio_output</code> is displayed using the <code>verbatimTextOutput</code> in the last code chunk.</li>
+</ul>
+<p>This document is then deployed to <code>shinyapps.io</code>. You can find the standalone document at <a href="https://minecr.shinyapps.io/shiny-in-quarto/">https://minecr.shinyapps.io/shiny-in-quarto</a>.</p>
+</section>
+<section id="interactivity" class="level2">
+<h2 class="anchored" data-anchor-id="interactivity">Interactivity</h2>
+<p>In addition to <a href="https://quarto.org/docs/interactive/shiny/">Shiny</a>, you can add interactivity to your Quarto documents with:</p>
+<ul>
+<li><a href="https://quarto.org/docs/interactive/ojs/">Observable JS</a></li>
+<li><a href="https://quarto.org/docs/interactive/widgets/jupyter.html">Jupyter Widgets</a></li>
+<li><a href="https://quarto.org/docs/interactive/widgets/htmlwidgets.html">htmlwidgets</a></li>
+</ul>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/interactive/">Interactivity</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>interactivity</category>
+  <category>shiny</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/22-shiny/index.html</guid>
+  <pubDate>Tue, 19 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/22-shiny/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Diagrams</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -1063,51 +1114,6 @@ pandoc–more
   <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/03-freeze/index.html</guid>
   <pubDate>Thu, 30 Jun 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/03-freeze/featured.png" medium="image" type="image/png" height="98" width="144"/>
-</item>
-<item>
-  <title>Fenced echo</title>
-  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/02-fenced-echo/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="echo-fenced" class="level2">
-<h2 class="anchored" data-anchor-id="echo-fenced"><code>echo: fenced</code></h2>
-<p>If you, like me, spend most of your time writing teaching materials or documentation, I’m sure you’ll find the chunk option <code>echo: fenced</code> just as useful as I do! When you set this option for a code chunk, the chunk is displayed with the fences around it – without a screenshot or using a special verbatim engine.</p>
-<p>To get code chunks printed out as</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;">```{r}</span></span>
-<span id="cb1-2"><span class="co" style="color: #5E5E5E;">#| label: simple-arithmetic</span></span>
-<span id="cb1-3"><span class="co" style="color: #5E5E5E;">#| results: hide</span></span>
-<span id="cb1-4"></span>
-<span id="cb1-5"><span class="dv" style="color: #AD0000;">1</span> <span class="sc" style="color: #5E5E5E;">+</span> <span class="dv" style="color: #AD0000;">1</span></span>
-<span id="cb1-6"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-</div>
-<p>add the <code>echo: fenced</code> option to your chunk:</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="in" style="color: #5E5E5E;">```{r}</span></span>
-<span id="cb2-2"><span class="co" style="color: #5E5E5E;">#| echo: fenced</span></span>
-<span id="cb2-3"><span class="co" style="color: #5E5E5E;">#| label: simple-arithmetic</span></span>
-<span id="cb2-4"><span class="co" style="color: #5E5E5E;">#| results: hide</span></span>
-<span id="cb2-5"></span>
-<span id="cb2-6"><span class="dv" style="color: #AD0000;">1</span> <span class="sc" style="color: #5E5E5E;">+</span> <span class="dv" style="color: #AD0000;">1</span></span>
-<span id="cb2-7"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<p>Note that in the output all chunk options other than <code>echo: fenced</code> are shown, so this is a great tool for teaching chunk options as well.</p>
-</section>
-<section id="learn-more" class="level2">
-<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p><a href="https://quarto.org/docs/computations/execution-options.html#fenced-echo">Fenced echo execution option</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>teaching</category>
-  <category>documentation</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/02-fenced-echo/index.html</guid>
-  <pubDate>Wed, 29 Jun 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/02-fenced-echo/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 </channel>
 </rss>

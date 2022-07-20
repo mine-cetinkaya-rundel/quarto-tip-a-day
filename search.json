@@ -1,52 +1,59 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "A Quarto tip a day keeps the docs away",
+    "objectID": "posts/18-font-awesome/index.html",
+    "href": "posts/18-font-awesome/index.html",
+    "title": "Font Awesome",
     "section": "",
-    "text": "As part of this project, I will tweet a Quarto tip each day in starting June 28, 2022 for thirty days, from the Quarto account (@quarto_pub), with the hashtag #quartotip. The daily tips / tweets are in no particular order. This website collects each tip as a daily blog post entry, with each blog post linking to “learn more” resources. And, you guessed it, it’s made with Quarto!\nThe target audience for this project is folks who are already somewhat familiar with Quarto. If you’re brand new to Quarto, I recommend getting started here instead."
+    "text": "Including Font Awesome icons in Quarto documents is now easy peasy lemon squeezy  with the Font Awesome extension. Just surround the Font Awesome icon name in {{< and >}}.\n\n\n\ninput\noutput\n\n\n\n\n{{< fa brands apple >}}\n\n\n\n{{< fa calendar >}}\n\n\n\n{{< fa user-doctor >}}\n\n\n\n{{< fa door-closed >}}\n\n\n\n\nTo use this extension run the following in your terminal in the Quarto project you want to use these icons.\nquarto install extension quarto-ext/fontawesome\nThis will prompt you to answer if you trust the extension, and you should decide that for yourself. This particular extension is developed by the Quarto development team. Once you say yes, the extension will be installed in an _extensions subdirectory.\nA few notes on this extension:\n\nIcons can be used in both HTML and PDF output.\nOnly the free Font Awesome icons are supported: https://fontawesome.com/search?m=free.\nIf you’re using version control, you should check in the _extensions directory."
   },
   {
-    "objectID": "posts/21-diagrams/index.html",
-    "href": "posts/21-diagrams/index.html",
-    "title": "Diagrams",
-    "section": "",
-    "text": "Quarto supports creating diagrams (flow charts, sequence diagrams, etc.) in with Mermaid and Graphviz.\nTo create a diagram with Mermaid, use a mermaid chunk. For example, Figure Figure 1 depicts how Quarto orchestrates rendering of documents.\n\n```{mermaid}\n%%| label: fig-mermaid\n%%| fig-width: 6\n%%| fig-cap: |\n%%|   How Quarto orchestrates rendering of documents: start with \n%%|   a qmd file, use the Knitr or Jupyter engine to perform the \n%%|   computations and convert it to an md file, then use Pandoc \n%%|   to convert to various file formats including HTML, PDF, \n%%|   and Word.\nflowchart LR\n  A[qmd] --> B(Knitr)\n  A[qmd] --> C(Jupyter)\n  B(Knitr) --> D[md]\n  C(Jupyter) --> D[md]\n  D[md] --> E(pandoc)\n  E(pandoc) --> F(HTML)\n  E(pandoc) --> G(PDF)\n  E(pandoc) --> H(Word)\n  E(pandoc) --> I{and more}\n```\n\n\n\n\nflowchart LR\n  A[qmd] --> B(Knitr)\n  A[qmd] --> C(Jupyter)\n  B(Knitr) --> D[md]\n  C(Jupyter) --> D[md]\n  D[md] --> E(pandoc)\n  E(pandoc) --> F(HTML)\n  E(pandoc) --> G(PDF)\n  E(pandoc) --> H(Word)\n  E(pandoc) --> I{and more}\n\n\n\n\n\nFigure 1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.\n\n\n\n\nNote that diagrams can be treated as figures, with chunk options like fig-width and fig-cap. And prefixing the label with fig- allows us to cross-reference it and for the diagram to get figure numbering.\nAnd Figure Figure 2 is the Graphviz version of this diagram. Note that it uses a different engine: dot.\n\n```{dot}\n//| label: fig-dot\n//| fig-width: 3\n//| fig-cap: |\n//|   How Quarto orchestrates rendering of documents: start with \n//|   a qmd file, use the Knitr or Jupyter engine to perform the \n//|   computations and convert it to an md file, then use Pandoc \n//|   to convert to various file formats including HTML, PDF, \n//|   and Word.\ngraph G {\n  layout=neato\n  qmd -- Knitr;\n  qmd -- Jupyter;\n  Knitr -- md;\n  Jupyter -- md;\n  md -- pandoc;\n  pandoc -- HTML;\n  pandoc -- PDF;\n  pandoc -- Word;\n  pandoc -- more;\n}\n```\n\n\n\n\n\n\n\nG\n\n  \n\nqmd\n\n qmd   \n\nKnitr\n\n Knitr   \n\nqmd–Knitr\n\n   \n\nJupyter\n\n Jupyter   \n\nqmd–Jupyter\n\n   \n\nmd\n\n md   \n\nKnitr–md\n\n   \n\nJupyter–md\n\n   \n\npandoc\n\n pandoc   \n\nmd–pandoc\n\n   \n\nHTML\n\n HTML   \n\npandoc–HTML\n\n   \n\nPDF\n\n PDF   \n\npandoc–PDF\n\n   \n\nWord\n\n Word   \n\npandoc–Word\n\n   \n\nmore\n\n more   \n\npandoc–more\n\n  \n\n\nFigure 2: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.\n\n\n\n\nCouple of notes on creating diagrams with Quarto:\n\nFor Mermaid diagrams, use %%| for chunk options. For Graphviz, use //|.\nThe online editors for Mermaid and Graphviz are very helpful for interactively developing the code for a diagram:\n\nMermaid Live Editor\nGraphviz Online"
-  },
-  {
-    "objectID": "posts/21-diagrams/index.html#learn-more",
-    "href": "posts/21-diagrams/index.html#learn-more",
-    "title": "Diagrams",
+    "objectID": "posts/18-font-awesome/index.html#learn-more",
+    "href": "posts/18-font-awesome/index.html#learn-more",
+    "title": "Font Awesome",
     "section": "Learn more",
-    "text": "Learn more\nDiagrams"
+    "text": "Learn more\n\nFont Awesome Extension for Quarto\nUsing Extensions"
   },
   {
-    "objectID": "posts/16-code-tools/index.html",
-    "href": "posts/16-code-tools/index.html",
-    "title": "Code tools",
+    "objectID": "posts/17-dark-mode/index.html",
+    "href": "posts/17-dark-mode/index.html",
+    "title": "Dark mode",
     "section": "",
-    "text": "You can include a Code menu in the header of your document that provides various tools for readers to interact with your source code.\nIf you want to include the full source code (including executable code chunks and your prose, in other words, your full .qmd file), set code-tools: true in the YAML of your document.\n---\nformat:\n  html: \n    code-tools: true\n---\nThe mlr3book uses this approach.\nAlternatively, if your document lives within a project that has a specified repo-url in the project-level _quarto.yml file, you can directly link to the document in your repo by specifying the source.\n---\nformat:\n  html: \n    code-tools:\n      source: repo\n---\nOn this page I’ve done something a little different. I have some “analysis code” on my page, in the following code chunks.\nFirst, I load some packages.\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nThen, I calculate some summary statistics.\n\npenguins %>%\n  group_by(species) %>%\n  summarise(mean_bill_length = mean(bill_length_mm, na.rm = TRUE))\n\n# A tibble: 3 × 2\n  species   mean_bill_length\n  <fct>                <dbl>\n1 Adelie                38.8\n2 Chinstrap             48.8\n3 Gentoo                47.5\n\n\nWhen you have a bunch of code as well as bunch of prose in your document (like here), your readers might want access to just the content in your executable code chunks so that they can easily replicate your analysis. You can do this by maintaining a separate R script, and then linking to it from your YAML, like I’ve done on this page.\n---\nformat:\n  html: \n    code-tools:\n      source: https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/posts/16-code-tools/penguins.R\n---\nAnd you have two options for generating that R script:\n\nYou can create and maintain it manually, making sure to keep it updated as you update the analysis in your narrative / .qmd file.\nYou can automatically generate it from your .qmd file with knitr::purl(), which “extracts the R code in it according to a list of patterns, evaluates the code and writes the output in another file”."
+    "text": "Quarto websites support light and dark themes and will automatically add a light/dark toggle to your website if you supply both themes.\n---\nformat:\n  html:\n    theme:\n      light: litera\n      dark: darkly\n---\nYou can also customize your light and dark themes and and supply custom theme files in addition to the Bootswatch themes you’re using.\n---\nformat:\n  html:\n    theme:\n      light: [litera, styles.scss]\n      dark: [darkly, styles-dark.scss]\n---\nHere are the custom styles I’m using on this website:\n\nstyles.scss\nstyles-dark.scss\n\nIf you know you want to offer the light/dark toggle, and you are planning to use a Bootswatch theme, I recommend browsing the options thoroughly first can decide on a light and a dark theme that look similar except for the colors and using that pair."
   },
   {
-    "objectID": "posts/16-code-tools/index.html#learn-more",
-    "href": "posts/16-code-tools/index.html#learn-more",
-    "title": "Code tools",
+    "objectID": "posts/17-dark-mode/index.html#learn-more",
+    "href": "posts/17-dark-mode/index.html#learn-more",
+    "title": "Dark mode",
     "section": "Learn more",
-    "text": "Learn more\nCode tools"
+    "text": "Learn more\nDark mode"
   },
   {
-    "objectID": "posts/01-side-by-side-tables/index.html",
-    "href": "posts/01-side-by-side-tables/index.html",
-    "title": "Side-by-side tables",
+    "objectID": "posts/10-site-resources/index.html",
+    "href": "posts/10-site-resources/index.html",
+    "title": "Site resources",
     "section": "",
-    "text": "Use the layout-ncol chunk option to organize output in columns, e.g., layout-ncol: 2 for two tables side-by-side.\n\n```{r}\n#| tbl-cap: Two tables\n#| tbl-subcap: [\"mtcars\", \"Just cars\"]\n#| layout-ncol: 2\n\nlibrary(knitr)\n\n# table on the left\nkable(head(mtcars[, 1:3]))\n\n# table on the right\nkable(head(cars))\n```\n\n\nTwo tables\n\n\n\n\nmtcars\n\n\n\nmpg\ncyl\ndisp\n\n\n\n\nMazda RX4\n21.0\n6\n160\n\n\nMazda RX4 Wag\n21.0\n6\n160\n\n\nDatsun 710\n22.8\n4\n108\n\n\nHornet 4 Drive\n21.4\n6\n258\n\n\nHornet Sportabout\n18.7\n8\n360\n\n\nValiant\n18.1\n6\n225\n\n\n\n\n\n\nJust cars\n\n\nspeed\ndist\n\n\n\n\n4\n2\n\n\n4\n10\n\n\n7\n4\n\n\n7\n22\n\n\n8\n16\n\n\n9\n10"
+    "text": "To publish a file not explicitly linked from pages in your Quarto site, add a resources entry to your _quarto.yml file.\nFor example, to include all PDF files within the project directory as part of the website, you can use the following.\nproject:\n  type: website\n  resources: \n    - \"*.pdf\"\nIf the PDF files are linked from somewhere in your website, they should automatically be copied over to your _site directory when your site is built. But if Quarto somehow fails to do that, adding them as resources should fix the issue.\nA few other notes on this feature:\n\nresources entries are character strings so they should have quotes around them.\nYou can use Quarto Glob Syntax when defining resources for Quarto websites.\nQuarto cannot render xaringan slides but you can include the Rmds and the resulting HTML files of your xaringan slide decks by including them as resources. Note that the slide decks are in a folder starting with _ to indicate that quarto render should ignore that folder.\n\nproject:\n  type: website\n  resources:\n    - \"_xaringan-slides/\"\n\nresources metadata can also be added to individual files. For example, if you have a course website with a syllabus page, and you also want to allow downloading a PDF version of the syllabus from that page, you might use something like the following.\n\ntitle: \"Syllabus\"\nresources:\n  - \"syllabus.pdf\""
   },
   {
-    "objectID": "posts/01-side-by-side-tables/index.html#learn-more",
-    "href": "posts/01-side-by-side-tables/index.html#learn-more",
-    "title": "Side-by-side tables",
+    "objectID": "posts/10-site-resources/index.html#learn-more",
+    "href": "posts/10-site-resources/index.html#learn-more",
+    "title": "Site resources",
     "section": "Learn more",
-    "text": "Learn more\nOptions for tables produced by executable code cells"
+    "text": "Learn more\nSite Resources"
+  },
+  {
+    "objectID": "posts/09-self-contained/index.html",
+    "href": "posts/09-self-contained/index.html",
+    "title": "Self-contained HTML",
+    "section": "",
+    "text": "If you want to create an entirely self-contained HTML document (with images, CSS, etc. embedded into the HTML file), add the following to the YAML of your document.\nformat:\n  html:\n    self-contained: true\nThis produces a standalone HTML with no external dependencies.\n\nThis works with .qmd and .ipynb files.\nIf instead of publishing the document, you want to share it using a file sharing service (e.g., Dropbox) or email it to someone just like you share other document types like spreadsheets, presentations, and PDFs, you should use this option to generate a self-contained HTML.\nQuarto presentations created with revealjs can also be published as self-contained HTML.\nMath libraries are not embedded in self-contained HTML documents by default (because they are quite large and often time consuming to download) but you can add self-contained-math: true to your YAML to embed them as well."
+  },
+  {
+    "objectID": "posts/09-self-contained/index.html#learn-more",
+    "href": "posts/09-self-contained/index.html#learn-more",
+    "title": "Self-contained HTML",
+    "section": "Learn more",
+    "text": "Learn more\nSelf-contained HTML"
   },
   {
     "objectID": "posts/11-spans/spans.html#fragments",
@@ -70,39 +77,74 @@
     "text": "Learn more\nSite Resources"
   },
   {
-    "objectID": "posts/14-slide-zoom/slide-zoom.html#find-the-bunny-among-the-cats",
-    "href": "posts/14-slide-zoom/slide-zoom.html#find-the-bunny-among-the-cats",
-    "title": "A Quarto tip a day",
-    "section": "Find the bunny among the cats",
-    "text": "Find the bunny among the cats\nby zooming in\n\n\nArtwork by Gergely Dudás"
-  },
-  {
-    "objectID": "posts/14-slide-zoom/index.html",
-    "href": "posts/14-slide-zoom/index.html",
-    "title": "Slide zoom",
+    "objectID": "posts/01-side-by-side-tables/index.html",
+    "href": "posts/01-side-by-side-tables/index.html",
+    "title": "Side-by-side tables",
     "section": "",
-    "text": "One way to draw your audience’s attention to a particular spot on your slides is annotating it, which I wrote about in quartotip #7. Another way of doing this is zooming in, which you can do by holding down the Alt key (or Ctrl in Linux) and clicking on any element to zoom towards it. Click again to zoom back out."
+    "text": "Use the layout-ncol chunk option to organize output in columns, e.g., layout-ncol: 2 for two tables side-by-side.\n\n```{r}\n#| tbl-cap: Two tables\n#| tbl-subcap: [\"mtcars\", \"Just cars\"]\n#| layout-ncol: 2\n\nlibrary(knitr)\n\n# table on the left\nkable(head(mtcars[, 1:3]))\n\n# table on the right\nkable(head(cars))\n```\n\n\nTwo tables\n\n\n\n\nmtcars\n\n\n\nmpg\ncyl\ndisp\n\n\n\n\nMazda RX4\n21.0\n6\n160\n\n\nMazda RX4 Wag\n21.0\n6\n160\n\n\nDatsun 710\n22.8\n4\n108\n\n\nHornet 4 Drive\n21.4\n6\n258\n\n\nHornet Sportabout\n18.7\n8\n360\n\n\nValiant\n18.1\n6\n225\n\n\n\n\n\n\nJust cars\n\n\nspeed\ndist\n\n\n\n\n4\n2\n\n\n4\n10\n\n\n7\n4\n\n\n7\n22\n\n\n8\n16\n\n\n9\n10"
   },
   {
-    "objectID": "posts/14-slide-zoom/index.html#learn-more",
-    "href": "posts/14-slide-zoom/index.html#learn-more",
-    "title": "Slide zoom",
+    "objectID": "posts/01-side-by-side-tables/index.html#learn-more",
+    "href": "posts/01-side-by-side-tables/index.html#learn-more",
+    "title": "Side-by-side tables",
     "section": "Learn more",
-    "text": "Learn more\nSlide zoom"
+    "text": "Learn more\nOptions for tables produced by executable code cells"
   },
   {
-    "objectID": "posts/02-fenced-echo/index.html",
-    "href": "posts/02-fenced-echo/index.html",
-    "title": "Fenced echo",
+    "objectID": "posts/04-include/index.html",
+    "href": "posts/04-include/index.html",
+    "title": "Includes",
     "section": "",
-    "text": "If you, like me, spend most of your time writing teaching materials or documentation, I’m sure you’ll find the chunk option echo: fenced just as useful as I do! When you set this option for a code chunk, the chunk is displayed with the fences around it – without a screenshot or using a special verbatim engine.\nTo get code chunks printed out as\n\n```{r}\n#| label: simple-arithmetic\n#| results: hide\n\n1 + 1\n```\n\nadd the echo: fenced option to your chunk:\n```{r}\n#| echo: fenced\n#| label: simple-arithmetic\n#| results: hide\n\n1 + 1\n```\nNote that in the output all chunk options other than echo: fenced are shown, so this is a great tool for teaching chunk options as well."
+    "text": "If you have content you want to include across many files, you can place that content in a separate Quarto file and use the include comment wherever you want to pull it in.\nThis could be useful for plain text content (e.g., including the same submission instructions for each homework assignment) or for content that includes computation (e.g., including the same data cleaning steps for various alternate analyses).\nSuppose you have such repeatable content in a file called _content-to-repeat.qmd and suppose the contents of that file read Look at me, I’m content to be repeated! (in italics):\n\n\n\n\n\n\ncontent-to-repeat.qmd\n*Look at me, I'm content to be repeated!*\n\n\n\nYou can include it in other documents using the {{< include >}} shortcode:\n{{< include _content-to-repeat.qmd >}}\nThis will result in:\nLook at me I’m content to be repeated!\nA few important things to note:\n\nThe name of the file that will be included should start with an underscore (_) so that they are automatically ignored (i.e. not treated as standalone files) when rendering a project.\nAll computations within a document will share a single engine (e.g., knitr and jupyter), which is relevant when the included file has computations.\nThe included file does not have to be a .qmd if it only contains text, it can also be a .md, .ipynb, etc. However included files with computation in them need to be .qmd, computational includes don’t work in .ipynb notebook files."
   },
   {
-    "objectID": "posts/02-fenced-echo/index.html#learn-more",
-    "href": "posts/02-fenced-echo/index.html#learn-more",
-    "title": "Fenced echo",
+    "objectID": "posts/04-include/index.html#learn-more",
+    "href": "posts/04-include/index.html#learn-more",
+    "title": "Includes",
     "section": "Learn more",
-    "text": "Learn more\nFenced echo execution option"
+    "text": "Learn more\nIncludes"
+  },
+  {
+    "objectID": "posts/21-diagrams/index.html",
+    "href": "posts/21-diagrams/index.html",
+    "title": "Diagrams",
+    "section": "",
+    "text": "Quarto supports creating diagrams (flow charts, sequence diagrams, etc.) in with Mermaid and Graphviz.\nTo create a diagram with Mermaid, use a mermaid chunk. For example, Figure Figure 1 depicts how Quarto orchestrates rendering of documents.\n\n```{mermaid}\n%%| label: fig-mermaid\n%%| fig-width: 6\n%%| fig-cap: |\n%%|   How Quarto orchestrates rendering of documents: start with \n%%|   a qmd file, use the Knitr or Jupyter engine to perform the \n%%|   computations and convert it to an md file, then use Pandoc \n%%|   to convert to various file formats including HTML, PDF, \n%%|   and Word.\nflowchart LR\n  A[qmd] --> B(Knitr)\n  A[qmd] --> C(Jupyter)\n  B(Knitr) --> D[md]\n  C(Jupyter) --> D[md]\n  D[md] --> E(pandoc)\n  E(pandoc) --> F(HTML)\n  E(pandoc) --> G(PDF)\n  E(pandoc) --> H(Word)\n  E(pandoc) --> I{and more}\n```\n\n\n\n\nflowchart LR\n  A[qmd] --> B(Knitr)\n  A[qmd] --> C(Jupyter)\n  B(Knitr) --> D[md]\n  C(Jupyter) --> D[md]\n  D[md] --> E(pandoc)\n  E(pandoc) --> F(HTML)\n  E(pandoc) --> G(PDF)\n  E(pandoc) --> H(Word)\n  E(pandoc) --> I{and more}\n\n\n\n\n\nFigure 1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.\n\n\n\n\nNote that diagrams can be treated as figures, with chunk options like fig-width and fig-cap. And prefixing the label with fig- allows us to cross-reference it and for the diagram to get figure numbering.\nAnd Figure Figure 2 is the Graphviz version of this diagram. Note that it uses a different engine: dot.\n\n```{dot}\n//| label: fig-dot\n//| fig-width: 3\n//| fig-cap: |\n//|   How Quarto orchestrates rendering of documents: start with \n//|   a qmd file, use the Knitr or Jupyter engine to perform the \n//|   computations and convert it to an md file, then use Pandoc \n//|   to convert to various file formats including HTML, PDF, \n//|   and Word.\ngraph G {\n  layout=neato\n  qmd -- Knitr;\n  qmd -- Jupyter;\n  Knitr -- md;\n  Jupyter -- md;\n  md -- pandoc;\n  pandoc -- HTML;\n  pandoc -- PDF;\n  pandoc -- Word;\n  pandoc -- more;\n}\n```\n\n\n\n\n\n\n\nG\n\n  \n\nqmd\n\n qmd   \n\nKnitr\n\n Knitr   \n\nqmd–Knitr\n\n   \n\nJupyter\n\n Jupyter   \n\nqmd–Jupyter\n\n   \n\nmd\n\n md   \n\nKnitr–md\n\n   \n\nJupyter–md\n\n   \n\npandoc\n\n pandoc   \n\nmd–pandoc\n\n   \n\nHTML\n\n HTML   \n\npandoc–HTML\n\n   \n\nPDF\n\n PDF   \n\npandoc–PDF\n\n   \n\nWord\n\n Word   \n\npandoc–Word\n\n   \n\nmore\n\n more   \n\npandoc–more\n\n  \n\n\nFigure 2: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.\n\n\n\n\nCouple of notes on creating diagrams with Quarto:\n\nFor Mermaid diagrams, use %%| for chunk options. For Graphviz, use //|.\nThe online editors for Mermaid and Graphviz are very helpful for interactively developing the code for a diagram:\n\nMermaid Live Editor\nGraphviz Online"
+  },
+  {
+    "objectID": "posts/21-diagrams/index.html#learn-more",
+    "href": "posts/21-diagrams/index.html#learn-more",
+    "title": "Diagrams",
+    "section": "Learn more",
+    "text": "Learn more\nDiagrams"
+  },
+  {
+    "objectID": "posts/20-yaml-intelligence/index.html",
+    "href": "posts/20-yaml-intelligence/index.html",
+    "title": "YAML intelligence",
+    "section": "",
+    "text": "Quarto offers extensive YAML intelligence (completion and diagnostics) in the RStudio IDE and in VS Code for project files, YAML front matter, and executable cell options. This makes it easier to write YAML, whether you’re an expert or just starting to learn."
+  },
+  {
+    "objectID": "posts/20-yaml-intelligence/index.html#yaml-completion",
+    "href": "posts/20-yaml-intelligence/index.html#yaml-completion",
+    "title": "YAML intelligence",
+    "section": "YAML completion",
+    "text": "YAML completion\nFor example, let’s say you have a code chunk in your document and you don’t want it to be evaluated. The chunk option you should set is eval and it should be set to false. If you’re coming from R Markdown, you might be used to seeing this as eval = FALSE, but in YAMl style this option should be defined as eval: false.\n\n\n\n\n\nThis is super helpful when you just want to browse through all chunk options to see what’s available as well as when you can’t remember the full name of a chunk option, but remember a piece of it, e.g., fig-.\n\n\n\n\n\nYAML completion works in .yml files as well."
+  },
+  {
+    "objectID": "posts/20-yaml-intelligence/index.html#yaml-diagnostics",
+    "href": "posts/20-yaml-intelligence/index.html#yaml-diagnostics",
+    "title": "YAML intelligence",
+    "section": "YAML diagnostics",
+    "text": "YAML diagnostics\nYAML intelligence isn’t limited to code completion. If you have incorrect YAML it will also be highlighted when documents are saved. For example, if you typed eval: FALSE instead of eval: false, you’ll see the following."
+  },
+  {
+    "objectID": "posts/20-yaml-intelligence/index.html#learn-more",
+    "href": "posts/20-yaml-intelligence/index.html#learn-more",
+    "title": "YAML intelligence",
+    "section": "Learn more",
+    "text": "Learn more\n\nRStudio IDE YAML intelligence\nVSCode YAML intelligence"
   },
   {
     "objectID": "posts/15-help/index.html",
@@ -117,97 +159,6 @@
     "title": "Need help?",
     "section": "Learn more",
     "text": "Learn more\nFrequently asked questions"
-  },
-  {
-    "objectID": "posts/07-slide-annotation/index.html",
-    "href": "posts/07-slide-annotation/index.html",
-    "title": "Slide annotation",
-    "section": "",
-    "text": "The chalkboard: true option for revealjs slides enables you to annotate your slides by drawing on them as well as open up an empty chalkboard within your presentation.\n---\nformat: \n  revealjs:\n    chalkboard: true\n---\nWhen you add this to your slide source code, you’ll see two new icons appear in the bottom left corner of your slides: chalkboard and paintbrush.\n\n\nCanvas annotation can be activated by clicking on the paintbrush icon and can be used to highlight / draw attention to particular items in your slide.\n\n\n\n\n\n\n\nChalkboard can be activated by clicking on the chalkboard icon. I often use this feature when I get a question during teaching that is not covered in the slides and requires some writing/drawing to effectively answer. It’s great help if you teach in a classroom where the chalk/whiteboard is not accessible when the projector screen is down.\n\n\n\n\n\n\nTry interacting with these in the slides embedded above! To clear drawings click DEL (delete). You can also toggle between these features and download your annotations using keyboard shortcuts."
-  },
-  {
-    "objectID": "posts/07-slide-annotation/index.html#learn-more",
-    "href": "posts/07-slide-annotation/index.html#learn-more",
-    "title": "Slide annotation",
-    "section": "Learn more",
-    "text": "Learn more\nChalkboard"
-  },
-  {
-    "objectID": "posts/07-slide-annotation/chalkboard.html#penguins",
-    "href": "posts/07-slide-annotation/chalkboard.html#penguins",
-    "title": "A Quarto tip a day",
-    "section": "Penguins",
-    "text": "Penguins\n\n\n\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()"
-  },
-  {
-    "objectID": "posts/13-homebrew/index.html",
-    "href": "posts/13-homebrew/index.html",
-    "title": "Quarto on Homebrew",
-    "section": "",
-    "text": "If you’re a Homebrew person, chances are you’d like to install and update Quarto with Homebrew. There are two options for doing so.\n\nUsing the Quarto cask: This installs the pkg file from latest official Quarto release. One minor pain point with this approach is that each time you update Quarto, you’ll need to enter your user password.\nbrew install --cask quarto\nUsing a private tap: This provides a formula-based version which installs the Quarto files in the typical Homebrew cellar location. With this method, you won’t need to enter your password each time you want to update Quarto, however you are relying on a private tap.\nbrew tap rundel/quarto-cli\nbrew install quarto\n\nOnce you’ve installed Quarto via Homebrew using either method, you can update to the latest release with\nbrew upgrade quarto\nor it will also update along with other software, when you run brew upgrade.\nA few more notes:\n\nYou do not need Homebrew to install or update the Quarto CLI. You can always get the latest released version at https://quarto.org/docs/get-started/.\nIf using RStudio, you do not need to install the Quarto CLI separately as RStudio already ships with it. However if you want a different version of Quarto than the one bundled with RStudio, you can use either of the approaches above to install / update it.\nIf you’re interested in the development version of Quarto, you can find installation instructions on the Quarto CLI repo."
-  },
-  {
-    "objectID": "posts/13-homebrew/index.html#learn-more",
-    "href": "posts/13-homebrew/index.html#learn-more",
-    "title": "Quarto on Homebrew",
-    "section": "Learn more",
-    "text": "Learn more\nQuarto on Homebrew"
-  },
-  {
-    "objectID": "posts/03-freeze/index.html",
-    "href": "posts/03-freeze/index.html",
-    "title": "Freeze",
-    "section": "",
-    "text": "For Quarto projects with many documents that include code, you probably won’t want to re-execute all of that code each time you render the project. The freeze execution option is helpful for managing that.\nFor example, you might have a Quarto blog and when you render the website you wouldn’t want code from old blog posts to be re-rendered automatically, you would likely prefer to leave them as is as of the date they were published. Or you might be using Quarto for a course website and have slides, homework assignments, etc. in that website that you add as the semester progresses. You wouldn’t want to re-render all of those old documents each time you add new items to your website.\nManaging execution for these purposes is straightforward with Quarto using the freeze option in your _quarto.yml file for your project, e.g.\nexecute:\n  freeze: true\nYou can set this option to true or auto. By default, it’s false.\n\nfreeze: true - Never re-render during project render. If you need the page/document to be re-rendered, you need to render that document individually.\n\nThis is the option I use for blogs as I want to make sure to avoid re-rendering old posts unless I explicitly do so.\n\nfreeze: auto - Re-render only when source changes.\n\nThis is the option I use for my course websites – when I catch a mistake in earlier slide decks, and update the source code, I want those documents re-render next time I render my project, I don’t want to rely on remembering to re-render them myself.\n\n\nNote that freeze controls whether execution occurs during global project renders. If you do render a single document or a sub-directory in a Quarto project, then the code is always executed."
-  },
-  {
-    "objectID": "posts/03-freeze/index.html#learn-more",
-    "href": "posts/03-freeze/index.html#learn-more",
-    "title": "Freeze",
-    "section": "Learn more",
-    "text": "Learn more\nManaging execution with freeze"
-  },
-  {
-    "objectID": "posts/06-listing-contents/index.html",
-    "href": "posts/06-listing-contents/index.html",
-    "title": "Listing contents",
-    "section": "",
-    "text": "Quarto blogs by default will create a new blog post entry for each .qmd file in the posts folder. However you can customize which files are included in the listing by specifying the contents for the listing in the YAML where the listing is created.\nFor example, suppose that in your posts folder you have a sub-folder for each blog post (like I do for this blog at https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/tree/main/posts). In each of these subfolders you might want to have an index.qmd file that contains the blog post entry as well as other supplementary .qmd files (e.g., any example, demo, etc. files for your blog post) that you don’t want turned into their own individual blog posts. To indicate this you can add the following to your YAML:\n---\nlisting:\n  contents: \"posts/*/index.qmd\"\n---\nA few more ideas for how this feature can be leveraged:\n\nIf building a course website, you can make use of the listings feature and bundle each lesson in a folder. Then, the index.qmd file in that folder can be the landing page for the lesson and other files (slides, exercises, instructor’s notes, etc.) can live in the lesson folder as well but not get processed as individual listing items.\nIn addition to using globs to include files that follow a certain convention, you can use globs to exclude them as well.\nAuthoring each of your blog posts in a file called index.qmd might get a bit hectic if you’re editing multiple posts concurrently (h/t to Charlotte for pointing this out). You can come up with a different naming convention for your posts and indicate that as a glob. Note that the file name will affect the slug of your post in its URL though, so you might want to choose a convention keeping that in mind."
-  },
-  {
-    "objectID": "posts/06-listing-contents/index.html#learn-more",
-    "href": "posts/06-listing-contents/index.html#learn-more",
-    "title": "Listing contents",
-    "section": "Learn more",
-    "text": "Learn more\n\nDocument listings\nListing contents\nQuarto glob syntax"
-  },
-  {
-    "objectID": "posts/12-html-block/index.html",
-    "href": "posts/12-html-block/index.html",
-    "title": "HTML blocks",
-    "section": "",
-    "text": "Want to embed an iframe on a webpage or a slide deck? Plop the sharing code in a raw html block!\n```{=html}\n<iframe width=\"780\" height=\"500\" src=\"https://quarto.org/\" title=\"Quarto Documentation\"></iframe>\n```\nAnd here is the result!\n\nA few notes on HTML blocks:\n\nThey’re useful for visually separating out areas where you include raw HTML in an otherwise (primarily) markdown document.\nThey make it easy to programatically access those HTML blocks should you ever need to do so (e.g., with a document parser or using regular expressions).\nIf you’re using the RStudio visual editor, you can insert an HTML block using Insert > Any > HTML Block or accessing the Insert Anything tool with the ⌘ / shortcut."
-  },
-  {
-    "objectID": "posts/12-html-block/index.html#learn-more",
-    "href": "posts/12-html-block/index.html#learn-more",
-    "title": "HTML blocks",
-    "section": "Learn more",
-    "text": "Learn more\nInsert anything"
-  },
-  {
-    "objectID": "posts/05-output-location/index.html",
-    "href": "posts/05-output-location/index.html",
-    "title": "Output location",
-    "section": "",
-    "text": "Showing code and output side-by-side or delayed reveal of the output are commonly used techniques for teaching programming when the mode of delivery is slides. The output-location chunk option makes it easy to achieve these.\nPossible values for the output-location option are as follows:\n\nfragment: Display output as a fragment, i.e., delay showing it until it is explicitly stepped through by advancing the slides.\nslide: Display output on the subsequent slide.\ncolumn: Display output in a column adjacent to the code. This splits the slide into two columns, each of which span 50% of the width of the slide\ncolumn-fragment: Display output in a column adjacent to the code and delay showing it until its explicitly stepped through by advancing the slides.\n\nYou can see these in action in the slide deck below.\n\nNote that for the column options I also adjusted fig-height and fig-width since the default size and aspect ration doesn’t work well for figures spanning only half the width of the slide."
-  },
-  {
-    "objectID": "posts/05-output-location/index.html#learn-more",
-    "href": "posts/05-output-location/index.html#learn-more",
-    "title": "Output location",
-    "section": "Learn more",
-    "text": "Learn more\nOutput location"
   },
   {
     "objectID": "posts/05-output-location/output-location.html#default",
@@ -252,60 +203,53 @@
     "text": "output-location: column-fragment\n\n\n```{r}\n#| output-location: column-fragment\n#| fig-width: 6\n#| fig-height: 4\n\nggplot(penguins, \n       aes(x = bill_length_mm, \n           y = bill_depth_mm, \n           color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```"
   },
   {
-    "objectID": "posts/10-site-resources/index.html",
-    "href": "posts/10-site-resources/index.html",
-    "title": "Site resources",
+    "objectID": "posts/05-output-location/index.html",
+    "href": "posts/05-output-location/index.html",
+    "title": "Output location",
     "section": "",
-    "text": "To publish a file not explicitly linked from pages in your Quarto site, add a resources entry to your _quarto.yml file.\nFor example, to include all PDF files within the project directory as part of the website, you can use the following.\nproject:\n  type: website\n  resources: \n    - \"*.pdf\"\nIf the PDF files are linked from somewhere in your website, they should automatically be copied over to your _site directory when your site is built. But if Quarto somehow fails to do that, adding them as resources should fix the issue.\nA few other notes on this feature:\n\nresources entries are character strings so they should have quotes around them.\nYou can use Quarto Glob Syntax when defining resources for Quarto websites.\nQuarto cannot render xaringan slides but you can include the Rmds and the resulting HTML files of your xaringan slide decks by including them as resources. Note that the slide decks are in a folder starting with _ to indicate that quarto render should ignore that folder.\n\nproject:\n  type: website\n  resources:\n    - \"_xaringan-slides/\"\n\nresources metadata can also be added to individual files. For example, if you have a course website with a syllabus page, and you also want to allow downloading a PDF version of the syllabus from that page, you might use something like the following.\n\ntitle: \"Syllabus\"\nresources:\n  - \"syllabus.pdf\""
+    "text": "Showing code and output side-by-side or delayed reveal of the output are commonly used techniques for teaching programming when the mode of delivery is slides. The output-location chunk option makes it easy to achieve these.\nPossible values for the output-location option are as follows:\n\nfragment: Display output as a fragment, i.e., delay showing it until it is explicitly stepped through by advancing the slides.\nslide: Display output on the subsequent slide.\ncolumn: Display output in a column adjacent to the code. This splits the slide into two columns, each of which span 50% of the width of the slide\ncolumn-fragment: Display output in a column adjacent to the code and delay showing it until its explicitly stepped through by advancing the slides.\n\nYou can see these in action in the slide deck below.\n\nNote that for the column options I also adjusted fig-height and fig-width since the default size and aspect ration doesn’t work well for figures spanning only half the width of the slide."
   },
   {
-    "objectID": "posts/10-site-resources/index.html#learn-more",
-    "href": "posts/10-site-resources/index.html#learn-more",
-    "title": "Site resources",
+    "objectID": "posts/05-output-location/index.html#learn-more",
+    "href": "posts/05-output-location/index.html#learn-more",
+    "title": "Output location",
     "section": "Learn more",
-    "text": "Learn more\nSite Resources"
+    "text": "Learn more\nOutput location"
   },
   {
-    "objectID": "posts/20-yaml-intelligence/index.html",
-    "href": "posts/20-yaml-intelligence/index.html",
-    "title": "YAML intelligence",
+    "objectID": "posts/02-fenced-echo/index.html",
+    "href": "posts/02-fenced-echo/index.html",
+    "title": "Fenced echo",
     "section": "",
-    "text": "Quarto offers extensive YAML intelligence (completion and diagnostics) in the RStudio IDE and in VS Code for project files, YAML front matter, and executable cell options. This makes it easier to write YAML, whether you’re an expert or just starting to learn."
+    "text": "If you, like me, spend most of your time writing teaching materials or documentation, I’m sure you’ll find the chunk option echo: fenced just as useful as I do! When you set this option for a code chunk, the chunk is displayed with the fences around it – without a screenshot or using a special verbatim engine.\nTo get code chunks printed out as\n\n```{r}\n#| label: simple-arithmetic\n#| results: hide\n\n1 + 1\n```\n\nadd the echo: fenced option to your chunk:\n```{r}\n#| echo: fenced\n#| label: simple-arithmetic\n#| results: hide\n\n1 + 1\n```\nNote that in the output all chunk options other than echo: fenced are shown, so this is a great tool for teaching chunk options as well."
   },
   {
-    "objectID": "posts/20-yaml-intelligence/index.html#yaml-completion",
-    "href": "posts/20-yaml-intelligence/index.html#yaml-completion",
-    "title": "YAML intelligence",
-    "section": "YAML completion",
-    "text": "YAML completion\nFor example, let’s say you have a code chunk in your document and you don’t want it to be evaluated. The chunk option you should set is eval and it should be set to false. If you’re coming from R Markdown, you might be used to seeing this as eval = FALSE, but in YAMl style this option should be defined as eval: false.\n\n\n\n\n\nThis is super helpful when you just want to browse through all chunk options to see what’s available as well as when you can’t remember the full name of a chunk option, but remember a piece of it, e.g., fig-.\n\n\n\n\n\nYAML completion works in .yml files as well."
-  },
-  {
-    "objectID": "posts/20-yaml-intelligence/index.html#yaml-diagnostics",
-    "href": "posts/20-yaml-intelligence/index.html#yaml-diagnostics",
-    "title": "YAML intelligence",
-    "section": "YAML diagnostics",
-    "text": "YAML diagnostics\nYAML intelligence isn’t limited to code completion. If you have incorrect YAML it will also be highlighted when documents are saved. For example, if you typed eval: FALSE instead of eval: false, you’ll see the following."
-  },
-  {
-    "objectID": "posts/20-yaml-intelligence/index.html#learn-more",
-    "href": "posts/20-yaml-intelligence/index.html#learn-more",
-    "title": "YAML intelligence",
+    "objectID": "posts/02-fenced-echo/index.html#learn-more",
+    "href": "posts/02-fenced-echo/index.html#learn-more",
+    "title": "Fenced echo",
     "section": "Learn more",
-    "text": "Learn more\n\nRStudio IDE YAML intelligence\nVSCode YAML intelligence"
+    "text": "Learn more\nFenced echo execution option"
   },
   {
-    "objectID": "posts/17-dark-mode/index.html",
-    "href": "posts/17-dark-mode/index.html",
-    "title": "Dark mode",
+    "objectID": "posts/22-shiny/index.html",
+    "href": "posts/22-shiny/index.html",
+    "title": "Shiny",
     "section": "",
-    "text": "Quarto websites support light and dark themes and will automatically add a light/dark toggle to your website if you supply both themes.\n---\nformat:\n  html:\n    theme:\n      light: litera\n      dark: darkly\n---\nYou can also customize your light and dark themes and and supply custom theme files in addition to the Bootswatch themes you’re using.\n---\nformat:\n  html:\n    theme:\n      light: [litera, styles.scss]\n      dark: [darkly, styles-dark.scss]\n---\nHere are the custom styles I’m using on this website:\n\nstyles.scss\nstyles-dark.scss\n\nIf you know you want to offer the light/dark toggle, and you are planning to use a Bootswatch theme, I recommend browsing the options thoroughly first can decide on a light and a dark theme that look similar except for the colors and using that pair."
+    "text": "You can create interactive Quarto documents using Shiny. To do so:\n\nAdd server: shiny to the YAML of your document.\nDefine Shiny UI elements in plain R code chunks.\nPlace Shiny server code in R code chunks with the chunk option context: server.\n\nBelow is an example of a Quarto document with Shiny elements in it. Click on a different radio button to see the effect in the document.\n\nYou can also click on the </> Code link in the document to view the source code for the document.\nYou’ll see that:\n\nWe create an input widget called radio_input in the first code chunk.\nThe value of this widget is stored in output$radio_output (which is in a code chunk with context: server, which is not visible in the rendered document).\nThe output element called radio_output is displayed using the verbatimTextOutput in the last code chunk.\n\nThis document is then deployed to shinyapps.io. You can find the standalone document at https://minecr.shinyapps.io/shiny-in-quarto."
   },
   {
-    "objectID": "posts/17-dark-mode/index.html#learn-more",
-    "href": "posts/17-dark-mode/index.html#learn-more",
-    "title": "Dark mode",
+    "objectID": "posts/22-shiny/index.html#interactivity",
+    "href": "posts/22-shiny/index.html#interactivity",
+    "title": "Shiny",
+    "section": "Interactivity",
+    "text": "Interactivity\nIn addition to Shiny, you can add interactivity to your Quarto documents with:\n\nObservable JS\nJupyter Widgets\nhtmlwidgets"
+  },
+  {
+    "objectID": "posts/22-shiny/index.html#learn-more",
+    "href": "posts/22-shiny/index.html#learn-more",
+    "title": "Shiny",
     "section": "Learn more",
-    "text": "Learn more\nDark mode"
+    "text": "Learn more\nInteractivity"
   },
   {
     "objectID": "posts/19-gallery/index.html",
@@ -322,20 +266,6 @@
     "text": "Learn more\nQuarto Gallery"
   },
   {
-    "objectID": "posts/18-font-awesome/index.html",
-    "href": "posts/18-font-awesome/index.html",
-    "title": "Font Awesome",
-    "section": "",
-    "text": "Including Font Awesome icons in Quarto documents is now easy peasy lemon squeezy  with the Font Awesome extension. Just surround the Font Awesome icon name in {{< and >}}.\n\n\n\ninput\noutput\n\n\n\n\n{{< fa brands apple >}}\n\n\n\n{{< fa calendar >}}\n\n\n\n{{< fa user-doctor >}}\n\n\n\n{{< fa door-closed >}}\n\n\n\n\nTo use this extension run the following in your terminal in the Quarto project you want to use these icons.\nquarto install extension quarto-ext/fontawesome\nThis will prompt you to answer if you trust the extension, and you should decide that for yourself. This particular extension is developed by the Quarto development team. Once you say yes, the extension will be installed in an _extensions subdirectory.\nA few notes on this extension:\n\nIcons can be used in both HTML and PDF output.\nOnly the free Font Awesome icons are supported: https://fontawesome.com/search?m=free.\nIf you’re using version control, you should check in the _extensions directory."
-  },
-  {
-    "objectID": "posts/18-font-awesome/index.html#learn-more",
-    "href": "posts/18-font-awesome/index.html#learn-more",
-    "title": "Font Awesome",
-    "section": "Learn more",
-    "text": "Learn more\n\nFont Awesome Extension for Quarto\nUsing Extensions"
-  },
-  {
     "objectID": "posts/08-rmd-switch/index.html",
     "href": "posts/08-rmd-switch/index.html",
     "title": "R Markdown to Quarto",
@@ -350,38 +280,129 @@
     "text": "Learn more\nFAQ for R Markdown Users"
   },
   {
-    "objectID": "posts/09-self-contained/index.html",
-    "href": "posts/09-self-contained/index.html",
-    "title": "Self-contained HTML",
+    "objectID": "posts/16-code-tools/index.html",
+    "href": "posts/16-code-tools/index.html",
+    "title": "Code tools",
     "section": "",
-    "text": "If you want to create an entirely self-contained HTML document (with images, CSS, etc. embedded into the HTML file), add the following to the YAML of your document.\nformat:\n  html:\n    self-contained: true\nThis produces a standalone HTML with no external dependencies.\n\nThis works with .qmd and .ipynb files.\nIf instead of publishing the document, you want to share it using a file sharing service (e.g., Dropbox) or email it to someone just like you share other document types like spreadsheets, presentations, and PDFs, you should use this option to generate a self-contained HTML.\nQuarto presentations created with revealjs can also be published as self-contained HTML.\nMath libraries are not embedded in self-contained HTML documents by default (because they are quite large and often time consuming to download) but you can add self-contained-math: true to your YAML to embed them as well."
+    "text": "You can include a Code menu in the header of your document that provides various tools for readers to interact with your source code.\nIf you want to include the full source code (including executable code chunks and your prose, in other words, your full .qmd file), set code-tools: true in the YAML of your document.\n---\nformat:\n  html: \n    code-tools: true\n---\nThe mlr3book uses this approach.\nAlternatively, if your document lives within a project that has a specified repo-url in the project-level _quarto.yml file, you can directly link to the document in your repo by specifying the source.\n---\nformat:\n  html: \n    code-tools:\n      source: repo\n---\nOn this page I’ve done something a little different. I have some “analysis code” on my page, in the following code chunks.\nFirst, I load some packages.\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nThen, I calculate some summary statistics.\n\npenguins %>%\n  group_by(species) %>%\n  summarise(mean_bill_length = mean(bill_length_mm, na.rm = TRUE))\n\n# A tibble: 3 × 2\n  species   mean_bill_length\n  <fct>                <dbl>\n1 Adelie                38.8\n2 Chinstrap             48.8\n3 Gentoo                47.5\n\n\nWhen you have a bunch of code as well as bunch of prose in your document (like here), your readers might want access to just the content in your executable code chunks so that they can easily replicate your analysis. You can do this by maintaining a separate R script, and then linking to it from your YAML, like I’ve done on this page.\n---\nformat:\n  html: \n    code-tools:\n      source: https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/posts/16-code-tools/penguins.R\n---\nAnd you have two options for generating that R script:\n\nYou can create and maintain it manually, making sure to keep it updated as you update the analysis in your narrative / .qmd file.\nYou can automatically generate it from your .qmd file with knitr::purl(), which “extracts the R code in it according to a list of patterns, evaluates the code and writes the output in another file”."
   },
   {
-    "objectID": "posts/09-self-contained/index.html#learn-more",
-    "href": "posts/09-self-contained/index.html#learn-more",
-    "title": "Self-contained HTML",
+    "objectID": "posts/16-code-tools/index.html#learn-more",
+    "href": "posts/16-code-tools/index.html#learn-more",
+    "title": "Code tools",
     "section": "Learn more",
-    "text": "Learn more\nSelf-contained HTML"
+    "text": "Learn more\nCode tools"
   },
   {
-    "objectID": "posts/04-include/index.html",
-    "href": "posts/04-include/index.html",
-    "title": "Includes",
+    "objectID": "posts/14-slide-zoom/slide-zoom.html#find-the-bunny-among-the-cats",
+    "href": "posts/14-slide-zoom/slide-zoom.html#find-the-bunny-among-the-cats",
+    "title": "A Quarto tip a day",
+    "section": "Find the bunny among the cats",
+    "text": "Find the bunny among the cats\nby zooming in\n\n\nArtwork by Gergely Dudás"
+  },
+  {
+    "objectID": "posts/14-slide-zoom/index.html",
+    "href": "posts/14-slide-zoom/index.html",
+    "title": "Slide zoom",
     "section": "",
-    "text": "If you have content you want to include across many files, you can place that content in a separate Quarto file and use the include comment wherever you want to pull it in.\nThis could be useful for plain text content (e.g., including the same submission instructions for each homework assignment) or for content that includes computation (e.g., including the same data cleaning steps for various alternate analyses).\nSuppose you have such repeatable content in a file called _content-to-repeat.qmd and suppose the contents of that file read Look at me, I’m content to be repeated! (in italics):\n\n\n\n\n\n\ncontent-to-repeat.qmd\n*Look at me, I'm content to be repeated!*\n\n\n\nYou can include it in other documents using the {{< include >}} shortcode:\n{{< include _content-to-repeat.qmd >}}\nThis will result in:\nLook at me I’m content to be repeated!\nA few important things to note:\n\nThe name of the file that will be included should start with an underscore (_) so that they are automatically ignored (i.e. not treated as standalone files) when rendering a project.\nAll computations within a document will share a single engine (e.g., knitr and jupyter), which is relevant when the included file has computations.\nThe included file does not have to be a .qmd if it only contains text, it can also be a .md, .ipynb, etc. However included files with computation in them need to be .qmd, computational includes don’t work in .ipynb notebook files."
+    "text": "One way to draw your audience’s attention to a particular spot on your slides is annotating it, which I wrote about in quartotip #7. Another way of doing this is zooming in, which you can do by holding down the Alt key (or Ctrl in Linux) and clicking on any element to zoom towards it. Click again to zoom back out."
   },
   {
-    "objectID": "posts/04-include/index.html#learn-more",
-    "href": "posts/04-include/index.html#learn-more",
-    "title": "Includes",
+    "objectID": "posts/14-slide-zoom/index.html#learn-more",
+    "href": "posts/14-slide-zoom/index.html#learn-more",
+    "title": "Slide zoom",
     "section": "Learn more",
-    "text": "Learn more\nIncludes"
+    "text": "Learn more\nSlide zoom"
+  },
+  {
+    "objectID": "posts/06-listing-contents/index.html",
+    "href": "posts/06-listing-contents/index.html",
+    "title": "Listing contents",
+    "section": "",
+    "text": "Quarto blogs by default will create a new blog post entry for each .qmd file in the posts folder. However you can customize which files are included in the listing by specifying the contents for the listing in the YAML where the listing is created.\nFor example, suppose that in your posts folder you have a sub-folder for each blog post (like I do for this blog at https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/tree/main/posts). In each of these subfolders you might want to have an index.qmd file that contains the blog post entry as well as other supplementary .qmd files (e.g., any example, demo, etc. files for your blog post) that you don’t want turned into their own individual blog posts. To indicate this you can add the following to your YAML:\n---\nlisting:\n  contents: \"posts/*/index.qmd\"\n---\nA few more ideas for how this feature can be leveraged:\n\nIf building a course website, you can make use of the listings feature and bundle each lesson in a folder. Then, the index.qmd file in that folder can be the landing page for the lesson and other files (slides, exercises, instructor’s notes, etc.) can live in the lesson folder as well but not get processed as individual listing items.\nIn addition to using globs to include files that follow a certain convention, you can use globs to exclude them as well.\nAuthoring each of your blog posts in a file called index.qmd might get a bit hectic if you’re editing multiple posts concurrently (h/t to Charlotte for pointing this out). You can come up with a different naming convention for your posts and indicate that as a glob. Note that the file name will affect the slug of your post in its URL though, so you might want to choose a convention keeping that in mind."
+  },
+  {
+    "objectID": "posts/06-listing-contents/index.html#learn-more",
+    "href": "posts/06-listing-contents/index.html#learn-more",
+    "title": "Listing contents",
+    "section": "Learn more",
+    "text": "Learn more\n\nDocument listings\nListing contents\nQuarto glob syntax"
+  },
+  {
+    "objectID": "posts/13-homebrew/index.html",
+    "href": "posts/13-homebrew/index.html",
+    "title": "Quarto on Homebrew",
+    "section": "",
+    "text": "If you’re a Homebrew person, chances are you’d like to install and update Quarto with Homebrew. There are two options for doing so.\n\nUsing the Quarto cask: This installs the pkg file from latest official Quarto release. One minor pain point with this approach is that each time you update Quarto, you’ll need to enter your user password.\nbrew install --cask quarto\nUsing a private tap: This provides a formula-based version which installs the Quarto files in the typical Homebrew cellar location. With this method, you won’t need to enter your password each time you want to update Quarto, however you are relying on a private tap.\nbrew tap rundel/quarto-cli\nbrew install quarto\n\nOnce you’ve installed Quarto via Homebrew using either method, you can update to the latest release with\nbrew upgrade quarto\nor it will also update along with other software, when you run brew upgrade.\nA few more notes:\n\nYou do not need Homebrew to install or update the Quarto CLI. You can always get the latest released version at https://quarto.org/docs/get-started/.\nIf using RStudio, you do not need to install the Quarto CLI separately as RStudio already ships with it. However if you want a different version of Quarto than the one bundled with RStudio, you can use either of the approaches above to install / update it.\nIf you’re interested in the development version of Quarto, you can find installation instructions on the Quarto CLI repo."
+  },
+  {
+    "objectID": "posts/13-homebrew/index.html#learn-more",
+    "href": "posts/13-homebrew/index.html#learn-more",
+    "title": "Quarto on Homebrew",
+    "section": "Learn more",
+    "text": "Learn more\nQuarto on Homebrew"
+  },
+  {
+    "objectID": "posts/12-html-block/index.html",
+    "href": "posts/12-html-block/index.html",
+    "title": "HTML blocks",
+    "section": "",
+    "text": "Want to embed an iframe on a webpage or a slide deck? Plop the sharing code in a raw html block!\n```{=html}\n<iframe width=\"780\" height=\"500\" src=\"https://quarto.org/\" title=\"Quarto Documentation\"></iframe>\n```\nAnd here is the result!\n\nA few notes on HTML blocks:\n\nThey’re useful for visually separating out areas where you include raw HTML in an otherwise (primarily) markdown document.\nThey make it easy to programatically access those HTML blocks should you ever need to do so (e.g., with a document parser or using regular expressions).\nIf you’re using the RStudio visual editor, you can insert an HTML block using Insert > Any > HTML Block or accessing the Insert Anything tool with the ⌘ / shortcut."
+  },
+  {
+    "objectID": "posts/12-html-block/index.html#learn-more",
+    "href": "posts/12-html-block/index.html#learn-more",
+    "title": "HTML blocks",
+    "section": "Learn more",
+    "text": "Learn more\nInsert anything"
+  },
+  {
+    "objectID": "posts/03-freeze/index.html",
+    "href": "posts/03-freeze/index.html",
+    "title": "Freeze",
+    "section": "",
+    "text": "For Quarto projects with many documents that include code, you probably won’t want to re-execute all of that code each time you render the project. The freeze execution option is helpful for managing that.\nFor example, you might have a Quarto blog and when you render the website you wouldn’t want code from old blog posts to be re-rendered automatically, you would likely prefer to leave them as is as of the date they were published. Or you might be using Quarto for a course website and have slides, homework assignments, etc. in that website that you add as the semester progresses. You wouldn’t want to re-render all of those old documents each time you add new items to your website.\nManaging execution for these purposes is straightforward with Quarto using the freeze option in your _quarto.yml file for your project, e.g.\nexecute:\n  freeze: true\nYou can set this option to true or auto. By default, it’s false.\n\nfreeze: true - Never re-render during project render. If you need the page/document to be re-rendered, you need to render that document individually.\n\nThis is the option I use for blogs as I want to make sure to avoid re-rendering old posts unless I explicitly do so.\n\nfreeze: auto - Re-render only when source changes.\n\nThis is the option I use for my course websites – when I catch a mistake in earlier slide decks, and update the source code, I want those documents re-render next time I render my project, I don’t want to rely on remembering to re-render them myself.\n\n\nNote that freeze controls whether execution occurs during global project renders. If you do render a single document or a sub-directory in a Quarto project, then the code is always executed."
+  },
+  {
+    "objectID": "posts/03-freeze/index.html#learn-more",
+    "href": "posts/03-freeze/index.html#learn-more",
+    "title": "Freeze",
+    "section": "Learn more",
+    "text": "Learn more\nManaging execution with freeze"
+  },
+  {
+    "objectID": "posts/07-slide-annotation/chalkboard.html#penguins",
+    "href": "posts/07-slide-annotation/chalkboard.html#penguins",
+    "title": "A Quarto tip a day",
+    "section": "Penguins",
+    "text": "Penguins\n\n\n\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()"
+  },
+  {
+    "objectID": "posts/07-slide-annotation/index.html",
+    "href": "posts/07-slide-annotation/index.html",
+    "title": "Slide annotation",
+    "section": "",
+    "text": "The chalkboard: true option for revealjs slides enables you to annotate your slides by drawing on them as well as open up an empty chalkboard within your presentation.\n---\nformat: \n  revealjs:\n    chalkboard: true\n---\nWhen you add this to your slide source code, you’ll see two new icons appear in the bottom left corner of your slides: chalkboard and paintbrush.\n\n\nCanvas annotation can be activated by clicking on the paintbrush icon and can be used to highlight / draw attention to particular items in your slide.\n\n\n\n\n\n\n\nChalkboard can be activated by clicking on the chalkboard icon. I often use this feature when I get a question during teaching that is not covered in the slides and requires some writing/drawing to effectively answer. It’s great help if you teach in a classroom where the chalk/whiteboard is not accessible when the projector screen is down.\n\n\n\n\n\n\nTry interacting with these in the slides embedded above! To clear drawings click DEL (delete). You can also toggle between these features and download your annotations using keyboard shortcuts."
+  },
+  {
+    "objectID": "posts/07-slide-annotation/index.html#learn-more",
+    "href": "posts/07-slide-annotation/index.html#learn-more",
+    "title": "Slide annotation",
+    "section": "Learn more",
+    "text": "Learn more\nChalkboard"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "A Quarto tip a day keeps the docs away",
+    "section": "",
+    "text": "As part of this project, I will tweet a Quarto tip each day in starting June 28, 2022 for thirty days, from the Quarto account (@quarto_pub), with the hashtag #quartotip. The daily tips / tweets are in no particular order. This website collects each tip as a daily blog post entry, with each blog post linking to “learn more” resources. And, you guessed it, it’s made with Quarto!\nThe target audience for this project is folks who are already somewhat familiar with Quarto. If you’re brand new to Quarto, I recommend getting started here instead."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "A Quarto tip a day",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 17, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 15, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 13, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 12, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 11, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 19, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 17, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 15, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 13, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 12, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 11, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
