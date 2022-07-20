@@ -292,3 +292,21 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/21-dia
 \[insert-image\]
 
 alt-text: Diagram depicting how Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.
+
+------------------------------------------------------------------------
+
+#quartotip 22: You can create interactive Quarto documents using Shiny by
+
+-   adding `server: shiny` to the YAML of your document,
+-   defining Shiny UI elements in plain code chunks, and
+-   placing Shiny server code in chunks with option `context: server`.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/22-shiny/
+
+\[insert-image\]
+
+alt-text: Code and output for a radioInput() widget that asks the question Are you a cat or dog person?
+with choices Cat person, Dog person, Don't make me choose, and Neither.
+An arrow points to code for defining output\$radio_output that places the widget value in a renderPrint() function.
+Finally, code and output for rendering the widget value with verbatimTextOutput().
+Complete code can be found in the blog post.

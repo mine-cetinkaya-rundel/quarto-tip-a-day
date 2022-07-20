@@ -1,0 +1,45 @@
+---
+title: "Shiny"
+date: "2022-07-19"
+categories: [interactivity, shiny]
+image: "featured.png"
+image-alt: "Code and output for a radioInput() widget that asks the question Are you a cat or dog person? with choices Cat person, Dog person, Don't make me choose, and Neither. An arrow points to code for defining output$radio_output that places the widget value in a renderPrint() function. Finally, code and output for rendering the widget value with verbatimTextOutput(). Complete code can be found in the blog post."
+---
+
+## Shiny
+
+You can create interactive Quarto documents using Shiny.
+To do so:
+
+-   Add `server: shiny` to the YAML of your document.
+-   Define Shiny UI elements in plain R code chunks.
+-   Place Shiny server code in R code chunks with the chunk option `context: server`.
+
+Below is an example of a Quarto document with Shiny elements in it.
+Click on a different radio button to see the effect in the document.
+
+```{=html}
+<iframe width="800px" height="1000px" style="border:2px solid #dee2e6;" src="https://minecr.shinyapps.io/shiny-in-quarto/"></iframe>
+```
+You can also click on the `</> Code` link in the document to view the source code for the document.
+
+You'll see that:
+
+-   We create an input widget called `radio_input` in the first code chunk.
+-   The value of this widget is stored in `output$radio_output` (which is in a code chunk with `context: server`, which is not visible in the rendered document).
+-   The output element called `radio_output` is displayed using the `verbatimTextOutput` in the last code chunk.
+
+This document is then deployed to `shinyapps.io`.
+You can find the standalone document at [https://minecr.shinyapps.io/shiny-in-quarto](https://minecr.shinyapps.io/shiny-in-quarto/).
+
+## Interactivity
+
+In addition to [Shiny](https://quarto.org/docs/interactive/shiny/), you can add interactivity to your Quarto documents with:
+
+-   [Observable JS](https://quarto.org/docs/interactive/ojs/)
+-   [Jupyter Widgets](https://quarto.org/docs/interactive/widgets/jupyter.html)
+-   [htmlwidgets](https://quarto.org/docs/interactive/widgets/htmlwidgets.html)
+
+## Learn more
+
+[Interactivity](https://quarto.org/docs/interactive/)
