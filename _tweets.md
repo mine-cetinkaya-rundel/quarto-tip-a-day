@@ -295,11 +295,12 @@ alt-text: Diagram depicting how Quarto orchestrates rendering of documents: star
 
 ------------------------------------------------------------------------
 
-#quartotip 22: You can create interactive Quarto documents using Shiny by
+#quartotip 22: You can create interactive Quarto documents using Shiny.
+To do so:
 
--   adding `server: shiny` to the YAML of your document,
--   defining Shiny UI elements in plain code chunks, and
--   placing Shiny server code in chunks with option `context: server`.
+-   add server: shiny to the YAML of your document
+-   define Shiny UI elements in plain code chunks
+-   place Shiny server code in chunks with option context: server
 
 Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/22-shiny/
 
