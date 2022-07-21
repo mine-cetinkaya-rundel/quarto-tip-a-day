@@ -311,3 +311,15 @@ with choices Cat person, Dog person, Don't make me choose, and Neither.
 An arrow points to code for defining output\$radio_output that places the widget value in a renderPrint() function.
 Finally, code and output for rendering the widget value with verbatimTextOutput().
 Complete code can be found in the blog post.
+
+------------------------------------------------------------------------
+
+#quartotip 23: If you have slides with no titles and you want them to have informative URLs and placeholder titles on the presentation outline, define a slide ID and data-menu-title.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/23-titleless-slides/
+
+\[insert-image\]
+
+alt-text: A slide with no title but slide ID and data-menu-title defined.
+Arrows point to where these pieces of information go on the slide URL and presentation outline.
+The screenshots are from Slide 3 of the example in the blog post, where the complete code can be found.

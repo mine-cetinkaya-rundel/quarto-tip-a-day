@@ -2,7 +2,8 @@
 title: "Title-less slides"
 date: "2022-07-20"
 categories: [presentation, revealjs]
-image-alt: "Add slide title."
+image: featured.png
+image-alt: "A slide with no title but slide ID and data-menu-title defined. Arrows point to where these pieces of information go on the slide URL and presentation outline. The screenshots are from Slide 3 of the example in the blog post, where the complete code can be found."
 ---
 
 ## `#slide-id` and `data-menu-title`
