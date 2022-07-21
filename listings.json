@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/23-titleless-slides/index.html",
       "/posts/22-shiny/index.html",
       "/posts/21-diagrams/index.html",
       "/posts/20-yaml-intelligence/index.html",
