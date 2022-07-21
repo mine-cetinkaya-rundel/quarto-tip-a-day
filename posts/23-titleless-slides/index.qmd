@@ -26,29 +26,27 @@ Now check out the source code for the slide deck: https://github.com/mine-cetink
 
 - Slide 1 has a title and content:
 
-```` 
+``` markdown
 ## Slide 1 title
 
 Slide 1 content - this slide has a title
-````
+```
 
 - Slide 2 has no title but content:
 
-````
+``` markdown
 ## 
 
 Slide 2 content - this slide has no title
-````
+```
 
 - Slide 3 also has no title but content, but also defines a slide ID and `data-menu-title`.
 
-````
+``` markdown
 ##  {#slide3-id data-menu-title="Slide 3 title for outline"}
 
 Slide 3 content - this slide has no title, but has a slide ID and `data-menu-title`.
-````
-
-
+```
 
 A couple more notes on slide titles:
 
