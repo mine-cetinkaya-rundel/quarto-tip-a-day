@@ -5,6 +5,8 @@ categories: [presentation, revealjs]
 image-alt: "Add slide title."
 ---
 
+## `#slide-id` and `data-menu-title`
+
 Most slides are comprised of a title and content, but sometimes you might choose to not have a title for a slide. 
 
 For example, if you just want to a full slide image or want to show an impactful quote on a slide with nothing else. You can have title-less slides in Quarto, but if you want those slides to appear properly in the presentation outline you'll need to do the following:
@@ -14,15 +16,39 @@ For example, if you just want to a full slide image or want to show an impactful
 
 Here is a sample slide deck with three slides:
 
-- Slide 1 has a title and content.
-- Slide 2 has no title but content.
-- Slide 3 also has no title but content, but also defines a slide ID and `data-menu-title`.
-
 ```{=html}
 <iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="titleless.html"></iframe>
 ```
 
-Check out the presentation outline by clicking on the hamburger menu (the three lines) at the bottom left of the slides as well and open the slides in a new tab/window to review the slide URLs: [add url].
+Check out the presentation outline by clicking on the hamburger menu (the three lines) at the bottom left of the slides as well and open the slides in a new tab/window to review the slide URLs: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/23-titleless-slides/titleless.html#/slide-1-title.
+
+Now check out the source code for the slide deck: https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/posts/23-titleless-slides/titleless.qmd.
+
+- Slide 1 has a title and content:
+
+```` 
+## Slide 1 title
+
+Slide 1 content - this slide has a title
+````
+
+- Slide 2 has no title but content:
+
+````
+## 
+
+Slide 2 content - this slide has no title
+````
+
+- Slide 3 also has no title but content, but also defines a slide ID and `data-menu-title`.
+
+````
+##  {#slide3-id data-menu-title="Slide 3 title for outline"}
+
+Slide 3 content - this slide has no title, but has a slide ID and `data-menu-title`.
+````
+
+
 
 A couple more notes on slide titles:
 
