@@ -19,7 +19,7 @@ Below is an example of a Quarto document with Shiny elements in it.
 Click on a different radio button to see the effect in the document.
 
 ```{=html}
-<iframe width="800px" height="1000px" style="border:2px solid #dee2e6;" src="https://minecr.shinyapps.io/shiny-in-quarto/"></iframe>
+<iframe width="800px" height="1000px" style="border:2px solid #dee2e6;" src="https://minecr.shinyapps.io/shiny_in_quarto/"></iframe>
 ```
 You can also click on the `</> Code` link in the document to view the source code for the document.
 
@@ -30,7 +30,7 @@ You'll see that:
 -   The output element called `radio_output` is displayed using the `verbatimTextOutput` in the last code chunk.
 
 This document is then deployed to `shinyapps.io`.
-You can find the standalone document at [https://minecr.shinyapps.io/shiny-in-quarto](https://minecr.shinyapps.io/shiny-in-quarto/).
+You can find the standalone document at [https://minecr.shinyapps.io/shiny_in_quarto](https://minecr.shinyapps.io/shiny_in_quarto/).
 
 ## Interactivity
 

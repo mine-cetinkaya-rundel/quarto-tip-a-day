@@ -314,7 +314,7 @@ Complete code can be found in the blog post.
 
 ------------------------------------------------------------------------
 
-#quartotip 23: If you have slides with no titles and you want them to have informative URLs and placeholder titles on the presentation outline, define a slide ID and data-menu-title.
+#quartotip 23: If you have revealjs slides with no titles and you want them to have informative URLs and placeholder titles on the presentation outline, define a slide ID and data-menu-title.
 
 Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/23-titleless-slides/
 
