@@ -35,21 +35,21 @@
 <ul>
 <li>Slide 1 has a title and content:</li>
 </ul>
-<pre><code>## Slide 1 title
-
-Slide 1 content - this slide has a title</code></pre>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="fu" style="color: #4758AB;">## Slide 1 title</span></span>
+<span id="cb1-2"></span>
+<span id="cb1-3">Slide 1 content - this slide has a title</span></code></pre></div>
 <ul>
 <li>Slide 2 has no title but content:</li>
 </ul>
-<pre><code>## 
-
-Slide 2 content - this slide has no title</code></pre>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="fu" style="color: #4758AB;">## </span></span>
+<span id="cb2-2"></span>
+<span id="cb2-3">Slide 2 content - this slide has no title</span></code></pre></div>
 <ul>
 <li>Slide 3 also has no title but content, but also defines a slide ID and <code>data-menu-title</code>.</li>
 </ul>
-<pre><code>##  {#slide3-id data-menu-title="Slide 3 title for outline"}
-
-Slide 3 content - this slide has no title, but has a slide ID and `data-menu-title`.</code></pre>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="fu" style="color: #4758AB;">##  {#slide3-id data-menu-title="Slide 3 title for outline"}</span></span>
+<span id="cb3-2"></span>
+<span id="cb3-3">Slide 3 content - this slide has no title, but has a slide ID and <span class="in" style="color: #5E5E5E;">`data-menu-title`</span>.</span></code></pre></div>
 <p>A couple more notes on slide titles:</p>
 <ul>
 <li>You can choose to have slide numbers instead of slugs based on slide IDs show up in the URL by setting <code>hash-type: number</code>.</li>
