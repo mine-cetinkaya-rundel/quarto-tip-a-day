@@ -214,7 +214,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learn-more" id="toc-learn-more" class="nav-link active" data-scroll-target="#learn-more">Learn more</a></li>
+  <li><a href="#slide-id-and-data-menu-title" id="toc-slide-id-and-data-menu-title" class="nav-link active" data-scroll-target="#slide-id-and-data-menu-title"><code>#slide-id</code> and <code>data-menu-title</code></a></li>
+  <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn more</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/23-titleless-slides/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -224,6 +225,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
+<section id="slide-id-and-data-menu-title" class="level2">
+<h2 class="anchored" data-anchor-id="slide-id-and-data-menu-title"><code>#slide-id</code> and <code>data-menu-title</code></h2>
 <p>Most slides are comprised of a title and content, but sometimes you might choose to not have a title for a slide.</p>
 <p>For example, if you just want to a full slide image or want to show an impactful quote on a slide with nothing else. You can have title-less slides in Quarto, but if you want those slides to appear properly in the presentation outline you’ll need to do the following:</p>
 <ul>
@@ -231,23 +234,38 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Define <code>data-menu-title = "Slide title"</code> to be used in the presentation outline.</li>
 </ul>
 <p>Here is a sample slide deck with three slides:</p>
+<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="titleless.html"></iframe>
+<p>Check out the presentation outline by clicking on the hamburger menu (the three lines) at the bottom left of the slides as well and open the slides in a new tab/window to review the slide URLs: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/23-titleless-slides/titleless.html#/slide-1-title.</p>
+<p>Now check out the source code for the slide deck: https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/posts/23-titleless-slides/titleless.qmd.</p>
 <ul>
-<li>Slide 1 has a title and content.</li>
-<li>Slide 2 has no title but content.</li>
+<li>Slide 1 has a title and content:</li>
+</ul>
+<pre><code>## Slide 1 title
+
+Slide 1 content - this slide has a title</code></pre>
+<ul>
+<li>Slide 2 has no title but content:</li>
+</ul>
+<pre><code>## 
+
+Slide 2 content - this slide has no title</code></pre>
+<ul>
 <li>Slide 3 also has no title but content, but also defines a slide ID and <code>data-menu-title</code>.</li>
 </ul>
-<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="titleless.html"></iframe>
-<p>Check out the presentation outline by clicking on the hamburger menu (the three lines) at the bottom left of the slides as well and open the slides in a new tab/window to review the slide URLs: [add url].</p>
+<pre><code>##  {#slide3-id data-menu-title="Slide 3 title for outline"}
+
+Slide 3 content - this slide has no title, but has a slide ID and `data-menu-title`.</code></pre>
 <p>A couple more notes on slide titles:</p>
 <ul>
 <li>You can choose to have slide numbers instead of slugs based on slide IDs show up in the URL by setting <code>hash-type: number</code>.</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">hash-type</span><span class="kw">:</span><span class="at"> number</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">hash-type</span><span class="kw">:</span><span class="at"> number</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>If your slide has no title and no text content (e.g., you only have a picture on the slide) but has speaker notes, the document outline will show the speaker notes if you don’t define <code>data-menu-title</code>. You probably don’t want that…</li>
 </ul>
+</section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
 <ul>
