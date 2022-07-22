@@ -10,7 +10,57 @@
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
 <generator>quarto-1.0.35</generator>
-<lastBuildDate>Wed, 20 Jul 2022 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 21 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Citations</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="citation-from-doi" class="level2">
+<h2 class="anchored" data-anchor-id="citation-from-doi">Citation from DOI</h2>
+<p>This is a bit of a Quarto tip and a bit of an RStudio Visual Editor tip that will also work with R Markdown documents.</p>
+<p>To add a citation, let’s say from a DOI,</p>
+<ul>
+<li>Go to Insert &gt; Citation</li>
+<li>Choose DOI from the left menu</li>
+<li>Paste the DOI of the journal article or book you want to cite in the search box and click search</li>
+<li>Once the work you want to cite is located, click on Insert</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/featured.gif" class="img-fluid figure-img" alt="Using RStudio's Visual Editor to insert a citation from DOI. The citation is for the Welcome to the Tidyverse paper. Citation is inserted using DOI and the Insert Citation menu. Steps for inserting a citation this way can be found below."></p>
+</figure>
+</div>
+<p>That’s it, you’re done! This will automatically create a bib file in your working directory, or if you already have one, add to it. It will also add a <code>bibliography</code> field to the YAML of your document, which will automatically insert your references at the end.</p>
+<p>A few more tips about citations and references:</p>
+<ul>
+<li>If you want your references to be in a new section, add that section header to the end of your document and your references will be placed after it.</li>
+<li>This method works with Quarto documents regardless of the <code>format</code>, so you can insert citations the same way into a journal article and a presentation. With presentations you’ll probably want your references on the last slide. Adding a H2 level heading like “References” will place them on a new slide.</li>
+<li>To insert an in-text citation, check the box “Use in-text citation”.</li>
+<li>The same menu can be used to insert citations from a variety of sources, including your Zotero library.</li>
+</ul>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<ul>
+<li><a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">Citations and footnotes</a></li>
+<li><a href="https://quarto.org/docs/visual-editor/technical.html#citations">Citations in the visual editor</a></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>citations</category>
+  <category>visual editor</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/index.html</guid>
+  <pubDate>Thu, 21 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/featured.gif" medium="image" type="image/gif"/>
+</item>
 <item>
   <title>Title-less slides</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -1090,55 +1140,6 @@ pandoc–more
   <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/05-output-location/index.html</guid>
   <pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/05-output-location/featured.png" medium="image" type="image/png" height="98" width="144"/>
-</item>
-<item>
-  <title>Includes</title>
-  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/04-include/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="include" class="level2">
-<h2 class="anchored" data-anchor-id="include"><code>include</code></h2>
-<p>If you have content you want to include across many files, you can place that content in a separate Quarto file and use the <code>include</code> comment wherever you want to pull it in.</p>
-<p>This could be useful for plain text content (e.g., including the same submission instructions for each homework assignment) or for content that includes computation (e.g., including the same data cleaning steps for various alternate analyses).</p>
-<p>Suppose you have such repeatable content in a file called <code>_content-to-repeat.qmd</code> and suppose the contents of that file read <em>Look at me, I’m content to be repeated!</em> (in italics):</p>
-<div class="callout-note callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container" title="hello">
-<p><strong>content-to-repeat.qmd</strong></p>
-<pre><code>*Look at me, I'm content to be repeated!*</code></pre>
-</div>
-</div>
-</div>
-<p>You can include it in other documents using the <code>{{&lt; include &gt;}}</code> shortcode:</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1">{{&lt; include _content-to-repeat.qmd &gt;}}</span></code></pre></div>
-<p>This will result in:</p>
-<p><em>Look at me I’m content to be repeated!</em></p>
-<p>A few important things to note:</p>
-<ul>
-<li>The name of the file that will be included should start with an underscore (<code>_</code>) so that they are automatically ignored (i.e.&nbsp;not treated as standalone files) when rendering a project.</li>
-<li>All computations within a document will share a single engine (e.g., knitr and jupyter), which is relevant when the included file has computations.</li>
-<li>The included file does not have to be a <code>.qmd</code> if it only contains text, it can also be a <code>.md</code>, <code>.ipynb</code>, etc. However included files with computation in them need to be <code>.qmd</code>, computational includes don’t work in <code>.ipynb</code> notebook files.</li>
-</ul>
-</section>
-<section id="learn-more" class="level2">
-<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p><a href="https://quarto.org/docs/authoring/includes.html">Includes</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>includes</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/04-include/index.html</guid>
-  <pubDate>Fri, 01 Jul 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/04-include/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 </channel>
 </rss>

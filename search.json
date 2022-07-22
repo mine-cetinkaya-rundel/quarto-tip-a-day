@@ -196,6 +196,20 @@
     "text": "Learn more\nFrequently asked questions"
   },
   {
+    "objectID": "posts/24-citations/index.html",
+    "href": "posts/24-citations/index.html",
+    "title": "Citations",
+    "section": "",
+    "text": "This is a bit of a Quarto tip and a bit of an RStudio Visual Editor tip that will also work with R Markdown documents.\nTo add a citation, let’s say from a DOI,\n\nGo to Insert > Citation\nChoose DOI from the left menu\nPaste the DOI of the journal article or book you want to cite in the search box and click search\nOnce the work you want to cite is located, click on Insert\n\n\n\n\n\n\nThat’s it, you’re done! This will automatically create a bib file in your working directory, or if you already have one, add to it. It will also add a bibliography field to the YAML of your document, which will automatically insert your references at the end.\nA few more tips about citations and references:\n\nIf you want your references to be in a new section, add that section header to the end of your document and your references will be placed after it.\nThis method works with Quarto documents regardless of the format, so you can insert citations the same way into a journal article and a presentation. With presentations you’ll probably want your references on the last slide. Adding a H2 level heading like “References” will place them on a new slide.\nTo insert an in-text citation, check the box “Use in-text citation”.\nThe same menu can be used to insert citations from a variety of sources, including your Zotero library."
+  },
+  {
+    "objectID": "posts/24-citations/index.html#learn-more",
+    "href": "posts/24-citations/index.html#learn-more",
+    "title": "Citations",
+    "section": "Learn more",
+    "text": "Learn more\n\nCitations and footnotes\nCitations in the visual editor"
+  },
+  {
     "objectID": "posts/05-output-location/output-location.html#default",
     "href": "posts/05-output-location/output-location.html#default",
     "title": "A Quarto tip a day",
@@ -438,6 +452,6 @@
     "href": "index.html",
     "title": "A Quarto tip a day",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 20, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 19, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 17, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 15, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 13, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 12, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 11, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 20, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 19, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 17, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 15, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 13, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 12, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 11, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJun 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
