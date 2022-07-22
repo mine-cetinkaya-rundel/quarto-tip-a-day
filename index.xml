@@ -10,7 +10,49 @@
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
 <generator>quarto-1.0.35</generator>
-<lastBuildDate>Thu, 21 Jul 2022 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 22 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Accessibility: aria-label</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/25-aria-labels/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="icons-and-aria-labels" class="level2">
+<h2 class="anchored" data-anchor-id="icons-and-aria-labels"><code>icon</code>s and <code>aria-label</code>s</h2>
+<p>For Quarto websites, you can add <code>icon</code>s as <a href="https://quarto.org/docs/reference/projects/websites.html#nav-items">Nav Items</a> in the <a href="https://quarto.org/docs/reference/projects/websites.html#navbar">navbar</a> and/or <a href="https://quarto.org/docs/reference/projects/websites.html#footer">page footer</a> YAML. The value of the <code>icon</code> field can be the name of any of the <a href="https://icons.getbootstrap.com/">Bootstrap icons</a>. To make these items accessible to screen readers, you should also add an <code>aria-label</code> describing what the navigation item is.</p>
+<p>For example, here are snippets from the YAML for the <a href="https://quarto.org/">Quarto documentation website</a>.</p>
+<p>From the top navbar:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;">website</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb1-2"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">navbar</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb1-3"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">right</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb1-4"><span class="at" style="color: #657422;">      </span><span class="kw" style="color: #003B4F;">-</span><span class="at" style="color: #657422;"> </span><span class="fu" style="color: #4758AB;">icon</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> twitter</span></span>
+<span id="cb1-5"><span class="at" style="color: #657422;">        </span><span class="fu" style="color: #4758AB;">href</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> https://twitter.com/quarto_pub</span></span>
+<span id="cb1-6"><span class="at" style="color: #657422;">        </span><span class="fu" style="color: #4758AB;">aria-label</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> Quarto Twitter</span></span></code></pre></div>
+<p>From the page footer:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><span class="fu" style="color: #4758AB;">website</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb2-2"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">page-footer</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb2-3"><span class="at" style="color: #657422;">      </span><span class="kw" style="color: #003B4F;">-</span><span class="at" style="color: #657422;"> </span><span class="fu" style="color: #4758AB;">icon</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> github</span></span>
+<span id="cb2-4"><span class="at" style="color: #657422;">        </span><span class="fu" style="color: #4758AB;">href</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> https://github.com/quarto-dev/quarto-cli</span></span>
+<span id="cb2-5"><span class="at" style="color: #657422;">        </span><span class="fu" style="color: #4758AB;">aria-label</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> Quarto GitHub</span></span></code></pre></div>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p><a href="https://quarto.org/docs/reference/projects/websites.html#nav-items">Nav items</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>accessibility</category>
+  <category>icon</category>
+  <category>aria-label</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/25-aria-labels/index.html</guid>
+  <pubDate>Fri, 22 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/25-aria-labels/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Citations</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -1101,45 +1143,6 @@ pandoc–more
   <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/06-listing-contents/index.html</guid>
   <pubDate>Sun, 03 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/06-listing-contents/featured.png" medium="image" type="image/png" height="98" width="144"/>
-</item>
-<item>
-  <title>Output location</title>
-  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/05-output-location/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="output-location" class="level2">
-<h2 class="anchored" data-anchor-id="output-location"><code>output-location</code></h2>
-<p>Showing code and output side-by-side or delayed reveal of the output are commonly used techniques for teaching programming when the mode of delivery is slides. The <code>output-location</code> chunk option makes it easy to achieve these.</p>
-<p>Possible values for the <code>output-location</code> option are as follows:</p>
-<ul>
-<li><code>fragment</code>: Display output as a <a href="https://quarto.org/docs/presentations/revealjs/advanced.html#fragments">fragment</a>, i.e., delay showing it until it is explicitly stepped through by advancing the slides.</li>
-<li><code>slide</code>: Display output on the subsequent slide.</li>
-<li><code>column</code>: Display output in a column adjacent to the code. This splits the slide into two columns, each of which span 50% of the width of the slide</li>
-<li><code>column-fragment</code>: Display output in a column adjacent to the code and delay showing it until its explicitly stepped through by advancing the slides.</li>
-</ul>
-<p>You can see these in action in the slide deck below.</p>
-<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="output-location.html"></iframe>
-<p>Note that for the column options I also adjusted <code>fig-height</code> and <code>fig-width</code> since the default size and aspect ration doesn’t work well for figures spanning only half the width of the slide.</p>
-</section>
-<section id="learn-more" class="level2">
-<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p><a href="https://quarto.org/docs/presentations/revealjs/#output-location">Output location</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>execution</category>
-  <category>code</category>
-  <category>layout</category>
-  <category>slides</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/05-output-location/index.html</guid>
-  <pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/05-output-location/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 </channel>
 </rss>
