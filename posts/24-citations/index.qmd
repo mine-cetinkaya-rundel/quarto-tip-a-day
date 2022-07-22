@@ -1,0 +1,37 @@
+---
+title: "Citations"
+date: "2022-07-21"
+categories: [citations, visual editor]
+image: featured.gif
+image-alt: "Using RStudio's Visual Editor to insert a citation from DOI. The citation is for the Welcome to the Tidyverse paper. Citation is inserted using DOI and the Insert Citation menu. Steps for inserting a citation this way can be found in the blog post."
+---
+
+## Citation from DOI
+
+This is a bit of a Quarto tip and a bit of an RStudio Visual Editor tip that will also work with R Markdown documents.
+
+To add a citation, let's say from a DOI,
+
+-   Go to Insert \> Citation
+-   Choose DOI from the left menu
+-   Paste the DOI of the journal article or book you want to cite in the search box and click search
+-   Once the work you want to cite is located, click on Insert
+
+![](featured.gif){fig-alt="Using RStudio's Visual Editor to insert a citation from DOI. The citation is for the Welcome to the Tidyverse paper. Citation is inserted using DOI and the Insert Citation menu. Steps for inserting a citation this way can be found below." fig-align="center"}
+
+That's it, you're done!
+This will automatically create a bib file in your working directory, or if you already have one, add to it.
+It will also add a `bibliography` field to the YAML of your document, which will automatically insert your references at the end.
+
+A few more tips about citations and references:
+
+-   If you want your references to be in a new section, add that section header to the end of your document and your references will be placed after it.
+-   This method works with Quarto documents regardless of the `format`, so you can insert citations the same way into a journal article and a presentation. With presentations you'll probably want your references on the last slide. Adding a H2 level heading like "References" will place them on a new slide.
+-   To insert an in-text citation, check the box "Use in-text citation".
+-   The same menu can be used to insert citations from a variety of sources, including your Zotero library.
+
+## Learn more
+
+-   [Citations and footnotes](https://quarto.org/docs/authoring/footnotes-and-citations.html)
+-   [Citations in the visual editor](https://quarto.org/docs/visual-editor/technical.html#citations)
+
