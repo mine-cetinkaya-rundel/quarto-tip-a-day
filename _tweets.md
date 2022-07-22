@@ -323,3 +323,17 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/23-tit
 alt-text: A slide with no title but slide ID and data-menu-title defined.
 Arrows point to where these pieces of information go on the slide URL and presentation outline.
 The screenshots are from Slide 3 of the example in the blog post, where the complete code can be found.
+
+------------------------------------------------------------------------
+
+#quartotip 24: Add citations with \@rstudio's Visual Editor directly from a DOI.
+Paste DOI and let it find the reference and place in a bib file for you!
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/
+
+\-\--
+
+Alt-text for GIF: Inserting citation from DOI with Visual Editor.
+Steps in blog post.
+
+\[insert-gif\]

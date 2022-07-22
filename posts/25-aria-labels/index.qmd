@@ -1,0 +1,38 @@
+---
+title: "Accessibility: `aria-label`"
+date: "2022-07-22"
+categories: [accessibility, icon, aria-label]
+image: featured.png
+image-alt: "YAML definition for adding the twitter icon and aria-label to the Quarto documentation site. The resulting html which shows an icon, a link, and an aria-label. And the output, the Twitter icon on the navbar."
+---
+
+## `icon`s and `aria-label`s
+
+For Quarto websites, you can add `icon`s as [Nav Items](https://quarto.org/docs/reference/projects/websites.html#nav-items) in the [navbar](https://quarto.org/docs/reference/projects/websites.html#navbar) and/or [page footer](https://quarto.org/docs/reference/projects/websites.html#footer) YAML. The value of the `icon` field can be the name of any of the [Bootstrap icons](https://icons.getbootstrap.com/). To make these items accessible to screen readers, you should also add an `aria-label` describing what the navigation item is.
+
+For example, here are snippets from the YAML for the [Quarto documentation website](https://quarto.org/). 
+
+From the top navbar:
+
+```yaml
+website:
+  navbar:
+    right:
+      - icon: twitter
+        href: https://twitter.com/quarto_pub
+        aria-label: Quarto Twitter
+```
+
+From the page footer:
+
+```yaml
+website:
+  page-footer:
+      - icon: github
+        href: https://github.com/quarto-dev/quarto-cli
+        aria-label: Quarto GitHub
+```
+
+## Learn more
+
+[Nav items](https://quarto.org/docs/reference/projects/websites.html#nav-items).
