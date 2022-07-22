@@ -337,3 +337,15 @@ Alt-text for GIF: Inserting citation from DOI with Visual Editor.
 Steps in blog post.
 
 \[insert-gif\]
+
+------------------------------------------------------------------------
+
+#quartotip 25: Add aria-labels to your navigation icons to make them accessible to screen readers as a YAML field.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/25-aria-labels/
+
+\[insert-image\]
+
+alt-text: YAML definition for adding the twitter icon and aria-label to the Quarto documentation site.
+The resulting html which shows an icon, a link, and an aria-label.
+And the output, the Twitter icon on the navbar.
