@@ -1,0 +1,30 @@
+---
+title: "Accessibility: `image-alt`"
+date: "2022-07-23"
+categories: [accessibility, image-alt, blog, social]
+image: featured.png
+image-alt: "YAML definition for adding the alt text for the blog featured image. The resulting html which shows the alt text for the image. And the output, blog post listing with the featured image."
+---
+
+## `image-alt`
+
+For Quarto websites, blog posts, and HTML pages, you can include an `image` in the metadata that will be displayed in places such as the thumbnail for blog posts (like each of the tips on this site), and the preview card on social media.
+
+You can (and should) provide alt text for these images by using the `image-alt` option in your YAML as well.
+For example, here's a snippet from the YAML for the [tip on using dark mode](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/17-dark-mode/).
+
+``` yaml
+title: "Dark mode"
+image: "featured.gif"
+image-alt: "Switching between light and dark mode using the toggle on the navbar of this blog's homepage."
+```
+
+## Learn more
+
+Note that `image-alt` can be supplied in several different places where an `image` can be specified, but that these will be inherited from the site or page metadata, so need not be repeated.
+
+-   [Website options](https://quarto.org/docs/reference/formats/html.html#website)
+
+-   [Twitter card options](https://quarto.org/docs/reference/projects/websites.html#twitter-card)
+
+-   [Open graph options](https://quarto.org/docs/reference/projects/websites.html#open-graph)
