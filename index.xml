@@ -9,8 +9,46 @@
 <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</link>
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
-<generator>quarto-1.0.35</generator>
-<lastBuildDate>Fri, 22 Jul 2022 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.0.36</generator>
+<lastBuildDate>Sat, 23 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Accessibility: image-alt</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/26-image-alt/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="image-alt" class="level2">
+<h2 class="anchored" data-anchor-id="image-alt"><code>image-alt</code></h2>
+<p>For Quarto websites, blog posts, and HTML pages, you can include an <code>image</code> in the metadata that will be displayed in places such as the thumbnail for blog posts (like each of the tips on this site), and the preview card on social media.</p>
+<p>You can (and should) provide alt text for these images by using the <code>image-alt</code> option in your YAML as well. For example, here’s a snippet from the YAML for the <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/17-dark-mode/">tip on using dark mode</a>.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;">title</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="st" style="color: #20794D;">"Dark mode"</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;">image</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="st" style="color: #20794D;">"featured.gif"</span></span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;">image-alt</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="st" style="color: #20794D;">"Switching between light and dark mode using the toggle on the navbar of this blog's homepage."</span></span></code></pre></div>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p>Note that <code>image-alt</code> can be supplied in several different places where an <code>image</code> can be specified, but that these will be inherited from the site or page metadata, so need not be repeated.</p>
+<ul>
+<li><p><a href="https://quarto.org/docs/reference/formats/html.html#website">Website options</a></p></li>
+<li><p><a href="https://quarto.org/docs/reference/projects/websites.html#twitter-card">Twitter card options</a></p></li>
+<li><p><a href="https://quarto.org/docs/reference/projects/websites.html#open-graph">Open graph options</a></p></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>accessibility</category>
+  <category>image-alt</category>
+  <category>blog</category>
+  <category>social</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/26-image-alt/index.html</guid>
+  <pubDate>Sat, 23 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/26-image-alt/featured.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Accessibility: aria-label</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -1100,49 +1138,6 @@ pandoc–more
   <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/07-slide-annotation/index.html</guid>
   <pubDate>Mon, 04 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/07-slide-annotation/featured.png" medium="image" type="image/png" height="98" width="144"/>
-</item>
-<item>
-  <title>Listing contents</title>
-  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/06-listing-contents/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="contents-for-listing" class="level2">
-<h2 class="anchored" data-anchor-id="contents-for-listing"><code>contents</code> for <code>listing</code></h2>
-<p>Quarto blogs by default will create a new blog post entry for each <code>.qmd</code> file in the <code>posts</code> folder. However you can customize which files are included in the listing by specifying the <code>contents</code> for the <code>listing</code> in the YAML where the listing is created.</p>
-<p>For example, suppose that in your <code>posts</code> folder you have a sub-folder for each blog post (like I do for this blog at <a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/tree/main/posts" class="uri">https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/tree/main/posts</a>). In each of these subfolders you might want to have an <code>index.qmd</code> file that contains the blog post entry as well as other supplementary <code>.qmd</code> files (e.g., any example, demo, etc. files for your blog post) that you don’t want turned into their own individual blog posts. To indicate this you can add the following to your YAML:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="pp" style="color: #AD0000;">---</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;">listing</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb1-3"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">contents</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="st" style="color: #20794D;">"posts/*/index.qmd"</span></span>
-<span id="cb1-4"><span class="pp" style="color: #AD0000;">---</span></span></code></pre></div>
-<p>A few more ideas for how this feature can be leveraged:</p>
-<ul>
-<li>If building a course website, you can make use of the listings feature and bundle each lesson in a folder. Then, the <code>index.qmd</code> file in that folder can be the landing page for the lesson and other files (slides, exercises, instructor’s notes, etc.) can live in the lesson folder as well but not get processed as individual listing items.</li>
-<li>In addition to using globs to include files that follow a certain convention, you can use globs to exclude them as well.</li>
-<li>Authoring each of your blog posts in a file called <code>index.qmd</code> might get a bit hectic if you’re editing multiple posts concurrently (<a href="https://twitter.com/charliejhadley/status/1537787931049578497?s=20&amp;t=e089-ispLwxkk5QeKj8rDA">h/t to Charlotte for pointing this out</a>). You can come up with a different naming convention for your posts and indicate that as a <a href="https://quarto.org/docs/reference/globs.html">glob</a>. Note that the file name will affect the slug of your post in its URL though, so you might want to choose a convention keeping that in mind.</li>
-</ul>
-</section>
-<section id="learn-more" class="level2">
-<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<ul>
-<li><a href="https://quarto.org/docs/websites/website-listings.html">Document listings</a></li>
-<li><a href="https://quarto.org/docs/websites/website-listings.html#listing-contents">Listing contents</a></li>
-<li><a href="https://quarto.org/docs/reference/globs.html">Quarto glob syntax</a></li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <category>blog</category>
-  <category>listing</category>
-  <category>glob</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/06-listing-contents/index.html</guid>
-  <pubDate>Sun, 03 Jul 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/06-listing-contents/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 </channel>
 </rss>
