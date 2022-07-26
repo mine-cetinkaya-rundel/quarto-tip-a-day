@@ -3,7 +3,7 @@ title: "Accessibility: `fig-alt`"
 date: "2022-07-25"
 categories: [accessibility, alt-text]
 image: featured.png
-image-alt: "Slide with an incremental list with three items. Arrows between each item and a loudspeaker icon at each arrow indicates audio would be played as you progress through items. Also shown is the YAML required for this feature, which is available in the blog post."
+image-alt: "YAML for adding the alt text for a figure created with code. The resulting figure as well as the HTML which shows the alt text for the image."
 ---
 
 ## `fig-alt`
