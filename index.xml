@@ -45,7 +45,7 @@
 <p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/28-fig-alt/index_files/figure-html/penguins-plot-1.png" class="img-fluid" alt="Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species." width="672"></p>
 </div>
 </div>
-<p>The resulting HTML is shown below. This alternative (<code>alt</code>) text is now accessible to screen readers.</p>
+<p>The resulting HTML is shown below. This alternative (<code>alt</code>) text is accessible to screen readers.</p>
 <div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><span class="kw" style="color: #003B4F;">&lt;img</span> <span class="er" style="color: #AD0000;">src</span><span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"index_files/figure-html/penguins-plot-1.png"</span> <span class="er" style="color: #AD0000;">class</span><span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"img-fluid"</span> <span class="er" style="color: #AD0000;">alt</span><span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species."</span> <span class="er" style="color: #AD0000;">width</span><span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"672"</span><span class="kw" style="color: #003B4F;">&gt;</span></span></code></pre></div>
 </section>
 <section id="learn-more" class="level2">

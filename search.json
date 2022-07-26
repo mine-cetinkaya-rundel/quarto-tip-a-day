@@ -140,32 +140,11 @@
     "text": "Learn more\nIncludes"
   },
   {
-    "objectID": "posts/28-fig-alt/slide-tone.html#incremental-list",
-    "href": "posts/28-fig-alt/slide-tone.html#incremental-list",
-    "title": "A Quarto tip a day",
-    "section": "Incremental list",
-    "text": "Incremental list\n\n\nItem 1\nItem 2\nItem 3"
-  },
-  {
-    "objectID": "posts/28-fig-alt/slide-tone.html#penguins",
-    "href": "posts/28-fig-alt/slide-tone.html#penguins",
-    "title": "A Quarto tip a day",
-    "section": "Penguins",
-    "text": "Penguins\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\nlibrary(colorblindr)\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()"
-  },
-  {
-    "objectID": "posts/28-fig-alt/slide-tone.html#moar-penguins",
-    "href": "posts/28-fig-alt/slide-tone.html#moar-penguins",
-    "title": "A Quarto tip a day",
-    "section": "Moar penguins",
-    "text": "Moar penguins\n\nggplot(penguins, \n       aes(x = flipper_length_mm, y = body_mass_g, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()"
-  },
-  {
     "objectID": "posts/28-fig-alt/index.html",
     "href": "posts/28-fig-alt/index.html",
     "title": "Accessibility: fig-alt",
     "section": "",
-    "text": "You can add alternative text to figures you create with code by adding the fig-alt chunk option, which works for Knitr, Jupyter, and Observable code chunks.\nHere is an R/Knitr example.\n\n```{r}\n#| label: penguins-plot\n#| warning: false\n#| fig-alt: |\n#|   Scatterplot of penguin bill depth vs. length, colored by species.\n#|   The relationship is positive for each of the three species.\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\nlibrary(colorblindr)\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```\n\n\n\n\nThe resulting HTML is shown below. This alternative (alt) text is now accessible to screen readers.\n<img src=\"index_files/figure-html/penguins-plot-1.png\" class=\"img-fluid\" alt=\"Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species.\" width=\"672\">"
+    "text": "You can add alternative text to figures you create with code by adding the fig-alt chunk option, which works for Knitr, Jupyter, and Observable code chunks.\nHere is an R/Knitr example.\n\n```{r}\n#| label: penguins-plot\n#| warning: false\n#| fig-alt: |\n#|   Scatterplot of penguin bill depth vs. length, colored by species.\n#|   The relationship is positive for each of the three species.\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\nlibrary(colorblindr)\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```\n\n\n\n\nThe resulting HTML is shown below. This alternative (alt) text is accessible to screen readers.\n<img src=\"index_files/figure-html/penguins-plot-1.png\" class=\"img-fluid\" alt=\"Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species.\" width=\"672\">"
   },
   {
     "objectID": "posts/28-fig-alt/index.html#learn-more",
