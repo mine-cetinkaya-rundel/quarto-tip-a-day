@@ -30,7 +30,8 @@ ggplot(penguins,
   scale_color_OkabeIto()
 ```
 
-The resulting HTML is shown below. This alternative (`alt`) text is accessible to screen readers.
+The resulting HTML is shown below.
+The alternative (`alt`) text is accessible to screen readers.
 
 ``` html
 <img src="index_files/figure-html/penguins-plot-1.png" class="img-fluid" alt="Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species." width="672">
@@ -39,11 +40,12 @@ The resulting HTML is shown below. This alternative (`alt`) text is accessible t
 ## Learn more
 
 Quarto chunk options:
-- [Jupyter code chunk options for figures](https://quarto.org/docs/reference/cells/cells-jupyter.html#figures)
-- [Knitr code chunk options for figures](https://quarto.org/docs/reference/cells/cells-knitr.html#figures)
-- [Observable code chunk options for figures](https://quarto.org/docs/reference/cells/cells-ojs.html#figures)
+
+-   [Jupyter code chunk options for figures](https://quarto.org/docs/reference/cells/cells-jupyter.html#figures)
+-   [Knitr code chunk options for figures](https://quarto.org/docs/reference/cells/cells-knitr.html#figures)
+-   [Observable code chunk options for figures](https://quarto.org/docs/reference/cells/cells-ojs.html#figures)
 
 Guidance for writing alt text:
 
-- [Writing Alt Text for Data Visualization](https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81)
-- [Charts & accessibility](Charts & Accessibility)
+-   [Writing Alt Text for Data Visualization](https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81)
+-   [Charts & accessibility](Charts%20&%20Accessibility)
