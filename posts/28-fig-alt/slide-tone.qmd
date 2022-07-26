@@ -1,0 +1,55 @@
+---
+format: 
+  revealjs:
+    slide-tone: true
+    mainfont: "Atkinson Hyperlegible"
+    highlight-style: a11y-dark
+toc: false
+execute: 
+  echo: true
+editor: visual
+---
+
+## Incremental list
+
+::: incremental
+-   Item 1
+-   Item 2
+-   Item 3
+:::
+
+## Penguins
+
+```{r}
+#| output-location: fragment
+#| message: false
+#| out-width: "50%"
+#| fig-alt: |
+#|   Scatterplot of penguin bill depth vs. length, colored by species.
+#|   The relationship is positive for each of the three species.
+
+library(tidyverse)
+library(palmerpenguins)
+library(colorblindr)
+
+ggplot(penguins, 
+       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
+  geom_point() +
+  scale_color_OkabeIto()
+```
+
+## Moar penguins
+
+```{r}
+#| echo: true
+#| fig-alt: |
+#|   Scatterplot of penguin body mass vs. flipper length, colored by species.
+#|   The relationship is positive for each of the three species.
+
+ggplot(penguins, 
+       aes(x = flipper_length_mm, y = body_mass_g, color = species)) +
+  geom_point() +
+  scale_color_OkabeIto()
+```
+
+## 

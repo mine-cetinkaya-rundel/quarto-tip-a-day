@@ -1,0 +1,49 @@
+---
+title: "Accessibility: `fig-alt`"
+date: "2022-07-25"
+categories: [accessibility, alt-text]
+image: featured.png
+image-alt: "Slide with an incremental list with three items. Arrows between each item and a loudspeaker icon at each arrow indicates audio would be played as you progress through items. Also shown is the YAML required for this feature, which is available in the blog post."
+---
+
+## `fig-alt`
+
+You can add alternative text to figures you create with code by adding the `fig-alt` chunk option, which works for Knitr, Jupyter, and Observable code chunks.
+
+Here is an R/Knitr example.
+
+```{r}
+#| echo: fenced
+#| label: penguins-plot
+#| warning: false
+#| fig-alt: |
+#|   Scatterplot of penguin bill depth vs. length, colored by species.
+#|   The relationship is positive for each of the three species.
+
+library(tidyverse)
+library(palmerpenguins)
+library(colorblindr)
+
+ggplot(penguins, 
+       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
+  geom_point() +
+  scale_color_OkabeIto()
+```
+
+The resulting HTML is shown below. This alternative (`alt`) text is accessible to screen readers.
+
+``` html
+<img src="index_files/figure-html/penguins-plot-1.png" class="img-fluid" alt="Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species." width="672">
+```
+
+## Learn more
+
+Quarto chunk options:
+- [Jupyter code chunk options for figures](https://quarto.org/docs/reference/cells/cells-jupyter.html#figures)
+- [Knitr code chunk options for figures](https://quarto.org/docs/reference/cells/cells-knitr.html#figures)
+- [Observable code chunk options for figures](https://quarto.org/docs/reference/cells/cells-ojs.html#figures)
+
+Guidance for writing alt text:
+
+- [Writing Alt Text for Data Visualization](https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81)
+- [Charts & accessibility](Charts & Accessibility)

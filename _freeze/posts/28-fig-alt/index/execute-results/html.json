@@ -1,0 +1,16 @@
+{
+  "hash": "405987580ed4c6255aa1f3b19fbf263c",
+  "result": {
+    "markdown": "---\ntitle: \"Accessibility: `fig-alt`\"\ndate: \"2022-07-25\"\ncategories: [accessibility, alt-text]\nimage: featured.png\nimage-alt: \"Slide with an incremental list with three items. Arrows between each item and a loudspeaker icon at each arrow indicates audio would be played as you progress through items. Also shown is the YAML required for this feature, which is available in the blog post.\"\n---\n\n\n## `fig-alt`\n\nYou can add alternative text to figures you create with code by adding the `fig-alt` chunk option, which works for Knitr, Jupyter, and Observable code chunks.\n\nHere is an R/Knitr example.\n\n\n::: {.cell}\n\n````{.cell-code}\n```{{r}}\n#| label: penguins-plot\n#| warning: false\n#| fig-alt: |\n#|   Scatterplot of penguin bill depth vs. length, colored by species.\n#|   The relationship is positive for each of the three species.\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\nlibrary(colorblindr)\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```\n````\n\n::: {.cell-output-display}\n![](index_files/figure-html/penguins-plot-1.png){fig-alt='Scatterplot of penguin bill depth vs. length, colored by species.\nThe relationship is positive for each of the three species.' width=672}\n:::\n:::\n\n\nThe resulting HTML is shown below. This alternative (`alt`) text is now accessible to screen readers.\n\n``` html\n<img src=\"index_files/figure-html/penguins-plot-1.png\" class=\"img-fluid\" alt=\"Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species.\" width=\"672\">\n```\n\n## Learn more\n\nQuarto chunk options:\n- [Jupyter code chunk options for figures](https://quarto.org/docs/reference/cells/cells-jupyter.html#figures)\n- [Knitr code chunk options for figures](https://quarto.org/docs/reference/cells/cells-knitr.html#figures)\n- [Observable code chunk options for figures](https://quarto.org/docs/reference/cells/cells-ojs.html#figures)\n\nGuidance for writing alt text:\n\n- [Writing Alt Text for Data Visualization](https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81)\n- [Charts & accessibility](Charts & Accessibility)\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
