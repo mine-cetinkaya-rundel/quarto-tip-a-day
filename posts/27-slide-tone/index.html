@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mine Çetinkaya-Rundel">
-<meta name="dcterms.date" content="2022-07-09">
+<meta name="dcterms.date" content="2022-07-24">
 
-<title>A Quarto tip a day - HTML blocks</title>
+<title>A Quarto tip a day - Accessibility: slide-tone</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -123,13 +123,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 }</script>
 
 
-<meta name="twitter:title" content="A Quarto tip a day - HTML blocks">
-<meta name="twitter:description" content="Want to embed an iframe on a webpage or a slide deck? Plop the sharing code in a raw html block!">
+<meta name="twitter:title" content="A Quarto tip a day - Accessibility: slide-tone">
+<meta name="twitter:description" content="You can set your Quarto presentation to play a subtle sound when slide is advanced to the next slide or as part of incremental build in a given slide.">
 <meta name="twitter:image" content="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/images/twitter-card.png">
 <meta name="twitter:creator" content="@quarto_pub">
 <meta name="twitter:image-height" content="600">
 <meta name="twitter:image-width" content="1200">
-<meta name="twitter:image:alt" content="On top, a screenshot of the Insert Anything tool in the RStudio Visual Editor to insert an HTML block. An arrow from this points to the bottom image, which is an HTML block containing raw HTML code for including the Quarto Documentation at quarto.org in an iframe. The complete code can be found in the blog post.">
+<meta name="twitter:image:alt" content="Slide with an incremental list with three items. Arrows between each item and a loudspeaker icon at each arrow indicates audio would be played as you progress through items. Also shown is the YAML required for this feature, which is available in the blog post.">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -178,10 +178,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">HTML blocks</h1>
+      <h1 class="title">Accessibility: <code>slide-tone</code></h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">html</div>
-                <div class="quarto-category">raw</div>
+                <div class="quarto-category">accessibility</div>
+                <div class="quarto-category">revealjs</div>
+                <div class="quarto-category">slide-tone</div>
               </div>
                   </div>
   </div>
@@ -199,7 +200,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 9, 2022</p>
+        <p class="date">July 24, 2022</p>
       </div>
     </div>
       
@@ -214,10 +215,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#html-block" id="toc-html-block" class="nav-link active" data-scroll-target="#html-block">HTML block</a></li>
+  <li><a href="#slide-tone" id="toc-slide-tone" class="nav-link active" data-scroll-target="#slide-tone"><code>slide-tone</code></a></li>
   <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn more</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/12-html-block/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/27-slide-tone/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -225,29 +226,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="html-block" class="level2">
-<h2 class="anchored" data-anchor-id="html-block">HTML block</h2>
-<p>Want to embed an iframe on a webpage or a slide deck? Plop the sharing code in a raw html block!</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;iframe width="780" height="500" src="https://quarto.org/" title="Quarto Documentation"&gt;&lt;/iframe&gt;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>And here is the result!</p>
-<iframe width="780" height="500" src="https://quarto.org/" title="Quarto Documentation"></iframe>
-<p>A few notes on HTML blocks:</p>
-<ul>
-<li>They’re useful for visually separating out areas where you include raw HTML in an otherwise (primarily) markdown document.</li>
-<li>They make it easy to programatically access those HTML blocks should you ever need to do so (e.g., with a document parser or using regular expressions).</li>
-<li>If you’re using the RStudio visual editor, you can insert an HTML block using <strong>Insert &gt; Any &gt; HTML Block</strong> or accessing the Insert Anything tool with the <kbd>⌘ /</kbd> shortcut.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="insert-html-block.png" class="img-fluid figure-img" alt="Using the Insert Anything tool to insert an HTML block. Typing out the letters &quot;ht&quot; brings this option in the tool." width="400"></p>
-</figure>
-</div>
+<section id="slide-tone" class="level2">
+<h2 class="anchored" data-anchor-id="slide-tone"><code>slide-tone</code></h2>
+<p>You can set your Quarto presentation to play a subtle sound when slide is advanced to the next slide or as part of incremental build in a given slide. This enables presenters to hear an auditory signal (from a low C to a high C note) of their progress through the slides.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">slide-tone</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This feature can be particularly useful for blind users who use a screen reader or otherwise interact with content via auditory signals. You can see it in action in the slide deck below. Make sure to turn your audio on.</p>
+<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="side-tone.html"></iframe>
 </section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p><a href="https://quarto.org/docs/visual-editor/index.html#insert-anything">Insert anything</a></p>
+<p><a href="https://quarto.org/docs/presentations/revealjs/presenting.html#slide-tone">Slide tone</a></p>
 
 
 </section>
