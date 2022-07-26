@@ -1,7 +1,7 @@
 ---
 title: "Accessibility: `image-alt`"
 date: "2022-07-23"
-categories: [accessibility, image-alt, blog, social]
+categories: [accessibility, alt-text, blog, social]
 image: featured.png
 image-alt: "YAML definition for adding the alt text for the blog featured image. The resulting html which shows the alt text for the image. And the output, blog post listing with the featured image."
 ---
