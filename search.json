@@ -144,14 +144,14 @@
     "href": "posts/28-fig-alt/index.html",
     "title": "Accessibility: fig-alt",
     "section": "",
-    "text": "You can add alternative text to figures you create with code by adding the fig-alt chunk option, which works for Knitr, Jupyter, and Observable code chunks.\nHere is an R/Knitr example.\n\n```{r}\n#| label: penguins-plot\n#| warning: false\n#| fig-alt: |\n#|   Scatterplot of penguin bill depth vs. length, colored by species.\n#|   The relationship is positive for each of the three species.\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\nlibrary(colorblindr)\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```\n\n\n\n\nThe resulting HTML is shown below. This alternative (alt) text is accessible to screen readers.\n<img src=\"index_files/figure-html/penguins-plot-1.png\" class=\"img-fluid\" alt=\"Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species.\" width=\"672\">"
+    "text": "You can add alternative text to figures you create with code by adding the fig-alt chunk option, which works for Knitr, Jupyter, and Observable code chunks.\nHere is an R/Knitr example.\n\n```{r}\n#| label: penguins-plot\n#| warning: false\n#| fig-alt: |\n#|   Scatterplot of penguin bill depth vs. length, colored by species.\n#|   The relationship is positive for each of the three species.\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\nlibrary(colorblindr)\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```\n\n\n\n\nThe resulting HTML is shown below. The alternative (alt) text is accessible to screen readers.\n<img src=\"index_files/figure-html/penguins-plot-1.png\" class=\"img-fluid\" alt=\"Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species.\" width=\"672\">"
   },
   {
     "objectID": "posts/28-fig-alt/index.html#learn-more",
     "href": "posts/28-fig-alt/index.html#learn-more",
     "title": "Accessibility: fig-alt",
     "section": "Learn more",
-    "text": "Learn more\nQuarto chunk options: - Jupyter code chunk options for figures - Knitr code chunk options for figures - Observable code chunk options for figures\nGuidance for writing alt text:\n\nWriting Alt Text for Data Visualization\nCharts & accessibility"
+    "text": "Learn more\nQuarto chunk options:\n\nJupyter code chunk options for figures\nKnitr code chunk options for figures\nObservable code chunk options for figures\n\nGuidance for writing alt text:\n\nWriting Alt Text for Data Visualization\nCharts & accessibility"
   },
   {
     "objectID": "posts/23-titleless-slides/titleless.html#slide-1-title",
