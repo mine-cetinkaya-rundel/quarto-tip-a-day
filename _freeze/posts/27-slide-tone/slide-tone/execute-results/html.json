@@ -1,0 +1,20 @@
+{
+  "hash": "ef587436162cd44716dbdc947e9ae168",
+  "result": {
+    "markdown": "---\nformat: \n  revealjs:\n    slide-tone: true\n    mainfont: \"Atkinson Hyperlegible\"\n    highlight-style: a11y-dark\ntoc: false\nexecute: \n  echo: true\neditor: visual\n---\n\n\n## Incremental list\n\n::: incremental\n-   Item 1\n-   Item 2\n-   Item 3\n:::\n\n## Penguins\n\n\n::: {.cell output-location='fragment'}\n\n```{.r .cell-code}\nlibrary(tidyverse)\nlibrary(palmerpenguins)\nlibrary(colorblindr)\n\nggplot(penguins, \n       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```\n\n::: {.cell-output-display}\n![](slide-tone_files/figure-revealjs/unnamed-chunk-1-1.png){fig-alt='Scatterplot of penguin bill depth vs. length, colored by species.\nThe relationship is positive for each of the three species.' width=50%}\n:::\n:::\n\n\n## Moar penguins\n\n\n::: {.cell}\n\n```{.r .cell-code}\nggplot(penguins, \n       aes(x = flipper_length_mm, y = body_mass_g, color = species)) +\n  geom_point() +\n  scale_color_OkabeIto()\n```\n\n::: {.cell-output-display}\n![](slide-tone_files/figure-revealjs/unnamed-chunk-2-1.png){fig-alt='Scatterplot of penguin body mass vs. flipper length, colored by species.\nThe relationship is positive for each of the three species.' width=960}\n:::\n:::\n\n\n## \n",
+    "supporting": [
+      "slide-tone_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    function fireSlideChanged(previousSlide, currentSlide) {\n\n      // dispatch for htmlwidgets\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for reveal\n    if (window.Reveal) {\n      window.Reveal.addEventListener(\"slidechanged\", function(event) {\n        fireSlideChanged(event.previousSlide, event.currentSlide);\n      });\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
