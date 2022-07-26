@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mine Çetinkaya-Rundel">
-<meta name="dcterms.date" content="2022-07-23">
+<meta name="dcterms.date" content="2022-07-25">
 
-<title>A Quarto tip a day - Accessibility: image-alt</title>
+<title>A Quarto tip a day - Accessibility: fig-alt</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -123,13 +123,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 }</script>
 
 
-<meta name="twitter:title" content="A Quarto tip a day - Accessibility: image-alt">
-<meta name="twitter:description" content="For Quarto websites, blog posts, and HTML pages, you can include an image in the metadata that will be displayed in places such as the thumbnail for blog posts (like each of the tips on this site)…">
+<meta name="twitter:title" content="A Quarto tip a day - Accessibility: fig-alt">
+<meta name="twitter:description" content="You can add alternative text to figures you create with code by adding the fig-alt chunk option, which works for Knitr, Jupyter, and Observable code chunks.">
 <meta name="twitter:image" content="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/images/twitter-card.png">
 <meta name="twitter:creator" content="@quarto_pub">
 <meta name="twitter:image-height" content="600">
 <meta name="twitter:image-width" content="1200">
-<meta name="twitter:image:alt" content="YAML definition for adding the alt text for the blog featured image. The resulting html which shows the alt text for the image. And the output, blog post listing with the featured image.">
+<meta name="twitter:image:alt" content="Slide with an incremental list with three items. Arrows between each item and a loudspeaker icon at each arrow indicates audio would be played as you progress through items. Also shown is the YAML required for this feature, which is available in the blog post.">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -178,12 +178,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Accessibility: <code>image-alt</code></h1>
+      <h1 class="title">Accessibility: <code>fig-alt</code></h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">accessibility</div>
                 <div class="quarto-category">alt-text</div>
-                <div class="quarto-category">blog</div>
-                <div class="quarto-category">social</div>
               </div>
                   </div>
   </div>
@@ -201,7 +199,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 23, 2022</p>
+        <p class="date">July 25, 2022</p>
       </div>
     </div>
       
@@ -216,10 +214,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#image-alt" id="toc-image-alt" class="nav-link active" data-scroll-target="#image-alt"><code>image-alt</code></a></li>
+  <li><a href="#fig-alt" id="toc-fig-alt" class="nav-link active" data-scroll-target="#fig-alt"><code>fig-alt</code></a></li>
   <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn more</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/26-image-alt/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/edit/main/posts/28-fig-alt/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -227,21 +225,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="image-alt" class="level2">
-<h2 class="anchored" data-anchor-id="image-alt"><code>image-alt</code></h2>
-<p>For Quarto websites, blog posts, and HTML pages, you can include an <code>image</code> in the metadata that will be displayed in places such as the thumbnail for blog posts (like each of the tips on this site), and the preview card on social media.</p>
-<p>You can (and should) provide alt text for these images by using the <code>image-alt</code> option in your YAML as well. For example, here’s a snippet from the YAML for the <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/17-dark-mode/">tip on using dark mode</a>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Dark mode"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> </span><span class="st">"featured.gif"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">image-alt</span><span class="kw">:</span><span class="at"> </span><span class="st">"Switching between light and dark mode using the toggle on the navbar of this blog's homepage."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="fig-alt" class="level2">
+<h2 class="anchored" data-anchor-id="fig-alt"><code>fig-alt</code></h2>
+<p>You can add alternative text to figures you create with code by adding the <code>fig-alt</code> chunk option, which works for Knitr, Jupyter, and Observable code chunks.</p>
+<p>Here is an R/Knitr example.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: penguins-plot</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-alt: |</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#|   Scatterplot of penguin bill depth vs. length, colored by species.</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#|   The relationship is positive for each of the three species.</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(colorblindr)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(penguins, </span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_OkabeIto</span>()</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/penguins-plot-1.png" class="img-fluid" alt="Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species." width="672"></p>
+</div>
+</div>
+<p>The resulting HTML is shown below. This alternative (<code>alt</code>) text is now accessible to screen readers.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"index_files/figure-html/penguins-plot-1.png"</span> <span class="er">class</span><span class="ot">=</span><span class="st">"img-fluid"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species."</span> <span class="er">width</span><span class="ot">=</span><span class="st">"672"</span><span class="kw">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p>Note that <code>image-alt</code> can be supplied in several different places where an <code>image</code> can be specified, but that these will be inherited from the site or page metadata, so need not be repeated.</p>
+<p>Quarto chunk options: - <a href="https://quarto.org/docs/reference/cells/cells-jupyter.html#figures">Jupyter code chunk options for figures</a> - <a href="https://quarto.org/docs/reference/cells/cells-knitr.html#figures">Knitr code chunk options for figures</a> - <a href="https://quarto.org/docs/reference/cells/cells-ojs.html#figures">Observable code chunk options for figures</a></p>
+<p>Guidance for writing alt text:</p>
 <ul>
-<li><p><a href="https://quarto.org/docs/reference/formats/html.html#website">Website options</a></p></li>
-<li><p><a href="https://quarto.org/docs/reference/projects/websites.html#twitter-card">Twitter card options</a></p></li>
-<li><p><a href="https://quarto.org/docs/reference/projects/websites.html#open-graph">Open graph options</a></p></li>
+<li><a href="https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81">Writing Alt Text for Data Visualization</a></li>
+<li><a href="Charts%20&amp;%20Accessibility">Charts &amp; accessibility</a></li>
 </ul>
 
 

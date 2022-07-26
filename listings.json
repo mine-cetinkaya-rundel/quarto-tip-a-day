@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/28-fig-alt/index.html",
       "/posts/27-slide-tone/index.html",
       "/posts/26-image-alt/index.html",
       "/posts/25-aria-labels/index.html",
