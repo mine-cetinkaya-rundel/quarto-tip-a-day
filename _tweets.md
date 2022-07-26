@@ -349,3 +349,38 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/25-ari
 alt-text: YAML definition for adding the twitter icon and aria-label to the Quarto documentation site.
 The resulting html which shows an icon, a link, and an aria-label.
 And the output, the Twitter icon on the navbar.
+
+------------------------------------------------------------------------
+
+#quartotip 26: Add alt-text to images that will be displayed in places like blog post thumbnails, social cards, etc. with image-alt.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/26-image-alt/
+
+\[insert-image\]
+
+alt-text: YAML for adding the alt text for the blog featured image.
+The resulting html which shows the alt text for the image.
+And the output, blog post listing with the featured image.
+
+------------------------------------------------------------------------
+
+#quartotip 27: Add audio indicator to your slides that plays as you progress from one slide to next or from incremental build to next.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/27-slide-tone/
+
+\[insert-image\]
+
+alt-text: Slide with an incremental list with three items.
+Arrows between each item and a loudspeaker icon at each arrow indicates audio would be played as you progress through items.
+Also shown is the YAML required for this feature, which is available in the linked blog post.
+
+------------------------------------------------------------------------
+
+#quartotip 28: Add alternative text to figures created in Knitr, Jupyter, and Observable chunks with fig-alt.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/28-fig-alt/
+
+\[insert-image\]
+
+alt-text: YAML for adding the alt text for a figure created with code.
+The resulting figure as well as the HTML which shows the alt text for the image.
