@@ -1,0 +1,14 @@
+{
+  "hash": "17dd8a3c49e9f56233f2b072986fe395",
+  "result": {
+    "markdown": "---\ntitle: \"Accessibility: `a11y` theme\"\ndate: \"2022-07-25\"\ncategories: [accessibility, alt-text]\nimage: featured.png\nimage-alt: \"YAML for adding the alt text for a figure created with code. The resulting figure as well as the HTML which shows the alt text for the image.\"\nformat:\n  html:\n    highlight-style: a11y\n---\n\n\n## `a11y`\n\nQuarto comes with accessible (with respect to color contrast) theme for syntax highlighting: `a11y`.\nThis theme is adaptive, so it aut automatically switches between a dark and light mode based upon the theme of the website.\nIt is designed to work well with sites with dark / light mode.\n\n``` yaml\nhighlight-style: a11y\n```\n\nHere is a code chunk -- let's calculate the area of a circle with radius 3 cm.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nr <- 3\npi * r^2\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 28.27433\n```\n:::\n:::\n\n\nYou can click on the light/dark toggle on the top right corner of the page and observe the syntax highlighting adapt to the background color.\nThe two highlight styles shown are `a11y-dark` and `a11y-light`.\n\nIf you want to use this highlighting style but don't want it to be adaptive, you can set `highlight-style` to your preference.\nFor example, for this blog, [I have it set it to `a11y-dark`](https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/10eafdffa2dabf83409e0ce22f854d682782d503/_quarto.yml#L45).\n\n## Learn more\n\n-   [Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)\n-   [`a11y-syntax-highlighting`](https://github.com/ericwbailey/a11y-syntax-highlighting)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
