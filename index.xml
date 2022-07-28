@@ -10,7 +10,31 @@
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
 <generator>quarto-1.0.37</generator>
-<lastBuildDate>Tue, 26 Jul 2022 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 27 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Quarto for the curious</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/30-quarto-curious/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>If you’re curious about Quarto, take a look at Tom Mock’s slide deck from rstudio::conf(2022) where he introduces Quarto, particularly for R Markdown users.</p>
+<p>Tom’s slides can be found at <a href="http://rstd.io/quarto-curious">rstd.io/quarto-curious</a>.</p>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<p>See the conference schedule at <a href="https://www.rstudio.com/conference/2022/schedule/">rstudio.com/conference/2022/schedule/</a> for more Quarto talks on Day 2 of the conference!</p>
+
+
+</section>
+
+ ]]></description>
+  <category>talk</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/30-quarto-curious/index.html</guid>
+  <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/30-quarto-curious/featured.png" medium="image" type="image/png" height="90" width="144"/>
+</item>
 <item>
   <title>Accessibility: a11y theme</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -1121,55 +1145,6 @@ pandoc–more
   <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/11-spans/index.html</guid>
   <pubDate>Fri, 08 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/11-spans/featured.png" medium="image" type="image/png" height="98" width="144"/>
-</item>
-<item>
-  <title>Site resources</title>
-  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/10-site-resources/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources"><code>resources</code></h2>
-<p>To publish a file not explicitly linked from pages in your Quarto site, add a <code>resources</code> entry to your <code>_quarto.yml</code> file.</p>
-<p>For example, to include all PDF files within the project directory as part of the website, you can use the following.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;">project</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb1-2"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">type</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> website</span></span>
-<span id="cb1-3"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">resources</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span></span>
-<span id="cb1-4"><span class="at" style="color: #657422;">    </span><span class="kw" style="color: #003B4F;">-</span><span class="at" style="color: #657422;"> </span><span class="st" style="color: #20794D;">"*.pdf"</span></span></code></pre></div>
-<p>If the PDF files are linked from somewhere in your website, they should automatically be copied over to your <code>_site</code> directory when your site is built. But if Quarto somehow fails to do that, adding them as <code>resources</code> should fix the issue.</p>
-<p>A few other notes on this feature:</p>
-<ul>
-<li><code>resources</code> entries are character strings so they should have quotes around them.</li>
-<li>You can use <a href="https://quarto.org/docs/reference/globs.html">Quarto Glob Syntax</a> when defining resources for Quarto websites.</li>
-<li>Quarto cannot render xaringan slides but you can include the Rmds and the resulting HTML files of your xaringan slide decks by including them as resources. Note that the slide decks are in a folder starting with <code>_</code> to indicate that <code>quarto render</code> should ignore that folder.</li>
-</ul>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><span class="fu" style="color: #4758AB;">project</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb2-2"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">type</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> website</span></span>
-<span id="cb2-3"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">resources</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb2-4"><span class="at" style="color: #657422;">    </span><span class="kw" style="color: #003B4F;">-</span><span class="at" style="color: #657422;"> </span><span class="st" style="color: #20794D;">"_xaringan-slides/"</span></span></code></pre></div>
-<ul>
-<li><code>resources</code> metadata can also be added to individual files. For example, if you have a course website with a syllabus page, and you also want to allow downloading a PDF version of the syllabus from that page, you might use something like the following.</li>
-</ul>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><span class="fu" style="color: #4758AB;">title</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="st" style="color: #20794D;">"Syllabus"</span></span>
-<span id="cb3-2"><span class="fu" style="color: #4758AB;">resources</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb3-3"><span class="at" style="color: #657422;">  </span><span class="kw" style="color: #003B4F;">-</span><span class="at" style="color: #657422;"> </span><span class="st" style="color: #20794D;">"syllabus.pdf"</span></span></code></pre></div>
-</section>
-<section id="learn-more" class="level2">
-<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p><a href="https://quarto.org/docs/websites/website-tools.html#site-resources">Site Resources</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>website</category>
-  <category>glob</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/10-site-resources/index.html</guid>
-  <pubDate>Thu, 07 Jul 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/10-site-resources/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 </channel>
 </rss>
