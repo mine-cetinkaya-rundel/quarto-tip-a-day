@@ -394,3 +394,32 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/29-a11
 \[insert-image\]
 
 alt-text: YAML for setting highlight-style to a11y as well as for light and dark theme (also provided in the blog post) and the resulting webpage in light and dark mode showing how the a11y theme adapts.
+
+------------------------------------------------------------------------
+
+#quartotip 30: Curious about Quarto?
+Browse @thomas_mock 's slides from Day 1 on #rstudioconf2022 and don't miss Day 2 talks!
+
+Link to slides: http://rstd.io/quarto-curious
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/30-quarto-curious/
+
+\[insert-image\]
+
+alt-text: Cover slide with the words Quarto for the curious and photo of an old quarto style printed book.\
+
+------------------------------------------------------------------------
+
+#quartotip 31: Don't miss @juliesquid and I talk about Quarto at #rstudioconf2022 at 9am ET.
+Join us in Potomac A or on the live stream at rstd.io/conf.
+#rstudioconf #rstats
+
+Link to slides: https://mine.quarto.pub/hello-quarto
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/
+
+\[insert-image\]
+
+alt-text: Illustration of two penguins, one blue and one orange, taking a selfie with a selfie stick.
+The moon in the background looks like the Quarto logo.
+
