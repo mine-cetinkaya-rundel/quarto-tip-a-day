@@ -1,0 +1,15 @@
+---
+title: "Quarto for the curious"
+date: "2022-07-27"
+categories: [talk]
+image: featured.png
+image-alt: "Cover slide with the words Quarto for the curious and photo of an old quarto style printed book."
+---
+
+If you're curious about Quarto, take a look at Tom Mock's slide deck from rstudio::conf(2022) where he introduces Quarto, particularly for R Markdown users.
+
+Tom's slides can be found at [rstd.io/quarto-curious](http://rstd.io/quarto-curious).
+
+## Learn more
+
+See the conference schedule at [rstudio.com/conference/2022/schedule/](https://www.rstudio.com/conference/2022/schedule/) for more Quarto talks on Day 2 of the conference!

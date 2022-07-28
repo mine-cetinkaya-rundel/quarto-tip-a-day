@@ -384,3 +384,13 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/28-fig
 
 alt-text: YAML for adding the alt text for a figure created with code.
 The resulting figure as well as the HTML which shows the alt text for the image.
+
+------------------------------------------------------------------------
+
+#quartotip 29: Use a11y as an accessible syntax highlighting style and have it automatically adapt to light/dark setting of your webpage.
+
+Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/29-a11y-theme/
+
+\[insert-image\]
+
+alt-text: YAML for setting highlight-style to a11y as well as for light and dark theme (also provided in the blog post) and the resulting webpage in light and dark mode showing how the a11y theme adapts.
