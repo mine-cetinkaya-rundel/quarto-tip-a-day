@@ -422,4 +422,4 @@ Read more: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hel
 
 alt-text: Illustration of two penguins, one blue and one orange, taking a selfie with a selfie stick.
 The moon in the background looks like the Quarto logo.
-
+Art by Allison Horst.
