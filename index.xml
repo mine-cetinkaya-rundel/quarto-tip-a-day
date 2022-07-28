@@ -10,7 +10,35 @@
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
 <generator>quarto-1.0.37</generator>
-<lastBuildDate>Wed, 27 Jul 2022 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 28 Jul 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Hello Quarto</title>
+  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Don’t miss Julia Stewart Lowndes and I talk about Quarto at rstudio::conf(2022) at 9am ET. Join us in Potomac A or on the live stream at <a href="https://rstd.io/conf">rstd.io/conf</a>.</p>
+<p>Our talks is titled <strong>Hello Quarto: Share + Collaborate + Teach + Reimagine</strong>. And our slides are at <a href="https://mine.quarto.pub/hello-quarto">mine.quarto.pub/hello-quarto</a> if you’d like to follow along!</p>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<ul>
+<li>Repo for slides: <a href="https://github.com/mine-cetinkaya-rundel/hello-quarto">github.com/mine-cetinkaya-rundel/hello-quarto</a></li>
+<li>Repo for the demo website we create in the talk: <a href="https://github.com/mine-cetinkaya-rundel/hello-quarto-demo">github.com/mine-cetinkaya-rundel/hello-quarto-demo</a></li>
+<li>Conference schedule for more Quarto talks on Day 2 of the conference: <a href="https://www.rstudio.com/conference/2022/schedule/">rstudio.com/conference/2022/schedule</a></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>talk</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/index.html</guid>
+  <pubDate>Thu, 28 Jul 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/featured.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Quarto for the curious</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
@@ -1063,88 +1091,6 @@ pandoc–more
   <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/index.html</guid>
   <pubDate>Sat, 09 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/featured.png" medium="image" type="image/png" height="98" width="144"/>
-</item>
-<item>
-  <title>Spans</title>
-  <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/11-spans/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="spans" class="level2">
-<h2 class="anchored" data-anchor-id="spans">Spans</h2>
-<p>You can apply styles to inline text by creating spans using <code>[]</code> to surround the text you want to style and <code>{}</code> to define the style you want to apply.</p>
-<p>For example, to achieve the styling in the following sentence:</p>
-<blockquote class="blockquote">
-<p>To draw attention to a specific part of the text, you might want to make it <span style="color: red;">red</span> with a <span style="background-color: yellow;">yellow background</span>; <span style="color: red; background-color: yellow;">like this</span>.</p>
-</blockquote>
-<p>You can use the following:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1">To draw attention to a specific part of the text, you might want to make it <span class="co" style="color: #5E5E5E;">[</span><span class="ot" style="color: #003B4F;">red</span><span class="co" style="color: #5E5E5E;">]</span>{style="color: red;"} with a <span class="co" style="color: #5E5E5E;">[</span><span class="ot" style="color: #003B4F;">yellow background</span><span class="co" style="color: #5E5E5E;">]</span>{style="background-color: yellow;"}; <span class="co" style="color: #5E5E5E;">[</span><span class="ot" style="color: #003B4F;">like this</span><span class="co" style="color: #5E5E5E;">]</span>{style="color: red; background-color: yellow;"}.</span></code></pre></div>
-<p>Some tips for using spans:</p>
-<ul>
-<li>If you’re authoring in RStudio using the visual editor, you can create a span by selecting the text you want to format and using the <strong>Format -&gt; Span</strong> command.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/11-spans/visual-editor-highlight.png" class="img-fluid figure-img" alt="Creating a span using the visual editor Span Attributes menu. This menu has four elements: ID, Classes, CSS Styles, and Other. The CSS styles element in the menu shows background-color: yellow;." width="400"></p>
-</figure>
-</div>
-<ul>
-<li>You can also define a CSS class and apply it to the span. For example,</li>
-</ul>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb2-1"><span class="fu" style="color: #4758AB;">.important</span> {</span>
-<span id="cb2-2">  <span class="kw" style="color: #003B4F;">background-color</span>: <span class="cn" style="color: #8f5902;">yellow</span><span class="op" style="color: #5E5E5E;">;</span></span>
-<span id="cb2-3">  <span class="kw" style="color: #003B4F;">color</span>: <span class="cn" style="color: #8f5902;">red</span><span class="op" style="color: #5E5E5E;">;</span></span>
-<span id="cb2-4">}</span></code></pre></div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/11-spans/visual-editor-important.png" class="img-fluid figure-img" alt="Creating a span using the visual editor Span Attributes menu. This menu has four elements: ID, Classes, CSS Styles, and Other. The Classes element in the menu shows .important." width="400"></p>
-</figure>
-</div>
-<ul>
-<li><p>Spans can also be used to define <a href="https://quarto.org/docs/presentations/revealjs/advanced.html#fragments">fragments</a> in Quarto revealjs presentations. Use the left arrow on your keyboard to advance the slides below to</p>
-<div class="panel-tabset">
-<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" aria-controls="tabset-1-1" aria-selected="true">Output</a></li><li class="nav-item"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" aria-controls="tabset-1-2" aria-selected="false">Code</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" aria-labelledby="tabset-1-1-tab">
-<iframe width="600px" height="400px" style="border:2px solid #dee2e6;" src="spans.html"></iframe>
-</div>
-<div id="tabset-1-2" class="tab-pane" aria-labelledby="tabset-1-2-tab">
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="fu" style="color: #4758AB;">## Fragments</span></span>
-<span id="cb3-2"></span>
-<span id="cb3-3">::: columns</span>
-<span id="cb3-4">::: {.column width="50%"}</span>
-<span id="cb3-5"><span class="co" style="color: #5E5E5E;">[</span><span class="ot" style="color: #003B4F;">This shows up first,</span><span class="co" style="color: #5E5E5E;">]</span>{.fragment fragment-index="1" style="color:orange;"}</span>
-<span id="cb3-6">:::</span>
-<span id="cb3-7"></span>
-<span id="cb3-8">::: {.column width="50%"}</span>
-<span id="cb3-9"><span class="co" style="color: #5E5E5E;">[</span><span class="ot" style="color: #003B4F;">then this,</span><span class="co" style="color: #5E5E5E;">]</span>{.fragment fragment-index="2" style="color: blue;"}</span>
-<span id="cb3-10">:::</span>
-<span id="cb3-11">:::</span>
-<span id="cb3-12"></span>
-<span id="cb3-13"><span class="co" style="color: #5E5E5E;">[</span><span class="ot" style="color: #003B4F;">then this.</span><span class="co" style="color: #5E5E5E;">]</span>{.fragment fragment-index="3" style="color: pink;"}</span></code></pre></div>
-</div>
-</div>
-</div></li>
-</ul>
-</section>
-<section id="learn-more" class="level2">
-<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
-<p><a href="https://quarto.org/docs/websites/website-tools.html#site-resources">Site Resources</a></p>
-
-
-</section>
-
- ]]></description>
-  <category>html</category>
-  <category>css</category>
-  <category>visual editor</category>
-  <category>revealjs</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/11-spans/index.html</guid>
-  <pubDate>Fri, 08 Jul 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/11-spans/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 </channel>
 </rss>

@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/31-hello-quarto/index.html",
       "/posts/30-quarto-curious/index.html",
       "/posts/29-a11y-theme/index.html",
       "/posts/28-fig-alt/index.html",
