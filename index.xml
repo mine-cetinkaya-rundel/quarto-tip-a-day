@@ -193,7 +193,7 @@ Note
 <span id="cb1-2"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">revealjs</span><span class="kw" style="color: #003B4F;">:</span></span>
 <span id="cb1-3"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">slide-tone</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="ch" style="color: #20794D;">true</span></span></code></pre></div>
 <p>This feature can be particularly useful for blind users who use a screen reader or otherwise interact with content via auditory signals. You can see it in action in the slide deck below. Make sure to turn your audio on.</p>
-<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="side-tone.html"></iframe>
+<iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="slide-tone.html"></iframe>
 </section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
