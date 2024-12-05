@@ -12,7 +12,7 @@ website:
   repo-url: https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day
   repo-actions: [edit, issue]
 
-  opengraph: true
+  open-graph: true
   twitter-card:
     creator: "@quarto_pub"
     image: "/images/twitter-card.png"
@@ -27,15 +27,15 @@ website:
       - icon: github
         href: https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day
         aria-label: GitHub repo
-      - icon: twitter
-        href: https://twitter.com/quarto_pub
-        aria-label: Quarto Twitter
+      - icon: cloud-fill
+        href: https://bsky.app/profile/quarto.org
+        aria-label: Quarto Bluesky
 
   page-footer:
     right: "This blog is built with ❤️ and [Quarto](https://quarto.org/)."
     left: |
       Proudly supported by
-      [![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-flat.svg){fig-alt="RStudio" width=65px}](https://www.rstudio.com)
+      [![](https://posit.co/wp-content/themes/Posit/assets/images/posit-logo-2024.svg){fig-alt="Posit" width=65px}](https://posit.co/)
 
 format:
   html:
