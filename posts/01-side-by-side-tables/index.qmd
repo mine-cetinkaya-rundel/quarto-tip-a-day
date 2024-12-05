@@ -12,6 +12,7 @@ Use the `layout-ncol` chunk option to organize output in columns, e.g., `layout-
 
 ```{r}
 #| echo: fenced
+#| label: tbl-label
 #| tbl-cap: Two tables
 #| tbl-subcap: ["mtcars", "Just cars"]
 #| layout-ncol: 2
