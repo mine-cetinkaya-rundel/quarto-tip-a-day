@@ -113,14 +113,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta property="og:site_name" content="A Quarto tip a day">
 <meta property="og:image:height" content="1114">
 <meta property="og:image:width" content="1684">
-<meta property="og:image:alt" content="Two tables side by side. On the left is the first six rows and first three columns of the mtcars dataset. On the right is the first six rows and all two columns of the cars dataset.">
+<meta property="og:image:alt" content="Two tables side by side. On the left is the first six rows and the first three columns of the mtcars dataset. On the right is the first six rows and all two columns of the cars dataset.">
 <meta name="twitter:title" content="Side-by-side tables – A Quarto tip a day">
 <meta name="twitter:description" content="Inspired by the saying “An apple a day keeps the doctor away”, this project titled “A Quarto tip a day keeps the docs away” is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.">
 <meta name="twitter:image" content="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/01-side-by-side-tables/featured.png">
 <meta name="twitter:creator" content="@quarto_pub">
 <meta name="twitter:image-height" content="1114">
 <meta name="twitter:image-width" content="1684">
-<meta name="twitter:image:alt" content="Two tables side by side. On the left is the first six rows and first three columns of the mtcars dataset. On the right is the first six rows and all two columns of the cars dataset.">
+<meta name="twitter:image:alt" content="Two tables side by side. On the left is the first six rows and the first three columns of the mtcars dataset. On the right is the first six rows and all two columns of the cars dataset.">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -224,23 +224,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="layout-ncol"><code>layout-ncol</code></h2>
 <p>Use the <code>layout-ncol</code> chunk option to organize output in columns, e.g., <code>layout-ncol: 2</code> for two tables side-by-side.</p>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| tbl-cap: Two tables</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="in">#| tbl-subcap: ["mtcars", "Just cars"]</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="in">#| layout-ncol: 2</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="in">library(knitr)</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="in"># table on the left</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in">kable(head(mtcars[, 1:3]))</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="in"># table on the right</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="in">kable(head(cars))</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="tbl-anonymous-4893166" class="cell quarto-layout-panel anchored" data-layout-ncol="2">
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: tbl-label</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="in">#| tbl-cap: Two tables</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="in">#| tbl-subcap: ["mtcars", "Just cars"]</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="in">#| layout-ncol: 2</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="in">library(knitr)</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in"># table on the left</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="in">kable(head(mtcars[, 1:3]))</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="in"># table on the right</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">kable(head(cars))</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tbl-label" class="quarto-layout-panel anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-label-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Two tables
+</figcaption>
+<div aria-describedby="tbl-label-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<table class="caption-top table table-sm table-striped small">
-<caption>mtcars {#tbl-anonymous-4893166-1}</caption>
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="tbl-label" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-label-1" class="do-not-create-environment quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-tbl" id="tbl-label-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) mtcars
+</figcaption>
+<div aria-describedby="tbl-label-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table id="tbl-label-1" class="do-not-create-environment caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: left;"></th>
@@ -289,9 +300,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<table class="caption-top table table-sm table-striped small">
-<caption>Just cars {#tbl-anonymous-4893166-2}</caption>
+</figure>
+</div>
+<div id="tbl-label-2" class="do-not-create-environment quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-tbl" id="tbl-label-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Just cars
+</figcaption>
+<div aria-describedby="tbl-label-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table id="tbl-label-2" class="do-not-create-environment caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: right;">speed</th>
@@ -326,12 +343,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </div>
-</div>
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>Two tables</p>
+</figure>
 </div>
 </div>
+</div>
+</div>
+</figure>
 </div>
 </section>
 <section id="learn-more" class="level2">
