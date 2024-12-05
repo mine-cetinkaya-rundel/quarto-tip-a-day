@@ -6,16 +6,17 @@
       version="2.0">
 <channel>
 <title>A Quarto tip a day</title>
-<link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</link>
+<link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/</link>
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
-<description>Inspired by the saying "An apple a day keeps the doctor away", this project titled "A Quarto tip a day keeps the docs away" is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
-<generator>quarto-1.0.37</generator>
+<description>Inspired by the saying &quot;An apple a day keeps the doctor away&quot;, this project titled &quot;A Quarto tip a day keeps the docs away&quot; is a playful attempt to share Quarto tips for a month leading up to my rstudio::conf(2022) keynote on Quarto.</description>
+<generator>quarto-1.6.39</generator>
 <lastBuildDate>Thu, 28 Jul 2022 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Hello Quarto</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -35,15 +36,16 @@
 
  ]]></description>
   <category>talk</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/</guid>
   <pubDate>Thu, 28 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/featured.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Quarto for the curious</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/30-quarto-curious/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/30-quarto-curious/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -59,15 +61,16 @@
 
  ]]></description>
   <category>talk</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/30-quarto-curious/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/30-quarto-curious/</guid>
   <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/30-quarto-curious/featured.png" medium="image" type="image/png" height="90" width="144"/>
 </item>
 <item>
   <title>Accessibility: a11y theme</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/29-a11y-theme/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/29-a11y-theme/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -75,20 +78,66 @@
 <section id="a11y" class="level2">
 <h2 class="anchored" data-anchor-id="a11y"><code>a11y</code></h2>
 <p>Quarto comes with accessible (with respect to color contrast) theme for syntax highlighting: <code>a11y</code>. This theme is adaptive, so it automatically switches between a dark and light mode based upon the theme of the website. It is designed to work well with sites with dark / light mode.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;">format</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb1-2"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">html</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb1-3"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">highlight-style</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> a11y</span></span>
-<span id="cb1-4"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">theme</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb1-5"><span class="at" style="color: #657422;">      </span><span class="fu" style="color: #4758AB;">light</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> flatly</span></span>
-<span id="cb1-6"><span class="at" style="color: #657422;">      </span><span class="fu" style="color: #4758AB;">dark</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> darkly</span></span></code></pre></div>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">format</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-2"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">highlight-style</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> a11y</span></span>
+<span id="cb1-4"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-5"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">light</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> flatly</span></span>
+<span id="cb1-6"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">dark</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> darkly</span></span></code></pre></div>
 <p>Here is a website with a light and dark theme. Click on the light/dark toggle on the top right corner of the page and observe the syntax highlighting adapt to the background color. The two highlight styles shown are <code>a11y-dark</code> and <code>a11y-light</code>.</p>
 <iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="https://mine.quarto.pub/a11y/"></iframe>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -112,15 +161,16 @@ Note
   <category>accessibility</category>
   <category>color constrast</category>
   <category>highlighting</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/29-a11y-theme/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/29-a11y-theme/</guid>
   <pubDate>Tue, 26 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/29-a11y-theme/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 <item>
   <title>Accessibility: fig-alt</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/28-fig-alt/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/28-fig-alt/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -130,28 +180,91 @@ Note
 <p>You can add alternative text to figures you create with code by adding the <code>fig-alt</code> chunk option, which works for Knitr, Jupyter, and Observable code chunks.</p>
 <p>Here is an R/Knitr example.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;">```{r}</span></span>
-<span id="cb1-2"><span class="co" style="color: #5E5E5E;">#| label: penguins-plot</span></span>
-<span id="cb1-3"><span class="co" style="color: #5E5E5E;">#| warning: false</span></span>
-<span id="cb1-4"><span class="co" style="color: #5E5E5E;">#| fig-alt: |</span></span>
-<span id="cb1-5"><span class="co" style="color: #5E5E5E;">#|   Scatterplot of penguin bill depth vs. length, colored by species.</span></span>
-<span id="cb1-6"><span class="co" style="color: #5E5E5E;">#|   The relationship is positive for each of the three species.</span></span>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```{r}</span></span>
+<span id="cb1-2"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#| label: penguins-plot</span></span>
+<span id="cb1-3"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#| warning: false</span></span>
+<span id="cb1-4"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#| fig-alt: |</span></span>
+<span id="cb1-5"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#|   Scatterplot of penguin bill depth vs. length, colored by species.</span></span>
+<span id="cb1-6"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#|   The relationship is positive for each of the three species.</span></span>
 <span id="cb1-7"></span>
-<span id="cb1-8"><span class="fu" style="color: #4758AB;">library</span>(tidyverse)</span>
-<span id="cb1-9"><span class="fu" style="color: #4758AB;">library</span>(palmerpenguins)</span>
-<span id="cb1-10"><span class="fu" style="color: #4758AB;">library</span>(colorblindr)</span>
+<span id="cb1-8"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">library(tidyverse)</span></span>
+<span id="cb1-9"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">library(palmerpenguins)</span></span>
+<span id="cb1-10"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">library(colorblindr)</span></span>
 <span id="cb1-11"></span>
-<span id="cb1-12"><span class="fu" style="color: #4758AB;">ggplot</span>(penguins, </span>
-<span id="cb1-13">       <span class="fu" style="color: #4758AB;">aes</span>(<span class="at" style="color: #657422;">x =</span> bill_length_mm, <span class="at" style="color: #657422;">y =</span> bill_depth_mm, <span class="at" style="color: #657422;">color =</span> species)) <span class="sc" style="color: #5E5E5E;">+</span></span>
-<span id="cb1-14">  <span class="fu" style="color: #4758AB;">geom_point</span>() <span class="sc" style="color: #5E5E5E;">+</span></span>
-<span id="cb1-15">  <span class="fu" style="color: #4758AB;">scale_color_OkabeIto</span>()</span>
-<span id="cb1-16"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+<span id="cb1-12"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">ggplot(penguins, </span></span>
+<span id="cb1-13"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">       aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +</span></span>
+<span id="cb1-14"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  geom_point() +</span></span>
+<span id="cb1-15"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  scale_color_OkabeIto()</span></span>
+<span id="cb1-16"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```</span></span></code></pre></div>
 <div class="cell-output-display">
-<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/28-fig-alt/index_files/figure-html/penguins-plot-1.png" class="img-fluid" alt="Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species." width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/28-fig-alt/index_files/figure-html/penguins-plot-1.png" class="img-fluid figure-img" alt="Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species." width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>The resulting HTML is shown below. The alternative (<code>alt</code>) text is accessible to screen readers.</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><span class="kw" style="color: #003B4F;">&lt;img</span> <span class="er" style="color: #AD0000;">src</span><span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"index_files/figure-html/penguins-plot-1.png"</span> <span class="er" style="color: #AD0000;">class</span><span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"img-fluid"</span> <span class="er" style="color: #AD0000;">alt</span><span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species."</span> <span class="er" style="color: #AD0000;">width</span><span class="ot" style="color: #003B4F;">=</span><span class="st" style="color: #20794D;">"672"</span><span class="kw" style="color: #003B4F;">&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&lt;</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">img</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> src</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"index_files/figure-html/penguins-plot-1.png"</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> class</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"img-fluid"</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> alt</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Scatterplot of penguin bill depth vs. length, colored by species. The relationship is positive for each of the three species."</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> width</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"672"</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&gt;</span></span></code></pre></div>
 </section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
@@ -164,7 +277,7 @@ Note
 <p>Guidance for writing alt text:</p>
 <ul>
 <li><a href="https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81">Writing Alt Text for Data Visualization</a></li>
-<li><a href="Charts%20&amp;%20Accessibility">Charts &amp; accessibility</a></li>
+<li><a href="Charts &amp; Accessibility">Charts &amp; accessibility</a></li>
 </ul>
 
 
@@ -173,15 +286,16 @@ Note
  ]]></description>
   <category>accessibility</category>
   <category>alt-text</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/28-fig-alt/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/28-fig-alt/</guid>
   <pubDate>Mon, 25 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/28-fig-alt/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 <item>
   <title>Accessibility: slide-tone</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/27-slide-tone/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/27-slide-tone/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -189,9 +303,32 @@ Note
 <section id="slide-tone" class="level2">
 <h2 class="anchored" data-anchor-id="slide-tone"><code>slide-tone</code></h2>
 <p>You can set your Quarto presentation to play a subtle sound when slide is advanced to the next slide or as part of incremental build in a given slide. This enables presenters to hear an auditory signal (from a low C to a high C note) of their progress through the slides.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;">format</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb1-2"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">revealjs</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb1-3"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">slide-tone</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="ch" style="color: #20794D;">true</span></span></code></pre></div>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">format</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-2"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">revealjs</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">slide-tone</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">true</span></span></code></pre></div>
 <p>This feature can be particularly useful for blind users who use a screen reader or otherwise interact with content via auditory signals. You can see it in action in the slide deck below. Make sure to turn your audio on.</p>
 <iframe width="800px" height="533px" style="border:2px solid #dee2e6;" src="slide-tone.html"></iframe>
 </section>
@@ -206,15 +343,16 @@ Note
   <category>accessibility</category>
   <category>revealjs</category>
   <category>slide-tone</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/27-slide-tone/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/27-slide-tone/</guid>
   <pubDate>Sun, 24 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/27-slide-tone/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 <item>
   <title>Accessibility: image-alt</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/26-image-alt/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/26-image-alt/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -223,9 +361,36 @@ Note
 <h2 class="anchored" data-anchor-id="image-alt"><code>image-alt</code></h2>
 <p>For Quarto websites, blog posts, and HTML pages, you can include an <code>image</code> in the metadata that will be displayed in places such as the thumbnail for blog posts (like each of the tips on this site), and the preview card on social media.</p>
 <p>You can (and should) provide alt text for these images by using the <code>image-alt</code> option in your YAML as well. For example, here’s a snippet from the YAML for the <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/17-dark-mode/">tip on using dark mode</a>.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;">title</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="st" style="color: #20794D;">"Dark mode"</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;">image</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="st" style="color: #20794D;">"featured.gif"</span></span>
-<span id="cb1-3"><span class="fu" style="color: #4758AB;">image-alt</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="st" style="color: #20794D;">"Switching between light and dark mode using the toggle on the navbar of this blog's homepage."</span></span></code></pre></div>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">title</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Dark mode"</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">image</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"featured.gif"</span></span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">image-alt</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Switching between light and dark mode using the toggle on the navbar of this blog's homepage."</span></span></code></pre></div>
 </section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
@@ -244,15 +409,16 @@ Note
   <category>alt-text</category>
   <category>blog</category>
   <category>social</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/26-image-alt/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/26-image-alt/</guid>
   <pubDate>Sat, 23 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/26-image-alt/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 <item>
   <title>Accessibility: aria-label</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/25-aria-labels/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/25-aria-labels/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -262,18 +428,113 @@ Note
 <p>For Quarto websites, you can add <code>icon</code>s as <a href="https://quarto.org/docs/reference/projects/websites.html#nav-items">Nav Items</a> in the <a href="https://quarto.org/docs/reference/projects/websites.html#navbar">navbar</a> and/or <a href="https://quarto.org/docs/reference/projects/websites.html#footer">page footer</a> YAML. The value of the <code>icon</code> field can be the name of any of the <a href="https://icons.getbootstrap.com/">Bootstrap icons</a>. To make these items accessible to screen readers, you should also add an <code>aria-label</code> describing what the navigation item is.</p>
 <p>For example, here are snippets from the YAML for the <a href="https://quarto.org/">Quarto documentation website</a>.</p>
 <p>From the top navbar:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;">website</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb1-2"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">navbar</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb1-3"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">right</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb1-4"><span class="at" style="color: #657422;">      </span><span class="kw" style="color: #003B4F;">-</span><span class="at" style="color: #657422;"> </span><span class="fu" style="color: #4758AB;">icon</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> twitter</span></span>
-<span id="cb1-5"><span class="at" style="color: #657422;">        </span><span class="fu" style="color: #4758AB;">href</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> https://twitter.com/quarto_pub</span></span>
-<span id="cb1-6"><span class="at" style="color: #657422;">        </span><span class="fu" style="color: #4758AB;">aria-label</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> Quarto Twitter</span></span></code></pre></div>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">website</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-2"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">navbar</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">right</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-4"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">icon</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> twitter</span></span>
+<span id="cb1-5"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">        </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">href</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> https://twitter.com/quarto_pub</span></span>
+<span id="cb1-6"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">        </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aria-label</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> Quarto Twitter</span></span></code></pre></div>
 <p>From the page footer:</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><span class="fu" style="color: #4758AB;">website</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb2-2"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">page-footer</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb2-3"><span class="at" style="color: #657422;">      </span><span class="kw" style="color: #003B4F;">-</span><span class="at" style="color: #657422;"> </span><span class="fu" style="color: #4758AB;">icon</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> github</span></span>
-<span id="cb2-4"><span class="at" style="color: #657422;">        </span><span class="fu" style="color: #4758AB;">href</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> https://github.com/quarto-dev/quarto-cli</span></span>
-<span id="cb2-5"><span class="at" style="color: #657422;">        </span><span class="fu" style="color: #4758AB;">aria-label</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> Quarto GitHub</span></span></code></pre></div>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">website</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb2-2"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">page-footer</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb2-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">icon</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> github</span></span>
+<span id="cb2-4"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">        </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">href</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> https://github.com/quarto-dev/quarto-cli</span></span>
+<span id="cb2-5"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">        </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aria-label</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> Quarto GitHub</span></span></code></pre></div>
 </section>
 <section id="learn-more" class="level2">
 <h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
@@ -286,15 +547,16 @@ Note
   <category>accessibility</category>
   <category>icon</category>
   <category>aria-label</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/25-aria-labels/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/25-aria-labels/</guid>
   <pubDate>Fri, 22 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/25-aria-labels/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 <item>
   <title>Citations</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -311,7 +573,7 @@ Note
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/featured.gif" class="img-fluid figure-img" alt="Using RStudio's Visual Editor to insert a citation from DOI. The citation is for the Welcome to the Tidyverse paper. Citation is inserted using DOI and the Insert Citation menu. Steps for inserting a citation this way can be found below."></p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/featured.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Using RStudio's Visual Editor to insert a citation from DOI. The citation is for the Welcome to the Tidyverse paper. Citation is inserted using DOI and the Insert Citation menu. Steps for inserting a citation this way can be found below."></p>
 </figure>
 </div>
 <p>That’s it, you’re done! This will automatically create a bib file in your working directory, or if you already have one, add to it. It will also add a <code>bibliography</code> field to the YAML of your document, which will automatically insert your references at the end.</p>
@@ -336,15 +598,16 @@ Note
  ]]></description>
   <category>citations</category>
   <category>visual editor</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/</guid>
   <pubDate>Thu, 21 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/featured.gif" medium="image" type="image/gif"/>
 </item>
 <item>
   <title>Title-less slides</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/23-titleless-slides/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/23-titleless-slides/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -364,28 +627,57 @@ Note
 <ul>
 <li>Slide 1 has a title and content:</li>
 </ul>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="fu" style="color: #4758AB;">## Slide 1 title</span></span>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">## Slide 1 title</span></span>
 <span id="cb1-2"></span>
 <span id="cb1-3">Slide 1 content - this slide has a title</span></code></pre></div>
 <ul>
 <li>Slide 2 has no title but content:</li>
 </ul>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="fu" style="color: #4758AB;">## </span></span>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">## </span></span>
 <span id="cb2-2"></span>
 <span id="cb2-3">Slide 2 content - this slide has no title</span></code></pre></div>
 <ul>
 <li>Slide 3 also has no title but content, but also defines a slide ID and <code>data-menu-title</code>.</li>
 </ul>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="fu" style="color: #4758AB;">##  {#slide3-id data-menu-title="Slide 3 title for outline"}</span></span>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">##  {#slide3-id data-menu-title="Slide 3 title for outline"}</span></span>
 <span id="cb3-2"></span>
-<span id="cb3-3">Slide 3 content - this slide has no title, but has a slide ID and <span class="in" style="color: #5E5E5E;">`data-menu-title`</span>.</span></code></pre></div>
+<span id="cb3-3">Slide 3 content - this slide has no title, but has a slide ID and <span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">`data-menu-title`</span>.</span></code></pre></div>
 <p>A couple more notes on slide titles:</p>
 <ul>
 <li>You can choose to have slide numbers instead of slugs based on slide IDs show up in the URL by setting <code>hash-type: number</code>.</li>
 </ul>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><span class="fu" style="color: #4758AB;">format</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb4-2"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">revealjs</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb4-3"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">hash-type</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> number</span></span></code></pre></div>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">format</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb4-2"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">revealjs</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb4-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">hash-type</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> number</span></span></code></pre></div>
 <ul>
 <li>If your slide has no title and no text content (e.g., you only have a picture on the slide) but has speaker notes, the document outline will show the speaker notes if you don’t define <code>data-menu-title</code>. You probably don’t want that…</li>
 </ul>
@@ -403,15 +695,16 @@ Note
  ]]></description>
   <category>presentation</category>
   <category>revealjs</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/23-titleless-slides/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/23-titleless-slides/</guid>
   <pubDate>Wed, 20 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/23-titleless-slides/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 <item>
   <title>Shiny</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/22-shiny/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/22-shiny/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -454,15 +747,16 @@ Note
  ]]></description>
   <category>interactivity</category>
   <category>shiny</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/22-shiny/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/22-shiny/</guid>
   <pubDate>Tue, 19 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/22-shiny/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 <item>
   <title>Diagrams</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/21-diagrams/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/21-diagrams/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -471,32 +765,73 @@ Note
 <h2 class="anchored" data-anchor-id="diagrams">Diagrams</h2>
 <p>Quarto supports creating diagrams (flow charts, sequence diagrams, etc.) in with <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a> and <a href="https://graphviz.org/">Graphviz</a>.</p>
 <p>To create a diagram with Mermaid, use a <code>mermaid</code> chunk. For example, Figure Figure&nbsp;1 depicts how Quarto orchestrates rendering of documents.</p>
-<div class="cell" data-fig-width="6">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;">```{mermaid}</span></span>
-<span id="cb1-2">%%| label: fig-mermaid</span>
-<span id="cb1-3">%%| fig<span class="ot" style="color: #003B4F;">-w</span>idth: <span class="dv" style="color: #AD0000;">6</span></span>
-<span id="cb1-4">%%| fig<span class="ot" style="color: #003B4F;">-c</span>ap: |</span>
-<span id="cb1-5">%%|   How Quarto orchestrates rendering of documents: start with </span>
-<span id="cb1-6">%%|   a qmd file, <span class="fu" style="color: #4758AB;">use</span> the Knitr <span class="ot" style="color: #003B4F;">or</span> Jupyter engine to perform the </span>
-<span id="cb1-7">%%|   computations <span class="ot" style="color: #003B4F;">and</span> convert it to an md file, then <span class="fu" style="color: #4758AB;">use</span> Pandoc </span>
-<span id="cb1-8">%%|   to convert to various file formats including HTML, PDF, </span>
-<span id="cb1-9">%%|   <span class="ot" style="color: #003B4F;">and</span> Word.</span>
-<span id="cb1-10">flowchart LR</span>
-<span id="cb1-11">  A[qmd] --&gt; B(Knitr)</span>
-<span id="cb1-12">  A[qmd] --&gt; C(Jupyter)</span>
-<span id="cb1-13">  B(Knitr) --&gt; D[md]</span>
-<span id="cb1-14">  C(Jupyter) --&gt; D[md]</span>
-<span id="cb1-15">  D[md] --&gt; E(pandoc)</span>
-<span id="cb1-16">  E(pandoc) --&gt; F(HTML)</span>
-<span id="cb1-17">  E(pandoc) --&gt; G(PDF)</span>
-<span id="cb1-18">  E(pandoc) --&gt; H(Word)</span>
-<span id="cb1-19">  E(pandoc) --&gt; I{<span class="ot" style="color: #003B4F;">and</span> more}</span>
-<span id="cb1-20"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+<div class="cell" data-fig-width="6" data-layout-align="default">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```{mermaid}</span></span>
+<span id="cb1-2"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%%| label: fig-mermaid</span></span>
+<span id="cb1-3"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%%| fig-width: 6</span></span>
+<span id="cb1-4"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%%| fig-cap: |</span></span>
+<span id="cb1-5"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%%|   How Quarto orchestrates rendering of documents: start with </span></span>
+<span id="cb1-6"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%%|   a qmd file, use the Knitr or Jupyter engine to perform the </span></span>
+<span id="cb1-7"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%%|   computations and convert it to an md file, then use Pandoc </span></span>
+<span id="cb1-8"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%%|   to convert to various file formats including HTML, PDF, </span></span>
+<span id="cb1-9"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%%|   and Word.</span></span>
+<span id="cb1-10"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">flowchart LR</span></span>
+<span id="cb1-11"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  A[qmd] --&gt; B(Knitr)</span></span>
+<span id="cb1-12"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  A[qmd] --&gt; C(Jupyter)</span></span>
+<span id="cb1-13"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  B(Knitr) --&gt; D[md]</span></span>
+<span id="cb1-14"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  C(Jupyter) --&gt; D[md]</span></span>
+<span id="cb1-15"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  D[md] --&gt; E(pandoc)</span></span>
+<span id="cb1-16"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  E(pandoc) --&gt; F(HTML)</span></span>
+<span id="cb1-17"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  E(pandoc) --&gt; G(PDF)</span></span>
+<span id="cb1-18"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  E(pandoc) --&gt; H(Word)</span></span>
+<span id="cb1-19"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  E(pandoc) --&gt; I{and more}</span></span>
+<span id="cb1-20"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```</span></span></code></pre></div>
 <div class="cell-output-display">
-<div id="fig-mermaid" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p>
-</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+<div id="fig-mermaid" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mermaid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-mermaid">flowchart LR
   A[qmd] --&gt; B(Knitr)
   A[qmd] --&gt; C(Jupyter)
   B(Knitr) --&gt; D[md]
@@ -507,125 +842,199 @@ Note
   E(pandoc) --&gt; H(Word)
   E(pandoc) --&gt; I{and more}
 </pre>
-<div id="mermaid-tooltip-1" class="mermaidTooltip">
-
 </div>
-<p></p>
-<p></p><figcaption class="figure-caption">Figure 1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.</figcaption><p></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mermaid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
 <p>Note that diagrams can be treated as figures, with chunk options like <code>fig-width</code> and <code>fig-cap</code>. And prefixing the <code>label</code> with <code>fig-</code> allows us to cross-reference it and for the diagram to get figure numbering.</p>
 <p>And Figure Figure&nbsp;2 is the Graphviz version of this diagram. Note that it uses a different engine: <code>dot</code>.</p>
-<div class="cell" data-fig-width="3">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="in" style="color: #5E5E5E;">```{dot}</span></span>
-<span id="cb2-2">//| label: fig<span class="ot" style="color: #003B4F;">-d</span>ot</span>
-<span id="cb2-3">//| fig<span class="ot" style="color: #003B4F;">-w</span>idth: <span class="dv" style="color: #AD0000;">3</span></span>
-<span id="cb2-4">//| fig<span class="ot" style="color: #003B4F;">-c</span>ap: |</span>
-<span id="cb2-5">//|   How Quarto orchestrates rendering of documents: start with </span>
-<span id="cb2-6">//|   a qmd file, <span class="fu" style="color: #4758AB;">use</span> the Knitr <span class="ot" style="color: #003B4F;">or</span> Jupyter engine to perform the </span>
-<span id="cb2-7">//|   computations <span class="ot" style="color: #003B4F;">and</span> convert it to an md file, then <span class="fu" style="color: #4758AB;">use</span> Pandoc </span>
-<span id="cb2-8">//|   to convert to various file formats including HTML, PDF, </span>
-<span id="cb2-9">//|   <span class="ot" style="color: #003B4F;">and</span> Word.</span>
-<span id="cb2-10">graph G {</span>
-<span id="cb2-11">  layout=neato</span>
-<span id="cb2-12">  qmd -- Knitr;</span>
-<span id="cb2-13">  qmd -- Jupyter;</span>
-<span id="cb2-14">  Knitr -- md;</span>
-<span id="cb2-15">  Jupyter -- md;</span>
-<span id="cb2-16">  md -- pandoc;</span>
-<span id="cb2-17">  pandoc -- HTML;</span>
-<span id="cb2-18">  pandoc -- PDF;</span>
-<span id="cb2-19">  pandoc -- Word;</span>
-<span id="cb2-20">  pandoc -- more;</span>
-<span id="cb2-21">}</span>
-<span id="cb2-22"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+<div class="cell" data-fig-width="3" data-layout-align="default">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```{dot}</span></span>
+<span id="cb2-2"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//| label: fig-dot</span></span>
+<span id="cb2-3"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//| fig-width: 3</span></span>
+<span id="cb2-4"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//| fig-cap: |</span></span>
+<span id="cb2-5"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//|   How Quarto orchestrates rendering of documents: start with </span></span>
+<span id="cb2-6"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//|   a qmd file, use the Knitr or Jupyter engine to perform the </span></span>
+<span id="cb2-7"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//|   computations and convert it to an md file, then use Pandoc </span></span>
+<span id="cb2-8"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//|   to convert to various file formats including HTML, PDF, </span></span>
+<span id="cb2-9"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">//|   and Word.</span></span>
+<span id="cb2-10"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">graph G {</span></span>
+<span id="cb2-11"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  layout=neato</span></span>
+<span id="cb2-12"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  qmd -- Knitr;</span></span>
+<span id="cb2-13"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  qmd -- Jupyter;</span></span>
+<span id="cb2-14"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  Knitr -- md;</span></span>
+<span id="cb2-15"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  Jupyter -- md;</span></span>
+<span id="cb2-16"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  md -- pandoc;</span></span>
+<span id="cb2-17"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  pandoc -- HTML;</span></span>
+<span id="cb2-18"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  pandoc -- PDF;</span></span>
+<span id="cb2-19"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  pandoc -- Word;</span></span>
+<span id="cb2-20"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  pandoc -- more;</span></span>
+<span id="cb2-21"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span></span>
+<span id="cb2-22"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```</span></span></code></pre></div>
 <div class="cell-output-display">
-<div id="fig-dot" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p>
-<svg width="288" height="385" viewbox="0.00 0.00 245.08 327.34" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+<div id="fig-dot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<svg width="288" height="480" viewbox="0.00 0.00 245.08 327.34" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 323.34)">
-<title>
-G
-</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-323.34 241.08,-323.34 241.08,4 -4,4"></polygon> <!-- qmd --> <g id="node1" class="node">
-<title>
-qmd
-</title>
-<ellipse fill="none" stroke="black" cx="69.62" cy="-301.34" rx="28.41" ry="18"></ellipse> <text text-anchor="middle" x="69.62" y="-297.14" font-family="Times,serif" font-size="14.00">qmd</text> </g> <!-- Knitr --> <g id="node2" class="node">
-<title>
-Knitr
-</title>
-<ellipse fill="none" stroke="black" cx="132.13" cy="-252.75" rx="31.34" ry="18"></ellipse> <text text-anchor="middle" x="132.13" y="-248.55" font-family="Times,serif" font-size="14.00">Knitr</text> </g> <!-- qmd&#45;&#45;Knitr --> <g id="edge1" class="edge">
-<title>
-qmd–Knitr
-</title>
-<path fill="none" stroke="black" d="M87.7,-287.28C95.78,-281 105.29,-273.61 113.44,-267.28"></path> </g> <!-- Jupyter --> <g id="node3" class="node">
-<title>
-Jupyter
-</title>
-<ellipse fill="none" stroke="black" cx="39.47" cy="-228.46" rx="39.43" ry="18"></ellipse> <text text-anchor="middle" x="39.47" y="-224.26" font-family="Times,serif" font-size="14.00">Jupyter</text> </g> <!-- qmd&#45;&#45;Jupyter --> <g id="edge2" class="edge">
-<title>
-qmd–Jupyter
-</title>
-<path fill="none" stroke="black" d="M62.32,-283.69C57.62,-272.32 51.52,-257.58 46.8,-246.19"></path> </g> <!-- md --> <g id="node4" class="node">
-<title>
-md
-</title>
-<ellipse fill="none" stroke="black" cx="102.7" cy="-177.2" rx="27" ry="18"></ellipse> <text text-anchor="middle" x="102.7" y="-173" font-family="Times,serif" font-size="14.00">md</text> </g> <!-- Knitr&#45;&#45;md --> <g id="edge3" class="edge">
-<title>
-Knitr–md
-</title>
-<path fill="none" stroke="black" d="M125.16,-234.84C120.43,-222.72 114.21,-206.76 109.52,-194.72"></path> </g> <!-- Jupyter&#45;&#45;md --> <g id="edge4" class="edge">
-<title>
-Jupyter–md
-</title>
-<path fill="none" stroke="black" d="M59.12,-212.52C67.54,-205.71 77.27,-197.82 85.4,-191.22"></path> </g> <!-- pandoc --> <g id="node5" class="node">
-<title>
-pandoc
-</title>
-<ellipse fill="none" stroke="black" cx="121.99" cy="-95.61" rx="38.85" ry="18"></ellipse> <text text-anchor="middle" x="121.99" y="-91.41" font-family="Times,serif" font-size="14.00">pandoc</text> </g> <!-- md&#45;&#45;pandoc --> <g id="edge5" class="edge">
-<title>
-md–pandoc
-</title>
-<path fill="none" stroke="black" d="M106.98,-159.1C110.18,-145.58 114.53,-127.18 117.72,-113.67"></path> </g> <!-- HTML --> <g id="node6" class="node">
-<title>
-HTML
-</title>
-<ellipse fill="none" stroke="black" cx="41.87" cy="-72.53" rx="38.29" ry="18"></ellipse> <text text-anchor="middle" x="41.87" y="-68.33" font-family="Times,serif" font-size="14.00">HTML</text> </g> <!-- pandoc&#45;&#45;HTML --> <g id="edge6" class="edge">
-<title>
-pandoc–HTML
-</title>
-<path fill="none" stroke="black" d="M88.94,-86.09C84.2,-84.72 79.32,-83.32 74.59,-81.96"></path> </g> <!-- PDF --> <g id="node7" class="node">
-<title>
-PDF
-</title>
-<ellipse fill="none" stroke="black" cx="96.57" cy="-18" rx="28.51" ry="18"></ellipse> <text text-anchor="middle" x="96.57" y="-13.8" font-family="Times,serif" font-size="14.00">PDF</text> </g> <!-- pandoc&#45;&#45;PDF --> <g id="edge7" class="edge">
-<title>
-pandoc–PDF
-</title>
-<path fill="none" stroke="black" d="M116.1,-77.61C111.96,-64.98 106.46,-48.18 102.35,-35.64"></path> </g> <!-- Word --> <g id="node8" class="node">
-<title>
-Word
-</title>
-<ellipse fill="none" stroke="black" cx="204.05" cy="-110.52" rx="33.05" ry="18"></ellipse> <text text-anchor="middle" x="204.05" y="-106.32" font-family="Times,serif" font-size="14.00">Word</text> </g> <!-- pandoc&#45;&#45;Word --> <g id="edge8" class="edge">
-<title>
-pandoc–Word
-</title>
-<path fill="none" stroke="black" d="M158.23,-102.2C163.03,-103.07 167.93,-103.96 172.65,-104.82"></path> </g> <!-- more --> <g id="node9" class="node">
-<title>
-more
-</title>
-<ellipse fill="none" stroke="black" cx="178.27" cy="-36.72" rx="30.76" ry="18"></ellipse> <text text-anchor="middle" x="178.27" y="-32.52" font-family="Times,serif" font-size="14.00">more</text> </g> <!-- pandoc&#45;&#45;more --> <g id="edge9" class="edge">
-<title>
-pandoc–more
-</title>
-<path fill="none" stroke="black" d="M137.97,-78.89C145.9,-70.6 155.42,-60.63 163.22,-52.47"></path> </g> </g>
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-323.34 241.08,-323.34 241.08,4 -4,4"></polygon>
+<!-- qmd -->
+<g id="node1" class="node">
+<title>qmd</title>
+<ellipse fill="none" stroke="black" cx="69.62" cy="-301.34" rx="28.41" ry="18"></ellipse>
+<text text-anchor="middle" x="69.62" y="-297.14" font-family="Times,serif" font-size="14.00">qmd</text>
+</g>
+<!-- Knitr -->
+<g id="node2" class="node">
+<title>Knitr</title>
+<ellipse fill="none" stroke="black" cx="132.13" cy="-252.75" rx="31.34" ry="18"></ellipse>
+<text text-anchor="middle" x="132.13" y="-248.55" font-family="Times,serif" font-size="14.00">Knitr</text>
+</g>
+<!-- qmd&#45;&#45;Knitr -->
+<g id="edge1" class="edge">
+<title>qmd--Knitr</title>
+<path fill="none" stroke="black" d="M87.7,-287.28C95.78,-281 105.29,-273.61 113.44,-267.28"></path>
+</g>
+<!-- Jupyter -->
+<g id="node3" class="node">
+<title>Jupyter</title>
+<ellipse fill="none" stroke="black" cx="39.47" cy="-228.46" rx="39.43" ry="18"></ellipse>
+<text text-anchor="middle" x="39.47" y="-224.26" font-family="Times,serif" font-size="14.00">Jupyter</text>
+</g>
+<!-- qmd&#45;&#45;Jupyter -->
+<g id="edge2" class="edge">
+<title>qmd--Jupyter</title>
+<path fill="none" stroke="black" d="M62.32,-283.69C57.62,-272.32 51.52,-257.58 46.8,-246.19"></path>
+</g>
+<!-- md -->
+<g id="node4" class="node">
+<title>md</title>
+<ellipse fill="none" stroke="black" cx="102.7" cy="-177.2" rx="27" ry="18"></ellipse>
+<text text-anchor="middle" x="102.7" y="-173" font-family="Times,serif" font-size="14.00">md</text>
+</g>
+<!-- Knitr&#45;&#45;md -->
+<g id="edge3" class="edge">
+<title>Knitr--md</title>
+<path fill="none" stroke="black" d="M125.16,-234.84C120.43,-222.72 114.21,-206.76 109.52,-194.72"></path>
+</g>
+<!-- Jupyter&#45;&#45;md -->
+<g id="edge4" class="edge">
+<title>Jupyter--md</title>
+<path fill="none" stroke="black" d="M59.12,-212.52C67.54,-205.71 77.27,-197.82 85.4,-191.22"></path>
+</g>
+<!-- pandoc -->
+<g id="node5" class="node">
+<title>pandoc</title>
+<ellipse fill="none" stroke="black" cx="121.99" cy="-95.61" rx="38.85" ry="18"></ellipse>
+<text text-anchor="middle" x="121.99" y="-91.41" font-family="Times,serif" font-size="14.00">pandoc</text>
+</g>
+<!-- md&#45;&#45;pandoc -->
+<g id="edge5" class="edge">
+<title>md--pandoc</title>
+<path fill="none" stroke="black" d="M106.98,-159.1C110.18,-145.58 114.53,-127.18 117.72,-113.67"></path>
+</g>
+<!-- HTML -->
+<g id="node6" class="node">
+<title>HTML</title>
+<ellipse fill="none" stroke="black" cx="41.87" cy="-72.53" rx="38.29" ry="18"></ellipse>
+<text text-anchor="middle" x="41.87" y="-68.33" font-family="Times,serif" font-size="14.00">HTML</text>
+</g>
+<!-- pandoc&#45;&#45;HTML -->
+<g id="edge6" class="edge">
+<title>pandoc--HTML</title>
+<path fill="none" stroke="black" d="M88.94,-86.09C84.2,-84.72 79.32,-83.32 74.59,-81.96"></path>
+</g>
+<!-- PDF -->
+<g id="node7" class="node">
+<title>PDF</title>
+<ellipse fill="none" stroke="black" cx="96.57" cy="-18" rx="28.51" ry="18"></ellipse>
+<text text-anchor="middle" x="96.57" y="-13.8" font-family="Times,serif" font-size="14.00">PDF</text>
+</g>
+<!-- pandoc&#45;&#45;PDF -->
+<g id="edge7" class="edge">
+<title>pandoc--PDF</title>
+<path fill="none" stroke="black" d="M116.1,-77.61C111.96,-64.98 106.46,-48.18 102.35,-35.64"></path>
+</g>
+<!-- Word -->
+<g id="node8" class="node">
+<title>Word</title>
+<ellipse fill="none" stroke="black" cx="204.05" cy="-110.52" rx="33.05" ry="18"></ellipse>
+<text text-anchor="middle" x="204.05" y="-106.32" font-family="Times,serif" font-size="14.00">Word</text>
+</g>
+<!-- pandoc&#45;&#45;Word -->
+<g id="edge8" class="edge">
+<title>pandoc--Word</title>
+<path fill="none" stroke="black" d="M158.23,-102.2C163.03,-103.07 167.93,-103.96 172.65,-104.82"></path>
+</g>
+<!-- more -->
+<g id="node9" class="node">
+<title>more</title>
+<ellipse fill="none" stroke="black" cx="178.27" cy="-36.72" rx="30.76" ry="18"></ellipse>
+<text text-anchor="middle" x="178.27" y="-32.52" font-family="Times,serif" font-size="14.00">more</text>
+</g>
+<!-- pandoc&#45;&#45;more -->
+<g id="edge9" class="edge">
+<title>pandoc--more</title>
+<path fill="none" stroke="black" d="M137.97,-78.89C145.9,-70.6 155.42,-60.63 163.22,-52.47"></path>
+</g>
+</g>
 </svg>
-</p>
-<p></p><figcaption class="figure-caption">Figure 2: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.</figcaption><p></p>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -649,15 +1058,16 @@ pandoc–more
 
  ]]></description>
   <category>diagrams</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/21-diagrams/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/21-diagrams/</guid>
   <pubDate>Mon, 18 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/21-diagrams/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 <item>
   <title>YAML intelligence</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -668,13 +1078,13 @@ pandoc–more
 <p>For example, let’s say you have a code chunk in your document and you don’t want it to be evaluated. The chunk option you should set is <code>eval</code> and it should be set to <code>false</code>. If you’re coming from R Markdown, you might be used to seeing this as <code>eval = FALSE</code>, but in YAMl style this option should be defined as <code>eval: false</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/eval-false.gif" class="img-fluid figure-img" alt="Code chunk with code 1 + 1. YAML style chunk option to set eval to false is added using tab completion."></p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/eval-false.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Code chunk with code 1 + 1. YAML style chunk option to set eval to false is added using tab completion."></p>
 </figure>
 </div>
 <p>This is super helpful when you just want to browse through all chunk options to see what’s available as well as when you can’t remember the full name of a chunk option, but remember a piece of it, e.g., <code>fig-</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/fig-options.png" class="img-fluid figure-img" alt="Code chunk with code plot(cars). Chunk option starting with fig- is added and tab completion brings up all chunk options starting with this character string: fig-align, fig-alt, fig-asp, fig-cap-location, fig-cap, fig-column, etc."></p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/fig-options.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Code chunk with code plot(cars). Chunk option starting with fig- is added and tab completion brings up all chunk options starting with this character string: fig-align, fig-alt, fig-asp, fig-cap-location, fig-cap, fig-column, etc."></p>
 </figure>
 </div>
 <p>YAML completion works in <code>.yml</code> files as well.</p>
@@ -685,7 +1095,7 @@ pandoc–more
 <p>YAML intelligence isn’t limited to code completion. If you have incorrect YAML it will also be highlighted when documents are saved. For example, if you typed <code>eval: FALSE</code> instead of <code>eval: false</code>, you’ll see the following.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/eval-FALSE.png" class="img-fluid figure-img" alt="Chunk option defined as eval: FALSE. The word FALSE is underlined in red. A red X next to the code chunk gives the warning Key eval has value FALSE, which must be `true` or `false`. (Try using false instead.)"></p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/eval-FALSE.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Chunk option defined as eval: FALSE. The word FALSE is underlined in red. A red X next to the code chunk gives the warning Key eval has value FALSE, which must be `true` or `false`. (Try using false instead.)"></p>
 </figure>
 </div>
 </section>
@@ -704,15 +1114,16 @@ pandoc–more
   <category>execution</category>
   <category>yaml</category>
   <category>teaching</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/</guid>
   <pubDate>Sun, 17 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/20-yaml-intelligence/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 <item>
   <title>Quarto Gallery</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gallery/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gallery/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -722,7 +1133,7 @@ pandoc–more
 <p>Need some Quarto inspiration? Want to see examples of what others are creating with Quarto? And importantly, <em>how</em> they’re creating them? Take a look at the newly refreshed <a href="https://quarto.org/docs/gallery/">Quarto Gallery</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://quarto.org/docs/gallery/"><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gallery/featured.gif" class="img-fluid figure-img" alt="Scrolling through the Quarto Gallery"></a></p>
+<p><a href="https://quarto.org/docs/gallery/"><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gallery/featured.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Scrolling through the Quarto Gallery"></a></p>
 </figure>
 </div>
 <p>The Quarto Gallery contains examples of</p>
@@ -746,23 +1157,28 @@ pandoc–more
 
  ]]></description>
   <category>documentation</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gallery/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gallery/</guid>
   <pubDate>Sat, 16 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/19-gallery/featured.gif" medium="image" type="image/gif"/>
 </item>
 <item>
   <title>Font Awesome</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/18-font-awesome/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/18-font-awesome/</link>
   <description><![CDATA[ 
+
 
 
 
 
 <section id="font-awesome" class="level2">
 <h2 class="anchored" data-anchor-id="font-awesome"><strong>Font Awesome</strong></h2>
-<p>Including Font Awesome icons in Quarto documents is now easy peasy lemon squeezy <i class="fa-solid fa-lemon"></i> with the <a href="https://github.com/quarto-ext/fontawesome">Font Awesome extension</a>. Just surround the Font Awesome icon name in <code>{{&lt;</code> and <code>&gt;}}</code>.</p>
-<table class="table">
+<p>Including Font Awesome icons in Quarto documents is now easy peasy lemon squeezy <i class="fa-solid fa-lemon"></i> with the <a href="https://github.com/quarto-ext/fontawesome">Font Awesome extension</a>. Just surround the Font Awesome icon name in <code>[[]{.quarto-shortcode__-param data-is-shortcode="1" data-value="</code>” data-raw=“<code>"} and []{.quarto-shortcode__-param data-is-shortcode="1" data-value="</code>” data-raw=“<code>"}]{.quarto-shortcode__ data-is-shortcode="1" data-raw="</code> and <code>&gt;}}"}</code>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 53%">
+<col style="width: 46%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>input</th>
@@ -789,7 +1205,9 @@ pandoc–more
 </tbody>
 </table>
 <p>To use this extension run the following in your terminal in the Quarto project you want to use these icons.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;">quarto</span> install extension quarto-ext/fontawesome</span></code></pre></div>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">quarto</span> install extension quarto-ext/fontawesome</span></code></pre></div>
 <p>This will prompt you to answer if you trust the extension, and you should decide that for yourself. This particular extension is developed by the Quarto development team. Once you say yes, the extension will be installed in an <code>_extensions</code> subdirectory.</p>
 <p>A few notes on this extension:</p>
 <ul>
@@ -811,15 +1229,16 @@ pandoc–more
  ]]></description>
   <category>extension</category>
   <category>fontawesome</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/18-font-awesome/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/18-font-awesome/</guid>
   <pubDate>Fri, 15 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/18-font-awesome/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 <item>
   <title>Dark mode</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/17-dark-mode/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/17-dark-mode/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -827,21 +1246,129 @@ pandoc–more
 <section id="theme-light-dark" class="level2">
 <h2 class="anchored" data-anchor-id="theme-light-dark"><code>theme:</code> <code>light</code> / <code>dark</code></h2>
 <p>Quarto websites support light and dark themes and will automatically add a light/dark toggle to your website if you supply both themes.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="pp" style="color: #AD0000;">---</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;">format</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb1-3"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">html</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb1-4"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">theme</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb1-5"><span class="at" style="color: #657422;">      </span><span class="fu" style="color: #4758AB;">light</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> litera</span></span>
-<span id="cb1-6"><span class="at" style="color: #657422;">      </span><span class="fu" style="color: #4758AB;">dark</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> darkly</span></span>
-<span id="cb1-7"><span class="pp" style="color: #AD0000;">---</span></span></code></pre></div>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">---</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">format</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-4"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-5"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">light</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> litera</span></span>
+<span id="cb1-6"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">dark</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> darkly</span></span>
+<span id="cb1-7"><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">---</span></span></code></pre></div>
 <p>You can also customize your light and dark themes and and supply custom theme files in addition to the <a href="https://bootswatch.com/">Bootswatch themes</a> you’re using.</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><span class="pp" style="color: #AD0000;">---</span></span>
-<span id="cb2-2"><span class="fu" style="color: #4758AB;">format</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb2-3"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">html</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb2-4"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">theme</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb2-5"><span class="at" style="color: #657422;">      </span><span class="fu" style="color: #4758AB;">light</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="kw" style="color: #003B4F;">[</span><span class="at" style="color: #657422;">litera</span><span class="kw" style="color: #003B4F;">,</span><span class="at" style="color: #657422;"> styles.scss</span><span class="kw" style="color: #003B4F;">]</span></span>
-<span id="cb2-6"><span class="at" style="color: #657422;">      </span><span class="fu" style="color: #4758AB;">dark</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="kw" style="color: #003B4F;">[</span><span class="at" style="color: #657422;">darkly</span><span class="kw" style="color: #003B4F;">,</span><span class="at" style="color: #657422;"> styles-dark.scss</span><span class="kw" style="color: #003B4F;">]</span></span>
-<span id="cb2-7"><span class="pp" style="color: #AD0000;">---</span></span></code></pre></div>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">---</span></span>
+<span id="cb2-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">format</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb2-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb2-4"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb2-5"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">light</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">[</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">litera</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">,</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> styles.scss</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">]</span></span>
+<span id="cb2-6"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">dark</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">[</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">darkly</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">,</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> styles-dark.scss</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">]</span></span>
+<span id="cb2-7"><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">---</span></span></code></pre></div>
 <p>Here are the custom styles I’m using on this website:</p>
 <ul>
 <li><a href="https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/styles.scss"><code>styles.scss</code></a></li>
@@ -859,15 +1386,16 @@ pandoc–more
  ]]></description>
   <category>website</category>
   <category>theme</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/17-dark-mode/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/17-dark-mode/</guid>
   <pubDate>Thu, 14 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/17-dark-mode/featured.gif" medium="image" type="image/gif"/>
 </item>
 <item>
   <title>Code tools</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/16-code-tools/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/16-code-tools/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -876,30 +1404,113 @@ pandoc–more
 <h2 class="anchored" data-anchor-id="code-tools"><code>code-tools</code></h2>
 <p>You can include a <strong>Code</strong> menu in the header of your document that provides various tools for readers to interact with your source code.</p>
 <p>If you want to include the full source code (including executable code chunks and your prose, in other words, your full <code>.qmd</code> file), set <code>code-tools: true</code> in the YAML of your document.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="pp" style="color: #AD0000;">---</span></span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;">format</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb1-3"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">html</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span></span>
-<span id="cb1-4"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">code-tools</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="ch" style="color: #20794D;">true</span></span>
-<span id="cb1-5"><span class="pp" style="color: #AD0000;">---</span></span></code></pre></div>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">---</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">format</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span></span>
+<span id="cb1-4"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">code-tools</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">true</span></span>
+<span id="cb1-5"><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">---</span></span></code></pre></div>
 <p>The <a href="https://mlr3book.mlr-org.com/">mlr3book</a> uses this approach.</p>
 <p>Alternatively, if your document lives within a project that has a specified <code>repo-url</code> in the project-level <code>_quarto.yml</code> file, you can directly link to the document in your repo by specifying the <code>source</code>.</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><span class="pp" style="color: #AD0000;">---</span></span>
-<span id="cb2-2"><span class="fu" style="color: #4758AB;">format</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb2-3"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">html</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span></span>
-<span id="cb2-4"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">code-tools</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb2-5"><span class="at" style="color: #657422;">      </span><span class="fu" style="color: #4758AB;">source</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> repo</span></span>
-<span id="cb2-6"><span class="pp" style="color: #AD0000;">---</span></span></code></pre></div>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">---</span></span>
+<span id="cb2-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">format</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb2-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span></span>
+<span id="cb2-4"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">code-tools</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb2-5"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">source</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> repo</span></span>
+<span id="cb2-6"><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">---</span></span></code></pre></div>
 <p>On this page I’ve done something a little different. I have some “analysis code” on my page, in the following code chunks.</p>
 <p>First, I load some packages.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;">library</span>(tidyverse)</span>
-<span id="cb3-2"><span class="fu" style="color: #4758AB;">library</span>(palmerpenguins)</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse)</span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(palmerpenguins)</span></code></pre></div>
 </div>
 <p>Then, I calculate some summary statistics.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">penguins <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb4-2">  <span class="fu" style="color: #4758AB;">group_by</span>(species) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb4-3">  <span class="fu" style="color: #4758AB;">summarise</span>(<span class="at" style="color: #657422;">mean_bill_length =</span> <span class="fu" style="color: #4758AB;">mean</span>(bill_length_mm, <span class="at" style="color: #657422;">na.rm =</span> <span class="cn" style="color: #8f5902;">TRUE</span>))</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">penguins <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb4-2">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">group_by</span>(species) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb4-3">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">summarise</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mean_bill_length =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mean</span>(bill_length_mm, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">na.rm =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">TRUE</span>))</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 2
   species   mean_bill_length
@@ -910,12 +1521,46 @@ pandoc–more
 </div>
 </div>
 <p>When you have a bunch of code as well as bunch of prose in your document (like here), your readers might want access to just the content in your executable code chunks so that they can easily replicate your analysis. You can do this by maintaining a separate R script, and then linking to it from your YAML, like I’ve done on this page.</p>
-<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><span class="pp" style="color: #AD0000;">---</span></span>
-<span id="cb6-2"><span class="fu" style="color: #4758AB;">format</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb6-3"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">html</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span></span>
-<span id="cb6-4"><span class="at" style="color: #657422;">    </span><span class="fu" style="color: #4758AB;">code-tools</span><span class="kw" style="color: #003B4F;">:</span></span>
-<span id="cb6-5"><span class="at" style="color: #657422;">      </span><span class="fu" style="color: #4758AB;">source</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/posts/16-code-tools/penguins.R</span></span>
-<span id="cb6-6"><span class="pp" style="color: #AD0000;">---</span></span></code></pre></div>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">---</span></span>
+<span id="cb6-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">format</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb6-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span></span>
+<span id="cb6-4"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">code-tools</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb6-5"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">source</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> https://github.com/mine-cetinkaya-rundel/quarto-tip-a-day/blob/main/posts/16-code-tools/penguins.R</span></span>
+<span id="cb6-6"><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">---</span></span></code></pre></div>
 <p>And you have two options for generating that R script:</p>
 <ul>
 <li>You can create and maintain it manually, making sure to keep it updated as you update the analysis in your narrative / <code>.qmd</code> file.</li>
@@ -932,15 +1577,16 @@ pandoc–more
  ]]></description>
   <category>html</category>
   <category>code</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/16-code-tools/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/16-code-tools/</guid>
   <pubDate>Wed, 13 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/16-code-tools/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 <item>
   <title>Need help?</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -954,13 +1600,13 @@ pandoc–more
 <p>Finally, before posting an issue, make sure to search for it in the repo. For example, say you have a question about the <a href="https://quarto.org/docs/output-formats/html-code.html#code-tools"><code>code-tools</code> feature</a>. First, search for <code>code-tools</code> in the <a href="https://github.com/quarto-dev/quarto-cli">quarto-dev/quarto-cli</a> repo. Choose “In this repository” among the search options.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/search.png" class="img-fluid figure-img" alt="Searching for &quot;code-tools&quot; in the quarto-dev/quarto-cli repo. The search options are &quot;in this repository&quot;, &quot;in this organization&quot;, and &quot;all GitHub&quot;. &quot;In this repository&quot; is highlighted." width="601"></p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/search.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Searching for &quot;code-tools&quot; in the quarto-dev/quarto-cli repo. The search options are &quot;in this repository&quot;, &quot;in this organization&quot;, and &quot;all GitHub&quot;. &quot;In this repository&quot; is highlighted." width="601"></p>
 </figure>
 </div>
 <p>Next, narrow down the search results for either Issues or Discussions.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/search-results.png" class="img-fluid figure-img" alt="Search results for &quot;code-tools&quot;. Options for narrowing down search results for &quot;Issues&quot; and &quot;Discussions&quot; are highlighted."></p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/search-results.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Search results for &quot;code-tools&quot;. Options for narrowing down search results for &quot;Issues&quot; and &quot;Discussions&quot; are highlighted."></p>
 </figure>
 </div>
 <p>Read any relevant posts and if those don’t answer your questions, post your own.</p>
@@ -974,15 +1620,16 @@ pandoc–more
 
  ]]></description>
   <category>help</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/</guid>
   <pubDate>Tue, 12 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/15-help/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 <item>
   <title>Slide zoom</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/14-slide-zoom/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/14-slide-zoom/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1002,15 +1649,16 @@ pandoc–more
  ]]></description>
   <category>slides</category>
   <category>revealjs</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/14-slide-zoom/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/14-slide-zoom/</guid>
   <pubDate>Mon, 11 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/14-slide-zoom/featured.gif" medium="image" type="image/gif"/>
 </item>
 <item>
   <title>Quarto on Homebrew</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/13-homebrew/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/13-homebrew/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1020,13 +1668,23 @@ pandoc–more
 <p>If you’re a Homebrew person, chances are you’d like to install and update Quarto with Homebrew. There are two options for doing so.</p>
 <ol type="1">
 <li><p>Using the Quarto cask: This installs the pkg file from latest official <a href="https://github.com/quarto-dev/quarto-cli/releases">Quarto release</a>. One minor pain point with this approach is that each time you update Quarto, you’ll need to enter your user password.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;">brew</span> install <span class="at" style="color: #657422;">--cask</span> quarto</span></code></pre></div></li>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">brew</span> install <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--cask</span> quarto</span></code></pre></div></li>
 <li><p>Using a private tap: This provides a formula-based version which installs the Quarto files in the typical Homebrew cellar location. With this method, you won’t need to enter your password each time you want to update Quarto, however you are relying on a private tap.</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;">brew</span> tap rundel/quarto-cli</span>
-<span id="cb2-2"><span class="ex" style="color: null;">brew</span> install quarto</span></code></pre></div></li>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">brew</span> tap rundel/quarto-cli</span>
+<span id="cb2-2"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">brew</span> install quarto</span></code></pre></div></li>
 </ol>
 <p>Once you’ve installed Quarto via Homebrew using either method, you can update to the latest release with</p>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;">brew</span> upgrade quarto</span></code></pre></div>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">brew</span> upgrade quarto</span></code></pre></div>
 <p>or it will also update along with other software, when you run <code>brew upgrade</code>.</p>
 <p>A few more notes:</p>
 <ul>
@@ -1045,15 +1703,16 @@ pandoc–more
  ]]></description>
   <category>installation</category>
   <category>homebrew</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/13-homebrew/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/13-homebrew/</guid>
   <pubDate>Sun, 10 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/13-homebrew/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
 <item>
   <title>HTML blocks</title>
   <dc:creator>Mine Çetinkaya-Rundel</dc:creator>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1061,9 +1720,15 @@ pandoc–more
 <section id="html-block" class="level2">
 <h2 class="anchored" data-anchor-id="html-block">HTML block</h2>
 <p>Want to embed an iframe on a webpage or a slide deck? Plop the sharing code in a raw html block!</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;">```{=html}</span></span>
-<span id="cb1-2"><span class="in" style="color: #5E5E5E;">&lt;iframe width="780" height="500" src="https://quarto.org/" title="Quarto Documentation"&gt;&lt;/iframe&gt;</span></span>
-<span id="cb1-3"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```{=html}</span></span>
+<span id="cb1-2"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;iframe width="780" height="500" src="https://quarto.org/" title="Quarto Documentation"&gt;&lt;/iframe&gt;</span></span>
+<span id="cb1-3"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```</span></span></code></pre></div>
 <p>And here is the result!</p>
 <iframe width="780" height="500" src="https://quarto.org/" title="Quarto Documentation"></iframe>
 <p>A few notes on HTML blocks:</p>
@@ -1074,7 +1739,7 @@ pandoc–more
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/insert-html-block.png" class="img-fluid figure-img" alt="Using the Insert Anything tool to insert an HTML block. Typing out the letters &quot;ht&quot; brings this option in the tool." width="400"></p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/insert-html-block.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Using the Insert Anything tool to insert an HTML block. Typing out the letters &quot;ht&quot; brings this option in the tool." width="400"></p>
 </figure>
 </div>
 </section>
@@ -1088,7 +1753,7 @@ pandoc–more
  ]]></description>
   <category>html</category>
   <category>raw</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/</guid>
   <pubDate>Sat, 09 Jul 2022 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/featured.png" medium="image" type="image/png" height="98" width="144"/>
 </item>
