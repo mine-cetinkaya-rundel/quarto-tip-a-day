@@ -3,7 +3,7 @@ title: "Side-by-side tables"
 date: "2022-06-28"
 categories: [tables]
 image: "featured.png"
-image-alt: "Two tables side by side. On the left is the first six rows and first three columns of the mtcars dataset. On the right is the first six rows and all two columns of the cars dataset."
+image-alt: "Two tables side by side. On the left is the first six rows and the first three columns of the mtcars dataset. On the right is the first six rows and all two columns of the cars dataset."
 ---
 
 ## `layout-ncol`
